@@ -13,6 +13,7 @@
     "@astrojs/starlight": "^0.24.5",
     "astro": "^4.10.2",
     "astro-icon": "^1.1.0",
+    "raw-loader": "^4.0.2",
     "sharp": "^0.32.5"
   }
 }

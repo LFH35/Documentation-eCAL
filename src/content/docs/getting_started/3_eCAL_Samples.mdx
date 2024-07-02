@@ -19,13 +19,13 @@ The eCAL installation comes with a set of ready-to-use sample applications. So, 
 
 The sample we are going to use to try out the "normal" eCAL communication is *ecal_sample_person_snd*. Start it!
 
-* On Windows start `C:\eCAL\samples\bin\ecal_sample_person_snd.exe`.
-* On Ubuntu call `ecal_sample_person_snd` from a terminal (it should be in your PATH).
+- On Windows start `C:\eCAL\samples\bin\ecal_sample_person_snd.exe`.
+- On Ubuntu call `ecal_sample_person_snd` from a terminal (it should be in your PATH).
 
 You now have a console-based application that periodically prints some text to the terminal. In the background the application created a topic *person* and sends data to it. So, let's add a subscriber that receives the data!
 
-* On Windows start `C:\eCAL\samples\bin\ecal_sample_person_rec.exe`.
-* On Ubuntu call `ecal_sample_person_rec` from a terminal.
+- On Windows start `C:\eCAL\samples\bin\ecal_sample_person_rec.exe`.
+- On Ubuntu call `ecal_sample_person_rec` from a terminal.
 
 Congratulations! You are looking at your first local eCAL communication! The subscriber subscribed to the topic *person* and prints all data it receives to the terminal.
 
