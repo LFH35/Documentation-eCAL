@@ -21,15 +21,38 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 <CardGrid stagger>
 	<Card title="Getting Started" icon="open-book">
-		See `src/content/docs/index.mdx` for Introduction.
+		To start learning about eCAL, please refer to the [Getting Started](/getting_started/1_introduction/) chapter.
+
+		This chapter will walk you through
+		- [Setting up](/getting_started/2_installing_ecal/) and [configuring eCAL](/getting_started/4_network_configuration/)
+		- The [applications](/getting_started/6-applications/) that come with eCAL
+		- Writing your first [Hello World](/getting_started/7-development-c/7_1_hello_world/) program
 	</Card>
-	<Card title="Development" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Downloading and installing eCAL" icon="seti:powershell">
+		At the moment, we support eCAL 5.13 and eCAL 5.12 with fixes. New users should always use the latest eCAL Version (5.13.2). Support for eCAL 5.12 will be dropped when eCAL 5.14 is released.
+		- Windows:
+			1. Visit the Download Archive and download the latest eCAL Installer
+			2. Install eCAL
+
+		- Ubuntu:
+
+			Install eCAL from our PPA:
+			```bash
+				sudo add-apt-repository ppa:ecal/ecal-latest
+				sudo apt-get update
+				sudo apt-get install ecal
+			```
+			This PPA will always upgrade you to the latest eCAL Release (-> Rolling Release PPA). If you intend to stay on an specific release, check out other PPAs [here](/getting_started/2_installing_ecal/#221-automatically-install-ecal-from-a-ppa).
 	</Card>
-	<Card title="Using eCal" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="License" icon="seti:csv">
+		eCAL is licensed under [Apache License 2.0.](http://www.apache.org/licenses/LICENSE-2.0) You are free to
+		- Use eCAL commercially
+		- Modify eCAL
+		- Distribute eCAL
+
+		eCAL is provided on an “as is” basis without warranties or conditions of any kind.
 	</Card>
-	<Card title="Advanced" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Trademark" icon="seti:code-climate">
+		Eclipse eCAL™ is a trademark of the Eclipse Foundation, Inc. and is used with permission.
 	</Card>
 </CardGrid>
