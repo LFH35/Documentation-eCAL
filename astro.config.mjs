@@ -11,7 +11,7 @@ export default defineConfig({
     // Relative path to your custom CSS file
     './src/styles/custom.css'],
     social: {
-      github: 'https://github.com/withastro/starlight'
+      github: 'https://github.com/eclipse-ecal/ecal'
     },
     sidebar: [{
       label: 'Getting Started',
