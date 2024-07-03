@@ -1,11 +1,14 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+import expressiveCodeConfig from './ec.config.mjs';
+
 import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [starlight({
+  integrations: [
+  starlight({
     title: 'Eclipse eCAL™',
     customCss: [
     // Relative path to your custom CSS file
@@ -18,6 +21,10 @@ export default defineConfig({
       autogenerate: {
         directory: 'getting_started'
       } //{ label: 'Example Guide', link: '/guides/example/' },
-    }]
-  }), icon()]
+    }],
+  }),
+  icon()],
+  markdown: {
+	shikiConfig: expressiveCodeConfig,
+  },
 });

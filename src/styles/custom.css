@@ -1,3 +1,6 @@
+@import 'prismjs/themes/prism-tomorrow.css';
+@import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+
 /* Dark mode colors. */
 :root {
 	--sl-color-accent-low: #24272F;
