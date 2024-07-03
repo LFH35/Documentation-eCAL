@@ -10,9 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^3.1.2",
+    "@astrojs/prism": "^3.1.0",
     "@astrojs/starlight": "^0.24.5",
     "astro": "^4.10.2",
     "astro-icon": "^1.1.0",
+    "prismjs": "^1.29.0",
     "raw-loader": "^4.0.2",
     "sharp": "^0.32.5"
   }

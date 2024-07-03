@@ -5,9 +5,10 @@ title: 4. Network configuration
 import { Aside } from '@astrojs/starlight/components';
 import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
-import CodeBlock from '@theme/CodeBlock';
+import { Code } from 'astro-expressive-code/components';
 
-import ecalMulticastLoopback from '../../../assets/netplan/50-ecal-multicast-loopback.yaml';
+import ecalMulticastLoopback from '../../../assets/netplan/50-ecal-multicast-loopback.yaml?raw';
+import ecalMulticast from '../../../assets/netplan/50-ecal-multicast.yaml?raw';
 
 <Aside title="Hint">
     If you don't have two PCs at your hand or if you are just not interested in inter-machine-communication, just skip this topic. It is not essential for the next tutorials to use cloud communication.
@@ -109,12 +110,7 @@ Jump to your section of choice below:
         
         ![Space indentation in gedit](../../../assets/gedit_space_indentation.png)
     </Aside>
-  </TabItem>
-</Tabs>
-
-   .. tab:: Netplan (recommended)
-
-      1. Configure the **loopback multicast** route (this will become active, if you disconnect from all networks).
+        1. Configure the **loopback multicast** route (this will become active, if you disconnect from all networks).
 
         ```bash
             sudo gedit /etc/netplan/50-ecal-multicast-loopback.yaml
@@ -122,124 +118,109 @@ Jump to your section of choice below:
 
         Paste the following configuration:
 
-        <CodeBlock language="yaml">{ecalMulticastLoopback}</CodeBlock>
-
-         .. literalinclude:: netplan/50-ecal-multicast-loopback.yaml
-            :language: yaml
+        <Code code={ecalMulticastLoopback} lang="yml" />
 
       2. Configure the **external multicast** route.
          This will get a lower metric and will thus become the preferred route once the interface is up.
 
-         .. code-block:: bash
-
+         ```bash
             sudo gedit /etc/netplan/50-ecal-multicast.yaml
+         ```
 
          Paste the following configuration and **replace eth0** with your desired interface:
 
-         .. literalinclude:: netplan/50-ecal-multicast.yaml
-            :language: yaml
+        <Code code={ecalMulticast} lang="yml" />
 
       3. Apply the changes
 
-         .. code-block:: bash
-
+         ```bash
             sudo netplan apply
-
-         .. important::
-
+         ```
+         <Aside type="caution" title="Important">
             In Ubuntu 20.04 and up you may also have to *activate* the netplan setting in the network configuration GUI!
 
-            .. figure:: img/gnome_netplan_gui.svg
-               :alt: Activate the netplan settings from the Gnome GUI
-               :align: center
+            ![Activate the netplan settings from the Gnome GUI](../../../assets/gnome_netplan_gui.svg)
+         </Aside>
 
-   .. tab:: GUI (easiest)
+         
+  </TabItem>
+  <TabItem label="GUI (easiest)">
+    If you have a graphical network manager installed (-> Desktop Ubuntu), you can use it to configure the external route.
 
-      If you have a graphical network manager installed (-> Desktop Ubuntu), you can use it to configure the external route.
+      <Aside type="caution" title="Important">
+      This method lacks the ability to configure a loopback route. When you are not connected to any network, your eCAL communication will fail. You can however combine this method with the loopback configuration from netplan.
+      </Aside>
 
-      .. important::
+      1. Configure the **external multicast** route
 
-         This method lacks the ability to configure a loopback route. 
-         When you are not connected to any network, your eCAL communication will fail.
-         You can however combine this method with the loopback configuration from netplan.
-
-      #. Configure the **external multicast** route
-
-         - System Settings -> Network -> Your Adapter -> Options -> IPv4 Tab -> Routes
+         - System Settings > Network > Your Adapter > Options > IPv4 Tab > Routes
 
          - Create a route:
 
-         - Address: :code:`239.0.0.0`
-         - Netmask: :code:`255.255.255.0`
-         - Gateway: :code:`0.0.0.0`
-         - Metric: :code:`1`
+         - Address: `239.0.0.0`
+         - Netmask: `255.255.255.0`
+         - Gateway: `0.0.0.0`
+         - Metric: `1`
 
-         .. image:: img/ubuntu_route_gui.png
-            :alt: Ubuntu multicast route
+        ![Ubuntu multicast route](../../../assets/ubuntu_route_gui.png)
 
-      #. Turn the interface off and on again
+      2. Turn the interface off and on again
 
-      #. Configure the **loopback multicast** route via *netplan* or :file:`/etc/network/interfaces`.
+      3. Configure the **loopback multicast** route via *netplan* or :file:`/etc/network/interfaces`.
          You can omit this, but then you will have to explicitly set eCAL to local mode, if you are not connected to any network.
- 
-   .. tab:: etc/network/interfaces (legacy)
-
-      The well known :file:`/etc/network/interfaces` file is supported up to Ubuntu 18.
+  </TabItem>
+  <TabItem label="etc/network/interfaces (legacy)">
+  The well known :file:`/etc/network/interfaces` file is supported up to Ubuntu 18.
       It is not supported since Ubuntu 20, anymore.
       Please use netplan instead.
       If you are running Ubuntu 18, using netplan is still recommended, unless you want to manage other interfaces via :file:`/etc/network/interfaces`.
 
       Edit the file and add the content below.
 
-      .. code-block:: bash
-
+      ```bash
          sudo gedit /etc/network/interfaces
+      ```
 
-      #. Configure the **loopback multicast** route (this will become active, if you disconnect from all networks).
+      1. Configure the **loopback multicast** route (this will become active, if you disconnect from all networks).
 
          Add the following lines beneath the :code:`iface lo inet loopback` line:
 
-         .. code-block:: bash
-
+         ```bash
             post-up ifconfig lo multicast
             post-up route add -net 239.0.0.0 netmask 255.255.255.0 dev lo metric 1000
+         ```
 
-      #. Configure the **external multicast** route.
+      2. Configure the **external multicast** route.
          This will get a lower metric and will thus become the preferred route once the interface is up.
 
          Add the following lines and **replace eth0** with your interface.
          You may want to replace the dhcp line with your desired configuration.
 
-         .. code-block:: bash
-
+         ```bash
             # replace eth0 with your network adapter
             auto eth0
             allow-hotplug eth0
             iface eth0 inet dhcp
             post-up ifconfig eth0 multicast
             post-up route add -net 239.0.0.0 netmask 255.255.255.0 dev eth0 metric 1
+         ```
 
-      #. Restart your PC
-    
-
-.. _ubuntu_multicast_route_test:
+      3. Restart your PC
+  </TabItem>
+</Tabs>
 
 #### 4.2.2.1 Test the configuration
 
 Check the result from a terminal. It should show routes for local and external communication:
 
-.. code-block:: bash
-   
+```bash
    route -n
+```
 
-.. image:: img/ubuntu_route_print.png
-   :alt: Ubuntu route -n
+![Ubuntu route -n](../../../assets/ubuntu_route_print.png)
 
 ## 4.3 eCAL Samples over network
 
-Now start one :file:`ecal_sample_person_snd` and one :file:`ecal_sample_person_rec`, just as in the :ref:`previous section<getting_started_samples>`.
-But on different machines!
-If you configured everything correctly, publisher and subscriber should connect almost immediately and exchange data.
+Now start one `ecal_sample_person_snd` and one `ecal_sample_person_rec`, just as in the [previous section](/getting_started/3_ecal_samples/). But on different machines! If you configured everything correctly, publisher and subscriber should connect almost immediately and exchange data.
 
-.. image:: img/cloud_person_combined.png
-   :alt: person_snd and person_rec sample over network
+![person_snd and person_rec sample over network](../../../assets/cloud_person_combined.png)
