@@ -40,5 +40,5 @@ All commands are run from the root of the project, from a terminal:
 Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
 
 ## Doxygen & Moxygen
-at first generate Doxygen XML files 'doxygen Doxygen'
-then generate .md files with Moxygen 'moxygen --anchors --pages --classes --templates=src/assets/templates --output=src/content/docs/doxygen/md/zapi-%s.md src/content/docs/doxygen/xml'
+at first generate Doxygen XML files `doxygen Doxygen`
+then generate .md files with Moxygen `moxygen --anchors --pages --classes --templates=src/assets/templates --output=src/content/docs/doxygen/md/zapi-%s.md src/content/docs/doxygen/xml`
