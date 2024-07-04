@@ -27,11 +27,29 @@ export default defineConfig({
         collapsed: true 
       } //{ label: 'Example Guide', link: '/guides/example/' },
     },{
+      label: 'Development',
+      autogenerate: {
+        directory: 'development', 
+        collapsed: true 
+      }
+    },{
+      label: 'Using eCAL',
+      autogenerate: {
+        directory: 'using_eCAL', 
+        collapsed: true 
+      }
+    },{
+      label: 'Advanced',
+      autogenerate: {
+        directory: 'advanced', 
+        collapsed: true 
+      }
+    },{
       label: 'Doxygen',
       autogenerate: {
         directory: 'doxygen/md', 
         collapsed: true 
-      } //{ label: 'Example Guide', link: '/guides/example/' },
+      }
     }],
   }),
   icon()],
