@@ -1,0 +1,24 @@
+---
+title: Local Configuration
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+Using eCAL in local mode can be benefitial
+
+- to avoid network congestion if the data is not needed on other machines
+- to make eCAL work in VPN and Firewall scenarios where non-local traffic is blocked
+
+To switch eCAL to local mode, edit your `ecal.ini` and change the following settings:
+
+- Windows: `C:\ProgramData\eCAL\ecal.ini`
+- Ubuntu: `/etc/ecal/ecal.ini`
+```ini
+   [network]
+   network_enabled           = false
+   multicast_ttl             = 0
+```
+
+<Aside type="tip">
+   To learn about the differences between local mode and cloud mode, check out [this table](/getting_started/4_network_configuration/).
+</Aside>

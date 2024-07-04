@@ -28,6 +28,7 @@ export default defineConfig({
       } //{ label: 'Example Guide', link: '/guides/example/' },
     },{
       label: 'Development',
+      collapsed: true,
       autogenerate: {
         directory: 'development', 
         collapsed: true 
@@ -40,12 +41,14 @@ export default defineConfig({
       }
     },{
       label: 'Advanced',
+      collapsed: true,
       autogenerate: {
         directory: 'advanced', 
         collapsed: true 
       }
     },{
       label: 'Doxygen',
+      collapsed: true,
       autogenerate: {
         directory: 'doxygen/md', 
         collapsed: true 
