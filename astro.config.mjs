@@ -26,6 +26,12 @@ export default defineConfig({
         directory: 'getting_started', 
         collapsed: true 
       } //{ label: 'Example Guide', link: '/guides/example/' },
+    },{
+      label: 'Doxygen',
+      autogenerate: {
+        directory: 'doxygen/html', 
+        collapsed: true 
+      } //{ label: 'Example Guide', link: '/guides/example/' },
     }],
   }),
   icon()],
