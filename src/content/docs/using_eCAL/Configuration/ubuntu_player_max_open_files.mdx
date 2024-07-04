@@ -1,0 +1,46 @@
+---
+title: Player - Max open files
+---
+
+import { Aside } from "@astrojs/starlight/components";
+import { Steps } from "@astrojs/starlight/components";
+
+When having an eCAL measurement with many topics on Ubuntu, you may experience crashes.
+This is caused by a Linux security feature that limits the number of open file descriptors (to 1024 by default).
+As each topic relies on multiple files (used by the shared memory transport layer), that limit may be triggered and cause a crash.
+
+<Aside>
+   Windows does not have that problem and should replay the measurement just fine.
+</Aside>
+
+Please follow the following steps to increase the allowed number of open files.
+
+<Steps>   
+1. Add to `/etc/sysctl.conf`:
+    ```ini
+      fs.file-max = 65535
+    ```
+  
+2. Apply this setting:
+    ```shell
+      sudo sysctl -p
+    ```
+
+3. Add to `/etc/security/limits.conf`:
+   *Replace YOUR_USERNAME with your actual username!*
+    ```conf
+      YOUR_USERNAME     soft     nproc          65535
+      YOUR_USERNAME     hard     nproc          65535
+      YOUR_USERNAME     soft     nofile         65535
+      YOUR_USERNAME     hard     nofile         65535
+    ```
+
+4. Add to both `/etc/systemd/user.conf` and `/etc/systemd/system.conf`:
+    ```ini
+      DefaultLimitNOFILE=65535
+    ```
+
+5. Reboot
+</Steps>
+
+Now the player should play the measurement just fine.
