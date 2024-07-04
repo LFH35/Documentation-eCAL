@@ -70,7 +70,7 @@ Call a method of this service, responses will be returned by callback.
 #### Returns
 True if successful.
 
-### `public ECAL_API bool `[`Call`](#d5/d4c/classeCAL_1_1CServiceClient_1afac68a2bdf163c6b23f58677a8611510)`(const std::string & method_name_,const std::string & request_,int timeout_,`[`ServiceResponseVecT`](src/content/docs/doxygen/md/zapi-ServiceResponseVecT.md#de/ddd/ecal__service__info_8h_1a36106945ed691d2225be35b428072270)` * service_response_vec_)` 
+### `public ECAL_API bool `[`Call`](#d5/d4c/classeCAL_1_1CServiceClient_1afac68a2bdf163c6b23f58677a8611510)`(const std::string & method_name_,const std::string & request_,int timeout_,`[`ServiceResponseVecT`](doxygen/md/zapi-ServiceResponseVecT.md#de/ddd/ecal__service__info_8h_1a36106945ed691d2225be35b428072270)` * service_response_vec_)` 
 
 Call a method of this service, all responses will be returned in service_response_vec_.
 
@@ -86,11 +86,11 @@ Call a method of this service, all responses will be returned in service_respons
 #### Returns
 True if successful.
 
-### `public ECAL_API bool `[`Call`](#d5/d4c/classeCAL_1_1CServiceClient_1a8c50f6bbc65f5a8cf617b554ec6b385e)`(const std::string & host_name_,const std::string & method_name_,const std::string & request_,struct `[`SServiceResponse`](src/content/docs/doxygen/md/zapi-eCAL::SServiceResponse.md#d9/d0b/structeCAL_1_1SServiceResponse)` & service_info_,std::string & response_)` 
+### `public ECAL_API bool `[`Call`](#d5/d4c/classeCAL_1_1CServiceClient_1a8c50f6bbc65f5a8cf617b554ec6b385e)`(const std::string & host_name_,const std::string & method_name_,const std::string & request_,struct `[`SServiceResponse`](doxygen/md/zapi-eCAL::SServiceResponse.md#d9/d0b/structeCAL_1_1SServiceResponse)` & service_info_,std::string & response_)` 
 
 Call method of this service, for specific host.
 
-> Deprecated: Please use the create method bool [Call(const std::string& method_name_, const std::string& request_, int timeout_, ServiceResponseVecT* service_response_vec_)](src/content/docs/doxygen/md/zapi-Call.md#d5/d4c/classeCAL_1_1CServiceClient_1afac68a2bdf163c6b23f58677a8611510) instead. This function will be removed in future eCAL versions.
+> Deprecated: Please use the create method bool [Call(const std::string& method_name_, const std::string& request_, int timeout_, ServiceResponseVecT* service_response_vec_)](doxygen/md/zapi-Call.md#d5/d4c/classeCAL_1_1CServiceClient_1afac68a2bdf163c6b23f58677a8611510) instead. This function will be removed in future eCAL versions.
 
 #### Parameters
 * `host_name_` Host name. 
@@ -120,7 +120,7 @@ Call a method of this service asynchronously, responses will be returned by call
 #### Returns
 True if successful.
 
-### `public ECAL_API bool `[`AddResponseCallback`](#d5/d4c/classeCAL_1_1CServiceClient_1aea2313031075e10b3a03893683531ddb)`(const `[`ResponseCallbackT`](src/content/docs/doxygen/md/zapi-ResponseCallbackT.md#de/ddd/ecal__service__info_8h_1a572360f74991bd1369ea24b5b7a0b6bb)` & callback_)` 
+### `public ECAL_API bool `[`AddResponseCallback`](#d5/d4c/classeCAL_1_1CServiceClient_1aea2313031075e10b3a03893683531ddb)`(const `[`ResponseCallbackT`](doxygen/md/zapi-ResponseCallbackT.md#de/ddd/ecal__service__info_8h_1a572360f74991bd1369ea24b5b7a0b6bb)` & callback_)` 
 
 Add server response callback.
 
@@ -137,7 +137,7 @@ Remove server response callback.
 #### Returns
 True if successful.
 
-### `public ECAL_API bool `[`AddEventCallback`](#d5/d4c/classeCAL_1_1CServiceClient_1a2d4e0d6eea8ecb83d15d2c0f874f50ac)`(eCAL_Client_Event type_,`[`ClientEventCallbackT`](src/content/docs/doxygen/md/zapi-ClientEventCallbackT.md#df/d76/ecal__callback_8h_1ac7bddc5ffadba36ef41e7d5ff6c02d62)` callback_)` 
+### `public ECAL_API bool `[`AddEventCallback`](#d5/d4c/classeCAL_1_1CServiceClient_1a2d4e0d6eea8ecb83d15d2c0f874f50ac)`(eCAL_Client_Event type_,`[`ClientEventCallbackT`](doxygen/md/zapi-ClientEventCallbackT.md#df/d76/ecal__callback_8h_1ac7bddc5ffadba36ef41e7d5ff6c02d62)` callback_)` 
 
 Add client event callback function.
 

@@ -30,7 +30,7 @@ topic type information of the connected publisher (for sub_event_update_connecti
 
 topic descriptor information of the connected publisher (for sub_event_update_connection only)
 
-### `public `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` `[`tdatatype`](#de/de6/structeCAL_1_1SSubEventCallbackData_1ada95800b1278580c3884f7312233aa1d) 
+### `public `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` `[`tdatatype`](#de/de6/structeCAL_1_1SSubEventCallbackData_1ada95800b1278580c3884f7312233aa1d) 
 
 topic information of the connected subscriber (for pub_event_update_connection only)
 

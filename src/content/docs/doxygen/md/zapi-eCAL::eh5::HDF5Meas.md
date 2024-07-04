@@ -273,7 +273,7 @@ Add entry to file.
 #### Returns
 true if succeeds, false if it fails
 
-### `public void `[`ConnectPreSplitCallback`](#d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1adc707f792475c9d03a1b5be24d40e198)`(`[`CallbackFunction`](src/content/docs/doxygen/md/zapi-CallbackFunction.md#d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a54dbaccb69979d75e6542d1f62b9c314)` cb)` 
+### `public void `[`ConnectPreSplitCallback`](#d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1adc707f792475c9d03a1b5be24d40e198)`(`[`CallbackFunction`](doxygen/md/zapi-CallbackFunction.md#d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a54dbaccb69979d75e6542d1f62b9c314)` cb)` 
 
 Connect callback for pre file split notification.
 

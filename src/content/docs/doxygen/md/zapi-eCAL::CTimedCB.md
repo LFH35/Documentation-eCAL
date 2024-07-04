@@ -16,7 +16,7 @@ Constructor.
 
 > Deprecated: Will be removed in future eCAL versions.
 
-### `public inline  `[`CTimedCB`](#d5/d9f/classeCAL_1_1CTimedCB_1a1d7553b231d5beeae4959c77319cae9e)`(int timeout_,`[`TimerCallbackT`](src/content/docs/doxygen/md/zapi-TimerCallbackT.md#df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d)` callback_,int delay_)` 
+### `public inline  `[`CTimedCB`](#d5/d9f/classeCAL_1_1CTimedCB_1a1d7553b231d5beeae4959c77319cae9e)`(int timeout_,`[`TimerCallbackT`](doxygen/md/zapi-TimerCallbackT.md#df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d)` callback_,int delay_)` 
 
 Constructor.
 
@@ -41,7 +41,7 @@ Destructor.
 
 ### `public `[`CTimedCB`](#d5/d9f/classeCAL_1_1CTimedCB)` & `[`operator=`](#d5/d9f/classeCAL_1_1CTimedCB_1ab62b144def226d0c3a4dc6c355371fbe)`(`[`CTimedCB`](#d5/d9f/classeCAL_1_1CTimedCB)` && rhs) = delete` 
 
-### `public inline bool `[`Start`](#d5/d9f/classeCAL_1_1CTimedCB_1ad8cc9becc6b20bb595cc44112eb4f976)`(const int timeout_,`[`TimerCallbackT`](src/content/docs/doxygen/md/zapi-TimerCallbackT.md#df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d)` callback_,const int delay_)` 
+### `public inline bool `[`Start`](#d5/d9f/classeCAL_1_1CTimedCB_1ad8cc9becc6b20bb595cc44112eb4f976)`(const int timeout_,`[`TimerCallbackT`](doxygen/md/zapi-TimerCallbackT.md#df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d)` callback_,const int delay_)` 
 
 Start the timer.
 

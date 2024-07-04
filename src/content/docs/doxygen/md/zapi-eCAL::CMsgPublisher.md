@@ -9,19 +9,19 @@ class eCAL::CMsgPublisher
 
 eCAL abstract message publisher class.
 
-Abstract publisher template class for messages. For details see documentation of [CPublisher](src/content/docs/doxygen/md/zapi-eCAL::CPublisher.md#dc/d42/classeCAL_1_1CPublisher) class.
+Abstract publisher template class for messages. For details see documentation of [CPublisher](doxygen/md/zapi-eCAL::CPublisher.md#dc/d42/classeCAL_1_1CPublisher) class.
 
 # Members
 
 ### `public inline  `[`CMsgPublisher`](#d3/d46/classeCAL_1_1CMsgPublisher_1a4d93fbee6b0d438be4e34d20dfbc2779)`()` 
 
-Default Constructor. Using this constructor, the object is not actually in a usable state. Before being able to send data, one has to call the `[Create()](src/content/docs/doxygen/md/zapi-Create.md#d3/d46/classeCAL_1_1CMsgPublisher_1a447bbe94735245dbccd3dc274103b770)` function, first.
+Default Constructor. Using this constructor, the object is not actually in a usable state. Before being able to send data, one has to call the `[Create()](doxygen/md/zapi-Create.md#d3/d46/classeCAL_1_1CMsgPublisher_1a447bbe94735245dbccd3dc274103b770)` function, first.
 
 ### `public inline  `[`CMsgPublisher`](#d3/d46/classeCAL_1_1CMsgPublisher_1aef9e493c1bc5c996b7734d021792930f)`(const std::string & topic_name_,const std::string & topic_type_,const std::string & topic_desc_)` 
 
 Constructor, that automatically intializes the Publisher.
 
-> Deprecated: Please use the constructor [CMsgPublisher(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](src/content/docs/doxygen/md/zapi-CMsgPublisher.md#d3/d46/classeCAL_1_1CMsgPublisher_1a099a034bc5cdb8cd52d930087c8e6ca1) instead. This function will be removed in future eCAL versions.
+> Deprecated: Please use the constructor [CMsgPublisher(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](doxygen/md/zapi-CMsgPublisher.md#d3/d46/classeCAL_1_1CMsgPublisher_1a099a034bc5cdb8cd52d930087c8e6ca1) instead. This function will be removed in future eCAL versions.
 
 #### Parameters
 * `topic_name_` Unique topic name. 
@@ -30,7 +30,7 @@ Constructor, that automatically intializes the Publisher.
 
 * `topic_desc_` Type description (optional for description checking).
 
-### `public inline  `[`CMsgPublisher`](#d3/d46/classeCAL_1_1CMsgPublisher_1a099a034bc5cdb8cd52d930087c8e6ca1)`(const std::string & topic_name_,const `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
+### `public inline  `[`CMsgPublisher`](#d3/d46/classeCAL_1_1CMsgPublisher_1a099a034bc5cdb8cd52d930087c8e6ca1)`(const std::string & topic_name_,const `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
 
 Constructor, that automatically intializes the Publisher. This should be the preferred constructor.
 
@@ -68,7 +68,7 @@ Move assignment.
 
 Creates this object.
 
-> Deprecated: Please use the method [Create(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](src/content/docs/doxygen/md/zapi-Create.md#d3/d46/classeCAL_1_1CMsgPublisher_1ab55fdd779019a2b9b586a868547e8b41) instead. This function will be removed in future eCAL versions.
+> Deprecated: Please use the method [Create(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](doxygen/md/zapi-Create.md#d3/d46/classeCAL_1_1CMsgPublisher_1ab55fdd779019a2b9b586a868547e8b41) instead. This function will be removed in future eCAL versions.
 
 #### Parameters
 * `topic_name_` Unique topic name. 
@@ -80,7 +80,7 @@ Creates this object.
 #### Returns
 True if it succeeds, false if it fails.
 
-### `public inline bool `[`Create`](#d3/d46/classeCAL_1_1CMsgPublisher_1ab55fdd779019a2b9b586a868547e8b41)`(const std::string & topic_name_,const `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
+### `public inline bool `[`Create`](#d3/d46/classeCAL_1_1CMsgPublisher_1ab55fdd779019a2b9b586a868547e8b41)`(const std::string & topic_name_,const `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
 
 Creates this object.
 
@@ -131,5 +131,5 @@ Number of bytes sent.
 
 ### `protected inline virtual std::string `[`GetDescription`](#d3/d46/classeCAL_1_1CMsgPublisher_1a5f86160010e4ed30c1e4872cc9e9e43a)`() const` 
 
-### `protected inline virtual `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` `[`GetDataTypeInformation`](#d3/d46/classeCAL_1_1CMsgPublisher_1a5ea85d8abc25d2b41063cb05a59e49b3)`() const` 
+### `protected inline virtual `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` `[`GetDataTypeInformation`](#d3/d46/classeCAL_1_1CMsgPublisher_1a5ea85d8abc25d2b41063cb05a59e49b3)`() const` 
 

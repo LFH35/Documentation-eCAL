@@ -9,7 +9,7 @@ class eCAL::CMsgSubscriber
 
 eCAL abstract message subscriber class.
 
-Abstract subscriber template class for messages. For details see documentation of [CPublisher](src/content/docs/doxygen/md/zapi-eCAL::CPublisher.md#dc/d42/classeCAL_1_1CPublisher) class.
+Abstract subscriber template class for messages. For details see documentation of [CPublisher](/doxygen/md/zapi-eCAL::CPublisher.md) class.
 
 # Members
 
@@ -21,7 +21,7 @@ Constructor.
 
 Constructor.
 
-> Deprecated: Please use the constructor [CMsgSubscriber(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](src/content/docs/doxygen/md/zapi-CMsgSubscriber.md#d5/de3/classeCAL_1_1CMsgSubscriber_1a51c386152b3d3755a07fd136cac97d89) instead. This function will be removed in future eCAL versions.
+> Deprecated: Please use the constructor [CMsgSubscriber(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](/doxygen/md/zapi-CMsgSubscriber.md#d5/de3/classeCAL_1_1CMsgSubscriber_1a51c386152b3d3755a07fd136cac97d89) instead. This function will be removed in future eCAL versions.
 
 #### Parameters
 * `topic_name_` Unique topic name. 
@@ -30,7 +30,7 @@ Constructor.
 
 * `topic_desc_` Type description (optional for description checking).
 
-### `public inline  `[`CMsgSubscriber`](#d5/de3/classeCAL_1_1CMsgSubscriber_1a51c386152b3d3755a07fd136cac97d89)`(const std::string & topic_name_,const `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
+### `public inline  `[`CMsgSubscriber`](#d5/de3/classeCAL_1_1CMsgSubscriber_1a51c386152b3d3755a07fd136cac97d89)`(const std::string & topic_name_,const `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
 
 Constructor.
 
@@ -61,7 +61,7 @@ Move assignment.
 
 Creates this object.
 
-> Deprecated: Please use the method [CMsgSubscriber(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](src/content/docs/doxygen/md/zapi-CMsgSubscriber.md#d5/de3/classeCAL_1_1CMsgSubscriber_1a51c386152b3d3755a07fd136cac97d89) instead. This function will be removed in future eCAL versions.
+> Deprecated: Please use the method [CMsgSubscriber(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](doxygen/md/zapi-CMsgSubscriber.md#d5/de3/classeCAL_1_1CMsgSubscriber_1a51c386152b3d3755a07fd136cac97d89) instead. This function will be removed in future eCAL versions.
 
 #### Parameters
 * `topic_name_` Unique topic name. 
@@ -73,7 +73,7 @@ Creates this object.
 #### Returns
 true if it succeeds, false if it fails.
 
-### `public inline bool `[`Create`](#d5/de3/classeCAL_1_1CMsgSubscriber_1accb975230fcd283bd24cedae3e13ca7c)`(const std::string & topic_name_,const `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
+### `public inline bool `[`Create`](#d5/de3/classeCAL_1_1CMsgSubscriber_1accb975230fcd283bd24cedae3e13ca7c)`(const std::string & topic_name_,const `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
 
 Creates this object.
 
@@ -106,7 +106,7 @@ Receive deserialized message.
 #### Returns
 True if a message could received, false otherwise.
 
-### `public inline bool `[`AddReceiveCallback`](#d5/de3/classeCAL_1_1CMsgSubscriber_1aefaca53dac611afbd69e021dcfc09883)`(`[`MsgReceiveCallbackT`](src/content/docs/doxygen/md/zapi-MsgReceiveCallbackT.md#d5/de3/classeCAL_1_1CMsgSubscriber_1af215a62bb04debf7eb34a1ce3dfda674)` callback_)` 
+### `public inline bool `[`AddReceiveCallback`](#d5/de3/classeCAL_1_1CMsgSubscriber_1aefaca53dac611afbd69e021dcfc09883)`(`[`MsgReceiveCallbackT`](doxygen/md/zapi-MsgReceiveCallbackT.md#d5/de3/classeCAL_1_1CMsgSubscriber_1af215a62bb04debf7eb34a1ce3dfda674)` callback_)` 
 
 Add receive callback for incoming messages.
 
@@ -127,7 +127,7 @@ True if it succeeds, false if it fails.
 
 ### `protected inline virtual std::string `[`GetDescription`](#d5/de3/classeCAL_1_1CMsgSubscriber_1ae9838b16efeab5fd660c73ab15bd8341)`() const` 
 
-### `protected inline virtual `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` `[`GetDataTypeInformation`](#d5/de3/classeCAL_1_1CMsgSubscriber_1a88d1d01c7f4e2d8aaf68f05753eefa9b)`() const` 
+### `protected inline virtual `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` `[`GetDataTypeInformation`](#d5/de3/classeCAL_1_1CMsgSubscriber_1a88d1d01c7f4e2d8aaf68f05753eefa9b)`() const` 
 
 ### `protected bool `[`Deserialize`](#d5/de3/classeCAL_1_1CMsgSubscriber_1aada1091134f3d22473ed9f01f5b99e5c)`(T & msg_,const void * buffer_,size_t size_) const` 
 

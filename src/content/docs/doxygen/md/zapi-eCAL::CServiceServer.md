@@ -64,7 +64,7 @@ Add method type descriptions.
 #### Returns
 True if successful.
 
-### `public ECAL_API bool `[`AddMethodCallback`](#d0/d09/classeCAL_1_1CServiceServer_1af52167f5ef7b89bfff61ac48a1c46e77)`(const std::string & method_,const std::string & req_type_,const std::string & resp_type_,const `[`MethodCallbackT`](src/content/docs/doxygen/md/zapi-MethodCallbackT.md#de/ddd/ecal__service__info_8h_1ae0436af7a525f2b5fcc30025def57c30)` & callback_)` 
+### `public ECAL_API bool `[`AddMethodCallback`](#d0/d09/classeCAL_1_1CServiceServer_1af52167f5ef7b89bfff61ac48a1c46e77)`(const std::string & method_,const std::string & req_type_,const std::string & resp_type_,const `[`MethodCallbackT`](doxygen/md/zapi-MethodCallbackT.md#de/ddd/ecal__service__info_8h_1ae0436af7a525f2b5fcc30025def57c30)` & callback_)` 
 
 Add method callback.
 
@@ -90,7 +90,7 @@ Remove method callback.
 #### Returns
 True if successful.
 
-### `public ECAL_API bool `[`AddEventCallback`](#d0/d09/classeCAL_1_1CServiceServer_1ac36d0e836d65a6cca9fc48e37dedf27d)`(eCAL_Server_Event type_,`[`ServerEventCallbackT`](src/content/docs/doxygen/md/zapi-ServerEventCallbackT.md#df/d76/ecal__callback_8h_1a9b49337a63f0ad773c4490f21b7b8d5c)` callback_)` 
+### `public ECAL_API bool `[`AddEventCallback`](#d0/d09/classeCAL_1_1CServiceServer_1ac36d0e836d65a6cca9fc48e37dedf27d)`(eCAL_Server_Event type_,`[`ServerEventCallbackT`](doxygen/md/zapi-ServerEventCallbackT.md#df/d76/ecal__callback_8h_1a9b49337a63f0ad773c4490f21b7b8d5c)` callback_)` 
 
 Add server event callback function.
 
