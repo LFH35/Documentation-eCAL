@@ -49,6 +49,7 @@ export default defineConfig({
     },{
       label: 'Doxygen',
       collapsed: true,
+      badge: 'Generated',
       autogenerate: {
         directory: 'doxygen/md', 
         collapsed: true 
