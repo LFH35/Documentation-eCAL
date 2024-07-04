@@ -9,7 +9,7 @@ export default {
         showLineNumbers: true,
         // But Disable line numbers for certain languages seperatet by , see 'batch,js,html'
         overridesByLang: {
-          'batch': {
+          'batch,shell': {
             showLineNumbers: false,
           },
         },
