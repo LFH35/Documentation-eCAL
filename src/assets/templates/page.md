@@ -1,5 +1,5 @@
 ---
-title: {{name}} page
+title: 1. {{name}} page
 ---
 
 # {{kind}} `{{name}}` {{anchor refid}}

@@ -1,11 +1,9 @@
 ---
-title: {{name}} class
+title: 2. {{kind}} {{name}}
 ---
 
-## {{kind}} `{{name}}` {{anchor refid}}
-
 {{#if basecompoundref}}
-```
+```cpp
 {{kind}} {{name}}
   {{#each basecompoundref}}
   : {{prot}} {{name}}
@@ -17,18 +15,10 @@ title: {{name}} class
 
 {{detaileddescription}}
 
-### Summary
-
- Members                        | Descriptions                                
---------------------------------|---------------------------------------------
-{{#each filtered.compounds}}{{cell proto}}        | {{cell summary}}
-{{/each}}{{#each filtered.members}}{{cell proto}} | {{cell summary}}
-{{/each}}
-
-### Members
+# Members
 
 {{#each filtered.compounds}}
-#### {{title proto}} {{anchor refid}}
+### {{title proto}} 
 
 {{briefdescription}}
 
@@ -36,7 +26,7 @@ title: {{name}} class
 {{/each}}
 
 {{#each filtered.members}}
-#### {{title proto}} {{anchor refid}}
+### {{title proto}} 
 
 {{#if enumvalue}}
  Values                         | Descriptions                                

@@ -1,5 +1,5 @@
 ---
-title: {{name}} namespace
+title: 3. {{name}} namespace
 ---
 
 # {{kind}} `{{name}}` {{anchor refid}}
