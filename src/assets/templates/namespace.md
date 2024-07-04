@@ -1,3 +1,7 @@
+---
+title: {{name}} namespace
+---
+
 # {{kind}} `{{name}}` {{anchor refid}}
 
 {{briefdescription}}

@@ -1,3 +1,7 @@
+---
+title: {{name}} class
+---
+
 ## {{kind}} `{{name}}` {{anchor refid}}
 
 {{#if basecompoundref}}

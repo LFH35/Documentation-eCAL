@@ -29,7 +29,7 @@ export default defineConfig({
     },{
       label: 'Doxygen',
       autogenerate: {
-        directory: 'doxygen/html', 
+        directory: 'doxygen/md', 
         collapsed: true 
       } //{ label: 'Example Guide', link: '/guides/example/' },
     }],

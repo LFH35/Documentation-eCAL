@@ -1,3 +1,7 @@
+---
+title: {{name}} page
+---
+
 # {{kind}} `{{name}}` {{anchor refid}}
 
 {{briefdescription}}
