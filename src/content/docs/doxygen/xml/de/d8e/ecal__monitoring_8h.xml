@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d8e/ecal__monitoring_8h" kind="file" language="C++">
+    <compoundname>ecal_monitoring.h</compoundname>
+    <includes refid="d8/db1/ecal__os_8h" local="no">ecal/ecal_os.h</includes>
+    <includes refid="dc/de4/ecal__deprecate_8h" local="no">ecal/ecal_deprecate.h</includes>
+    <includes local="no">ecal/types/monitoring.h</includes>
+    <includes local="no">string</includes>
+    <includedby refid="d9/dbf/ecal_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>ecal/ecal_os.h</label>
+        <link refid="d8/db1/ecal__os_8h"/>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>ecal/ecal_defs.h</label>
+      </node>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h</label>
+        <link refid="de/d8e/ecal__monitoring_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ecal/types/monitoring.h</label>
+      </node>
+      <node id="3">
+        <label>ecal/ecal_deprecate.h</label>
+        <link refid="dc/de4/ecal__deprecate_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h</label>
+        <link refid="de/d8e/ecal__monitoring_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</label>
+        <link refid="d9/dbf/ecal_8h"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="db/de7/namespaceeCAL">eCAL</innernamespace>
+    <innernamespace refid="de/dcc/namespaceeCAL_1_1Monitoring">eCAL::Monitoring</innernamespace>
+    <briefdescription>
+<para>eCAL monitoring interface </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d8/db1/ecal__os_8h" kindref="compound">ecal/ecal_os.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dc/de4/ecal__deprecate_8h" kindref="compound">ecal/ecal_deprecate.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ecal/types/monitoring.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eCAL</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Monitoring</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44" refid="de/d8e/ecal__monitoring_8h_1a7d38a2c338352ce2d739a0e6241e0e28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="de/d8e/ecal__monitoring_8h_1a7d38a2c338352ce2d739a0e6241e0e28" kindref="member">SetExclFilter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filter_);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="de/d8e/ecal__monitoring_8h_1a9beaf5f527b1f60da8662622873805ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="de/d8e/ecal__monitoring_8h_1a9beaf5f527b1f60da8662622873805ee" kindref="member">SetInclFilter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filter_);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="de/d8e/ecal__monitoring_8h_1a1891c7595b3c36fd474b238bb2c80976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="de/d8e/ecal__monitoring_8h_1a1891c7595b3c36fd474b238bb2c80976" kindref="member">SetFilterState</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>state_);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(</highlight><highlight class="stringliteral">&quot;Will<sp/>be<sp/>removed<sp/>in<sp/>future<sp/>eCAL<sp/>versions.<sp/>Please<sp/>use<sp/>GetMonitoring(std::string&amp;<sp/>mon_,<sp/>unsigned<sp/>int<sp/>entities_)<sp/>instead.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="73" refid="de/d8e/ecal__monitoring_8h_1a3f27326ec1c3aefa80251c32f02a785d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetMonitoring(std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>mon_);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="de/d8e/ecal__monitoring_8h_1aa83af5b57590229e655179bb665097f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetMonitoring(std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>mon_,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>entities_);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="de/d8e/ecal__monitoring_8h_1a2a0488ed7f58f10016e3a8ecd5d13cf2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetMonitoring(eCAL::Monitoring::SMonitoring&amp;<sp/>mon_,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>entities_<sp/>=<sp/>Entity::All);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="de/d8e/ecal__monitoring_8h_1acd887762353250aa95666405429f6374" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetLogging(std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>log_);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1ab97aaa09eca6557258c53627065c6743" kindref="member">ECAL_DEPRECATE_SINCE_5_12</ref>(&quot;Will<sp/>be<sp/>removed<sp/>in<sp/>future<sp/>eCAL<sp/>versions.&quot;)</highlight></codeline>
+<codeline lineno="115" refid="de/d8e/ecal__monitoring_8h_1a9e118dfcb7a51ad11d08bde99f90f495" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>PubMonitoring(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>state_,<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name_<sp/>=<sp/>&quot;ecal.monitoring&quot;);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1ab97aaa09eca6557258c53627065c6743" kindref="member">ECAL_DEPRECATE_SINCE_5_12</ref>(&quot;Will<sp/>be<sp/>removed<sp/>in<sp/>future<sp/>eCAL<sp/>versions.&quot;)</highlight></codeline>
+<codeline lineno="127" refid="de/d8e/ecal__monitoring_8h_1a94da1d74530ae82c1cac0824237f8a9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>PubLogging(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>state_,<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name_<sp/>=<sp/>&quot;ecal.logging&quot;);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h"/>
+  </compounddef>
+</doxygen>

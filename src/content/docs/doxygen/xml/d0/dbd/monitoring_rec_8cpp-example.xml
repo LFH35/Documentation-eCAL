@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/dbd/monitoring_rec_8cpp-example" kind="example">
+    <compoundname>monitoring_rec.cpp</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is an example how the eCAL Monitoring API may be utilized to print monitoring information. <programlisting filename="monitoring_rec.cpp"></programlisting> </para>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h"/>
+  </compounddef>
+</doxygen>

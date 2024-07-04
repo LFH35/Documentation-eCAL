@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_f3bfaf43b18e3e1f17f7f9b318da9b98" kind="dir">
+    <compoundname>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime</compoundname>
+    <innerdir refid="dir_26014e4eb82f5c4db5319d0bac6ce224">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/"/>
+  </compounddef>
+</doxygen>

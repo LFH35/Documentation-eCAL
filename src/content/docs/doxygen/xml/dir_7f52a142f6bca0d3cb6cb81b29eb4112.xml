@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_7f52a142f6bca0d3cb6cb81b29eb4112" kind="dir">
+    <compoundname>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal</compoundname>
+    <innerdir refid="dir_e97fd7d6983618cc5b9d38a01fb5d89b">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg</innerdir>
+    <innerfile refid="d9/dbf/ecal_8h">ecal.h</innerfile>
+    <innerfile refid="df/d76/ecal__callback_8h">ecal_callback.h</innerfile>
+    <innerfile refid="d4/d19/ecal__clang_8h">ecal_clang.h</innerfile>
+    <innerfile refid="d0/d22/ecal__client_8h">ecal_client.h</innerfile>
+    <innerfile refid="d5/d15/ecal__config_8h">ecal_config.h</innerfile>
+    <innerfile refid="d2/dab/ecal__core_8h">ecal_core.h</innerfile>
+    <innerfile refid="dc/de4/ecal__deprecate_8h">ecal_deprecate.h</innerfile>
+    <innerfile refid="d9/d17/ecal__event_8h">ecal_event.h</innerfile>
+    <innerfile refid="d2/def/ecal__eventhandle_8h">ecal_eventhandle.h</innerfile>
+    <innerfile refid="dc/d9d/ecal__init_8h">ecal_init.h</innerfile>
+    <innerfile refid="de/d8c/ecal__log_8h">ecal_log.h</innerfile>
+    <innerfile refid="db/db5/ecal__log__level_8h">ecal_log_level.h</innerfile>
+    <innerfile refid="de/d8e/ecal__monitoring_8h">ecal_monitoring.h</innerfile>
+    <innerfile refid="d8/db1/ecal__os_8h">ecal_os.h</innerfile>
+    <innerfile refid="d7/dbb/ecal__payload__writer_8h">ecal_payload_writer.h</innerfile>
+    <innerfile refid="de/df1/ecal__process_8h">ecal_process.h</innerfile>
+    <innerfile refid="d3/d85/ecal__process__mode_8h">ecal_process_mode.h</innerfile>
+    <innerfile refid="d0/d0f/ecal__process__severity_8h">ecal_process_severity.h</innerfile>
+    <innerfile refid="dc/d1a/ecal__publisher_8h">ecal_publisher.h</innerfile>
+    <innerfile refid="d8/d58/ecal__qos_8h">ecal_qos.h</innerfile>
+    <innerfile refid="d2/d4f/ecal__server_8h">ecal_server.h</innerfile>
+    <innerfile refid="d7/d5d/ecal__service_8h">ecal_service.h</innerfile>
+    <innerfile refid="de/ddd/ecal__service__info_8h">ecal_service_info.h</innerfile>
+    <innerfile refid="de/db9/ecal__subscriber_8h">ecal_subscriber.h</innerfile>
+    <innerfile refid="d5/df7/ecal__time_8h">ecal_time.h</innerfile>
+    <innerfile refid="da/dfc/ecal__timed__cb_8h">ecal_timed_cb.h</innerfile>
+    <innerfile refid="d5/df2/ecal__timer_8h">ecal_timer.h</innerfile>
+    <innerfile refid="d4/dd8/ecal__tlayer_8h">ecal_tlayer.h</innerfile>
+    <innerfile refid="d1/de7/ecal__types_8h">ecal_types.h</innerfile>
+    <innerfile refid="da/d20/ecal__util_8h">ecal_util.h</innerfile>
+    <innerfile refid="dd/d5d/ecalc_8h">ecalc.h</innerfile>
+    <innerfile refid="d3/d8d/ecalc__types_8h">ecalc_types.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/"/>
+  </compounddef>
+</doxygen>

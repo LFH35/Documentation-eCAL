@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_e97fd7d6983618cc5b9d38a01fb5d89b" kind="dir">
+    <compoundname>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg</compoundname>
+    <innerfile refid="df/dd3/dynamic_8h">dynamic.h</innerfile>
+    <innerfile refid="d1/d40/publisher_8h">publisher.h</innerfile>
+    <innerfile refid="da/d9f/subscriber_8h">subscriber.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/"/>
+  </compounddef>
+</doxygen>

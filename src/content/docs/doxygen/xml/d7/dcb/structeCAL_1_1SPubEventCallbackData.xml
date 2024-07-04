@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/dcb/structeCAL_1_1SPubEventCallbackData" kind="struct" language="C++" prot="public">
+    <compoundname>eCAL::SPubEventCallbackData</compoundname>
+    <includes refid="df/d76/ecal__callback_8h" local="no">ecal_callback.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aecc8fd8a2f02cbf5386ec5dfcb8dc78d" prot="public" static="no" mutable="no">
+        <type>eCAL_Publisher_Event</type>
+        <definition>eCAL_Publisher_Event eCAL::SPubEventCallbackData::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>publisher event type </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="59" column="26" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a8ac417eae8daf46dd5b6a00721268273" prot="public" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long eCAL::SPubEventCallbackData::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+<para>publisher event time in µs </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="60" column="26" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a1998c8d07e9b046f9cf04cfb1b8f7f40" prot="public" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long eCAL::SPubEventCallbackData::clock</definition>
+        <argsstring></argsstring>
+        <name>clock</name>
+        <briefdescription>
+<para>publisher event clock </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="61" column="26" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aad6953139e9e168a3313d600e1f2ed12" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SPubEventCallbackData::tid</definition>
+        <argsstring></argsstring>
+        <name>tid</name>
+        <briefdescription>
+<para>topic id of the of the connected subscriber (for pub_event_update_connection only) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="62" column="26" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a6e4f62c71dd68a87379138064e0e54d7" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SPubEventCallbackData::ttype</definition>
+        <argsstring></argsstring>
+        <name>ttype</name>
+        <briefdescription>
+<para>topic type information of the connected publisher (for sub_event_update_connection only) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="64" column="26" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a3f57151bd0ae8e9a52bf742473ee23df" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SPubEventCallbackData::tdesc</definition>
+        <argsstring></argsstring>
+        <name>tdesc</name>
+        <briefdescription>
+<para>topic descriptor information of the connected publisher (for sub_event_update_connection only) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="66" column="26" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aeba8116a327f6e787311e8d75e907112" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref></type>
+        <definition>SDataTypeInformation eCAL::SPubEventCallbackData::tdatatype</definition>
+        <argsstring></argsstring>
+        <name>tdatatype</name>
+        <briefdescription>
+<para>datatype description of the connected subscriber (for pub_event_update_connection only) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="67" column="26" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a5110ac143cdd02f817dfc9854a5f6387" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::SPubEventCallbackData::SPubEventCallbackData</definition>
+        <argsstring>()</argsstring>
+        <name>SPubEventCallbackData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="53" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="53" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL publisher event callback struct. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>eCAL::SDataTypeInformation</label>
+        <link refid="d7/d0f/structeCAL_1_1SDataTypeInformation"/>
+      </node>
+      <node id="1">
+        <label>eCAL::SPubEventCallbackData</label>
+        <link refid="d7/dcb/structeCAL_1_1SPubEventCallbackData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>tdatatype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="51" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="52" bodyend="68"/>
+    <listofallmembers>
+      <member refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a1998c8d07e9b046f9cf04cfb1b8f7f40" prot="public" virt="non-virtual"><scope>eCAL::SPubEventCallbackData</scope><name>clock</name></member>
+      <member refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a5110ac143cdd02f817dfc9854a5f6387" prot="public" virt="non-virtual"><scope>eCAL::SPubEventCallbackData</scope><name>SPubEventCallbackData</name></member>
+      <member refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aeba8116a327f6e787311e8d75e907112" prot="public" virt="non-virtual"><scope>eCAL::SPubEventCallbackData</scope><name>tdatatype</name></member>
+      <member refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a3f57151bd0ae8e9a52bf742473ee23df" prot="public" virt="non-virtual"><scope>eCAL::SPubEventCallbackData</scope><name>tdesc</name></member>
+      <member refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aad6953139e9e168a3313d600e1f2ed12" prot="public" virt="non-virtual"><scope>eCAL::SPubEventCallbackData</scope><name>tid</name></member>
+      <member refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a8ac417eae8daf46dd5b6a00721268273" prot="public" virt="non-virtual"><scope>eCAL::SPubEventCallbackData</scope><name>time</name></member>
+      <member refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a6e4f62c71dd68a87379138064e0e54d7" prot="public" virt="non-virtual"><scope>eCAL::SPubEventCallbackData</scope><name>ttype</name></member>
+      <member refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aecc8fd8a2f02cbf5386ec5dfcb8dc78d" prot="public" virt="non-virtual"><scope>eCAL::SPubEventCallbackData</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

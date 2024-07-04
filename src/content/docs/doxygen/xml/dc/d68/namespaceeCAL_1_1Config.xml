@@ -1,0 +1,615 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/d68/namespaceeCAL_1_1Config" kind="namespace" language="C++">
+    <compoundname>eCAL::Config</compoundname>
+    <innernamespace refid="d3/d76/namespaceeCAL_1_1Config_1_1Experimental">eCAL::Config::Experimental</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d5/d15/ecal__config_8h_1ad5d30f75fb2c2de1253f805e812ab3b0" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>UdpConfigVersion</name>
+        <enumvalue id="d5/d15/ecal__config_8h_1ad5d30f75fb2c2de1253f805e812ab3b0ab4daca084ad9eabfc8de231929477ed6" prot="public">
+          <name>V1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d15/ecal__config_8h_1ad5d30f75fb2c2de1253f805e812ab3b0aec765f1adc3b4253f2d3b131a4a8618f" prot="public">
+          <name>V2</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="34" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" bodystart="35" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a0e61706ed81e23d251be210649974bba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Config::GetLoadedEcalIniPath</definition>
+        <argsstring>()</argsstring>
+        <name>GetLoadedEcalIniPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="44" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="44" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a313807e5364233c84ae52d3a2ab10211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Config::GetRegistrationTimeoutMs</definition>
+        <argsstring>()</argsstring>
+        <name>GetRegistrationTimeoutMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="45" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="45" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1ae2fa1793150cbce526ab0b81e1773f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Config::GetRegistrationRefreshMs</definition>
+        <argsstring>()</argsstring>
+        <name>GetRegistrationRefreshMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="46" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="46" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a082ee8766ff051566a4fc4eeb0ca4a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::IsNetworkEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsNetworkEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="52" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="52" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1ac5df2eda843892fe59f8162c49c9ee99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API UdpConfigVersion</type>
+        <definition>ECAL_API UdpConfigVersion eCAL::Config::GetUdpMulticastConfigVersion</definition>
+        <argsstring>()</argsstring>
+        <name>GetUdpMulticastConfigVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="53" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="53" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a1c69db24e82f221aefb2995f47d48d59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Config::GetUdpMulticastGroup</definition>
+        <argsstring>()</argsstring>
+        <name>GetUdpMulticastGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="54" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="54" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1ae7f51eb8b589364ad50e01d4002f2159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Config::GetUdpMulticastMask</definition>
+        <argsstring>()</argsstring>
+        <name>GetUdpMulticastMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="55" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="55" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a150fae520c5ad7d7ba814fde8527946f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Config::GetUdpMulticastPort</definition>
+        <argsstring>()</argsstring>
+        <name>GetUdpMulticastPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="56" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="56" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1aed3e5a8a68ac9c231951b80aabdbedf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Config::GetUdpMulticastTtl</definition>
+        <argsstring>()</argsstring>
+        <name>GetUdpMulticastTtl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="57" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="57" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1aa30495547ba254caba3e6ed57a164fde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Config::GetUdpMulticastSndBufSizeBytes</definition>
+        <argsstring>()</argsstring>
+        <name>GetUdpMulticastSndBufSizeBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="59" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="59" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1aefc58fe7084b3912745ab0e9d77a3f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Config::GetUdpMulticastRcvBufSizeBytes</definition>
+        <argsstring>()</argsstring>
+        <name>GetUdpMulticastRcvBufSizeBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="60" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="60" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1abda92e1cc50e7f3c3b65acf8765e344d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::IsUdpMulticastJoinAllIfEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsUdpMulticastJoinAllIfEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="62" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="62" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a0e2293d2d291224c6715ed8441242970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Config::GetMaxUdpBandwidthBytesPerSecond</definition>
+        <argsstring>()</argsstring>
+        <name>GetMaxUdpBandwidthBytesPerSecond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="64" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="64" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a159d41c9cf64a883becf2b2c5a8a099e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::IsUdpMulticastRecEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsUdpMulticastRecEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="66" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="66" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a22e6a81fbd3e1a5bb0c32e5f0bfa69aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::IsShmRecEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsShmRecEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="67" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="67" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a5163d960ca5891f6cca4303709565265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::IsTcpRecEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsTcpRecEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="68" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="68" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a5b9112fc006799ecd3e47607a9a6124d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::IsInprocRecEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsInprocRecEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="69" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="69" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1af4eb2b0687288b44e2e363ab8b15a80b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::IsNpcapEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsNpcapEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="71" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="71" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a00f7511944c4663914c9a7d0bb0795f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Config::GetTcpPubsubReaderThreadpoolSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetTcpPubsubReaderThreadpoolSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="73" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="73" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a6583d43cc85866c54ad0756834e02ffc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Config::GetTcpPubsubWriterThreadpoolSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetTcpPubsubWriterThreadpoolSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="74" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="74" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a9e6cb0ba42fa6e1e34e206db76ed3a7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Config::GetTcpPubsubMaxReconnectionAttemps</definition>
+        <argsstring>()</argsstring>
+        <name>GetTcpPubsubMaxReconnectionAttemps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="75" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="75" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1ae1578488d4562a7096c389bc0d3acc56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Config::GetHostGroupName</definition>
+        <argsstring>()</argsstring>
+        <name>GetHostGroupName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="77" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="77" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a633d1b1b9214f6b1ce56c919bcd43eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Config::GetTimesyncModuleName</definition>
+        <argsstring>()</argsstring>
+        <name>GetTimesyncModuleName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="83" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="83" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a606731c2e14b2a298b15abc1cdb19a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Config::GetTerminalEmulatorCommand</definition>
+        <argsstring>()</argsstring>
+        <name>GetTerminalEmulatorCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="89" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="89" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a1f51f220b4b541f92e55c07386659c45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Config::GetMonitoringTimeoutMs</definition>
+        <argsstring>()</argsstring>
+        <name>GetMonitoringTimeoutMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="95" column="34" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="95" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1aae50703f55499562d9e78c2f23fe781a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Config::GetMonitoringFilterExcludeList</definition>
+        <argsstring>()</argsstring>
+        <name>GetMonitoringFilterExcludeList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="96" column="34" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="96" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a15cbfc38f2be568d32f8e227751254f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Config::GetMonitoringFilterIncludeList</definition>
+        <argsstring>()</argsstring>
+        <name>GetMonitoringFilterIncludeList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="97" column="34" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="97" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a5192f32d6157255d0d5d9295f38e02cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API eCAL_Logging_Filter</type>
+        <definition>ECAL_API eCAL_Logging_Filter eCAL::Config::GetConsoleLogFilter</definition>
+        <argsstring>()</argsstring>
+        <name>GetConsoleLogFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="98" column="34" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="98" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1acfc8c09605825c36ae84ed2c38216112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API eCAL_Logging_Filter</type>
+        <definition>ECAL_API eCAL_Logging_Filter eCAL::Config::GetFileLogFilter</definition>
+        <argsstring>()</argsstring>
+        <name>GetFileLogFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="99" column="34" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="99" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a785f3d90dc6b68ea1700f63d4f236f62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API eCAL_Logging_Filter</type>
+        <definition>ECAL_API eCAL_Logging_Filter eCAL::Config::GetUdpLogFilter</definition>
+        <argsstring>()</argsstring>
+        <name>GetUdpLogFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="100" column="34" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="100" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a2021665a60dc38ea96ec53dfeeabb2ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Config::GetEcalSysFilterExcludeList</definition>
+        <argsstring>()</argsstring>
+        <name>GetEcalSysFilterExcludeList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="106" column="34" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="106" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a84de65e00d3c504f8a86962708302523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API <ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">TLayer::eSendMode</ref></type>
+        <definition>ECAL_API TLayer::eSendMode eCAL::Config::GetPublisherInprocMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetPublisherInprocMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="111" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="111" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a9bb9908f7068ebdc8ab68e65632cfd07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API <ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">TLayer::eSendMode</ref></type>
+        <definition>ECAL_API TLayer::eSendMode eCAL::Config::GetPublisherShmMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetPublisherShmMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="112" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="112" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a0670b3cc479851b5321f8784befe887c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API <ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">TLayer::eSendMode</ref></type>
+        <definition>ECAL_API TLayer::eSendMode eCAL::Config::GetPublisherTcpMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetPublisherTcpMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="113" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="113" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a908deeb83f898d5d14eaeddad4570e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API <ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">TLayer::eSendMode</ref></type>
+        <definition>ECAL_API TLayer::eSendMode eCAL::Config::GetPublisherUdpMulticastMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetPublisherUdpMulticastMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="114" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="114" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a97a61c0d4557c82db8a4dd926cf228dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API size_t</type>
+        <definition>ECAL_API size_t eCAL::Config::GetMemfileMinsizeBytes</definition>
+        <argsstring>()</argsstring>
+        <name>GetMemfileMinsizeBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="116" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="116" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1acb1fa98d1fa7cd20a141c900b6cbb9ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API size_t</type>
+        <definition>ECAL_API size_t eCAL::Config::GetMemfileOverprovisioningPercentage</definition>
+        <argsstring>()</argsstring>
+        <name>GetMemfileOverprovisioningPercentage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="117" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="117" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a587f04c8d34bcff1de60110e9c620509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Config::GetMemfileAckTimeoutMs</definition>
+        <argsstring>()</argsstring>
+        <name>GetMemfileAckTimeoutMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="118" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="118" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a3856030282d0af6627fe6764c1239589" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::IsMemfileZerocopyEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsMemfileZerocopyEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="119" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="119" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a1bf3ad9215f2024d6466864e3aa35798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API size_t</type>
+        <definition>ECAL_API size_t eCAL::Config::GetMemfileBufferCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetMemfileBufferCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="120" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="120" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a52d7c8d986007ec10687d7fae7e3e4fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::IsTopicTypeSharingEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsTopicTypeSharingEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="122" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="122" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1ad37f5a6bde4bb5e92e3711a8255efe3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::IsTopicDescriptionSharingEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsTopicDescriptionSharingEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="123" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="123" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a762bb5e7e8a645b38253789a6ffc98be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::IsServiceProtocolV0Enabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsServiceProtocolV0Enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="128" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="128" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a2535368afdc3131762fe973a2469a836" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::IsServiceProtocolV1Enabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsServiceProtocolV1Enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="129" column="32" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="129" declcolumn="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="32" column="3"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/d97/structeCAL_1_1SReceiveCallbackData" kind="struct" language="C++" prot="public">
+    <compoundname>eCAL::SReceiveCallbackData</compoundname>
+    <includes refid="df/d76/ecal__callback_8h" local="no">ecal_callback.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/d97/structeCAL_1_1SReceiveCallbackData_1a73f9ec7f4a49447079e96b964e6f1137" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* eCAL::SReceiveCallbackData::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>payload buffer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="41" column="14" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d97/structeCAL_1_1SReceiveCallbackData_1acfd7c40b3892e0fc0c03ca0c37f42999" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long eCAL::SReceiveCallbackData::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>payload buffer size </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="42" column="15" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d97/structeCAL_1_1SReceiveCallbackData_1ad4a1d4610aa3b5a2c3a94050a9f3a5dd" prot="public" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long eCAL::SReceiveCallbackData::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>publisher id (SetId()) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="43" column="15" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d97/structeCAL_1_1SReceiveCallbackData_1aadfaaa0f23f048209e71b72fe658d8a7" prot="public" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long eCAL::SReceiveCallbackData::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>publisher send time in µs </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="44" column="15" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d97/structeCAL_1_1SReceiveCallbackData_1a583076c29d3d2fe4a4487b075b045426" prot="public" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long eCAL::SReceiveCallbackData::clock</definition>
+        <argsstring></argsstring>
+        <name>clock</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>publisher send clock </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="45" column="15" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL subscriber receive callback struct. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="39" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="40" bodyend="46"/>
+    <listofallmembers>
+      <member refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1a73f9ec7f4a49447079e96b964e6f1137" prot="public" virt="non-virtual"><scope>eCAL::SReceiveCallbackData</scope><name>buf</name></member>
+      <member refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1a583076c29d3d2fe4a4487b075b045426" prot="public" virt="non-virtual"><scope>eCAL::SReceiveCallbackData</scope><name>clock</name></member>
+      <member refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1ad4a1d4610aa3b5a2c3a94050a9f3a5dd" prot="public" virt="non-virtual"><scope>eCAL::SReceiveCallbackData</scope><name>id</name></member>
+      <member refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1acfd7c40b3892e0fc0c03ca0c37f42999" prot="public" virt="non-virtual"><scope>eCAL::SReceiveCallbackData</scope><name>size</name></member>
+      <member refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1aadfaaa0f23f048209e71b72fe658d8a7" prot="public" virt="non-virtual"><scope>eCAL::SReceiveCallbackData</scope><name>time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

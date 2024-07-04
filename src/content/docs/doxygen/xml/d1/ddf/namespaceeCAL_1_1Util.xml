@@ -1,0 +1,949 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/ddf/namespaceeCAL_1_1Util" kind="namespace" language="C++">
+    <compoundname>eCAL::Util</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a2576cb50ec46867931c197b4d1935f95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Util::GeteCALHomePath</definition>
+        <argsstring>()</argsstring>
+        <name>GeteCALHomePath</name>
+        <briefdescription>
+<para>Retrieve eCAL home path (for starting eCAL applications). Windows: $ECAL_HOME/eCAL Linux: $HOME/.ecal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000117"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method std::string <ref refid="da/d20/ecal__util_8h_1abc702b1c24eecfeca0472010ff548a69" kindref="member">GeteCALConfigPath()</ref> instead. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>eCAL home path. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="51" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="51" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1abc702b1c24eecfeca0472010ff548a69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Util::GeteCALConfigPath</definition>
+        <argsstring>()</argsstring>
+        <name>GeteCALConfigPath</name>
+        <briefdescription>
+<para>Retrieve eCAL configuration path. This is path is for the global eCAL configuration files like ecal.ini. This path is read only for standard users. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>eCAL configuration path. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="61" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="61" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a2fb67b525968b2b9f8bd623b9e7dcdc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Util::GeteCALUserSettingsPath</definition>
+        <argsstring>()</argsstring>
+        <name>GeteCALUserSettingsPath</name>
+        <briefdescription>
+<para>Retrieve eCAL user configuration path. This is path is for the eCAL application settings files. This path has read/write permissions for standard users. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>eCAL data path. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="70" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="70" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1afd2099777cb8277bd0f39f20a3e86a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Util::GeteCALLogPath</definition>
+        <argsstring>()</argsstring>
+        <name>GeteCALLogPath</name>
+        <briefdescription>
+<para>Retrieve eCAL standard logging path. This is path is for the eCAL logging files. This path has read/write permissions for standard users. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>eCAL data path. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="79" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="79" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a27263f5f699870e349210f85c0cf331f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Util::GeteCALActiveIniFile</definition>
+        <argsstring>()</argsstring>
+        <name>GeteCALActiveIniFile</name>
+        <briefdescription>
+<para>Retrieve full path to active eCAL ini file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>eCAL active ini file name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="86" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="86" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a2e4f8a5d9ee1e9c657b98a618132170f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Util::GeteCALDefaultIniFile</definition>
+        <argsstring>()</argsstring>
+        <name>GeteCALDefaultIniFile</name>
+        <briefdescription>
+<para>Retrieve full eCAL default ini file name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000118"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method std::string <ref refid="da/d20/ecal__util_8h_1a27263f5f699870e349210f85c0cf331f" kindref="member">GeteCALActiveIniFile()</ref> instead. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>eCAL default ini file name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="96" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="96" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a26640bb79b62d9caf0c99352aa7105e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Util::ShutdownProcess</definition>
+        <argsstring>(const std::string &amp;unit_name_)</argsstring>
+        <name>ShutdownProcess</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit_name_</declname>
+        </param>
+        <briefdescription>
+<para>Send shutdown event to specified local user process using it&apos;s unit name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Process unit name. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="103" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="103" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1ad1b49f4aa10627b97ef9ab8db2e3c5e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Util::ShutdownProcess</definition>
+        <argsstring>(int process_id_)</argsstring>
+        <name>ShutdownProcess</name>
+        <param>
+          <type>int</type>
+          <declname>process_id_</declname>
+        </param>
+        <briefdescription>
+<para>Send shutdown event to specified local user process using it&apos;s process id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>process_id_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Process id. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="110" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="110" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a2c04e3730ba3cf15dcd0da57e785aa1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Util::ShutdownProcesses</definition>
+        <argsstring>()</argsstring>
+        <name>ShutdownProcesses</name>
+        <briefdescription>
+<para>Send shutdown event to all local user processes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="115" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="115" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1aba63144455de7691434fd2aa6080d214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Util::ShutdownCore</definition>
+        <argsstring>()</argsstring>
+        <name>ShutdownCore</name>
+        <briefdescription>
+<para>Send shutdown event to all local core components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="120" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="120" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a8bcb30275052a25eb7baa8cddf238a8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Util::EnableLoopback</definition>
+        <argsstring>(bool state_)</argsstring>
+        <name>EnableLoopback</name>
+        <param>
+          <type>bool</type>
+          <declname>state_</declname>
+        </param>
+        <briefdescription>
+<para>Enable eCAL message loop back, that means subscriber will receive messages from publishers of the same process (default == false). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch on message loop back. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="129" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="129" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a751a7bae597d25e4e03e0b03a446509b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Util::PubShareType</definition>
+        <argsstring>(bool state_)</argsstring>
+        <name>PubShareType</name>
+        <param>
+          <type>bool</type>
+          <declname>state_</declname>
+        </param>
+        <briefdescription>
+<para>Enable process wide eCAL publisher topic type sharing that is needed for reflection on subscriber side. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch on type sharing </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="137" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="137" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a1daff5885b14d401a446a089c2d149f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Util::PubShareDescription</definition>
+        <argsstring>(bool state_)</argsstring>
+        <name>PubShareDescription</name>
+        <param>
+          <type>bool</type>
+          <declname>state_</declname>
+        </param>
+        <briefdescription>
+<para>Enable process wide eCAL publisher topic description sharing that is needed for reflection on subscriber side. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch on description sharing </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="145" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="145" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a8708664179148d49495a67bcde6f660c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Util::GetTopics</definition>
+        <argsstring>(std::unordered_map&lt; std::string, SDataTypeInformation &gt; &amp;topic_info_map_)</argsstring>
+        <name>GetTopics</name>
+        <param>
+          <type>std::unordered_map&lt; std::string, <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> &gt; &amp;</type>
+          <declname>topic_info_map_</declname>
+        </param>
+        <briefdescription>
+<para>Get complete topic map (including types and descriptions). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_info_map_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Map to store the datatype descriptions. Map containing { TopicName -&gt; (Encoding, Type, Description) } mapping of all topics that are currently known. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="153" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="153" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1adbfa8491ed2de9f7848ecf9652304b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Util::GetTopicNames</definition>
+        <argsstring>(std::vector&lt; std::string &gt; &amp;topic_names_)</argsstring>
+        <name>GetTopicNames</name>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>topic_names_</declname>
+        </param>
+        <briefdescription>
+<para>Get all topic names. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_names_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector to store the topic names. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="160" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="160" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1af879a09d2c651e40b0a6d090abfcd891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Util::GetTopicTypeName</definition>
+        <argsstring>(const std::string &amp;topic_name_, std::string &amp;topic_type_)</argsstring>
+        <name>GetTopicTypeName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>topic_type_</declname>
+        </param>
+        <briefdescription>
+<para>Gets type name of the specified topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000119"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the type information from the members encoding and type of the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to store type name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="172" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="172" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1ab218d683cae4d084dd46b745963f54be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Util::GetTopicTypeName</definition>
+        <argsstring>(const std::string &amp;topic_name_)</argsstring>
+        <name>GetTopicTypeName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <briefdescription>
+<para>Gets type name of the specified topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000120"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the type information from the members encoding and type of the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Topic type name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="183" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="183" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1ab09471063065bbde731be5d4ede67c3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Util::GetTopicDescription</definition>
+        <argsstring>(const std::string &amp;topic_name_, std::string &amp;topic_desc_)</argsstring>
+        <name>GetTopicDescription</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>topic_desc_</declname>
+        </param>
+        <briefdescription>
+<para>Gets description of the specified topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000121"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the descriptor from the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_desc_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to store description.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="195" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="195" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a905a81904fe00f2c54499ccbf38b037d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Util::GetTopicDescription</definition>
+        <argsstring>(const std::string &amp;topic_name_)</argsstring>
+        <name>GetTopicDescription</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <briefdescription>
+<para>Gets description of the specified topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000122"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the descriptor from the <ref refid="d4/d98/structeCAL_1_1STopicInformation" kindref="compound">STopicInformation</ref> variable. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Topic description. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="206" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="206" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a011decbbd7e97bfb24096d93ae80e915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Util::GetTopicDataTypeInformation</definition>
+        <argsstring>(const std::string &amp;topic_name_, SDataTypeInformation &amp;topic_info_)</argsstring>
+        <name>GetTopicDataTypeInformation</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> &amp;</type>
+          <declname>topic_info_</declname>
+        </param>
+        <briefdescription>
+<para>Gets description of the specified topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_info_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> to be filled by this function.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if TopicInformation for specified topic could be retrieved, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="216" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="216" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a9f48a404ea0d79e59cd7bfa71f2bf12e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Util::GetServices</definition>
+        <argsstring>(std::map&lt; std::tuple&lt; std::string, std::string &gt;, SServiceMethodInformation &gt; &amp;service_info_map_)</argsstring>
+        <name>GetServices</name>
+        <param>
+          <type>std::map&lt; std::tuple&lt; std::string, std::string &gt;, <ref refid="df/d6a/structeCAL_1_1SServiceMethodInformation" kindref="compound">SServiceMethodInformation</ref> &gt; &amp;</type>
+          <declname>service_info_map_</declname>
+        </param>
+        <briefdescription>
+<para>Get complete service map (including request and response types and descriptions). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service_info_map_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Map to store the datatype descriptions. Map { (ServiceName, MethodName) -&gt; ( (ReqType, ReqDescription), (RespType, RespDescription) ) } mapping of all currently known services. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="224" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="224" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1adb8e571b1bfda142b925901b7fe9bfc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Util::GetServiceNames</definition>
+        <argsstring>(std::vector&lt; std::tuple&lt; std::string, std::string &gt;&gt; &amp;service_method_names_)</argsstring>
+        <name>GetServiceNames</name>
+        <param>
+          <type>std::vector&lt; std::tuple&lt; std::string, std::string &gt;&gt; &amp;</type>
+          <declname>service_method_names_</declname>
+        </param>
+        <briefdescription>
+<para>Get all service/method names. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service_method_names_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector to store the service/method tuples (Vector { (ServiceName, MethodName) }). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="231" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="231" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1af6ada090069691cfcc3b84d4bd7d190b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Util::GetServiceTypeNames</definition>
+        <argsstring>(const std::string &amp;service_name_, const std::string &amp;method_name_, std::string &amp;req_type_, std::string &amp;resp_type_)</argsstring>
+        <name>GetServiceTypeNames</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>service_name_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>method_name_</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>req_type_</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>resp_type_</declname>
+        </param>
+        <briefdescription>
+<para>Gets service method request and response type names. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Service name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>req_type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to store request type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resp_type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to store response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="243" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="243" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a1a37d5a98a255b78e564b41c68746bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Util::GetServiceDescription</definition>
+        <argsstring>(const std::string &amp;service_name_, const std::string &amp;method_name_, std::string &amp;req_desc_, std::string &amp;resp_desc_)</argsstring>
+        <name>GetServiceDescription</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>service_name_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>method_name_</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>req_desc_</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>resp_desc_</declname>
+        </param>
+        <briefdescription>
+<para>Gets service method request and response descriptions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Service name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>req_desc_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to store request description. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resp_desc_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to store response description.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="255" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="255" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a5a340cf6e811ea385d783c55ded800b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Util::GetTypeName</definition>
+        <argsstring>(const std::string &amp;topic_name_, std::string &amp;topic_type_)</argsstring>
+        <name>GetTypeName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>topic_type_</declname>
+        </param>
+        <briefdescription>
+<para>Gets type name of the specified topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000123"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the type information from the members encoding and type of the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to store type name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="267" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="267" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1abe234234065284cc4a621be946b49e16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Util::GetTypeName</definition>
+        <argsstring>(const std::string &amp;topic_name_)</argsstring>
+        <name>GetTypeName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <briefdescription>
+<para>Gets type name of the specified topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000124"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the type information from the members encoding and type of the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Topic type name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="278" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="278" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a8a6da5c64336cb74d3c3d8d6baae6596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Util::GetDescription</definition>
+        <argsstring>(const std::string &amp;topic_name_, std::string &amp;topic_desc_)</argsstring>
+        <name>GetDescription</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>topic_desc_</declname>
+        </param>
+        <briefdescription>
+<para>Gets description of the specified topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000125"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the descriptor from the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_desc_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to store description.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="290" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="290" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1a6b718f778eb845effac2fa3cf61973cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Util::GetDescription</definition>
+        <argsstring>(const std::string &amp;topic_name_)</argsstring>
+        <name>GetDescription</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <briefdescription>
+<para>Gets description of the specified topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000126"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the descriptor from the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Topic description. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="301" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="301" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1aae2b2263e13cadfc23a7bfd57a10eb29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::pair&lt; std::string, std::string &gt;</type>
+        <definition>ECAL_API std::pair&lt;std::string, std::string&gt; eCAL::Util::SplitCombinedTopicType</definition>
+        <argsstring>(const std::string &amp;combined_topic_type_)</argsstring>
+        <name>SplitCombinedTopicType</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>combined_topic_type_</declname>
+        </param>
+        <briefdescription>
+<para>Splits the topic type (eCAL &lt; 5.12) into encoding and types (&gt;= eCAL 5.12) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>combined_topic_type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&quot;Old&quot; typename.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::pair(encoding, typename). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="310" column="24" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="310" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d20/ecal__util_8h_1ac9378c61f24c4ecc9b9b6bb9407bcc73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Util::CombinedTopicEncodingAndType</definition>
+        <argsstring>(const std::string &amp;topic_encoding_, const std::string &amp;topic_type_)</argsstring>
+        <name>CombinedTopicEncodingAndType</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_encoding_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_type_</declname>
+        </param>
+        <briefdescription>
+<para>Combine separate encoding and type iinformation (&gt;= eCAL 5.12) into a combined typename (eCAL &lt; 5.12) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_encoding_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic Encoding </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic Type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&quot;Old&quot; typename. ( encoding:typename ). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="320" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" declline="320" declcolumn="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_util.h" line="40" column="3"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d77/structeCAL_1_1SEventHandle" kind="struct" language="C++" prot="public">
+    <compoundname>eCAL::SEventHandle</compoundname>
+    <includes refid="d2/def/ecal__eventhandle_8h" local="no">ecal_eventhandle.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/d77/structeCAL_1_1SEventHandle_1a83894d2b024771a4fba196e85f8dd572" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SEventHandle::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>event name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_eventhandle.h" line="46" column="17" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_eventhandle.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d77/structeCAL_1_1SEventHandle_1a1a9407a8b53569d1916ef7593350f85e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* eCAL::SEventHandle::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+<para>event handle </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_eventhandle.h" line="47" column="16" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_eventhandle.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d77/structeCAL_1_1SEventHandle_1a8dcd552938be0b153c2a8548ddff8914" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::SEventHandle::SEventHandle</definition>
+        <argsstring>()</argsstring>
+        <name>SEventHandle</name>
+        <briefdescription>
+<para>Event callback handle constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_eventhandle.h" line="43" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_eventhandle.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL event callback handle. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000072"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_eventhandle.h" line="38" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_eventhandle.h" bodystart="39" bodyend="55"/>
+    <listofallmembers>
+      <member refid="d2/d77/structeCAL_1_1SEventHandle_1a1a9407a8b53569d1916ef7593350f85e" prot="public" virt="non-virtual"><scope>eCAL::SEventHandle</scope><name>handle</name></member>
+      <member refid="d2/d77/structeCAL_1_1SEventHandle_1a83894d2b024771a4fba196e85f8dd572" prot="public" virt="non-virtual"><scope>eCAL::SEventHandle</scope><name>name</name></member>
+      <member refid="d2/d77/structeCAL_1_1SEventHandle_1a8dcd552938be0b153c2a8548ddff8914" prot="public" virt="non-virtual"><scope>eCAL::SEventHandle</scope><name>SEventHandle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

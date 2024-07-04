@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/d58/deprecated" kind="page">
+    <compoundname>deprecated</compoundname>
+    <title>Deprecated List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a8f33dfb4c563e82391cb4a0e3d1b0089" kindref="member">client_call_method</ref>  (ECAL_HANDLE handle_, const char *method_name_, const char *request_, const int request_len_, const int timeout_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000056"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a7b5e4e316b89e78eef3da213d4f9dd8d" kindref="member">client_call_method_async</ref>  (ECAL_HANDLE handle_, const char *method_name_, const char *request_, const int request_len_, const int timeout_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000057"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a10bdcde88fbe9b6c7491b2b3ba794e4e" kindref="member">client_create</ref>  (const char *service_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000053"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a7acefeb93d842698df5ade150870d107" kindref="member">client_destroy</ref>  (ECAL_HANDLE handle_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000054"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ade6b59f214874534a6518be2f186eaa0" kindref="member">client_set_hostname</ref>  (ECAL_HANDLE handle_, const char *host_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000055"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ada98267a58dec836697704b3c495d580" kindref="member">dyn_json_sub_add_receive_callback</ref>  (ECAL_HANDLE handle_, const ReceiveCallbackCT callback_, void *par_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000047"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a829d5fbcae1f370afe411a44065fbcd3" kindref="member">dyn_json_sub_create</ref>  (const char *topic_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000045"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a0aed2c922b11b65e57b28055de17c421" kindref="member">dyn_json_sub_destroy</ref>  (ECAL_HANDLE handle_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000046"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ad5563ed5725905ab6cb5266f3000813f" kindref="member">dyn_json_sub_rem_receive_callback</ref>  (ECAL_HANDLE handle_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000048"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d3/d46/classeCAL_1_1CMsgPublisher_1aef9e493c1bc5c996b7734d021792930f" kindref="member">eCAL::CMsgPublisher&lt; T &gt;::CMsgPublisher</ref>  (const std::string &amp;topic_name_, const std::string &amp;topic_type_, const std::string &amp;topic_desc_=&quot;&quot;)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000127"/>Please use the constructor <ref refid="d3/d46/classeCAL_1_1CMsgPublisher_1a099a034bc5cdb8cd52d930087c8e6ca1" kindref="member">CMsgPublisher(const std::string&amp; topic_name_, const SDataTypeInformation&amp; topic_info_)</ref> instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d3/d46/classeCAL_1_1CMsgPublisher_1a447bbe94735245dbccd3dc274103b770" kindref="member">eCAL::CMsgPublisher&lt; T &gt;::Create</ref>  (const std::string &amp;topic_name_, const std::string &amp;topic_type_=&quot;&quot;, const std::string &amp;topic_desc_=&quot;&quot;)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000128"/>Please use the method <ref refid="d3/d46/classeCAL_1_1CMsgPublisher_1ab55fdd779019a2b9b586a868547e8b41" kindref="member">Create(const std::string&amp; topic_name_, const SDataTypeInformation&amp; topic_info_)</ref> instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a85f1acc60a0a2433870af7d3ac0521c3" kindref="member">eCAL::CMsgSubscriber&lt; T &gt;::CMsgSubscriber</ref>  (const std::string &amp;topic_name_, const std::string &amp;topic_type_=&quot;&quot;, const std::string &amp;topic_desc_=&quot;&quot;)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000129"/>Please use the constructor <ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a51c386152b3d3755a07fd136cac97d89" kindref="member">CMsgSubscriber(const std::string&amp; topic_name_, const SDataTypeInformation&amp; topic_info_)</ref> instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a66f407c0a800d138623cebfdedfabaa6" kindref="member">eCAL::CMsgSubscriber&lt; T &gt;::Create</ref>  (const std::string &amp;topic_name_, const std::string &amp;topic_type_=&quot;&quot;, const std::string &amp;topic_desc_=&quot;&quot;)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000130"/>Please use the method <ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a51c386152b3d3755a07fd136cac97d89" kindref="member">CMsgSubscriber(const std::string&amp; topic_name_, const SDataTypeInformation&amp; topic_info_)</ref> instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="dc/d42/classeCAL_1_1CPublisher_1ada151b4279624922e103fe0c36c5fc76" kindref="member">eCAL::CPublisher::CPublisher</ref>  (const std::string &amp;topic_name_, const std::string &amp;topic_type_, const std::string &amp;topic_desc_=&quot;&quot;)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000089"/>Please use the constructor <ref refid="dc/d42/classeCAL_1_1CPublisher_1a504c55b1883606f3ea948a3642c409cc" kindref="member">CPublisher(const std::string&amp; topic_name_, const SDataTypeInformation&amp; topic_info_)</ref> instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="dc/d42/classeCAL_1_1CPublisher_1ad47ccd97b3ea5c93ff8307fbb78e3287" kindref="member">eCAL::CPublisher::Create</ref>  (const std::string &amp;topic_name_, const std::string &amp;topic_type_, const std::string &amp;topic_desc_=&quot;&quot;)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000090"/>Please use the create method bool <ref refid="dc/d42/classeCAL_1_1CPublisher_1abf94f945976e3b9c0a65a8f17199006f" kindref="member">Create(const std::string&amp; topic_name_, const SDataTypeInformation&amp; topic_info_)</ref> instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="dc/d42/classeCAL_1_1CPublisher_1a8c617ff05ca9890c90173a9769cdfb4b" kindref="member">eCAL::CPublisher::GetDescription</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000098"/>Please use the method <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> <ref refid="dc/d42/classeCAL_1_1CPublisher_1addc866ba86a84a8c83e4cb78b6c4f540" kindref="member">GetDataTypeInformation()</ref> instead. You can extract the descriptor from the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="dc/d42/classeCAL_1_1CPublisher_1a16b531c461127e2e22ef6fe02fcf79b9" kindref="member">eCAL::CPublisher::GetQOS</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000094"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="dc/d42/classeCAL_1_1CPublisher_1a00e879f37846423f74065e13e89c56ed" kindref="member">eCAL::CPublisher::GetTypeName</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000097"/>Please use the method <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> <ref refid="dc/d42/classeCAL_1_1CPublisher_1addc866ba86a84a8c83e4cb78b6c4f540" kindref="member">GetDataTypeInformation()</ref> instead. You can extract the typename from the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="dc/d42/classeCAL_1_1CPublisher_1ac2ee785a29c8fa2a85efe873b085005a" kindref="member">eCAL::CPublisher::SendSynchronized</ref>  (const void *const buf_, size_t len_, long long time_, long long acknowledge_timeout_ms_) const</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000096"/>Please use the method size_t <ref refid="dc/d42/classeCAL_1_1CPublisher_1a8fd0663b7117ca27c70b3ddac16c60e8" kindref="member">Send(CPayloadWriter&amp; payload_, long long time_, long long acknowledge_timeout_ms_) const </ref>instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="dc/d42/classeCAL_1_1CPublisher_1ad87a26fdf303329647a2c9fb0c865c11" kindref="member">eCAL::CPublisher::SetDescription</ref>  (const std::string &amp;topic_desc_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000092"/>Please use the method bool <ref refid="dc/d42/classeCAL_1_1CPublisher_1aad7aed589c12253ff805c795b9106b39" kindref="member">SetDataTypeInformation(const SDataTypeInformation&amp; topic_info_)</ref> instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="dc/d42/classeCAL_1_1CPublisher_1a59e4fe88875ec6498d82174840e6b19c" kindref="member">eCAL::CPublisher::SetMaxBandwidthUDP</ref>  (long bandwidth_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000095"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="dc/d42/classeCAL_1_1CPublisher_1a7742362c6bd52a5cf4bf5432402beaf1" kindref="member">eCAL::CPublisher::SetQOS</ref>  (const <ref refid="d1/d85/structeCAL_1_1QOS_1_1SWriterQOS" kindref="compound">QOS::SWriterQOS</ref> &amp;qos_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000093"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="dc/d42/classeCAL_1_1CPublisher_1a3e7c32e9a4a11c9259e26dbccd5e996d" kindref="member">eCAL::CPublisher::SetTypeName</ref>  (const std::string &amp;topic_type_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000091"/>Please use the method bool <ref refid="dc/d42/classeCAL_1_1CPublisher_1aad7aed589c12253ff805c795b9106b39" kindref="member">SetDataTypeInformation(const SDataTypeInformation&amp; topic_info_)</ref> instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d5/d4c/classeCAL_1_1CServiceClient_1a8c50f6bbc65f5a8cf617b554ec6b385e" kindref="member">eCAL::CServiceClient::Call</ref>  (const std::string &amp;host_name_, const std::string &amp;method_name_, const std::string &amp;request_, struct <ref refid="d9/d0b/structeCAL_1_1SServiceResponse" kindref="compound">SServiceResponse</ref> &amp;service_info_, std::string &amp;response_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000065"/>Please use the create method bool <ref refid="d5/d4c/classeCAL_1_1CServiceClient_1afac68a2bdf163c6b23f58677a8611510" kindref="member">Call(const std::string&amp; method_name_, const std::string&amp; request_, int timeout_, ServiceResponseVecT* service_response_vec_)</ref> instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d3/d33/classeCAL_1_1CSubscriber_1af9d4527503a72a867b4911164a2ac7aa" kindref="member">eCAL::CSubscriber::Create</ref>  (const std::string &amp;topic_name_, const std::string &amp;topic_type_, const std::string &amp;topic_desc_=&quot;&quot;)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000104"/>Please use the create method bool Create(const std::string&amp; topic_name_, const STopicInformation&amp; topic_info_) instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d3/d33/classeCAL_1_1CSubscriber_1a94c85b36570ccc5821699e3e2eb48849" kindref="member">eCAL::CSubscriber::CSubscriber</ref>  (const std::string &amp;topic_name_, const std::string &amp;topic_type_, const std::string &amp;topic_desc_=&quot;&quot;)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000103"/>Please use the constructor <ref refid="d3/d33/classeCAL_1_1CSubscriber_1ad5e15fc7c17ae35d32cae42006d7922e" kindref="member">CSubscriber(const std::string&amp; topic_name_, const SDataTypeInformation&amp; topic_info_)</ref> instead. This function will be removed in future eCAL versions.. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d3/d33/classeCAL_1_1CSubscriber_1a4bd98308f9766f8da9dd7bbe9040000d" kindref="member">eCAL::CSubscriber::GetDescription</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000109"/>Please use the method <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> <ref refid="d3/d33/classeCAL_1_1CSubscriber_1a7e35f163ae5692ad3ec33c8282f1f4e3" kindref="member">GetDataTypeInformation()</ref> instead. You can extract the descriptor from the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d3/d33/classeCAL_1_1CSubscriber_1a354f4ef355df54ef7a9ed0d5041075ac" kindref="member">eCAL::CSubscriber::GetQOS</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000106"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d3/d33/classeCAL_1_1CSubscriber_1a8ca964ba862ac4658786b8bf5f7d46d5" kindref="member">eCAL::CSubscriber::GetTypeName</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000108"/>Please use the method <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> <ref refid="d3/d33/classeCAL_1_1CSubscriber_1a7e35f163ae5692ad3ec33c8282f1f4e3" kindref="member">GetDataTypeInformation()</ref> instead. You can extract the typename from the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d3/d33/classeCAL_1_1CSubscriber_1aeed17e22a271f1bfe41f14fc472a329f" kindref="member">eCAL::CSubscriber::Receive</ref>  (std::string &amp;buf_, long long *time_=nullptr, int rcv_timeout_=0) const</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000107"/>Please use the method bool ReceiveBuffer(std::string&amp; buf_, long long* time_ = nullptr, int rcv_timeout_ = 0) instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d3/d33/classeCAL_1_1CSubscriber_1a6d2eedfb0f6f188e755fdc10b8dd65aa" kindref="member">eCAL::CSubscriber::SetQOS</ref>  (const <ref refid="dd/d67/structeCAL_1_1QOS_1_1SReaderQOS" kindref="compound">QOS::SReaderQOS</ref> &amp;qos_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000105"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d3/d33/classeCAL_1_1CSubscriber_1aabe73171952a53d768b706668354f1f7" kindref="member">eCAL::CSubscriber::SetTimeout</ref>  (int timeout_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000110"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Class <ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">eCAL::CTimedCB</ref>  </term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000112"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d5/d9f/classeCAL_1_1CTimedCB_1a160ed4b5f96e4e073926292bdfc3b399" kindref="member">eCAL::CTimedCB::CTimedCB</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000113"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d5/d9f/classeCAL_1_1CTimedCB_1a1d7553b231d5beeae4959c77319cae9e" kindref="member">eCAL::CTimedCB::CTimedCB</ref>  (int timeout_, TimerCallbackT callback_, int delay_=0)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000114"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d5/d9f/classeCAL_1_1CTimedCB_1ad8cc9becc6b20bb595cc44112eb4f976" kindref="member">eCAL::CTimedCB::Start</ref>  (const int timeout_, TimerCallbackT callback_, const int delay_=0)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000115"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d5/d9f/classeCAL_1_1CTimedCB_1af47e494ebb54327c1b8f110e86711610" kindref="member">eCAL::CTimedCB::Stop</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000116"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d9/d17/ecal__event_8h_1a4c8c0a593567bc0d3de721f077c9eb95" kindref="member">eCAL::gCloseEvent</ref>  (const EventHandleT &amp;event_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000067"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d9/d17/ecal__event_8h_1a6f89da9c1465814557bb85d4146bde0a" kindref="member">eCAL::gEventIsValid</ref>  (const EventHandleT &amp;event_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000071"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d9/d17/ecal__event_8h_1a7a6ff2db53a413dcfe717f714c875c7f" kindref="member">eCAL::gInvalidateEvent</ref>  (EventHandleT *event_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000070"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d9/d17/ecal__event_8h_1a5028600c8e998ac1d8cb35b38025160c" kindref="member">eCAL::gOpenEvent</ref>  (eCAL::EventHandleT *event_, const std::string &amp;event_name_=&quot;&quot;)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000066"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d9/d17/ecal__event_8h_1a1ad756a53cfdf0638ae1721e9093e8c9" kindref="member">eCAL::gSetEvent</ref>  (const EventHandleT &amp;event_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000068"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d9/d17/ecal__event_8h_1ab938b3b890db68d3ecb042d0a084aedf" kindref="member">eCAL::gWaitForEvent</ref>  (const EventHandleT &amp;event_, long timeout_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000069"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/d8c/ecal__log_8h_1a30cdf6309f4f3eedde84449c8060bc20" kindref="member">eCAL::Logging::GetCoreTime</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000076"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/d8c/ecal__log_8h_1a23722a569cb8c0b63fa45c25d45c8791" kindref="member">eCAL::Logging::SetCoreTime</ref>  (double time_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000075"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/d8c/ecal__log_8h_1aab10190f69cced3fa2ab4c2b3c371934" kindref="member">eCAL::Logging::StartCoreTimer</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000073"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/d8c/ecal__log_8h_1ae50c6eca86af0f85cd36c6f8e7a8640e" kindref="member">eCAL::Logging::StopCoreTimer</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000074"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/d8e/ecal__monitoring_8h_1a3f27326ec1c3aefa80251c32f02a785d" kindref="member">eCAL::Monitoring::GetMonitoring</ref>  (std::string &amp;mon_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000077"/>Will be removed in future eCAL versions. Please use GetMonitoring(std::string&amp; mon_, unsigned int entities_) instead. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/d8e/ecal__monitoring_8h_1a94da1d74530ae82c1cac0824237f8a9a" kindref="member">eCAL::Monitoring::PubLogging</ref>  (bool state_, std::string name_=&quot;ecal.logging&quot;)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000079"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/d8e/ecal__monitoring_8h_1a9e118dfcb7a51ad11d08bde99f90f495" kindref="member">eCAL::Monitoring::PubMonitoring</ref>  (bool state_, std::string name_=&quot;ecal.monitoring&quot;)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000078"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/df1/ecal__process_8h_1a9f0be9f1946c8d3827baa4d250dae9dd" kindref="member">eCAL::Process::GetHostID</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000080"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/df1/ecal__process_8h_1a2df790218186bb86ca0527cba65c2453" kindref="member">eCAL::Process::GetProcessCpuUsage</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000081"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/df1/ecal__process_8h_1adb83926b66ecff2b785f4d6d6c88f533" kindref="member">eCAL::Process::GetProcessMemory</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000082"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/df1/ecal__process_8h_1a7a18edbcb416b038f210f9796178970e" kindref="member">eCAL::Process::GetRBytes</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000088"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/df1/ecal__process_8h_1a14af6ac75055ab99a8774a7cc764eb32" kindref="member">eCAL::Process::GetRClock</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000087"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/df1/ecal__process_8h_1aa03c3a2a189aa62a0c79ec265a43cd19" kindref="member">eCAL::Process::GetSBytes</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000084"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/df1/ecal__process_8h_1adee987991ca8cb2b0ff8e894b45029f8" kindref="member">eCAL::Process::GetSClock</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000083"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/df1/ecal__process_8h_1aa23764e83f16831c5b2e4da07a8ec1b6" kindref="member">eCAL::Process::GetWBytes</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000086"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="de/df1/ecal__process_8h_1ac9650b3a94782e569d1fda0f695ae880" kindref="member">eCAL::Process::GetWClock</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000085"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d8/d58/ecal__qos_8h_1a0da8b6f992aeac2e25089144fd27da24" kindref="member">eCAL::QOS::eQOSPolicy_HistoryKind</ref>  </term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000099"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d8/d58/ecal__qos_8h_1afc19a9113f5036d91321f5ba6b4e4803" kindref="member">eCAL::QOS::eQOSPolicy_Reliability</ref>  </term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000100"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="dd/d67/structeCAL_1_1QOS_1_1SReaderQOS" kindref="compound">eCAL::QOS::SReaderQOS</ref>  </term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000102"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="d1/d85/structeCAL_1_1QOS_1_1SWriterQOS" kindref="compound">eCAL::QOS::SWriterQOS</ref>  </term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000101"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="d2/d77/structeCAL_1_1SEventHandle" kindref="compound">eCAL::SEventHandle</ref>  </term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000072"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">eCAL::TimerCallbackT</ref>  </term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000111"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="da/d20/ecal__util_8h_1a6b718f778eb845effac2fa3cf61973cd" kindref="member">eCAL::Util::GetDescription</ref>  (const std::string &amp;topic_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000126"/>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the descriptor from the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="da/d20/ecal__util_8h_1a8a6da5c64336cb74d3c3d8d6baae6596" kindref="member">eCAL::Util::GetDescription</ref>  (const std::string &amp;topic_name_, std::string &amp;topic_desc_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000125"/>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the descriptor from the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="da/d20/ecal__util_8h_1a2e4f8a5d9ee1e9c657b98a618132170f" kindref="member">eCAL::Util::GeteCALDefaultIniFile</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000118"/>Please use the method std::string <ref refid="da/d20/ecal__util_8h_1a27263f5f699870e349210f85c0cf331f" kindref="member">GeteCALActiveIniFile()</ref> instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="da/d20/ecal__util_8h_1a2576cb50ec46867931c197b4d1935f95" kindref="member">eCAL::Util::GeteCALHomePath</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000117"/>Please use the method std::string <ref refid="da/d20/ecal__util_8h_1abc702b1c24eecfeca0472010ff548a69" kindref="member">GeteCALConfigPath()</ref> instead. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="da/d20/ecal__util_8h_1ab09471063065bbde731be5d4ede67c3f" kindref="member">eCAL::Util::GetTopicDescription</ref>  (const std::string &amp;topic_name_, std::string &amp;topic_desc_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000121"/>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the descriptor from the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="da/d20/ecal__util_8h_1a905a81904fe00f2c54499ccbf38b037d" kindref="member">eCAL::Util::GetTopicDescription</ref>  (const std::string &amp;topic_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000122"/>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the descriptor from the <ref refid="d4/d98/structeCAL_1_1STopicInformation" kindref="compound">STopicInformation</ref> variable. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="da/d20/ecal__util_8h_1af879a09d2c651e40b0a6d090abfcd891" kindref="member">eCAL::Util::GetTopicTypeName</ref>  (const std::string &amp;topic_name_, std::string &amp;topic_type_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000119"/>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the type information from the members encoding and type of the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="da/d20/ecal__util_8h_1ab218d683cae4d084dd46b745963f54be" kindref="member">eCAL::Util::GetTopicTypeName</ref>  (const std::string &amp;topic_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000120"/>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the type information from the members encoding and type of the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="da/d20/ecal__util_8h_1a5a340cf6e811ea385d783c55ded800b2" kindref="member">eCAL::Util::GetTypeName</ref>  (const std::string &amp;topic_name_, std::string &amp;topic_type_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000123"/>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the type information from the members encoding and type of the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="da/d20/ecal__util_8h_1abe234234065284cc4a621be946b49e16" kindref="member">eCAL::Util::GetTypeName</ref>  (const std::string &amp;topic_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000124"/>Please use the method bool GetTopicDataTypeInformation(const std::string&amp; topic_name_, SDataTypeInformation&amp; topic_info_) instead. You can extract the type information from the members encoding and type of the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a1c45cf4b32d38e7a2e3c0b3de00e5899" kindref="member">ecal_enable_loopback</ref>  (const int state_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000016"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a1103d7dc1a86fa60c4ac72b2a7ee3ffc" kindref="member">ecal_finalize</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000005"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ac7d866e489425b4d01e83a353a2fd6e9" kindref="member">ecal_free_mem</ref>  (void *mem_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000010"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a3e88be288c916c094abc717579f4f85c" kindref="member">ecal_get_description</ref>  (const char *topic_name_, const char **topic_desc_, int *topic_desc_len_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000018"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a223cd64b3c0fe18b5a7f4084fb3e56cc" kindref="member">ecal_get_type_name</ref>  (const char *topic_name_, const char **topic_type_, int *topic_type_len_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000017"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ad2b025124cfe6b21dfa19a1d85cf9bb7" kindref="member">ecal_getdate</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000003"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a85b5ba3548d6163d0719f0cef2cd33e6" kindref="member">ecal_getversion</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000001"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a796502f49ee481c4c6cb99bcb19db6d9" kindref="member">ecal_getversion_components</ref>  (int *major_, int *minor_, int *patch_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000002"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a29db94388ec381748e074a9df967909f" kindref="member">ecal_initialize</ref>  (int argc_, char **argv_, const char *unit_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000004"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1add52342efb58ef692522bdcd1ff2120f" kindref="member">ecal_is_initialized</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000006"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a95ed939a2965efd4ce0fca6f392586c3" kindref="member">ecal_ok</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000009"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a739ac14ab29959f162491b39ef6d9e39" kindref="member">ecal_set_process_state</ref>  (const int severity_, const int level_, const char *info_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000008"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1afb64cdd0f3741ff9eeb55f62d3aba563" kindref="member">ecal_set_unit_name</ref>  (const char *unit_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000007"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1aff7c0bddb1be0ad0c19de1a4b3ee91d1" kindref="member">ecal_shutdown_core</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000015"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1afbffe71ef65e928d4c5bee30f62f24c6" kindref="member">ecal_shutdown_process_id</ref>  (const int process_id_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000013"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1aa10fa2d4385f260a23c368dab4f3c1bc" kindref="member">ecal_shutdown_process_uname</ref>  (const char *unit_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000012"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a45a4c94273c3b9e13cc40790da10c828" kindref="member">ecal_shutdown_processes</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000014"/>Will be removed in future eCAL versions.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a389240832a5d9030be12d6d9c3b5535a" kindref="member">ecal_sleep_ms</ref>  (const long time_ms_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000011"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1aecd889bfd46bf7ce7549b249c405fb15" kindref="member">log_message</ref>  (const char *message_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000021"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ad6ab32ac524e11ecff49c04e50ee418d" kindref="member">log_setcoretime</ref>  (const double time_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000020"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a8734995133d0e2808ff66274ff7d7512" kindref="member">log_setlevel</ref>  (const int level_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000019"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ac165329dc942cd7404144c1347254466" kindref="member">mon_finalize</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000059"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a98af3629ed3891b91b34d62071e68f53" kindref="member">mon_get_logging</ref>  (const char **log_buf_, int *log_buf_len_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000064"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a9a8ce626e7c7ceb6f4c5ce5b44512212" kindref="member">mon_get_monitoring</ref>  (const char **mon_buf_, int *mon_buf_len_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000063"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ad7fb789b30d8884c876eee8c0bfdb6b7" kindref="member">mon_initialize</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000058"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a231586e73852b9f617c11156a617bf63" kindref="member">mon_set_excl_filter</ref>  (const char *filter_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000060"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ae4866992ca07ca8bdc77c458c7c0d6a1" kindref="member">mon_set_filter_state</ref>  (const bool state_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000062"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ab79620db2c3a73f17c5e91fe766b62a8" kindref="member">mon_set_incl_filter</ref>  (const char *filter_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000061"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a826c12557d26a778aeca0900e0026dd6" kindref="member">pub_add_event_callback</ref>  (ECAL_HANDLE handle_, enum eCAL_Publisher_Event type_, const PubEventCallbackCT callback_, void *par_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000032"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ab77da4eb0646292a113b9025a2dd38c7" kindref="member">pub_create</ref>  (const char *topic_name_, const char *topic_type_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000022"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a02d6437f4a1da37f22bfd7d9efbf3f15" kindref="member">pub_destroy</ref>  (ECAL_HANDLE handle_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000023"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a29c50810681e482f364404cf93366e58" kindref="member">pub_get_qos</ref>  (ECAL_HANDLE handle_, struct SWriterQOSC *qos_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000027"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a3c4548baa30604c6f790adb4cc2c3438" kindref="member">pub_rem_event_callback</ref>  (ECAL_HANDLE handle_, enum eCAL_Publisher_Event type_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000033"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a0e2c1a29a1336083f2d19db5a1a2d4d1" kindref="member">pub_send</ref>  (ECAL_HANDLE handle_, const char *payload_, const int length_, const long long time_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000030"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a771d86ab58f9ccfe0152329f93238da7" kindref="member">pub_send_sync</ref>  (ECAL_HANDLE handle_, const char *payload_, const int length_, const long long time_, const long long acknowledge_timeout_ms_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000031"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1aaacbcd254d94c68c9a61fae235101c5c" kindref="member">pub_set_description</ref>  (ECAL_HANDLE handle_, const char *topic_desc_, const int topic_desc_length_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000025"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a8cb6f20f940c0e54231c78e47c5bc920" kindref="member">pub_set_layer_mode</ref>  (ECAL_HANDLE handle_, const int layer_, const int mode_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000028"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ad7cad459dd949ef83ec948ce20d8da1d" kindref="member">pub_set_max_bandwidth_udp</ref>  (ECAL_HANDLE handle_, long bandwidth_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000029"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a81bf79f82c3f19bc7c0de5e9f90c9f20" kindref="member">pub_set_qos</ref>  (ECAL_HANDLE handle_, struct SWriterQOSC qos_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000026"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1addc7cfbd8c81984c68af33dbf437ff01" kindref="member">pub_set_type_name</ref>  (ECAL_HANDLE handle_, const char *topic_type_name_, const int topic_type_name_length_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000024"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ae6d216f6f783783ef482782995a7ebcb" kindref="member">server_add_method_callback</ref>  (ECAL_HANDLE handle_, const char *method_name_, const char *req_type_, const char *resp_type_, const MethodCallbackCT callback_, void *par_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000051"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a877acafc2048df1d6e9e197e5ce85caf" kindref="member">server_create</ref>  (const char *service_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000049"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a06eaa7aa946da64ff339bc07bdf1f635" kindref="member">server_destroy</ref>  (ECAL_HANDLE handle_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000050"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a0a877a4b626654a13403022e8f2d7447" kindref="member">server_rem_method_callback</ref>  (ECAL_HANDLE handle_, const char *method_name_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000052"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1aa157db0be5fa32d82450030b094cf0bd" kindref="member">sub_add_event_callback</ref>  (ECAL_HANDLE handle_, enum eCAL_Subscriber_Event type_, const SubEventCallbackCT callback_, void *par_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000042"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a67be84fdf2f94a25f18d4bcb58f66551" kindref="member">sub_add_receive_callback</ref>  (ECAL_HANDLE handle_, const ReceiveCallbackCT callback_, void *par_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000040"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a1831f04989002bff9548bfc18f35bcc0" kindref="member">sub_create</ref>  (const char *topic_name_, const char *topic_type_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000034"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1afe3c3a74ccfa61f0d811befc8d40f60a" kindref="member">sub_destroy</ref>  (ECAL_HANDLE handle_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000035"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1abc58eef47fc5fa983d5d8a72af212a14" kindref="member">sub_get_qos</ref>  (ECAL_HANDLE handle_, struct SReaderQOSC *qos_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000037"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a1ec1f718a0335eb6844c47e3f58c2398" kindref="member">sub_receive</ref>  (ECAL_HANDLE handle_, const char **rcv_buf_, int *rcv_buf_len_, long long *rcv_time_, const int timeout_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000038"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1ac6cdc9785b833cd571c373aab28794d2" kindref="member">sub_receive_buffer</ref>  (ECAL_HANDLE handle_, const char **rcv_buf_, int *rcv_buf_len_, long long *rcv_time_, const int timeout_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000039"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a326dd7ba23bbd7df7c28038a5914928d" kindref="member">sub_rem_event_callback</ref>  (ECAL_HANDLE handle_, enum eCAL_Subscriber_Event type_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000043"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1a5423009de750bc100d6fd3ff088f20f1" kindref="member">sub_rem_receive_callback</ref>  (ECAL_HANDLE handle_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000041"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1abc7e3b35431d935887d7484a390362d7" kindref="member">sub_set_qos</ref>  (ECAL_HANDLE handle_, struct SReaderQOSC qos_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000036"/>Will be removed in future eCAL versions. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="d4/d19/ecal__clang_8h_1aeb563351d862ff01fb009e307d76292d" kindref="member">sub_set_timeout</ref>  (ECAL_HANDLE handle_, int timeout_)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000044"/>Will be removed in future eCAL versions.</para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="da/d58/deprecated"/>
+  </compounddef>
+</doxygen>

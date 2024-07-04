@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/d6c/namespaceeCAL_1_1Logging" kind="namespace" language="C++">
+    <compoundname>eCAL::Logging</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="de/d8c/ecal__log_8h_1a4d2ffa95eadc0a05c9f8a2886867848a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Logging::SetLogLevel</definition>
+        <argsstring>(eCAL_Logging_eLogLevel level_)</argsstring>
+        <name>SetLogLevel</name>
+        <param>
+          <type><ref refid="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310" kindref="member">eCAL_Logging_eLogLevel</ref></type>
+          <declname>level_</declname>
+        </param>
+        <briefdescription>
+<para>Sets the log level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The level. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" line="42" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" declline="42" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8c/ecal__log_8h_1ae02f62df75715df74abc07018d19fd9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API <ref refid="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310" kindref="member">eCAL_Logging_eLogLevel</ref></type>
+        <definition>ECAL_API eCAL_Logging_eLogLevel eCAL::Logging::GetLogLevel</definition>
+        <argsstring>()</argsstring>
+        <name>GetLogLevel</name>
+        <briefdescription>
+<para>Get the current log level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current log level. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" line="49" column="37" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" declline="49" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8c/ecal__log_8h_1a158d4dc6169fa282c344e556f5046ea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Logging::Log</definition>
+        <argsstring>(const std::string &amp;msg_)</argsstring>
+        <name>Log</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <briefdescription>
+<para>Log a message (with current log level). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The log message string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" line="56" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" declline="56" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8c/ecal__log_8h_1aeec9794d43afeaf2877b5e7ced2469d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void eCAL::Logging::Log</definition>
+        <argsstring>(eCAL_Logging_eLogLevel level_, const std::string &amp;msg_)</argsstring>
+        <name>Log</name>
+        <param>
+          <type><ref refid="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310" kindref="member">eCAL_Logging_eLogLevel</ref></type>
+          <declname>level_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <briefdescription>
+<para>Log a message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The level. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The log message string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" line="64" column="17" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8c/ecal__log_8h_1aab10190f69cced3fa2ab4c2b3c371934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Logging::StartCoreTimer</definition>
+        <argsstring>()</argsstring>
+        <name>StartCoreTimer</name>
+        <briefdescription>
+<para>Mark the start of the user core process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000073"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" line="75" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" declline="75" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8c/ecal__log_8h_1ae50c6eca86af0f85cd36c6f8e7a8640e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Logging::StopCoreTimer</definition>
+        <argsstring>()</argsstring>
+        <name>StopCoreTimer</name>
+        <briefdescription>
+<para>Mark the stop of the user core process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000074"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" line="82" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" declline="82" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8c/ecal__log_8h_1a23722a569cb8c0b63fa45c25d45c8791" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Logging::SetCoreTime</definition>
+        <argsstring>(double time_)</argsstring>
+        <name>SetCoreTime</name>
+        <param>
+          <type>double</type>
+          <declname>time_</declname>
+        </param>
+        <briefdescription>
+<para>Set the current measured core time in s (for user implemented measuring). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000075"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" line="89" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" declline="89" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8c/ecal__log_8h_1a30cdf6309f4f3eedde84449c8060bc20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API double</type>
+        <definition>ECAL_API double eCAL::Logging::GetCoreTime</definition>
+        <argsstring>()</argsstring>
+        <name>GetCoreTime</name>
+        <briefdescription>
+<para>Returns the current measured core time in s. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000076"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" line="96" column="21" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" declline="96" declcolumn="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h" line="35" column="3"/>
+  </compounddef>
+</doxygen>

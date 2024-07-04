@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d6a/structeCAL_1_1SServiceMethodInformation" kind="struct" language="C++" prot="public">
+    <compoundname>eCAL::SServiceMethodInformation</compoundname>
+    <includes refid="d1/de7/ecal__types_8h" local="no">ecal_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/d6a/structeCAL_1_1SServiceMethodInformation_1a920ab893f1375ff4e639e57460a48337" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref></type>
+        <definition>SDataTypeInformation eCAL::SServiceMethodInformation::request_type</definition>
+        <argsstring></argsstring>
+        <name>request_type</name>
+        <briefdescription>
+<para>Data type description of the request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_types.h" line="80" column="28" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_types.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d6a/structeCAL_1_1SServiceMethodInformation_1ac8b4257ece72a0b3dbda461692730662" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref></type>
+        <definition>SDataTypeInformation eCAL::SServiceMethodInformation::response_type</definition>
+        <argsstring></argsstring>
+        <name>response_type</name>
+        <briefdescription>
+<para>Data type description of the response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_types.h" line="81" column="28" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_types.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Optional compile time information associated with a given service method (necessary for reflection / runtime type checking) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>eCAL::SDataTypeInformation</label>
+        <link refid="d7/d0f/structeCAL_1_1SDataTypeInformation"/>
+      </node>
+      <node id="1">
+        <label>eCAL::SServiceMethodInformation</label>
+        <link refid="df/d6a/structeCAL_1_1SServiceMethodInformation"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>request_type</edgelabel>
+          <edgelabel>response_type</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_types.h" line="78" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_types.h" bodystart="79" bodyend="94"/>
+    <listofallmembers>
+      <member refid="df/d6a/structeCAL_1_1SServiceMethodInformation_1a920ab893f1375ff4e639e57460a48337" prot="public" virt="non-virtual"><scope>eCAL::SServiceMethodInformation</scope><name>request_type</name></member>
+      <member refid="df/d6a/structeCAL_1_1SServiceMethodInformation_1ac8b4257ece72a0b3dbda461692730662" prot="public" virt="non-virtual"><scope>eCAL::SServiceMethodInformation</scope><name>response_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

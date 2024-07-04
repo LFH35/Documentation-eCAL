@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d72/structeCAL_1_1SClientAttr" kind="struct" language="C++" prot="public">
+    <compoundname>eCAL::SClientAttr</compoundname>
+    <includes refid="df/d76/ecal__callback_8h" local="no">ecal_callback.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="db/d72/structeCAL_1_1SClientAttr_1a8c72cc464f7eb37d2111b1dd5a65e0b4" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SClientAttr::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+<para>unique service key (internal) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="126" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d72/structeCAL_1_1SClientAttr_1a25ba3a9659b2cdde33490f5c064931d9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SClientAttr::hname</definition>
+        <argsstring></argsstring>
+        <name>hname</name>
+        <briefdescription>
+<para>host name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="127" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d72/structeCAL_1_1SClientAttr_1ae55bce1e301bcea42a70f8eb22a2a3db" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SClientAttr::pname</definition>
+        <argsstring></argsstring>
+        <name>pname</name>
+        <briefdescription>
+<para>process name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="128" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d72/structeCAL_1_1SClientAttr_1a41fec199d9dfed8281005f31b0353b43" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SClientAttr::uname</definition>
+        <argsstring></argsstring>
+        <name>uname</name>
+        <briefdescription>
+<para>process unit name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="129" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d72/structeCAL_1_1SClientAttr_1a8abd53e4a7105fbba13480440e6b4f3c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SClientAttr::sname</definition>
+        <argsstring></argsstring>
+        <name>sname</name>
+        <briefdescription>
+<para>service name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="130" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d72/structeCAL_1_1SClientAttr_1a9b5913e61141f79f344c4496b50f2dd1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SClientAttr::sid</definition>
+        <argsstring></argsstring>
+        <name>sid</name>
+        <briefdescription>
+<para>service id </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="131" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d72/structeCAL_1_1SClientAttr_1a3d5c3b32aa5193a6eac749c6291f4a6f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eCAL::SClientAttr::pid</definition>
+        <argsstring></argsstring>
+        <name>pid</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>process id </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="132" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d72/structeCAL_1_1SClientAttr_1a9d923d714d7979fc8eb57efc832d7538" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int eCAL::SClientAttr::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>client version </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="134" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL client attributes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="124" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="125" bodyend="135"/>
+    <listofallmembers>
+      <member refid="db/d72/structeCAL_1_1SClientAttr_1a25ba3a9659b2cdde33490f5c064931d9" prot="public" virt="non-virtual"><scope>eCAL::SClientAttr</scope><name>hname</name></member>
+      <member refid="db/d72/structeCAL_1_1SClientAttr_1a8c72cc464f7eb37d2111b1dd5a65e0b4" prot="public" virt="non-virtual"><scope>eCAL::SClientAttr</scope><name>key</name></member>
+      <member refid="db/d72/structeCAL_1_1SClientAttr_1a3d5c3b32aa5193a6eac749c6291f4a6f" prot="public" virt="non-virtual"><scope>eCAL::SClientAttr</scope><name>pid</name></member>
+      <member refid="db/d72/structeCAL_1_1SClientAttr_1ae55bce1e301bcea42a70f8eb22a2a3db" prot="public" virt="non-virtual"><scope>eCAL::SClientAttr</scope><name>pname</name></member>
+      <member refid="db/d72/structeCAL_1_1SClientAttr_1a9b5913e61141f79f344c4496b50f2dd1" prot="public" virt="non-virtual"><scope>eCAL::SClientAttr</scope><name>sid</name></member>
+      <member refid="db/d72/structeCAL_1_1SClientAttr_1a8abd53e4a7105fbba13480440e6b4f3c" prot="public" virt="non-virtual"><scope>eCAL::SClientAttr</scope><name>sname</name></member>
+      <member refid="db/d72/structeCAL_1_1SClientAttr_1a41fec199d9dfed8281005f31b0353b43" prot="public" virt="non-virtual"><scope>eCAL::SClientAttr</scope><name>uname</name></member>
+      <member refid="db/d72/structeCAL_1_1SClientAttr_1a9d923d714d7979fc8eb57efc832d7538" prot="public" virt="non-virtual"><scope>eCAL::SClientAttr</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

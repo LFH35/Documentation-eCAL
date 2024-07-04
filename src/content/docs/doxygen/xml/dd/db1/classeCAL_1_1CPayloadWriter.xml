@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/db1/classeCAL_1_1CPayloadWriter" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>eCAL::CPayloadWriter</compoundname>
+    <includes refid="d7/dbb/ecal__payload__writer_8h" local="no">ecal_payload_writer.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/db1/classeCAL_1_1CPayloadWriter_1a287a1a3c0424f5998915cea0cde1c326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CPayloadWriter::CPayloadWriter</definition>
+        <argsstring>()=default</argsstring>
+        <name>CPayloadWriter</name>
+        <briefdescription>
+<para>Default constructor for <ref refid="dd/db1/classeCAL_1_1CPayloadWriter" kindref="compound">CPayloadWriter</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_payload_writer.h" line="49" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db1/classeCAL_1_1CPayloadWriter_1aa534d3e9315ab097cdc3d4e9332676ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual eCAL::CPayloadWriter::~CPayloadWriter</definition>
+        <argsstring>()=default</argsstring>
+        <name>~CPayloadWriter</name>
+        <briefdescription>
+<para>Virtual destructor for <ref refid="dd/db1/classeCAL_1_1CPayloadWriter" kindref="compound">CPayloadWriter</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_payload_writer.h" line="54" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db1/classeCAL_1_1CPayloadWriter_1a5e0811d56d7ceb8f0ca3c52b98d17cdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CPayloadWriter::CPayloadWriter</definition>
+        <argsstring>(const CPayloadWriter &amp;)=default</argsstring>
+        <name>CPayloadWriter</name>
+        <param>
+          <type>const <ref refid="dd/db1/classeCAL_1_1CPayloadWriter" kindref="compound">CPayloadWriter</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy constructor (deleted). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_payload_writer.h" line="59" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db1/classeCAL_1_1CPayloadWriter_1a110b6503c24323c369277ce51daa1710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CPayloadWriter::CPayloadWriter</definition>
+        <argsstring>(CPayloadWriter &amp;&amp;)=default</argsstring>
+        <name>CPayloadWriter</name>
+        <param>
+          <type><ref refid="dd/db1/classeCAL_1_1CPayloadWriter" kindref="compound">CPayloadWriter</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move constructor (deleted). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_payload_writer.h" line="64" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db1/classeCAL_1_1CPayloadWriter_1ac56421da31ffcf6b902536a4755bf818" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dd/db1/classeCAL_1_1CPayloadWriter" kindref="compound">CPayloadWriter</ref> &amp;</type>
+        <definition>CPayloadWriter&amp; eCAL::CPayloadWriter::operator=</definition>
+        <argsstring>(const CPayloadWriter &amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="dd/db1/classeCAL_1_1CPayloadWriter" kindref="compound">CPayloadWriter</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy assignment operator (deleted). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_payload_writer.h" line="69" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db1/classeCAL_1_1CPayloadWriter_1a61bd311744ce4c5ee82e78d1e7d985cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dd/db1/classeCAL_1_1CPayloadWriter" kindref="compound">CPayloadWriter</ref> &amp;</type>
+        <definition>CPayloadWriter&amp; eCAL::CPayloadWriter::operator=</definition>
+        <argsstring>(CPayloadWriter &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="dd/db1/classeCAL_1_1CPayloadWriter" kindref="compound">CPayloadWriter</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move assignment operator (deleted). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_payload_writer.h" line="74" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db1/classeCAL_1_1CPayloadWriter_1a2d4fd3818680de453cf3ac755338bb2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool eCAL::CPayloadWriter::WriteFull</definition>
+        <argsstring>(void *buffer_, size_t size_)=0</argsstring>
+        <name>WriteFull</name>
+        <param>
+          <type>void *</type>
+          <declname>buffer_</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size_</declname>
+        </param>
+        <briefdescription>
+<para>Perform a full write operation on uninitialized memory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This virtual function allows derived classes to perform a full write operation when the provisioned memory is uninitialized. Typically, this is the case when a memory file had to be recreated or its size had to be changed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer containing the data to be written. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the data to be written.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the write operation is successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_payload_writer.h" line="88" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db1/classeCAL_1_1CPayloadWriter_1a17324d2f99cb72e720910208458b368c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool eCAL::CPayloadWriter::WriteModified</definition>
+        <argsstring>(void *buffer_, size_t size_)</argsstring>
+        <name>WriteModified</name>
+        <param>
+          <type>void *</type>
+          <declname>buffer_</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size_</declname>
+        </param>
+        <briefdescription>
+<para>Perform a partial write operation to modify existing data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This virtual function allows derived classes to modify existing data when the provisioned memory is already initialized by a WriteFull call (i.e. contains the data from that full write operation).</para>
+<para>The memory can be partially modified and does not have to be completely rewritten, which leads to significantly higher performance (lower latency).</para>
+<para>If not implemented (by default), this operation will just call the <computeroutput>WriteFull</computeroutput> function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer containing the data to be modified. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the data to be modified.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the write/update operation is successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_payload_writer.h" line="106" column="18" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_payload_writer.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db1/classeCAL_1_1CPayloadWriter_1a32092e1db64f84bd86429df86824835c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t eCAL::CPayloadWriter::GetSize</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetSize</name>
+        <briefdescription>
+<para>Get the size of the required memory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This virtual function allows derived classes to provide the size of the memory that eCAL needs to allocate.</para>
+<para><simplesect kind="return"><para>The size of the required memory. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_payload_writer.h" line="116" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base payload writer class to allow zero copy memory operations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class serves as the base class for payload writers, allowing zero-copy memory operations. The <computeroutput>WriteFull</computeroutput> and <computeroutput>WriteModified</computeroutput> calls may operate on the target memory file directly in zero-copy mode.</para>
+<para>A partial writing / modification of the memory file is only possible when zero-copy mode is activated. If zero-copy is not enabled, the <computeroutput>WriteModified</computeroutput> method is ignored and the <computeroutput>WriteFull</computeroutput> method is always executed (see <ref refid="dc/d42/classeCAL_1_1CPublisher_1af057c139ad7f40fe6574e095f5ff806c" kindref="member">CPublisher::ShmEnableZeroCopy</ref>) </para>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_payload_writer.h" line="43" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_payload_writer.h" bodystart="44" bodyend="117"/>
+    <listofallmembers>
+      <member refid="dd/db1/classeCAL_1_1CPayloadWriter_1a287a1a3c0424f5998915cea0cde1c326" prot="public" virt="non-virtual"><scope>eCAL::CPayloadWriter</scope><name>CPayloadWriter</name></member>
+      <member refid="dd/db1/classeCAL_1_1CPayloadWriter_1a5e0811d56d7ceb8f0ca3c52b98d17cdd" prot="public" virt="non-virtual"><scope>eCAL::CPayloadWriter</scope><name>CPayloadWriter</name></member>
+      <member refid="dd/db1/classeCAL_1_1CPayloadWriter_1a110b6503c24323c369277ce51daa1710" prot="public" virt="non-virtual"><scope>eCAL::CPayloadWriter</scope><name>CPayloadWriter</name></member>
+      <member refid="dd/db1/classeCAL_1_1CPayloadWriter_1a32092e1db64f84bd86429df86824835c" prot="public" virt="pure-virtual"><scope>eCAL::CPayloadWriter</scope><name>GetSize</name></member>
+      <member refid="dd/db1/classeCAL_1_1CPayloadWriter_1ac56421da31ffcf6b902536a4755bf818" prot="public" virt="non-virtual"><scope>eCAL::CPayloadWriter</scope><name>operator=</name></member>
+      <member refid="dd/db1/classeCAL_1_1CPayloadWriter_1a61bd311744ce4c5ee82e78d1e7d985cd" prot="public" virt="non-virtual"><scope>eCAL::CPayloadWriter</scope><name>operator=</name></member>
+      <member refid="dd/db1/classeCAL_1_1CPayloadWriter_1a2d4fd3818680de453cf3ac755338bb2c" prot="public" virt="pure-virtual"><scope>eCAL::CPayloadWriter</scope><name>WriteFull</name></member>
+      <member refid="dd/db1/classeCAL_1_1CPayloadWriter_1a17324d2f99cb72e720910208458b368c" prot="public" virt="virtual"><scope>eCAL::CPayloadWriter</scope><name>WriteModified</name></member>
+      <member refid="dd/db1/classeCAL_1_1CPayloadWriter_1aa534d3e9315ab097cdc3d4e9332676ae" prot="public" virt="virtual"><scope>eCAL::CPayloadWriter</scope><name>~CPayloadWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

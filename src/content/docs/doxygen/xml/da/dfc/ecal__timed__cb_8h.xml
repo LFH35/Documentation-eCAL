@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/dfc/ecal__timed__cb_8h" kind="file" language="C++">
+    <compoundname>ecal_timed_cb.h</compoundname>
+    <includes local="no">atomic</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">assert.h</includes>
+    <includes refid="dc/de4/ecal__deprecate_8h" local="no">ecal/ecal_deprecate.h</includes>
+    <includes refid="de/df1/ecal__process_8h" local="yes">ecal_process.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>atomic</label>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="15">
+        <label>ecal/cimpl/ecal_callback_cimpl.h</label>
+      </node>
+      <node id="6">
+        <label>assert.h</label>
+      </node>
+      <node id="11">
+        <label>ecal/ecal_os.h</label>
+        <link refid="d8/db1/ecal__os_8h"/>
+      </node>
+      <node id="12">
+        <label>ecal/ecal_process_mode.h</label>
+        <link refid="d3/d85/ecal__process__mode_8h"/>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="16">
+        <label>ecal/ecal_types.h</label>
+        <link refid="d1/de7/ecal__types_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ecal_process.h</label>
+        <link refid="de/df1/ecal__process_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h</label>
+        <link refid="da/dfc/ecal__timed__cb_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ecal/ecal_defs.h</label>
+      </node>
+      <node id="13">
+        <label>ecal/ecal_process_severity.h</label>
+        <link refid="d0/d0f/ecal__process__severity_8h"/>
+      </node>
+      <node id="7">
+        <label>ecal/ecal_deprecate.h</label>
+        <link refid="dc/de4/ecal__deprecate_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>chrono</label>
+      </node>
+      <node id="5">
+        <label>thread</label>
+      </node>
+      <node id="14">
+        <label>ecal/ecal_callback.h</label>
+        <link refid="df/d76/ecal__callback_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="d5/d9f/classeCAL_1_1CTimedCB" prot="public">eCAL::CTimedCB</innerclass>
+    <innernamespace refid="db/de7/namespaceeCAL">eCAL</innernamespace>
+    <briefdescription>
+<para>eCAL timer callback class (deprecated, will be removed in future eCAL versions) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atomic&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dc/de4/ecal__deprecate_8h" kindref="compound">ecal/ecal_deprecate.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="de/df1/ecal__process_8h" kindref="compound">ecal_process.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eCAL</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CTimedCB;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;void(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)&gt;<sp/><ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="d5/d9f/classeCAL_1_1CTimedCB" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(</highlight><highlight class="stringliteral">&quot;Will<sp/>be<sp/>removed<sp/>in<sp/>future<sp/>eCAL<sp/>versions.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="61" refid="d5/d9f/classeCAL_1_1CTimedCB_1a160ed4b5f96e4e073926292bdfc3b399" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref>()<sp/>:<sp/>m_stop(false),<sp/>m_running(false)<sp/>{}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(</highlight><highlight class="stringliteral">&quot;Will<sp/>be<sp/>removed<sp/>in<sp/>future<sp/>eCAL<sp/>versions.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="72" refid="d5/d9f/classeCAL_1_1CTimedCB_1a1d7553b231d5beeae4959c77319cae9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout_,<sp/><ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref><sp/>callback_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>delay_<sp/>=<sp/>0)<sp/>:<sp/>m_stop(false),<sp/>m_running(false)<sp/>{<sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB_1ad8cc9becc6b20bb595cc44112eb4f976" kindref="member">Start</ref>(timeout_,<sp/>callback_,<sp/>delay_);<sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="d5/d9f/classeCAL_1_1CTimedCB_1a1eed0c3bd9acdd4910ac5afe82445c7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB_1a1eed0c3bd9acdd4910ac5afe82445c7e" kindref="member">~CTimedCB</ref>()<sp/>{<sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB_1af47e494ebb54327c1b8f110e86711610" kindref="member">Stop</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB_1a160ed4b5f96e4e073926292bdfc3b399" kindref="member">CTimedCB</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB_1a160ed4b5f96e4e073926292bdfc3b399" kindref="member">CTimedCB</ref>(<ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref>&amp;&amp;<sp/>rhs)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref>&amp;<sp/>operator=(<ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref>&amp;&amp;<sp/>rhs)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(</highlight><highlight class="stringliteral">&quot;Will<sp/>be<sp/>removed<sp/>in<sp/>future<sp/>eCAL<sp/>versions.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="95" refid="d5/d9f/classeCAL_1_1CTimedCB_1ad8cc9becc6b20bb595cc44112eb4f976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB_1ad8cc9becc6b20bb595cc44112eb4f976" kindref="member">Start</ref>(const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout_,<sp/><ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref><sp/>callback_,<sp/>const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>delay_<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assert(m_running<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_running)<sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(timeout_<sp/>&lt;<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_stop<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_thread<sp/>=<sp/>std::thread(&amp;CTimedCB::Thread,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>callback_,<sp/>timeout_,<sp/>delay_);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_running<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(</highlight><highlight class="stringliteral">&quot;Will<sp/>be<sp/>removed<sp/>in<sp/>future<sp/>eCAL<sp/>versions.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="113" refid="d5/d9f/classeCAL_1_1CTimedCB_1af47e494ebb54327c1b8f110e86711610" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/><ref refid="d5/d9f/classeCAL_1_1CTimedCB_1af47e494ebb54327c1b8f110e86711610" kindref="member">Stop</ref>()</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!m_running)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_stop<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wait<sp/>for<sp/>the<sp/>callback<sp/>thread<sp/>to<sp/>finish</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_thread.joinable())<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_thread.join();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_running<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Thread(<ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref><sp/>callback_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>delay_)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assert(callback_<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(callback_<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(delay_<sp/>&gt;<sp/>0)<sp/>eCAL::Process::SleepFor(std::chrono::milliseconds(delay_));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!m_stop)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>std::chrono::steady_clock::now();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(callback_)();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(timeout_<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>now<sp/>=<sp/>std::chrono::steady_clock::now();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>elapsed_time<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(now<sp/>-<sp/>start).count();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sleep_duration<sp/>=<sp/>timeout_<sp/>-<sp/>elapsed_time;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eCAL::Process::SleepFor(std::chrono::milliseconds(sleep_duration));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_stop<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>std::atomic&lt;bool&gt;<sp/>m_stop;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>std::atomic&lt;bool&gt;<sp/>m_running;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>std::thread<sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_thread;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h"/>
+  </compounddef>
+</doxygen>

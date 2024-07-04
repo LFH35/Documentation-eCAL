@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d1b/eh5__defs_8h" kind="file" language="C++">
+    <compoundname>eh5_defs.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="db/d1b/eh5__defs_8h_1a1e3b049958f67461359ecf9d9876e461" prot="public" static="no">
+        <name>ECAL_HDF5_VERSION_MAJOR</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>eCAL HDF5 major version </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h" line="28" column="9" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d1b/eh5__defs_8h_1a578e5b65d53b5a537f7d90b9d64c0106" prot="public" static="no">
+        <name>ECAL_HDF5_VERSION_MINOR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>eCAL HDF5 minor version </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h" line="29" column="9" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d1b/eh5__defs_8h_1a2b1361eb83e2597c992f296441ac20e2" prot="public" static="no">
+        <name>ECAL_HDF5_VERSION_PATCH</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>eCAL HDF5 patch version </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h" line="30" column="9" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d1b/eh5__defs_8h_1a86e5a64f658d9f84dcd42b5a30ed8bfd" prot="public" static="no">
+        <name>ECAL_HDF5_VERSION</name>
+        <initializer>&quot;v.2.1.0.20180329&quot;</initializer>
+        <briefdescription>
+<para>eCAL HDF5 version string </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h" line="33" column="9" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d1b/eh5__defs_8h_1accb613e2b9b76ded6bf8ca42b2824c5b" prot="public" static="no">
+        <name>ECAL_HDF5_DATE</name>
+        <initializer>&quot;29.03.2018&quot;</initializer>
+        <briefdescription>
+<para>eCAL HDF5 version date </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h" line="34" column="9" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d1b/eh5__defs_8h_1a5fe10ba3f1fa8832219784c6edc73f0d" prot="public" static="no">
+        <name>ECAL_HDF5_NAME</name>
+        <initializer>&quot;eCALHDF5&quot;</initializer>
+        <briefdescription>
+<para>eCAL HDF5 library name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h" line="37" column="9" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCALHDF5 version definition ; </para>
+    </briefdescription>
+    <detaileddescription>
+<para>; * ; * </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">;</highlight><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">;<sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">;<sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">;<sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">;<sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">;<sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">;<sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">;<sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">;<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">;<sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">;<sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">;<sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">;<sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">;<sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">;<sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">;<sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">;<sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">;</highlight><highlight class="comment">/*<sp/>version<sp/>parsed<sp/>out<sp/>into<sp/>numeric<sp/>values<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="db/d1b/eh5__defs_8h_1a1e3b049958f67461359ecf9d9876e461" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ECAL_HDF5_VERSION_MAJOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="db/d1b/eh5__defs_8h_1a578e5b65d53b5a537f7d90b9d64c0106" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ECAL_HDF5_VERSION_MINOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="db/d1b/eh5__defs_8h_1a2b1361eb83e2597c992f296441ac20e2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ECAL_HDF5_VERSION_PATCH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">;</highlight><highlight class="comment">/*<sp/>version<sp/>as<sp/>string<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="db/d1b/eh5__defs_8h_1a86e5a64f658d9f84dcd42b5a30ed8bfd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ECAL_HDF5_VERSION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;v.2.1.0.20180329&quot;</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="db/d1b/eh5__defs_8h_1accb613e2b9b76ded6bf8ca42b2824c5b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ECAL_HDF5_DATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;29.03.2018&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">;</highlight><highlight class="comment">/*<sp/>name<sp/>as<sp/>string<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="db/d1b/eh5__defs_8h_1a5fe10ba3f1fa8832219784c6edc73f0d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ECAL_HDF5_NAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;eCALHDF5&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_defs.h"/>
+  </compounddef>
+</doxygen>

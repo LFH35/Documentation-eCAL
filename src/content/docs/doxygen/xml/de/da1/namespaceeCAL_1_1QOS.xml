@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/da1/namespaceeCAL_1_1QOS" kind="namespace" language="C++">
+    <compoundname>eCAL::QOS</compoundname>
+    <innerclass refid="d1/d85/structeCAL_1_1QOS_1_1SWriterQOS" prot="public">eCAL::QOS::SWriterQOS</innerclass>
+    <innerclass refid="dd/d67/structeCAL_1_1QOS_1_1SReaderQOS" prot="public">eCAL::QOS::SReaderQOS</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d8/d58/ecal__qos_8h_1a0da8b6f992aeac2e25089144fd27da24" prot="public" static="no" strong="no">
+        <type></type>
+        <name>eQOSPolicy_HistoryKind</name>
+        <enumvalue id="d8/d58/ecal__qos_8h_1a0da8b6f992aeac2e25089144fd27da24a13f5d893b3ee786f3bc61832be64067d" prot="public">
+          <name>keep_last_history_qos</name>
+          <briefdescription>
+<para>Keep only a number of samples, default value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d8/d58/ecal__qos_8h_1a0da8b6f992aeac2e25089144fd27da24a358d3dda796e2838a3627b19ca851cb1" prot="public">
+          <name>keep_all_history_qos</name>
+          <briefdescription>
+<para>Keep all samples until the ResourceLimitsQosPolicy are exhausted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>eCAL QOS history kind mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000099"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" line="37" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="enum" id="d8/d58/ecal__qos_8h_1afc19a9113f5036d91321f5ba6b4e4803" prot="public" static="no" strong="no">
+        <type></type>
+        <name>eQOSPolicy_Reliability</name>
+        <enumvalue id="d8/d58/ecal__qos_8h_1afc19a9113f5036d91321f5ba6b4e4803a5f12793075646ed3029a98faf41808fb" prot="public">
+          <name>best_effort_reliability_qos</name>
+          <briefdescription>
+<para>Best Effort reliability (default for Subscribers). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d8/d58/ecal__qos_8h_1afc19a9113f5036d91321f5ba6b4e4803a613c85d285033fb8676aab8765dd9513" prot="public">
+          <name>reliable_reliability_qos</name>
+          <briefdescription>
+<para>Reliable reliability (default for Publishers). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>eCAL QOS reliability mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000100"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" line="47" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" bodystart="48" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" line="31" column="3"/>
+  </compounddef>
+</doxygen>

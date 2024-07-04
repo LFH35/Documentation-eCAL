@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/d98/structeCAL_1_1STopicInformation" kind="struct" language="C++" prot="public">
+    <compoundname>eCAL::STopicInformation</compoundname>
+    <includes refid="d1/de7/ecal__types_8h" local="no">ecal_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/d98/structeCAL_1_1STopicInformation_1ab0943d725a63c41acf329eec3d881866" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref></type>
+        <definition>SDataTypeInformation eCAL::STopicInformation::topic_type</definition>
+        <argsstring></argsstring>
+        <name>topic_type</name>
+        <briefdescription>
+<para>Data type description of the topic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_types.h" line="59" column="28" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_types.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Optional compile time information associated with a given topic (necessary for reflection / runtime type checking) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>eCAL::STopicInformation</label>
+        <link refid="d4/d98/structeCAL_1_1STopicInformation"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>topic_type</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>eCAL::SDataTypeInformation</label>
+        <link refid="d7/d0f/structeCAL_1_1SDataTypeInformation"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_types.h" line="57" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_types.h" bodystart="58" bodyend="72"/>
+    <listofallmembers>
+      <member refid="d4/d98/structeCAL_1_1STopicInformation_1ab0943d725a63c41acf329eec3d881866" prot="public" virt="non-virtual"><scope>eCAL::STopicInformation</scope><name>topic_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

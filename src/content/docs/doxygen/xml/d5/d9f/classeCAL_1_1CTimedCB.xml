@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/d9f/classeCAL_1_1CTimedCB" kind="class" language="C++" prot="public">
+    <compoundname>eCAL::CTimedCB</compoundname>
+    <includes refid="da/dfc/ecal__timed__cb_8h" local="no">ecal_timed_cb.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d9f/classeCAL_1_1CTimedCB_1a426b4ad7f2f540c37c859cdb142d896f" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; eCAL::CTimedCB::m_stop</definition>
+        <argsstring></argsstring>
+        <name>m_stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="146" column="17" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d9f/classeCAL_1_1CTimedCB_1acbd87a587c4bf86e89331eade764a7d4" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; eCAL::CTimedCB::m_running</definition>
+        <argsstring></argsstring>
+        <name>m_running</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="147" column="17" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d9f/classeCAL_1_1CTimedCB_1a32564660bf51ef4ddd005cbfea14f582" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread eCAL::CTimedCB::m_thread</definition>
+        <argsstring></argsstring>
+        <name>m_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="148" column="23" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d9f/classeCAL_1_1CTimedCB_1a160ed4b5f96e4e073926292bdfc3b399" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CTimedCB::CTimedCB</definition>
+        <argsstring>()</argsstring>
+        <name>CTimedCB</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000113"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="61" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classeCAL_1_1CTimedCB_1a1d7553b231d5beeae4959c77319cae9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CTimedCB::CTimedCB</definition>
+        <argsstring>(int timeout_, TimerCallbackT callback_, int delay_=0)</argsstring>
+        <name>CTimedCB</name>
+        <param>
+          <type>int</type>
+          <declname>timeout_</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref></type>
+          <declname>callback_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000114"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeout_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer callback loop time in ms. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer callback delay for first call in ms. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="72" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classeCAL_1_1CTimedCB_1a1eed0c3bd9acdd4910ac5afe82445c7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual eCAL::CTimedCB::~CTimedCB</definition>
+        <argsstring>()</argsstring>
+        <name>~CTimedCB</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="77" column="13" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classeCAL_1_1CTimedCB_1a8e48ca9bd416b243b1645d85374c3ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CTimedCB::CTimedCB</definition>
+        <argsstring>(const CTimedCB &amp;)=delete</argsstring>
+        <name>CTimedCB</name>
+        <param>
+          <type>const <ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="79" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classeCAL_1_1CTimedCB_1a0ffa41eb87b25a6298b51aad300c20be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref> &amp;</type>
+        <definition>CTimedCB&amp; eCAL::CTimedCB::operator=</definition>
+        <argsstring>(const CTimedCB &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="80" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classeCAL_1_1CTimedCB_1ac28dd0335f5d7ffedb44b147e0ae0eaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CTimedCB::CTimedCB</definition>
+        <argsstring>(CTimedCB &amp;&amp;rhs)=delete</argsstring>
+        <name>CTimedCB</name>
+        <param>
+          <type><ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="81" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classeCAL_1_1CTimedCB_1ab62b144def226d0c3a4dc6c355371fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref> &amp;</type>
+        <definition>CTimedCB&amp; eCAL::CTimedCB::operator=</definition>
+        <argsstring>(CTimedCB &amp;&amp;rhs)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="82" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classeCAL_1_1CTimedCB_1ad8cc9becc6b20bb595cc44112eb4f976" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::CTimedCB::Start</definition>
+        <argsstring>(const int timeout_, TimerCallbackT callback_, const int delay_=0)</argsstring>
+        <name>Start</name>
+        <param>
+          <type>const int</type>
+          <declname>timeout_</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref></type>
+          <declname>callback_</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>delay_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Start the timer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000115"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeout_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer callback loop time in ms. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer callback delay for first call in ms.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if timer could be started. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="95" column="10" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" bodystart="95" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classeCAL_1_1CTimedCB_1af47e494ebb54327c1b8f110e86711610" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::CTimedCB::Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <briefdescription>
+<para>Stop the timer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000116"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>True if timer could be stopped. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="113" column="10" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" bodystart="113" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d5/d9f/classeCAL_1_1CTimedCB_1ac5d783fe14bd6daf552b7472a7c2da70" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void eCAL::CTimedCB::Thread</definition>
+        <argsstring>(TimerCallbackT callback_, int timeout_, int delay_)</argsstring>
+        <name>Thread</name>
+        <param>
+          <type><ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref></type>
+          <declname>callback_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="126" column="10" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" bodystart="126" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL timer callback class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000112"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para>The <ref refid="d5/d9f/classeCAL_1_1CTimedCB" kindref="compound">CTimedCB</ref> class is used to realize simple time triggered callbacks. </para>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" line="53" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h" bodystart="54" bodyend="149"/>
+    <listofallmembers>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1a160ed4b5f96e4e073926292bdfc3b399" prot="public" virt="non-virtual"><scope>eCAL::CTimedCB</scope><name>CTimedCB</name></member>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1a1d7553b231d5beeae4959c77319cae9e" prot="public" virt="non-virtual"><scope>eCAL::CTimedCB</scope><name>CTimedCB</name></member>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1a8e48ca9bd416b243b1645d85374c3ca1" prot="public" virt="non-virtual"><scope>eCAL::CTimedCB</scope><name>CTimedCB</name></member>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1ac28dd0335f5d7ffedb44b147e0ae0eaf" prot="public" virt="non-virtual"><scope>eCAL::CTimedCB</scope><name>CTimedCB</name></member>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1acbd87a587c4bf86e89331eade764a7d4" prot="private" virt="non-virtual"><scope>eCAL::CTimedCB</scope><name>m_running</name></member>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1a426b4ad7f2f540c37c859cdb142d896f" prot="private" virt="non-virtual"><scope>eCAL::CTimedCB</scope><name>m_stop</name></member>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1a32564660bf51ef4ddd005cbfea14f582" prot="private" virt="non-virtual"><scope>eCAL::CTimedCB</scope><name>m_thread</name></member>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1a0ffa41eb87b25a6298b51aad300c20be" prot="public" virt="non-virtual"><scope>eCAL::CTimedCB</scope><name>operator=</name></member>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1ab62b144def226d0c3a4dc6c355371fbe" prot="public" virt="non-virtual"><scope>eCAL::CTimedCB</scope><name>operator=</name></member>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1ad8cc9becc6b20bb595cc44112eb4f976" prot="public" virt="non-virtual"><scope>eCAL::CTimedCB</scope><name>Start</name></member>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1af47e494ebb54327c1b8f110e86711610" prot="public" virt="non-virtual"><scope>eCAL::CTimedCB</scope><name>Stop</name></member>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1ac5d783fe14bd6daf552b7472a7c2da70" prot="private" virt="non-virtual"><scope>eCAL::CTimedCB</scope><name>Thread</name></member>
+      <member refid="d5/d9f/classeCAL_1_1CTimedCB_1a1eed0c3bd9acdd4910ac5afe82445c7e" prot="public" virt="virtual"><scope>eCAL::CTimedCB</scope><name>~CTimedCB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

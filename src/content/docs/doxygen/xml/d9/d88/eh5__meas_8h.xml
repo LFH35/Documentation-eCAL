@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d88/eh5__meas_8h" kind="file" language="C++">
+    <compoundname>eh5_meas.h</compoundname>
+    <includes local="no">functional</includes>
+    <includes local="no">set</includes>
+    <includes local="no">string</includes>
+    <includes local="no">memory</includes>
+    <includes refid="d1/d37/eh5__types_8h" local="yes">eh5_types.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>functional</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h</label>
+        <link refid="d9/d88/eh5__meas_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>eh5_types.h</label>
+        <link refid="d1/d37/eh5__types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>set</label>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>ecal/measurement/base/types.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" prot="public">eCAL::eh5::HDF5Meas</innerclass>
+    <innernamespace refid="db/de7/namespaceeCAL">eCAL</innernamespace>
+    <innernamespace refid="d0/dfe/namespaceeCAL_1_1eh5">eCAL::eh5</innernamespace>
+    <briefdescription>
+<para>eCALHDF5 measurement class </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d37/eh5__types_8h" kindref="compound">eh5_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eCAL</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eh5</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HDF5MeasImpl;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a38a4a05c222d89a299585e495d176dd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a38a4a05c222d89a299585e495d176dd3" kindref="member">HDF5Meas</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a0bd5ff2dc2f13c544494a7745581c55b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a0bd5ff2dc2f13c544494a7745581c55b" kindref="member">HDF5Meas</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path,<sp/>eAccessType<sp/>access<sp/>=<sp/>RDONLY);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a8586f7c715d04371ec47be6d039dcf16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a8586f7c715d04371ec47be6d039dcf16" kindref="member">~HDF5Meas</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a046f3d909593b00d712062426f20b903" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a046f3d909593b00d712062426f20b903" kindref="member">HDF5Meas</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref>&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a8f21de8290b9e61ef3dca8a29f143998" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref>&amp;<sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a8f21de8290b9e61ef3dca8a29f143998" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref>&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aa6bd4a1ae6a3bed9579b3a26cb6af4c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aa6bd4a1ae6a3bed9579b3a26cb6af4c1" kindref="member">HDF5Meas</ref>(<ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a7e7bae6a1c1d218fe8fe16f3f91ee16b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref>&amp;<sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a7e7bae6a1c1d218fe8fe16f3f91ee16b" kindref="member">operator=</ref>(<ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aecad4114488fb039cb4a7887caaa5c25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aecad4114488fb039cb4a7887caaa5c25" kindref="member">Open</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path,<sp/>eAccessType<sp/>access<sp/>=<sp/>RDONLY);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1abeed7e30c0dfe2c99fcea3dddc5b131a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1abeed7e30c0dfe2c99fcea3dddc5b131a" kindref="member">Close</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aca4422176c24284ea24d694e545d8f68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aca4422176c24284ea24d694e545d8f68" kindref="member">IsOk</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aeafef45016e17fabfd091af5663d95ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aeafef45016e17fabfd091af5663d95ef" kindref="member">GetFileVersion</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a674c3533cd6269ac88ff3f9a88e1791a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a674c3533cd6269ac88ff3f9a88e1791a" kindref="member">GetMaxSizePerFile</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a5c12487539acba0e4396535ad50550e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a5c12487539acba0e4396535ad50550e1" kindref="member">SetMaxSizePerFile</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a523090bd0f77a4438efd42676474dedd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a523090bd0f77a4438efd42676474dedd" kindref="member">IsOneFilePerChannelEnabled</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ab6d20e5ca90bcf043e351490bc066b11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ab6d20e5ca90bcf043e351490bc066b11" kindref="member">SetOneFilePerChannelEnabled</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enabled);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aaaaf77dbb3707d2016e622d67b8f351f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;std::string&gt;<sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aaaaf77dbb3707d2016e622d67b8f351f" kindref="member">GetChannelNames</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ae7433e76c418f226fd448a52a801e2b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ae7433e76c418f226fd448a52a801e2b8" kindref="member">HasChannel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>channel_name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ab068cdb97d707afe1317f6ab5cbd1e69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ab068cdb97d707afe1317f6ab5cbd1e69" kindref="member">GetChannelDescription</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>channel_name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aadf74bed883a202b76a9f556b3ba16f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aadf74bed883a202b76a9f556b3ba16f7" kindref="member">SetChannelDescription</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>channel_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>description);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a9ba7555055d7df49f2e73874979e7825" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a9ba7555055d7df49f2e73874979e7825" kindref="member">GetChannelType</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>channel_name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ae4f937af73235f7058ca81139f6cc213" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ae4f937af73235f7058ca81139f6cc213" kindref="member">SetChannelType</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>channel_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>type);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a3265977aa86b989c4cb9ee4358b35206" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a3265977aa86b989c4cb9ee4358b35206" kindref="member">GetMinTimestamp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>channel_name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a72eb031080a9cc9976241cfa83219cac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a72eb031080a9cc9976241cfa83219cac" kindref="member">GetMaxTimestamp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>channel_name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a988501cbee4f7c2e692302956be166c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a988501cbee4f7c2e692302956be166c3" kindref="member">GetEntriesInfo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>channel_name,<sp/>EntryInfoSet&amp;<sp/>entries)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a3e410806eaca9ec637b28a48d94ae13e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a3e410806eaca9ec637b28a48d94ae13e" kindref="member">GetEntriesInfoRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>channel_name,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>begin,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>end,<sp/>EntryInfoSet&amp;<sp/>entries)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ae5662887a20255c6b963c4f191dd102d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ae5662887a20255c6b963c4f191dd102d" kindref="member">GetEntryDataSize</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>entry_id,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">&amp;<sp/>size)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ac228c71238443288a0a271e7d059626e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ac228c71238443288a0a271e7d059626e" kindref="member">GetEntryData</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>entry_id,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1afe55bd6d747fd940242f5a21e03a36a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1afe55bd6d747fd940242f5a21e03a36a6" kindref="member">SetFileBaseName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>base_name);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a6385d17c35fe657d698b743ce1ce35a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a6385d17c35fe657d698b743ce1ce35a5" kindref="member">AddEntryToFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">&amp;<sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">&amp;<sp/>snd_timestamp,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">&amp;<sp/>rcv_timestamp,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>channel_name,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>clock);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a54dbaccb69979d75e6542d1f62b9c314" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;void(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)&gt;<sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a54dbaccb69979d75e6542d1f62b9c314" kindref="member">CallbackFunction</ref>;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1adc707f792475c9d03a1b5be24d40e198" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1adc707f792475c9d03a1b5be24d40e198" kindref="member">ConnectPreSplitCallback</ref>(<ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a54dbaccb69979d75e6542d1f62b9c314" kindref="member">CallbackFunction</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a54e3462d02dad69d9ed9c4ecb1a133fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a54e3462d02dad69d9ed9c4ecb1a133fa" kindref="member">DisconnectPreSplitCallback</ref>();</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;HDF5MeasImpl&gt;<sp/>hdf_meas_impl_;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/>}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>eh5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>eCAL</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h"/>
+  </compounddef>
+</doxygen>

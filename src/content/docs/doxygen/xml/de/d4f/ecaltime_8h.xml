@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d4f/ecaltime_8h" kind="file" language="C++">
+    <compoundname>ecaltime.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="de/d4f/ecaltime_8h_1a7fbc67f7baf03488d730190a9b7df7e5" prot="public" static="no">
+        <name>ECALTIME_API</name>
+        <briefdescription>
+<para>eCAL time synchronization interface </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" line="34" column="12" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="de/d4f/ecaltime_8h_1a38cbc3be2b54d74505358388e1098863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECALTIME_API int</type>
+        <definition>ECALTIME_API int etime_initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>etime_initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize time sync interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Zero if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" line="46" column="20" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" declline="46" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4f/ecaltime_8h_1a0f8a78bd198d73f1151f062be5c49ac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECALTIME_API int</type>
+        <definition>ECALTIME_API int etime_finalize</definition>
+        <argsstring>(void)</argsstring>
+        <name>etime_finalize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Finalize time sync interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Zero if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" line="53" column="20" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" declline="53" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4f/ecaltime_8h_1a87b9ce1ab9a3b2efedfee904d0724411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECALTIME_API long long</type>
+        <definition>ECALTIME_API long long etime_get_nanoseconds</definition>
+        <argsstring>()</argsstring>
+        <name>etime_get_nanoseconds</name>
+        <briefdescription>
+<para>Get current time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>current time in ns. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" line="60" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" declline="60" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4f/ecaltime_8h_1ac833665286a425fe84565538fcdf2e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECALTIME_API int</type>
+        <definition>ECALTIME_API int etime_set_nanoseconds</definition>
+        <argsstring>(long long time_)</argsstring>
+        <name>etime_set_nanoseconds</name>
+        <param>
+          <type>long long</type>
+          <declname>time_</declname>
+        </param>
+        <briefdescription>
+<para>Set current time in nano seconds if host is time master. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current time in ns.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded non zero otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" line="69" column="20" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" declline="69" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4f/ecaltime_8h_1ac72f625e34980b0c4181390cbcb6fb29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECALTIME_API int</type>
+        <definition>ECALTIME_API int etime_is_synchronized</definition>
+        <argsstring>()</argsstring>
+        <name>etime_is_synchronized</name>
+        <briefdescription>
+<para>Returns time synchronization state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Non zero if process is time synchronized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" line="76" column="20" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" declline="76" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4f/ecaltime_8h_1a02bcea8ff347dd681136e83de3fcd3f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECALTIME_API int</type>
+        <definition>ECALTIME_API int etime_is_master</definition>
+        <argsstring>()</argsstring>
+        <name>etime_is_master</name>
+        <briefdescription>
+<para>Checks wether this host is time master. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Non zero if host is time master. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" line="83" column="20" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" declline="83" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4f/ecaltime_8h_1aa5a87891aab403cda09159c98dc8d967" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECALTIME_API void</type>
+        <definition>ECALTIME_API void etime_sleep_for_nanoseconds</definition>
+        <argsstring>(long long duration_nsecs_)</argsstring>
+        <name>etime_sleep_for_nanoseconds</name>
+        <param>
+          <type>long long</type>
+          <declname>duration_nsecs_</declname>
+        </param>
+        <briefdescription>
+<para>Blocks for the given amount of nanoseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The actual amount of (real-) time is influenced by the current rate at which the time is proceeding. It is not guaranteed, that the precision of this function actually is in nanoseconds. Limitations of the operating system might reduce the accuracy.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration_nsecs_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the duration in nanoseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" line="95" column="21" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" declline="95" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4f/ecaltime_8h_1a306e7ee7378f7047c680293c8c0b8052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECALTIME_API void</type>
+        <definition>ECALTIME_API void etime_get_status</definition>
+        <argsstring>(int *error_, char *status_message_, int max_len_)</argsstring>
+        <name>etime_get_status</name>
+        <param>
+          <type>int *</type>
+          <declname>error_</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>status_message_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_len_</declname>
+        </param>
+        <briefdescription>
+<para>Get the current error code and status message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Adapters must return 0 if everything is OK. Each adapter can use it&apos;s own set of error codes. Everything non-zero is considered to indicate a problem. Adapters may provide aditional information with a status message.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>error_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[out] the current error code. 0 indicates that everything is OK </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status_message_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in, out] a pre-allocated char array. The status message will be written to this memory. May be null, if the caller is not interested in the message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_len_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] length of the allocated memory </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" line="108" column="21" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h" declline="108" declcolumn="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ecaltime_h_included</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ecaltime_h_included</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>ECAL_TIME_PLUGIN_API_EXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ECALTIME_API<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ECALTIME_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>ECALTIME_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*__cplusplus*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>ECALTIME_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>etime_initialize(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>ECALTIME_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>etime_finalize(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>ECALTIME_API<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>etime_get_nanoseconds();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>ECALTIME_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>etime_set_nanoseconds(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>time_);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>ECALTIME_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>etime_is_synchronized();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>ECALTIME_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>etime_is_master();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>ECALTIME_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>etime_sleep_for_nanoseconds(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>duration_nsecs_);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>ECALTIME_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>etime_get_status(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>error_,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>status_message_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_len_);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*__cplusplus*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*ecaltime_h_included*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/ecaltime.h"/>
+  </compounddef>
+</doxygen>

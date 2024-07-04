@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d85/ecal__process__mode_8h" kind="file" language="C++">
+    <compoundname>ecal_process_mode.h</compoundname>
+    <includedby refid="de/df1/ecal__process_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process_mode.h</label>
+        <link refid="d3/d85/ecal__process__mode_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h</label>
+        <link refid="de/df1/ecal__process_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h</label>
+        <link refid="da/dfc/ecal__timed__cb_8h"/>
+      </node>
+      <node id="3">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</label>
+        <link refid="d9/dbf/ecal_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>eCAL_Process_eStartMode</name>
+        <enumvalue id="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8a8288fec369cc0bd5cf6ef3024324f302" prot="public">
+          <name>proc_smode_normal</name>
+          <initializer>=  0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>0 == start mode normal <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8a6addd74fc4aa16707db7e301d48c1588" prot="public">
+          <name>proc_smode_hidden</name>
+          <initializer>=  1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1 == start mode hidden <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8aca02b67ac6a29a8efcd0a024d11f6667" prot="public">
+          <name>proc_smode_minimized</name>
+          <initializer>=  2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2 == start mode minimized <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8a68e1fb23027ef77b3ea76bc4ebf83ff2" prot="public">
+          <name>proc_smode_maximized</name>
+          <initializer>=  3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3 == start mode maximized <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Process start mode (StartProcess) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process_mode.h" line="30" column="1" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process_mode.h" bodystart="31" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL process start mode </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8" kindref="member">eCAL_Process_eStartMode</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32" refid="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8a8288fec369cc0bd5cf6ef3024324f302" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8a8288fec369cc0bd5cf6ef3024324f302" kindref="member">proc_smode_normal</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0,<sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8a6addd74fc4aa16707db7e301d48c1588" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8a6addd74fc4aa16707db7e301d48c1588" kindref="member">proc_smode_hidden</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>1,<sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8aca02b67ac6a29a8efcd0a024d11f6667" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8aca02b67ac6a29a8efcd0a024d11f6667" kindref="member">proc_smode_minimized</ref><sp/><sp/>=<sp/><sp/>2,<sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8a68e1fb23027ef77b3ea76bc4ebf83ff2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8a68e1fb23027ef77b3ea76bc4ebf83ff2" kindref="member">proc_smode_maximized</ref><sp/><sp/>=<sp/><sp/>3,<sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process_mode.h"/>
+  </compounddef>
+</doxygen>

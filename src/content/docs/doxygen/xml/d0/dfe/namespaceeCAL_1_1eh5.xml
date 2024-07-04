@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/dfe/namespaceeCAL_1_1eh5" kind="namespace" language="C++">
+    <compoundname>eCAL::eh5</compoundname>
+    <innerclass refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" prot="public">eCAL::eh5::HDF5Meas</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="36" column="3"/>
+  </compounddef>
+</doxygen>

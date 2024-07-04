@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/db5/ecal__log__level_8h" kind="file" language="C++">
+    <compoundname>ecal_log_level.h</compoundname>
+    <includedby refid="d5/d15/ecal__config_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h</includedby>
+    <includedby refid="de/d8c/ecal__log_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h</label>
+        <link refid="d5/d15/ecal__config_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log_level.h</label>
+        <link refid="db/db5/ecal__log__level_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</label>
+        <link refid="d9/dbf/ecal_8h"/>
+      </node>
+      <node id="4">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log.h</label>
+        <link refid="de/d8c/ecal__log_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310" prot="public" static="no" strong="no">
+        <type></type>
+        <name>eCAL_Logging_eLogLevel</name>
+        <enumvalue id="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310af237e71d825a10608628d0e8801d8759" prot="public">
+          <name>log_level_none</name>
+          <initializer>=   0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310aefa6acb4ce5ea14d07dc9afca37f804f" prot="public">
+          <name>log_level_all</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310a4f342dc5af9c87b37cfa21d78709f6be" prot="public">
+          <name>log_level_info</name>
+          <initializer>=   1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310af4bde79670db805b94b0ffe9ee077086" prot="public">
+          <name>log_level_warning</name>
+          <initializer>=   2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310abe790379f9291a4b9df3a38b96c3e08e" prot="public">
+          <name>log_level_error</name>
+          <initializer>=   4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310afb658c15ac61105687259065bcf59a61" prot="public">
+          <name>log_level_fatal</name>
+          <initializer>=   8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310addbdbb5bfad5c73461e7a0b995472f22" prot="public">
+          <name>log_level_debug1</name>
+          <initializer>=  16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310a5843741ec0ee9d82b01482a1add00290" prot="public">
+          <name>log_level_debug2</name>
+          <initializer>=  32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310a48623597d8cdc7d9ce930ea2a8f4ae5d" prot="public">
+          <name>log_level_debug3</name>
+          <initializer>=  64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310a4393f7aac272a8cdb21c6259625fc76e" prot="public">
+          <name>log_level_debug4</name>
+          <initializer>= 128</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent different log level to filter on monitoring. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log_level.h" line="30" column="1" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log_level.h" bodystart="31" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL logging severities </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="db/db5/ecal__log__level_8h_1a7ac86e3048a80a58673fdab06c1a2310" kindref="member">eCAL_Logging_eLogLevel</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>log_level_none<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>0,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>log_level_all<sp/><sp/><sp/><sp/><sp/>=<sp/>255,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>log_level_info<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>1,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>log_level_warning<sp/>=<sp/><sp/><sp/>2,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>log_level_error<sp/><sp/><sp/>=<sp/><sp/><sp/>4,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>log_level_fatal<sp/><sp/><sp/>=<sp/><sp/><sp/>8,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>log_level_debug1<sp/><sp/>=<sp/><sp/>16,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>log_level_debug2<sp/><sp/>=<sp/><sp/>32,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>log_level_debug3<sp/><sp/>=<sp/><sp/>64,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>log_level_debug4<sp/><sp/>=<sp/>128,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>eCAL_Logging_Filter;<sp/><sp/></highlight><highlight class="comment">//!&lt;<sp/>This<sp/>type<sp/>is<sp/>to<sp/>be<sp/>used<sp/>as<sp/>a<sp/>bitmask<sp/>for<sp/>the<sp/>activated<sp/>logging<sp/>levels</highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_log_level.h"/>
+  </compounddef>
+</doxygen>

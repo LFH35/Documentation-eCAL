@@ -1,0 +1,650 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d46/classeCAL_1_1CMsgPublisher" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>eCAL::CMsgPublisher</compoundname>
+    <basecompoundref refid="dc/d42/classeCAL_1_1CPublisher" prot="public" virt="non-virtual">eCAL::CPublisher</basecompoundref>
+    <includes refid="d1/d40/publisher_8h" local="no">publisher.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d46/classeCAL_1_1CMsgPublisher_1a28742fc769d3137c5d92c987892eee2d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; eCAL::CMsgPublisher&lt; T &gt;::m_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="231" column="17" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1a4d93fbee6b0d438be4e34d20dfbc2779" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CMsgPublisher&lt; T &gt;::CMsgPublisher</definition>
+        <argsstring>()</argsstring>
+        <name>CMsgPublisher</name>
+        <briefdescription>
+<para>Default Constructor. Using this constructor, the object is not actually in a usable state. Before being able to send data, one has to call the <computeroutput><ref refid="d3/d46/classeCAL_1_1CMsgPublisher_1a447bbe94735245dbccd3dc274103b770" kindref="member">Create()</ref></computeroutput> function, first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="54" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1aef9e493c1bc5c996b7734d021792930f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CMsgPublisher&lt; T &gt;::CMsgPublisher</definition>
+        <argsstring>(const std::string &amp;topic_name_, const std::string &amp;topic_type_, const std::string &amp;topic_desc_=&quot;&quot;)</argsstring>
+        <name>CMsgPublisher</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_type_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_desc_</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor, that automatically intializes the Publisher. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000127"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the constructor <ref refid="d3/d46/classeCAL_1_1CMsgPublisher_1a099a034bc5cdb8cd52d930087c8e6ca1" kindref="member">CMsgPublisher(const std::string&amp; topic_name_, const SDataTypeInformation&amp; topic_info_)</ref> instead. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_desc_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type description (optional for description checking). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="67" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1a099a034bc5cdb8cd52d930087c8e6ca1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CMsgPublisher&lt; T &gt;::CMsgPublisher</definition>
+        <argsstring>(const std::string &amp;topic_name_, const SDataTypeInformation &amp;topic_info_)</argsstring>
+        <name>CMsgPublisher</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> &amp;</type>
+          <declname>topic_info_</declname>
+        </param>
+        <briefdescription>
+<para>Constructor, that automatically intializes the Publisher. This should be the preferred constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_info_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct that contains information of the datatype (name, encoding, description) of the topic. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="78" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1ae6cc2277dbe4e340c8eea9fc8296df92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CMsgPublisher&lt; T &gt;::CMsgPublisher</definition>
+        <argsstring>(const std::string &amp;topic_name_)</argsstring>
+        <name>CMsgPublisher</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <briefdescription>
+<para>Constructor, that automatically intializes the Publisher. If no datatype information about the topic is available, this constructor can be used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique topic name. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="88" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1a4def852ade5b4472d797a27e1654aa1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CMsgPublisher&lt; T &gt;::CMsgPublisher</definition>
+        <argsstring>(const CMsgPublisher &amp;)=delete</argsstring>
+        <name>CMsgPublisher</name>
+        <param>
+          <type>const <ref refid="d3/d46/classeCAL_1_1CMsgPublisher" kindref="compound">CMsgPublisher</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy Constructor is not available. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="95" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1a7375e5420da968b444f9ece5b085e396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d46/classeCAL_1_1CMsgPublisher" kindref="compound">CMsgPublisher</ref> &amp;</type>
+        <definition>CMsgPublisher&amp; eCAL::CMsgPublisher&lt; T &gt;::operator=</definition>
+        <argsstring>(const CMsgPublisher &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d3/d46/classeCAL_1_1CMsgPublisher" kindref="compound">CMsgPublisher</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy Constructor is not available. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="100" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1ab27fc2988981dfe0dabe0481625f857b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CMsgPublisher&lt; T &gt;::CMsgPublisher</definition>
+        <argsstring>(CMsgPublisher &amp;&amp;)=default</argsstring>
+        <name>CMsgPublisher</name>
+        <param>
+          <type><ref refid="d3/d46/classeCAL_1_1CMsgPublisher" kindref="compound">CMsgPublisher</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="105" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1aaa3b6cdc5f343672afafaa8827aa648e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d46/classeCAL_1_1CMsgPublisher" kindref="compound">CMsgPublisher</ref> &amp;</type>
+        <definition>CMsgPublisher&amp; eCAL::CMsgPublisher&lt; T &gt;::operator=</definition>
+        <argsstring>(CMsgPublisher &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d3/d46/classeCAL_1_1CMsgPublisher" kindref="compound">CMsgPublisher</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move assignment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="110" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1ab66547d0bba6cabc0ae8377ff767ae7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual eCAL::CMsgPublisher&lt; T &gt;::~CMsgPublisher</definition>
+        <argsstring>()=default</argsstring>
+        <name>~CMsgPublisher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="112" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1a447bbe94735245dbccd3dc274103b770" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::CMsgPublisher&lt; T &gt;::Create</definition>
+        <argsstring>(const std::string &amp;topic_name_, const std::string &amp;topic_type_=&quot;&quot;, const std::string &amp;topic_desc_=&quot;&quot;)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_type_</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_desc_</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Creates this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000128"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method <ref refid="d3/d46/classeCAL_1_1CMsgPublisher_1ab55fdd779019a2b9b586a868547e8b41" kindref="member">Create(const std::string&amp; topic_name_, const SDataTypeInformation&amp; topic_info_)</ref> instead. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type name (optional for type checking). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_desc_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type description (optional for description checking).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="127" column="10" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1ab55fdd779019a2b9b586a868547e8b41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::CMsgPublisher&lt; T &gt;::Create</definition>
+        <argsstring>(const std::string &amp;topic_name_, const SDataTypeInformation &amp;topic_info_)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> &amp;</type>
+          <declname>topic_info_</declname>
+        </param>
+        <briefdescription>
+<para>Creates this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_info_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Associated datatype description.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="140" column="10" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1aa6c33ab9f619e75e4e55abfb2e59c365" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::CMsgPublisher&lt; T &gt;::Destroy</definition>
+        <argsstring>()</argsstring>
+        <name>Destroy</name>
+        <briefdescription>
+<para>Destroys this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="150" column="10" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1a890f181c3fb819ce1f729de7220445a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t eCAL::CMsgPublisher&lt; T &gt;::Send</definition>
+        <argsstring>(const T &amp;msg_, long long time_=eCAL::CPublisher::DEFAULT_TIME_ARGUMENT)</argsstring>
+        <name>Send</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>time_</declname>
+          <defval><ref refid="dc/d42/classeCAL_1_1CPublisher_1adbc02e2ad1cb6c5ab89888d7a0487176" kindref="member">eCAL::CPublisher::DEFAULT_TIME_ARGUMENT</ref></defval>
+        </param>
+        <briefdescription>
+<para>Send serialized message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional time stamp.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of bytes sent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="163" column="12" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1aea3d9cd6fc0b77830dc00a164b09d81c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t eCAL::CMsgPublisher&lt; T &gt;::Send</definition>
+        <argsstring>(const T &amp;msg_, long long time_, long long acknowledge_timeout_ms_)</argsstring>
+        <name>Send</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>time_</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>acknowledge_timeout_ms_</declname>
+        </param>
+        <briefdescription>
+<para>Send a serialized message to all subscribers synchronized with acknowledge timeout (see also ShmSetAcknowledgeTimeout). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This synchronized mode is currently implemented for local interprocess communication (shm-ecal layer) only.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time stamp. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>acknowledge_timeout_ms_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum time to wait for all subscribers acknowledge feedback in ms (buffer received and processed).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of bytes sent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="179" column="12" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="179" bodyend="209"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1a655e634bf81b0bd3ce0956e6acbb653d" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string eCAL::CMsgPublisher&lt; T &gt;::GetTypeName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="213" column="25" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="213" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1a5f86160010e4ed30c1e4872cc9e9e43a" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string eCAL::CMsgPublisher&lt; T &gt;::GetDescription</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="220" column="25" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1a5ea85d8abc25d2b41063cb05a59e49b3" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref></type>
+        <definition>virtual SDataTypeInformation eCAL::CMsgPublisher&lt; T &gt;::GetDataTypeInformation</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDataTypeInformation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="226" column="34" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="226" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1aec754347953ae33b5bcb4b3185d463b9" prot="private" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t eCAL::CMsgPublisher&lt; T &gt;::GetSize</definition>
+        <argsstring>(const T &amp;msg_) const =0</argsstring>
+        <name>GetSize</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="228" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classeCAL_1_1CMsgPublisher_1ad0fef3ddefb4d68e6f184d62fd1a636a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool eCAL::CMsgPublisher&lt; T &gt;::Serialize</definition>
+        <argsstring>(const T &amp;msg_, char *buffer_, size_t size_) const =0</argsstring>
+        <name>Serialize</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer_</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="229" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL abstract message publisher class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Abstract publisher template class for messages. For details see documentation of <ref refid="dc/d42/classeCAL_1_1CPublisher" kindref="compound">CPublisher</ref> class. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>eCAL::CMsgPublisher&lt; T &gt;</label>
+        <link refid="d3/d46/classeCAL_1_1CMsgPublisher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>eCAL::CPublisher</label>
+        <link refid="dc/d42/classeCAL_1_1CPublisher"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>eCAL::CMsgPublisher&lt; T &gt;</label>
+        <link refid="d3/d46/classeCAL_1_1CMsgPublisher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>eCAL::CPublisher</label>
+        <link refid="dc/d42/classeCAL_1_1CPublisher"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" line="46" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h" bodystart="47" bodyend="232"/>
+    <listofallmembers>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1af62a9ab48e4f1186320ae23343d971e4" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>AddEventCallback</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a8800c3a1c833332fdc3b5d197c4bf775" prot="protected" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>ApplyTopicToDescGate</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a01cb058cadfeaa8403a52a6b2bbb3225" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>ClearAttribute</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1a4d93fbee6b0d438be4e34d20dfbc2779" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>CMsgPublisher</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1aef9e493c1bc5c996b7734d021792930f" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>CMsgPublisher</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1a099a034bc5cdb8cd52d930087c8e6ca1" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>CMsgPublisher</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1ae6cc2277dbe4e340c8eea9fc8296df92" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>CMsgPublisher</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1a4def852ade5b4472d797a27e1654aa1a" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>CMsgPublisher</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1ab27fc2988981dfe0dabe0481625f857b" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>CMsgPublisher</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1aeec7c85875f2c620315a878cda238c53" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>CPublisher</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1ada151b4279624922e103fe0c36c5fc76" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>CPublisher</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a504c55b1883606f3ea948a3642c409cc" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>CPublisher</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a96fadf431f080e3a87af932daf580032" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>CPublisher</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a1c29f699017455282cb467ae8536c592" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>CPublisher</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a654085c2a3760965cca316fc9c82117b" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>CPublisher</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1a447bbe94735245dbccd3dc274103b770" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>Create</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1ab55fdd779019a2b9b586a868547e8b41" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>Create</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1ac21dbd9ebcab1e0e476f9602e7c48e56" prot="public" virt="non-virtual" ambiguityscope="eCAL::CPublisher::"><scope>eCAL::CMsgPublisher</scope><name>Create</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a82ee6644621ffcdb809b29bb5e042f84" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>DEFAULT_ACKNOWLEDGE_ARGUMENT</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1adbc02e2ad1cb6c5ab89888d7a0487176" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>DEFAULT_TIME_ARGUMENT</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1aa6c33ab9f619e75e4e55abfb2e59c365" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>Destroy</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1af28f3497376600ed38a74fcbbf64d745" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>Dump</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1a5ea85d8abc25d2b41063cb05a59e49b3" prot="protected" virt="virtual"><scope>eCAL::CMsgPublisher</scope><name>GetDataTypeInformation</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1a5f86160010e4ed30c1e4872cc9e9e43a" prot="protected" virt="virtual"><scope>eCAL::CMsgPublisher</scope><name>GetDescription</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a16b531c461127e2e22ef6fe02fcf79b9" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>GetQOS</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1aec754347953ae33b5bcb4b3185d463b9" prot="private" virt="pure-virtual"><scope>eCAL::CMsgPublisher</scope><name>GetSize</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a5c3e26fc1d257295623815c0aeae0feb" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>GetSubscriberCount</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a548e81f35cfab6e17261a2da61ee482c" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>GetTopicName</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1a655e634bf81b0bd3ce0956e6acbb653d" prot="protected" virt="virtual"><scope>eCAL::CMsgPublisher</scope><name>GetTypeName</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1aa5596202833f51f675dd43d2425e8092" prot="protected" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>InitializeQOS</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1aaf61ea734d14239a173f5112aab2cc5c" prot="protected" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>InitializeTLayer</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1aca0e771b005d79ab250bed26a5f6b7ef" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>IsCreated</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1aa92ac2fec84b4723f35eca7409aa6546" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>IsSubscribed</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1a28742fc769d3137c5d92c987892eee2d" prot="private" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>m_buffer</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a17d1644afc64a07edfa29020614fb08e" prot="protected" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>m_created</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1ae0795ab1ef910f5da05c9ddfd7f1b997" prot="protected" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>m_datawriter</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a66b63af78a33a72cb405ddbf217972f4" prot="protected" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>m_id</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a184a2c26af2fb02b2849b8d7122aae1e" prot="protected" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>m_initialized</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1a7375e5420da968b444f9ece5b085e396" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>operator=</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1aaa3b6cdc5f343672afafaa8827aa648e" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>operator=</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1ad5b9e7d8d31b03009169a74df203237b" prot="public" virt="non-virtual" ambiguityscope="eCAL::CPublisher::"><scope>eCAL::CMsgPublisher</scope><name>operator=</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a8c455bcb6e8d0cfcc3b75ba552223709" prot="public" virt="non-virtual" ambiguityscope="eCAL::CPublisher::"><scope>eCAL::CMsgPublisher</scope><name>operator=</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1ac4774ce73ec86542c0629d147f0e3640" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>RemEventCallback</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1a890f181c3fb819ce1f729de7220445a7" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>Send</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1aea3d9cd6fc0b77830dc00a164b09d81c" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>Send</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1acbea7ac61cfb86ca5a939e281a89285f" prot="public" virt="non-virtual" ambiguityscope="eCAL::CPublisher::"><scope>eCAL::CMsgPublisher</scope><name>Send</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a5f97c75cbcaeb7bd31e451560d473103" prot="public" virt="non-virtual" ambiguityscope="eCAL::CPublisher::"><scope>eCAL::CMsgPublisher</scope><name>Send</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1afd1b28d92fda2ff899d1adbad4ea0d44" prot="public" virt="non-virtual" ambiguityscope="eCAL::CPublisher::"><scope>eCAL::CMsgPublisher</scope><name>Send</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a8fd0663b7117ca27c70b3ddac16c60e8" prot="public" virt="non-virtual" ambiguityscope="eCAL::CPublisher::"><scope>eCAL::CMsgPublisher</scope><name>Send</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1ad3fc32ad6ebf11fad1a1aa1281eabeae" prot="public" virt="non-virtual" ambiguityscope="eCAL::CPublisher::"><scope>eCAL::CMsgPublisher</scope><name>Send</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a6de143cb2500815322d36acee89414bd" prot="public" virt="non-virtual" ambiguityscope="eCAL::CPublisher::"><scope>eCAL::CMsgPublisher</scope><name>Send</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1ac2ee785a29c8fa2a85efe873b085005a" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>SendSynchronized</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1ad0fef3ddefb4d68e6f184d62fd1a636a" prot="private" virt="pure-virtual"><scope>eCAL::CMsgPublisher</scope><name>Serialize</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a02e676312007e8917ffd9b9ffc1a777a" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>SetAttribute</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1aad7aed589c12253ff805c795b9106b39" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>SetDataTypeInformation</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1ad87a26fdf303329647a2c9fb0c865c11" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>SetDescription</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a1098fe2ca3ac7c8dae5f9845c000b16b" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>SetID</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a679db56f8d6bb28f94ef9f356158680f" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>SetLayerMode</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a59e4fe88875ec6498d82174840e6b19c" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>SetMaxBandwidthUDP</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a7742362c6bd52a5cf4bf5432402beaf1" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>SetQOS</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a3e7c32e9a4a11c9259e26dbccd5e996d" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>SetTypeName</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a5a928f8e02f5cb1fc2c428e2207bb720" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>ShareDescription</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1ac80396f79fdcf4dc3426948dc6c30988" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>ShareType</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1af057c139ad7f40fe6574e095f5ff806c" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>ShmEnableZeroCopy</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a809dab69596b6f4632bcf0b5d68b4eef" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>ShmSetAcknowledgeTimeout</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1aa82567ba534ba4d25ffd87a18ac92160" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>ShmSetAcknowledgeTimeout</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1af489ade9595abe747ec0067fb78c1a3f" prot="public" virt="non-virtual"><scope>eCAL::CMsgPublisher</scope><name>ShmSetBufferCount</name></member>
+      <member refid="d3/d46/classeCAL_1_1CMsgPublisher_1ab66547d0bba6cabc0ae8377ff767ae7f" prot="public" virt="virtual"><scope>eCAL::CMsgPublisher</scope><name>~CMsgPublisher</name></member>
+      <member refid="dc/d42/classeCAL_1_1CPublisher_1a1a2979f4b0e461334e4030953fe7218a" prot="public" virt="virtual"><scope>eCAL::CMsgPublisher</scope><name>~CPublisher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

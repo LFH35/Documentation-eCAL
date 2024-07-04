@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/dd8/ecal__tlayer_8h" kind="file" language="C++">
+    <compoundname>ecal_tlayer.h</compoundname>
+    <includes refid="d8/db1/ecal__os_8h" local="no">ecal/ecal_os.h</includes>
+    <includedby refid="d9/dbf/ecal_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</includedby>
+    <includedby refid="d5/d15/ecal__config_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h</includedby>
+    <includedby refid="dc/d1a/ecal__publisher_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_publisher.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h</label>
+        <link refid="d4/dd8/ecal__tlayer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ecal/ecal_os.h</label>
+        <link refid="d8/db1/ecal__os_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h</label>
+        <link refid="d4/dd8/ecal__tlayer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h</label>
+        <link refid="d5/d15/ecal__config_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h</label>
+        <link refid="d1/d40/publisher_8h_source"/>
+      </node>
+      <node id="4">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_publisher.h</label>
+        <link refid="dc/d1a/ecal__publisher_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</label>
+        <link refid="d9/dbf/ecal_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer" prot="public">eCAL::TLayer::STLayer</innerclass>
+    <innernamespace refid="db/de7/namespaceeCAL">eCAL</innernamespace>
+    <innernamespace refid="db/dd0/namespaceeCAL_1_1TLayer">eCAL::TLayer</innernamespace>
+    <briefdescription>
+<para>eCAL transport layer </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d8/db1/ecal__os_8h" kindref="compound">ecal/ecal_os.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eCAL</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">TLayer</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36" refid="d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59a" kindref="member">eTransportLayer</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tlayer_none<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tlayer_udp_mc<sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tlayer_shm<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tlayer_tcp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="42" refid="d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59aaa5e9d60aaf6f0fa8840781fafa4e7b38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59aaa5e9d60aaf6f0fa8840781fafa4e7b38" kindref="member">tlayer_inproc</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>42,<sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tlayer_all<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>255</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">eSendMode</ref></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>smode_none<sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>smode_off<sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>smode_on,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>smode_auto</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ECAL_API<sp/><ref refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer" kindref="compound">STLayer</ref></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer" kindref="compound">STLayer</ref>()</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sm_udp_mc<sp/><sp/>=<sp/>smode_none;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sm_shm<sp/><sp/><sp/><sp/><sp/>=<sp/>smode_none;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sm_inproc<sp/><sp/>=<sp/>smode_none;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sm_tcp<sp/><sp/><sp/><sp/><sp/>=<sp/>smode_none;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69" refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1a6d2b837f12a9825ef8d4dc4fc87277c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">eSendMode</ref><sp/><ref refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1a6d2b837f12a9825ef8d4dc4fc87277c2" kindref="member">sm_udp_mc</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1aca21f1a95daa8311a81af63d7371ebf1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">eSendMode</ref><sp/><ref refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1aca21f1a95daa8311a81af63d7371ebf1" kindref="member">sm_shm</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71" refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1ac6c8c7adff4a4ba36debc8d26eff8b89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">eSendMode</ref><sp/><ref refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1ac6c8c7adff4a4ba36debc8d26eff8b89" kindref="member">sm_inproc</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1a8875cd37781fde98f31ed59633fd7ce4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">eSendMode</ref><sp/><ref refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1a8875cd37781fde98f31ed59633fd7ce4" kindref="member">sm_tcp</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h"/>
+  </compounddef>
+</doxygen>

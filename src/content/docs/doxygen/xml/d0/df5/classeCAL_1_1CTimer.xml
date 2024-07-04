@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/df5/classeCAL_1_1CTimer" kind="class" language="C++" prot="public">
+    <compoundname>eCAL::CTimer</compoundname>
+    <includes refid="d5/df2/ecal__timer_8h" local="no">ecal_timer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d0/df5/classeCAL_1_1CTimer_1ac9f11fce9d00ed1165f382b37cca65df" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; CTimerImpl &gt;</type>
+        <definition>std::unique_ptr&lt;CTimerImpl&gt; eCAL::CTimer::m_timer</definition>
+        <argsstring></argsstring>
+        <name>m_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" line="89" column="21" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/df5/classeCAL_1_1CTimer_1accff7c4ade6b4c3963f3aa1ecda30797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API</type>
+        <definition>ECAL_API eCAL::CTimer::CTimer</definition>
+        <argsstring>()</argsstring>
+        <name>CTimer</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" line="47" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/df5/classeCAL_1_1CTimer_1ab260fc7614585065aa7dedb056c9af63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API</type>
+        <definition>ECAL_API eCAL::CTimer::CTimer</definition>
+        <argsstring>(int timeout_, TimerCallbackT callback_, int delay_=0)</argsstring>
+        <name>CTimer</name>
+        <param>
+          <type>int</type>
+          <declname>timeout_</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref></type>
+          <declname>callback_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeout_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer callback loop time in ms. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer callback delay for first call in ms. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" line="56" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/df5/classeCAL_1_1CTimer_1a4afb54913b34e026e87823633b1ff0db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ECAL_API</type>
+        <definition>virtual ECAL_API eCAL::CTimer::~CTimer</definition>
+        <argsstring>()</argsstring>
+        <name>~CTimer</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" line="61" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/df5/classeCAL_1_1CTimer_1ad8fb51655ea25dec665359bbdba9f1e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CTimer::CTimer</definition>
+        <argsstring>(const CTimer &amp;)=delete</argsstring>
+        <name>CTimer</name>
+        <param>
+          <type>const <ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" line="64" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/df5/classeCAL_1_1CTimer_1a7945395a045380ef1a520b6d898f5df4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref> &amp;</type>
+        <definition>CTimer&amp; eCAL::CTimer::operator=</definition>
+        <argsstring>(const CTimer &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" line="65" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/df5/classeCAL_1_1CTimer_1a59d78b21ac2f852db739fb2036b17b05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::CTimer::CTimer</definition>
+        <argsstring>(CTimer &amp;&amp;rhs)=delete</argsstring>
+        <name>CTimer</name>
+        <param>
+          <type><ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" line="66" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/df5/classeCAL_1_1CTimer_1aaf1b4383c90f32bc5ea6de1fcc746381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref> &amp;</type>
+        <definition>CTimer&amp; eCAL::CTimer::operator=</definition>
+        <argsstring>(CTimer &amp;&amp;rhs)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" line="67" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/df5/classeCAL_1_1CTimer_1a0cc3792068bede2dc56dd651def4980b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CTimer::Start</definition>
+        <argsstring>(int timeout_, TimerCallbackT callback_, int delay_=0)</argsstring>
+        <name>Start</name>
+        <param>
+          <type>int</type>
+          <declname>timeout_</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref></type>
+          <declname>callback_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Start the timer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeout_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer callback loop time in ms. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer callback delay for first call in ms.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if timer could be started. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" line="78" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/df5/classeCAL_1_1CTimer_1aadbb9efabb053f51fea323530c29b8ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CTimer::Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <briefdescription>
+<para>Stop the timer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if timer could be stopped. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" line="85" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL timer class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref> class is used to realize simple time triggered callbacks. </para>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" line="41" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h" bodystart="42" bodyend="90"/>
+    <listofallmembers>
+      <member refid="d0/df5/classeCAL_1_1CTimer_1accff7c4ade6b4c3963f3aa1ecda30797" prot="public" virt="non-virtual"><scope>eCAL::CTimer</scope><name>CTimer</name></member>
+      <member refid="d0/df5/classeCAL_1_1CTimer_1ab260fc7614585065aa7dedb056c9af63" prot="public" virt="non-virtual"><scope>eCAL::CTimer</scope><name>CTimer</name></member>
+      <member refid="d0/df5/classeCAL_1_1CTimer_1ad8fb51655ea25dec665359bbdba9f1e0" prot="public" virt="non-virtual"><scope>eCAL::CTimer</scope><name>CTimer</name></member>
+      <member refid="d0/df5/classeCAL_1_1CTimer_1a59d78b21ac2f852db739fb2036b17b05" prot="public" virt="non-virtual"><scope>eCAL::CTimer</scope><name>CTimer</name></member>
+      <member refid="d0/df5/classeCAL_1_1CTimer_1ac9f11fce9d00ed1165f382b37cca65df" prot="protected" virt="non-virtual"><scope>eCAL::CTimer</scope><name>m_timer</name></member>
+      <member refid="d0/df5/classeCAL_1_1CTimer_1a7945395a045380ef1a520b6d898f5df4" prot="public" virt="non-virtual"><scope>eCAL::CTimer</scope><name>operator=</name></member>
+      <member refid="d0/df5/classeCAL_1_1CTimer_1aaf1b4383c90f32bc5ea6de1fcc746381" prot="public" virt="non-virtual"><scope>eCAL::CTimer</scope><name>operator=</name></member>
+      <member refid="d0/df5/classeCAL_1_1CTimer_1a0cc3792068bede2dc56dd651def4980b" prot="public" virt="non-virtual"><scope>eCAL::CTimer</scope><name>Start</name></member>
+      <member refid="d0/df5/classeCAL_1_1CTimer_1aadbb9efabb053f51fea323530c29b8ea" prot="public" virt="non-virtual"><scope>eCAL::CTimer</scope><name>Stop</name></member>
+      <member refid="d0/df5/classeCAL_1_1CTimer_1a4afb54913b34e026e87823633b1ff0db" prot="public" virt="virtual"><scope>eCAL::CTimer</scope><name>~CTimer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

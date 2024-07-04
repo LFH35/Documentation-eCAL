@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/df2/ecal__timer_8h" kind="file" language="C++">
+    <compoundname>ecal_timer.h</compoundname>
+    <includes refid="d8/db1/ecal__os_8h" local="no">ecal/ecal_os.h</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">memory</includes>
+    <includedby refid="d9/dbf/ecal_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>functional</label>
+      </node>
+      <node id="2">
+        <label>ecal/ecal_os.h</label>
+        <link refid="d8/db1/ecal__os_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h</label>
+        <link refid="d5/df2/ecal__timer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h</label>
+        <link refid="d5/df2/ecal__timer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</label>
+        <link refid="d9/dbf/ecal_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d0/df5/classeCAL_1_1CTimer" prot="public">eCAL::CTimer</innerclass>
+    <innernamespace refid="db/de7/namespaceeCAL">eCAL</innernamespace>
+    <briefdescription>
+<para>eCAL timer interface </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d8/db1/ecal__os_8h" kindref="compound">ecal/ecal_os.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eCAL</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CTimerImpl;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;void(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)&gt;<sp/><ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="d0/df5/classeCAL_1_1CTimer" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47" refid="d0/df5/classeCAL_1_1CTimer_1accff7c4ade6b4c3963f3aa1ecda30797" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/><ref refid="d0/df5/classeCAL_1_1CTimer_1accff7c4ade6b4c3963f3aa1ecda30797" kindref="member">CTimer</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="d0/df5/classeCAL_1_1CTimer_1ab260fc7614585065aa7dedb056c9af63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/><ref refid="d0/df5/classeCAL_1_1CTimer_1accff7c4ade6b4c3963f3aa1ecda30797" kindref="member">CTimer</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout_,<sp/><ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref><sp/>callback_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>delay_<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="d0/df5/classeCAL_1_1CTimer_1a4afb54913b34e026e87823633b1ff0db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d0/df5/classeCAL_1_1CTimer_1a4afb54913b34e026e87823633b1ff0db" kindref="member">~CTimer</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Object<sp/>not<sp/>copyable<sp/>/<sp/>moveable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/df5/classeCAL_1_1CTimer_1accff7c4ade6b4c3963f3aa1ecda30797" kindref="member">CTimer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/df5/classeCAL_1_1CTimer_1accff7c4ade6b4c3963f3aa1ecda30797" kindref="member">CTimer</ref>(<ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref>&amp;&amp;<sp/>rhs)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref>&amp;<sp/>operator=(<ref refid="d0/df5/classeCAL_1_1CTimer" kindref="compound">CTimer</ref>&amp;&amp;<sp/>rhs)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="d0/df5/classeCAL_1_1CTimer_1a0cc3792068bede2dc56dd651def4980b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/df5/classeCAL_1_1CTimer_1a0cc3792068bede2dc56dd651def4980b" kindref="member">Start</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout_,<sp/><ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref><sp/>callback_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>delay_<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="d0/df5/classeCAL_1_1CTimer_1aadbb9efabb053f51fea323530c29b8ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/df5/classeCAL_1_1CTimer_1aadbb9efabb053f51fea323530c29b8ea" kindref="member">Stop</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>class<sp/>members</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;CTimerImpl&gt;<sp/>m_timer;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timer.h"/>
+  </compounddef>
+</doxygen>

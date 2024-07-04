@@ -1,0 +1,871 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/de7/namespaceeCAL" kind="namespace" language="C++">
+    <compoundname>eCAL</compoundname>
+    <innerclass refid="d4/d97/structeCAL_1_1SReceiveCallbackData" prot="public">eCAL::SReceiveCallbackData</innerclass>
+    <innerclass refid="d7/dcb/structeCAL_1_1SPubEventCallbackData" prot="public">eCAL::SPubEventCallbackData</innerclass>
+    <innerclass refid="de/de6/structeCAL_1_1SSubEventCallbackData" prot="public">eCAL::SSubEventCallbackData</innerclass>
+    <innerclass refid="d6/daa/structeCAL_1_1SServiceAttr" prot="public">eCAL::SServiceAttr</innerclass>
+    <innerclass refid="d6/d99/structeCAL_1_1SClientEventCallbackData" prot="public">eCAL::SClientEventCallbackData</innerclass>
+    <innerclass refid="db/d72/structeCAL_1_1SClientAttr" prot="public">eCAL::SClientAttr</innerclass>
+    <innerclass refid="d0/d66/structeCAL_1_1SServerEventCallbackData" prot="public">eCAL::SServerEventCallbackData</innerclass>
+    <innerclass refid="d5/d4c/classeCAL_1_1CServiceClient" prot="public">eCAL::CServiceClient</innerclass>
+    <innerclass refid="d2/d77/structeCAL_1_1SEventHandle" prot="public">eCAL::SEventHandle</innerclass>
+    <innerclass refid="dd/db1/classeCAL_1_1CPayloadWriter" prot="public">eCAL::CPayloadWriter</innerclass>
+    <innerclass refid="dc/d42/classeCAL_1_1CPublisher" prot="public">eCAL::CPublisher</innerclass>
+    <innerclass refid="d0/d09/classeCAL_1_1CServiceServer" prot="public">eCAL::CServiceServer</innerclass>
+    <innerclass refid="d9/d0b/structeCAL_1_1SServiceResponse" prot="public">eCAL::SServiceResponse</innerclass>
+    <innerclass refid="d3/d33/classeCAL_1_1CSubscriber" prot="public">eCAL::CSubscriber</innerclass>
+    <innerclass refid="d5/d9f/classeCAL_1_1CTimedCB" prot="public">eCAL::CTimedCB</innerclass>
+    <innerclass refid="d0/df5/classeCAL_1_1CTimer" prot="public">eCAL::CTimer</innerclass>
+    <innerclass refid="d7/d0f/structeCAL_1_1SDataTypeInformation" prot="public">eCAL::SDataTypeInformation</innerclass>
+    <innerclass refid="d4/d98/structeCAL_1_1STopicInformation" prot="public">eCAL::STopicInformation</innerclass>
+    <innerclass refid="df/d6a/structeCAL_1_1SServiceMethodInformation" prot="public">eCAL::SServiceMethodInformation</innerclass>
+    <innerclass refid="d3/d46/classeCAL_1_1CMsgPublisher" prot="public">eCAL::CMsgPublisher</innerclass>
+    <innerclass refid="d5/de3/classeCAL_1_1CMsgSubscriber" prot="public">eCAL::CMsgSubscriber</innerclass>
+    <innernamespace refid="dc/d68/namespaceeCAL_1_1Config">eCAL::Config</innernamespace>
+    <innernamespace refid="d0/dfe/namespaceeCAL_1_1eh5">eCAL::eh5</innernamespace>
+    <innernamespace refid="d8/d0f/namespaceeCAL_1_1Init">eCAL::Init</innernamespace>
+    <innernamespace refid="d4/d6c/namespaceeCAL_1_1Logging">eCAL::Logging</innernamespace>
+    <innernamespace refid="de/dcc/namespaceeCAL_1_1Monitoring">eCAL::Monitoring</innernamespace>
+    <innernamespace refid="da/d9e/namespaceeCAL_1_1pb">eCAL::pb</innernamespace>
+    <innernamespace refid="d7/df1/namespaceeCAL_1_1Process">eCAL::Process</innernamespace>
+    <innernamespace refid="de/da1/namespaceeCAL_1_1QOS">eCAL::QOS</innernamespace>
+    <innernamespace refid="d5/d73/namespaceeCAL_1_1Time">eCAL::Time</innernamespace>
+    <innernamespace refid="db/dd0/namespaceeCAL_1_1TLayer">eCAL::TLayer</innernamespace>
+    <innernamespace refid="d1/ddf/namespaceeCAL_1_1Util">eCAL::Util</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="df/d76/ecal__callback_8h_1aa7cd61c577b65761ec5227aa509f1aa6" prot="public" static="no">
+        <type>std::function&lt; void(const char *, const struct <ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData" kindref="compound">SReceiveCallbackData</ref> *)&gt;</type>
+        <definition>using eCAL::ReceiveCallbackT = typedef std::function&lt;void (const char *, const struct SReceiveCallbackData *)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ReceiveCallbackT</name>
+        <briefdescription>
+<para>Raw data receive callback function type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The topic name of the received message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data struct containing payload, timestamp and publication clock. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="152" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" prot="public" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>typedef std::function&lt; void(void)&gt; eCAL::TimerCallbackT</definition>
+        <argsstring></argsstring>
+        <name>TimerCallbackT</name>
+        <briefdescription>
+<para>Timer callback function type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000111"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="157" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="df/d76/ecal__callback_8h_1a91d4259a2908bf409ff0b3fb871ca0a3" prot="public" static="no">
+        <type>std::function&lt; void(const char *, int)&gt;</type>
+        <definition>using eCAL::RegistrationCallbackT = typedef std::function&lt;void (const char *, int)&gt;</definition>
+        <argsstring></argsstring>
+        <name>RegistrationCallbackT</name>
+        <briefdescription>
+<para>Registration callback type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sample protocol buffer registration payload buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sample_size_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload buffer size. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="165" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="df/d76/ecal__callback_8h_1ad5ee2b03f650f613c9ae5487a73630a1" prot="public" static="no">
+        <type>std::function&lt; void(const char *, const struct <ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData" kindref="compound">SPubEventCallbackData</ref> *)&gt;</type>
+        <definition>using eCAL::PubEventCallbackT = typedef std::function&lt;void (const char *, const struct SPubEventCallbackData *)&gt;</definition>
+        <argsstring></argsstring>
+        <name>PubEventCallbackT</name>
+        <briefdescription>
+<para>Publisher event callback function type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The topic name of the publisher that triggered the event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event callback data structure with the event specific information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="173" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="df/d76/ecal__callback_8h_1a86878088e2aad452b6881ccfe5ab8cd2" prot="public" static="no">
+        <type>std::function&lt; void(const char *, const struct <ref refid="de/de6/structeCAL_1_1SSubEventCallbackData" kindref="compound">SSubEventCallbackData</ref> *)&gt;</type>
+        <definition>using eCAL::SubEventCallbackT = typedef std::function&lt;void (const char *, const struct SSubEventCallbackData *)&gt;</definition>
+        <argsstring></argsstring>
+        <name>SubEventCallbackT</name>
+        <briefdescription>
+<para>Subscriber event callback function type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The topic name of the subscriber that triggered the event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event callback data structure with the event specific information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="181" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="df/d76/ecal__callback_8h_1ac7bddc5ffadba36ef41e7d5ff6c02d62" prot="public" static="no">
+        <type>std::function&lt; void(const char *, const struct <ref refid="d6/d99/structeCAL_1_1SClientEventCallbackData" kindref="compound">SClientEventCallbackData</ref> *)&gt;</type>
+        <definition>using eCAL::ClientEventCallbackT = typedef std::function&lt;void (const char *, const struct SClientEventCallbackData *)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ClientEventCallbackT</name>
+        <briefdescription>
+<para>Client event callback function type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the connection that triggered the event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event callback data structure with the event specific information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="189" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="df/d76/ecal__callback_8h_1a9b49337a63f0ad773c4490f21b7b8d5c" prot="public" static="no">
+        <type>std::function&lt; void(const char *, const struct <ref refid="d0/d66/structeCAL_1_1SServerEventCallbackData" kindref="compound">SServerEventCallbackData</ref> *)&gt;</type>
+        <definition>using eCAL::ServerEventCallbackT = typedef std::function&lt;void (const char *, const struct SServerEventCallbackData *)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ServerEventCallbackT</name>
+        <briefdescription>
+<para>Server event callback function type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the connection that triggered the event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event callback data structure with the event specific information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="197" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="de/ddd/ecal__service__info_8h_1a36106945ed691d2225be35b428072270" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="d9/d0b/structeCAL_1_1SServiceResponse" kindref="compound">SServiceResponse</ref> &gt;</type>
+        <definition>typedef std::vector&lt;SServiceResponse&gt; eCAL::ServiceResponseVecT</definition>
+        <argsstring></argsstring>
+        <name>ServiceResponseVecT</name>
+        <briefdescription>
+<para>vector of multiple service responses </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="54" column="23" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="de/ddd/ecal__service__info_8h_1ae0436af7a525f2b5fcc30025def57c30" prot="public" static="no">
+        <type>std::function&lt; int(const std::string &amp;method_, const std::string &amp;req_type_, const std::string &amp;resp_type_, const std::string &amp;request_, std::string &amp;response_)&gt;</type>
+        <definition>typedef std::function&lt;int(const std::string&amp; method_, const std::string&amp; req_type_, const std::string&amp; resp_type_, const std::string&amp; request_, std::string&amp; response_)&gt; eCAL::MethodCallbackT</definition>
+        <argsstring></argsstring>
+        <name>MethodCallbackT</name>
+        <briefdescription>
+<para>Service method callback function type (low level server interface). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>method_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The method name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>req_type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the method request. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resp_type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the method response. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>request_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The request. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>response_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The response returned from the method call. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="65" column="25" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="de/ddd/ecal__service__info_8h_1a572360f74991bd1369ea24b5b7a0b6bb" prot="public" static="no">
+        <type>std::function&lt; void(const struct <ref refid="d9/d0b/structeCAL_1_1SServiceResponse" kindref="compound">SServiceResponse</ref> &amp;service_response_)&gt;</type>
+        <definition>typedef std::function&lt;void(const struct SServiceResponse&amp; service_response_)&gt; eCAL::ResponseCallbackT</definition>
+        <argsstring></argsstring>
+        <name>ResponseCallbackT</name>
+        <briefdescription>
+<para>Service response callback function type (low level client interface). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service_response_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Service response struct containing the (responding) server informations and the response itself. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="72" column="25" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/dab/ecal__core_8h_1a714f5511a81c28caa345b820bad16bf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API const char *</type>
+        <definition>ECAL_API const char* eCAL::GetVersionString</definition>
+        <argsstring>()</argsstring>
+        <name>GetVersionString</name>
+        <briefdescription>
+<para>Get eCAL version string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Full eCAL version string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" line="42" column="23" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" declline="42" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dab/ecal__core_8h_1ac52f8cc16ece6d66783726f78695ff87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API const char *</type>
+        <definition>ECAL_API const char* eCAL::GetVersionDateString</definition>
+        <argsstring>()</argsstring>
+        <name>GetVersionDateString</name>
+        <briefdescription>
+<para>Get eCAL version date. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Full eCAL version date string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" line="49" column="23" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" declline="49" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dab/ecal__core_8h_1aaf5f98fd50238b9b05a20ad01427fafe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::GetVersion</definition>
+        <argsstring>(int *major_, int *minor_, int *patch_)</argsstring>
+        <name>GetVersion</name>
+        <param>
+          <type>int *</type>
+          <declname>major_</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>minor_</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>patch_</declname>
+        </param>
+        <briefdescription>
+<para>Get eCAL version as separated integer values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">major_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The eCAL major version number. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">minor_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The eCAL minor version number. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">patch_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The eCAL patch version number.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" line="60" column="16" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" declline="60" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dab/ecal__core_8h_1a390408819d676df7778dc77934dcd7eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Initialize</definition>
+        <argsstring>(int argc_=0, char **argv_=nullptr, const char *unit_name_=nullptr, unsigned int components_=Init::Default)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>int</type>
+          <declname>argc_</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv_</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>unit_name_</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>components_</declname>
+          <defval>Init::Default</defval>
+        </param>
+        <briefdescription>
+<para>Initialize eCAL API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argc_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of command line arguments. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of command line arguments. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines the name of the eCAL unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>components_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines which component to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded, 1 if already initialized, -1 if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" line="72" column="16" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" declline="72" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dab/ecal__core_8h_1a80530ef61fc0a320348cb17b9b55aa0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Initialize</definition>
+        <argsstring>(std::vector&lt; std::string &gt; args_, const char *unit_name_=nullptr, unsigned int components_=Init::Default)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>args_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>unit_name_</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>components_</declname>
+          <defval>Init::Default</defval>
+        </param>
+        <briefdescription>
+<para>Initialize eCAL API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of config arguments to overwrite ([&quot;arg1&quot;, &quot;value1&quot;, &quot;arg2&quot;, &quot;arg3&quot;, &quot;value3&quot; ..]). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines the name of the eCAL unit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>components_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines which component to initialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded, 1 if already initialized, -1 if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" line="83" column="16" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" declline="83" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dab/ecal__core_8h_1a1b9442b23e7971df6f41cf76a405933d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Finalize</definition>
+        <argsstring>(unsigned int components_=Init::Default)</argsstring>
+        <name>Finalize</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>components_</declname>
+          <defval>Init::Default</defval>
+        </param>
+        <briefdescription>
+<para>Finalize eCAL API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>components_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines which component to finalize (not yet supported).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded, 1 if already finalized, -1 if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" line="92" column="16" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" declline="92" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dab/ecal__core_8h_1a8dbe319c04fef61bc7a5f6382fbe4c2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::IsInitialized</definition>
+        <argsstring>(unsigned int component_=0)</argsstring>
+        <name>IsInitialized</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>component_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Check eCAL initialize state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>component_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Check specific component or 0 for general state of eCAL core.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if eCAL is initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" line="101" column="16" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" declline="101" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dab/ecal__core_8h_1ab7ca5b4f6fe59075ea6136f998f24fac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::SetUnitName</definition>
+        <argsstring>(const char *unit_name_)</argsstring>
+        <name>SetUnitName</name>
+        <param>
+          <type>const char *</type>
+          <declname>unit_name_</declname>
+        </param>
+        <briefdescription>
+<para>Set/change the unit name of current module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines the name of the eCAL unit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" line="110" column="16" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" declline="110" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dab/ecal__core_8h_1a600033b0736069b66b026b5bc39cab35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Ok</definition>
+        <argsstring>()</argsstring>
+        <name>Ok</name>
+        <briefdescription>
+<para>Return the eCAL process state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if eCAL is in proper state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" line="117" column="17" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_core.h" declline="117" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d17/ecal__event_8h_1a5028600c8e998ac1d8cb35b38025160c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::gOpenEvent</definition>
+        <argsstring>(eCAL::EventHandleT *event_, const std::string &amp;event_name_=&quot;&quot;)</argsstring>
+        <name>gOpenEvent</name>
+        <param>
+          <type>eCAL::EventHandleT *</type>
+          <declname>event_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>event_name_</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Open a named or unnamed event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000066"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">event_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Returned event struct. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event name (&quot;&quot; == unnamed).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_event.h" line="45" column="17" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_event.h" declline="45" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d17/ecal__event_8h_1a4c8c0a593567bc0d3de721f077c9eb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::gCloseEvent</definition>
+        <argsstring>(const EventHandleT &amp;event_)</argsstring>
+        <name>gCloseEvent</name>
+        <param>
+          <type>const EventHandleT &amp;</type>
+          <declname>event_</declname>
+        </param>
+        <briefdescription>
+<para>Close an event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000067"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event struct.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_event.h" line="56" column="17" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_event.h" declline="56" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d17/ecal__event_8h_1a1ad756a53cfdf0638ae1721e9093e8c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::gSetEvent</definition>
+        <argsstring>(const EventHandleT &amp;event_)</argsstring>
+        <name>gSetEvent</name>
+        <param>
+          <type>const EventHandleT &amp;</type>
+          <declname>event_</declname>
+        </param>
+        <briefdescription>
+<para>Set an event active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000068"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event struct.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_event.h" line="67" column="17" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_event.h" declline="67" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d17/ecal__event_8h_1ab938b3b890db68d3ecb042d0a084aedf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::gWaitForEvent</definition>
+        <argsstring>(const EventHandleT &amp;event_, long timeout_)</argsstring>
+        <name>gWaitForEvent</name>
+        <param>
+          <type>const EventHandleT &amp;</type>
+          <declname>event_</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>timeout_</declname>
+        </param>
+        <briefdescription>
+<para>Wait for an event with timeout. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000069"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event struct. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timeout in ms (-1 == infinite).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_event.h" line="79" column="17" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_event.h" declline="79" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d17/ecal__event_8h_1a7a6ff2db53a413dcfe717f714c875c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::gInvalidateEvent</definition>
+        <argsstring>(EventHandleT *event_)</argsstring>
+        <name>gInvalidateEvent</name>
+        <param>
+          <type>EventHandleT *</type>
+          <declname>event_</declname>
+        </param>
+        <briefdescription>
+<para>Invalidate an event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000070"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>True if event is invalidated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_event.h" line="88" column="17" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_event.h" declline="88" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d17/ecal__event_8h_1a6f89da9c1465814557bb85d4146bde0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::gEventIsValid</definition>
+        <argsstring>(const EventHandleT &amp;event_)</argsstring>
+        <name>gEventIsValid</name>
+        <param>
+          <type>const EventHandleT &amp;</type>
+          <declname>event_</declname>
+        </param>
+        <briefdescription>
+<para>Check whether an event is valid or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000071"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>True if event is valid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_event.h" line="97" column="17" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_event.h" declline="97" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h" line="49" column="1"/>
+  </compounddef>
+</doxygen>

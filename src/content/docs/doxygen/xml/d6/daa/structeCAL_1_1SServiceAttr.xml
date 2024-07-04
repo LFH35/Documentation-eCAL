@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/daa/structeCAL_1_1SServiceAttr" kind="struct" language="C++" prot="public">
+    <compoundname>eCAL::SServiceAttr</compoundname>
+    <includes refid="df/d76/ecal__callback_8h" local="no">ecal_callback.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d6/daa/structeCAL_1_1SServiceAttr_1a0d1654876635a8c90b5b26b3f0323a5e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SServiceAttr::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+<para>unique service key (internal) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="97" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/daa/structeCAL_1_1SServiceAttr_1a105b9481795caee865132433dcecfad5" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SServiceAttr::hname</definition>
+        <argsstring></argsstring>
+        <name>hname</name>
+        <briefdescription>
+<para>host name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="98" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/daa/structeCAL_1_1SServiceAttr_1a2489e2452ca0ecc8a68554032ff52635" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SServiceAttr::pname</definition>
+        <argsstring></argsstring>
+        <name>pname</name>
+        <briefdescription>
+<para>process name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="99" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/daa/structeCAL_1_1SServiceAttr_1ab61d4012dedd1460e9cd40749d77dc5f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SServiceAttr::uname</definition>
+        <argsstring></argsstring>
+        <name>uname</name>
+        <briefdescription>
+<para>process unit name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="100" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/daa/structeCAL_1_1SServiceAttr_1afb255b538350960654dd065dd0d98cfd" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SServiceAttr::sname</definition>
+        <argsstring></argsstring>
+        <name>sname</name>
+        <briefdescription>
+<para>service name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="101" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/daa/structeCAL_1_1SServiceAttr_1ad0d8fc6a5950fe4e1432e0d1dc6ed834" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SServiceAttr::sid</definition>
+        <argsstring></argsstring>
+        <name>sid</name>
+        <briefdescription>
+<para>service id </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="102" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/daa/structeCAL_1_1SServiceAttr_1a1a1d2d4278e651f82c6d22935c8d1ab7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eCAL::SServiceAttr::pid</definition>
+        <argsstring></argsstring>
+        <name>pid</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>process id </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="103" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/daa/structeCAL_1_1SServiceAttr_1a624a47286fb03f9c04641a8517e5d78e" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int eCAL::SServiceAttr::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>service protocol version </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="106" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/daa/structeCAL_1_1SServiceAttr_1a330c695d255531a8a334ded281981ba6" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short eCAL::SServiceAttr::tcp_port_v0</definition>
+        <argsstring></argsstring>
+        <name>tcp_port_v0</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>service tcp port protocol version 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="107" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/daa/structeCAL_1_1SServiceAttr_1a33c6171778952b3a2d30598f479731ae" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short eCAL::SServiceAttr::tcp_port_v1</definition>
+        <argsstring></argsstring>
+        <name>tcp_port_v1</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>service tcp port protocol version 1 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="108" column="20" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL service attributes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="95" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="96" bodyend="109"/>
+    <listofallmembers>
+      <member refid="d6/daa/structeCAL_1_1SServiceAttr_1a105b9481795caee865132433dcecfad5" prot="public" virt="non-virtual"><scope>eCAL::SServiceAttr</scope><name>hname</name></member>
+      <member refid="d6/daa/structeCAL_1_1SServiceAttr_1a0d1654876635a8c90b5b26b3f0323a5e" prot="public" virt="non-virtual"><scope>eCAL::SServiceAttr</scope><name>key</name></member>
+      <member refid="d6/daa/structeCAL_1_1SServiceAttr_1a1a1d2d4278e651f82c6d22935c8d1ab7" prot="public" virt="non-virtual"><scope>eCAL::SServiceAttr</scope><name>pid</name></member>
+      <member refid="d6/daa/structeCAL_1_1SServiceAttr_1a2489e2452ca0ecc8a68554032ff52635" prot="public" virt="non-virtual"><scope>eCAL::SServiceAttr</scope><name>pname</name></member>
+      <member refid="d6/daa/structeCAL_1_1SServiceAttr_1ad0d8fc6a5950fe4e1432e0d1dc6ed834" prot="public" virt="non-virtual"><scope>eCAL::SServiceAttr</scope><name>sid</name></member>
+      <member refid="d6/daa/structeCAL_1_1SServiceAttr_1afb255b538350960654dd065dd0d98cfd" prot="public" virt="non-virtual"><scope>eCAL::SServiceAttr</scope><name>sname</name></member>
+      <member refid="d6/daa/structeCAL_1_1SServiceAttr_1a330c695d255531a8a334ded281981ba6" prot="public" virt="non-virtual"><scope>eCAL::SServiceAttr</scope><name>tcp_port_v0</name></member>
+      <member refid="d6/daa/structeCAL_1_1SServiceAttr_1a33c6171778952b3a2d30598f479731ae" prot="public" virt="non-virtual"><scope>eCAL::SServiceAttr</scope><name>tcp_port_v1</name></member>
+      <member refid="d6/daa/structeCAL_1_1SServiceAttr_1ab61d4012dedd1460e9cd40749d77dc5f" prot="public" virt="non-virtual"><scope>eCAL::SServiceAttr</scope><name>uname</name></member>
+      <member refid="d6/daa/structeCAL_1_1SServiceAttr_1a624a47286fb03f9c04641a8517e5d78e" prot="public" virt="non-virtual"><scope>eCAL::SServiceAttr</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

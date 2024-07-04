@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/dd5/structeCAL_1_1TLayer_1_1STLayer" kind="struct" language="C++" prot="public">
+    <compoundname>eCAL::TLayer::STLayer</compoundname>
+    <includes refid="d4/dd8/ecal__tlayer_8h" local="no">ecal_tlayer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1a6d2b837f12a9825ef8d4dc4fc87277c2" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">eSendMode</ref></type>
+        <definition>eSendMode eCAL::TLayer::STLayer::sm_udp_mc</definition>
+        <argsstring></argsstring>
+        <name>sm_udp_mc</name>
+        <briefdescription>
+<para>udp multicast </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" line="69" column="17" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1aca21f1a95daa8311a81af63d7371ebf1" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">eSendMode</ref></type>
+        <definition>eSendMode eCAL::TLayer::STLayer::sm_shm</definition>
+        <argsstring></argsstring>
+        <name>sm_shm</name>
+        <briefdescription>
+<para>shared memory </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" line="70" column="17" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1ac6c8c7adff4a4ba36debc8d26eff8b89" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">eSendMode</ref></type>
+        <definition>eSendMode eCAL::TLayer::STLayer::sm_inproc</definition>
+        <argsstring></argsstring>
+        <name>sm_inproc</name>
+        <briefdescription>
+<para>deprecated, whole layer will be removed in future eCAL versions *<zwj/>/ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" line="71" column="17" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1a8875cd37781fde98f31ed59633fd7ce4" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" kindref="member">eSendMode</ref></type>
+        <definition>eSendMode eCAL::TLayer::STLayer::sm_tcp</definition>
+        <argsstring></argsstring>
+        <name>sm_tcp</name>
+        <briefdescription>
+<para>tcp </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" line="72" column="17" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1a66b4d658bbefdad77c1bbbc2906da96e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::TLayer::STLayer::STLayer</definition>
+        <argsstring>()</argsstring>
+        <name>STLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" line="62" column="7" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" bodystart="62" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL transport layer state struct. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" line="60" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" bodystart="61" bodyend="73"/>
+    <listofallmembers>
+      <member refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1ac6c8c7adff4a4ba36debc8d26eff8b89" prot="public" virt="non-virtual"><scope>eCAL::TLayer::STLayer</scope><name>sm_inproc</name></member>
+      <member refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1aca21f1a95daa8311a81af63d7371ebf1" prot="public" virt="non-virtual"><scope>eCAL::TLayer::STLayer</scope><name>sm_shm</name></member>
+      <member refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1a8875cd37781fde98f31ed59633fd7ce4" prot="public" virt="non-virtual"><scope>eCAL::TLayer::STLayer</scope><name>sm_tcp</name></member>
+      <member refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1a6d2b837f12a9825ef8d4dc4fc87277c2" prot="public" virt="non-virtual"><scope>eCAL::TLayer::STLayer</scope><name>sm_udp_mc</name></member>
+      <member refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer_1a66b4d658bbefdad77c1bbbc2906da96e" prot="public" virt="non-virtual"><scope>eCAL::TLayer::STLayer</scope><name>STLayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d0f/ecal__process__severity_8h" kind="file" language="C++">
+    <compoundname>ecal_process_severity.h</compoundname>
+    <includedby refid="de/df1/ecal__process_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h</label>
+        <link refid="de/df1/ecal__process_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h</label>
+        <link refid="da/dfc/ecal__timed__cb_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process_severity.h</label>
+        <link refid="d0/d0f/ecal__process__severity_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</label>
+        <link refid="d9/dbf/ecal_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17" prot="public" static="no" strong="no">
+        <type></type>
+        <name>eCAL_Process_eSeverity</name>
+        <enumvalue id="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17af0d4ab40c833c55cb5ef1864cc36d5a3" prot="public">
+          <name>proc_sev_unknown</name>
+          <initializer>=  0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>0 == condition unknown <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17a822bba9dfbc85e3a7dbeb34da111b372" prot="public">
+          <name>proc_sev_healthy</name>
+          <initializer>=  1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1 == process healthy <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17a935d8727d5522732b5ff6392b6924609" prot="public">
+          <name>proc_sev_warning</name>
+          <initializer>=  2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2 == process warning level </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17aaf41c31b187a69937769f882d92c5e01" prot="public">
+          <name>proc_sev_critical</name>
+          <initializer>=  3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3 == process critical <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17a1c447519774c3a6933bf4679c9b110a0" prot="public">
+          <name>proc_sev_failed</name>
+          <initializer>=  4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>4 == process failed <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Process severity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process_severity.h" line="30" column="1" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process_severity.h" bodystart="31" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="enum" id="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>eCAL_Process_eSeverity_Level</name>
+        <enumvalue id="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aa3d42b801f7b24072c16fcf9bba16d554" prot="public">
+          <name>proc_sev_level1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>default severity level 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aa78f2b299344b7f4ca0c0517c84fb4c5c" prot="public">
+          <name>proc_sev_level2</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>severity level 2 <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aad056297dacd46fee2dce3aa07acf2816" prot="public">
+          <name>proc_sev_level3</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>severity level 3 <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aa61a040ac33565e6713f7b36d14f0c14c" prot="public">
+          <name>proc_sev_level4</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>severity level 4 <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aac350d72a37effb788f997973f0b7a017" prot="public">
+          <name>proc_sev_level5</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>severity level 5 <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Process Severity Level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>enumerations for ECAL_API::SetState functionality where the lowest process severity is generally proc_sev_level1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process_severity.h" line="46" column="1" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process_severity.h" bodystart="47" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL process severity </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17" kindref="member">eCAL_Process_eSeverity</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32" refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17af0d4ab40c833c55cb5ef1864cc36d5a3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17af0d4ab40c833c55cb5ef1864cc36d5a3" kindref="member">proc_sev_unknown</ref><sp/><sp/><sp/>=<sp/><sp/>0,<sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17a822bba9dfbc85e3a7dbeb34da111b372" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17a822bba9dfbc85e3a7dbeb34da111b372" kindref="member">proc_sev_healthy</ref><sp/><sp/><sp/>=<sp/><sp/>1,<sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17a935d8727d5522732b5ff6392b6924609" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17a935d8727d5522732b5ff6392b6924609" kindref="member">proc_sev_warning</ref><sp/><sp/><sp/>=<sp/><sp/>2,<sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17aaf41c31b187a69937769f882d92c5e01" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17aaf41c31b187a69937769f882d92c5e01" kindref="member">proc_sev_critical</ref><sp/><sp/>=<sp/><sp/>3,<sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17a1c447519774c3a6933bf4679c9b110a0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17a1c447519774c3a6933bf4679c9b110a0" kindref="member">proc_sev_failed</ref><sp/><sp/><sp/><sp/>=<sp/><sp/>4,<sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312a" kindref="member">eCAL_Process_eSeverity_Level</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48" refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aa3d42b801f7b24072c16fcf9bba16d554" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aa3d42b801f7b24072c16fcf9bba16d554" kindref="member">proc_sev_level1</ref><sp/>=<sp/>1,<sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aa78f2b299344b7f4ca0c0517c84fb4c5c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aa78f2b299344b7f4ca0c0517c84fb4c5c" kindref="member">proc_sev_level2</ref><sp/>=<sp/>2,<sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aad056297dacd46fee2dce3aa07acf2816" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aad056297dacd46fee2dce3aa07acf2816" kindref="member">proc_sev_level3</ref><sp/>=<sp/>3,<sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aa61a040ac33565e6713f7b36d14f0c14c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aa61a040ac33565e6713f7b36d14f0c14c" kindref="member">proc_sev_level4</ref><sp/>=<sp/>4,<sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aac350d72a37effb788f997973f0b7a017" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312aac350d72a37effb788f997973f0b7a017" kindref="member">proc_sev_level5</ref><sp/>=<sp/>5,<sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process_severity.h"/>
+  </compounddef>
+</doxygen>

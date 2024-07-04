@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/d9f/subscriber_8h" kind="file" language="C++">
+    <compoundname>subscriber.h</compoundname>
+    <includes refid="dc/de4/ecal__deprecate_8h" local="no">ecal/ecal_deprecate.h</includes>
+    <includes refid="de/db9/ecal__subscriber_8h" local="no">ecal/ecal_subscriber.h</includes>
+    <includes refid="da/d20/ecal__util_8h" local="no">ecal/ecal_util.h</includes>
+    <includes local="no">cassert</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>ecal/cimpl/ecal_callback_cimpl.h</label>
+      </node>
+      <node id="12">
+        <label>ecal/ecal_qos.h</label>
+        <link refid="d8/d58/ecal__qos_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ecal/ecal_os.h</label>
+        <link refid="d8/db1/ecal__os_8h"/>
+      </node>
+      <node id="21">
+        <label>cassert</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>ecal/ecal_types.h</label>
+        <link refid="d1/de7/ecal__types_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>map</label>
+      </node>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/subscriber.h</label>
+        <link refid="da/d9f/subscriber_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ecal/ecal_defs.h</label>
+      </node>
+      <node id="17">
+        <label>tuple</label>
+      </node>
+      <node id="20">
+        <label>vector</label>
+      </node>
+      <node id="19">
+        <label>utility</label>
+      </node>
+      <node id="5">
+        <label>cstddef</label>
+      </node>
+      <node id="2">
+        <label>ecal/ecal_deprecate.h</label>
+        <link refid="dc/de4/ecal__deprecate_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>unordered_map</label>
+      </node>
+      <node id="4">
+        <label>ecal/ecal_subscriber.h</label>
+        <link refid="de/db9/ecal__subscriber_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>mutex</label>
+      </node>
+      <node id="14">
+        <label>set</label>
+      </node>
+      <node id="6">
+        <label>ecal/ecal_callback.h</label>
+        <link refid="df/d76/ecal__callback_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ecal/ecal_util.h</label>
+        <link refid="da/d20/ecal__util_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>cstring</label>
+      </node>
+      <node id="13">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="d5/de3/classeCAL_1_1CMsgSubscriber" prot="public">eCAL::CMsgSubscriber</innerclass>
+    <innernamespace refid="db/de7/namespaceeCAL">eCAL</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dc/de4/ecal__deprecate_8h" kindref="compound">ecal/ecal_deprecate.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="de/db9/ecal__subscriber_8h" kindref="compound">ecal/ecal_subscriber.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="da/d20/ecal__util_8h" kindref="compound">ecal/ecal_util.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eCAL</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="47" refid="d5/de3/classeCAL_1_1CMsgSubscriber" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber" kindref="compound">CMsgSubscriber</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d3/d33/classeCAL_1_1CSubscriber" kindref="compound">CSubscriber</ref></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a13a0ea3e138347c12427e27906862ebd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a13a0ea3e138347c12427e27906862ebd" kindref="member">CMsgSubscriber</ref>()<sp/>:<sp/><ref refid="d3/d33/classeCAL_1_1CSubscriber" kindref="compound">CSubscriber</ref>()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>use<sp/>the<sp/>constructor<sp/>CMsgSubscriber(const<sp/>std::string&amp;<sp/>topic_name_,<sp/>const<sp/>SDataTypeInformation&amp;<sp/>topic_info_)<sp/>instead.<sp/>This<sp/>function<sp/>will<sp/>be<sp/>removed<sp/>in<sp/>future<sp/>eCAL<sp/>versions.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="66" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a85f1acc60a0a2433870af7d3ac0521c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber" kindref="compound">CMsgSubscriber</ref>(const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>topic_name_,<sp/>const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>topic_type_<sp/>=<sp/>&quot;&quot;,<sp/>const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>topic_desc_<sp/>=<sp/>&quot;&quot;)<sp/>:<sp/><ref refid="d3/d33/classeCAL_1_1CSubscriber" kindref="compound">CSubscriber</ref>(topic_name_,<sp/>topic_type_,<sp/>topic_desc_)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a51c386152b3d3755a07fd136cac97d89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a51c386152b3d3755a07fd136cac97d89" kindref="member">CMsgSubscriber</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>topic_name_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref>&amp;<sp/>topic_info_)<sp/>:<sp/><ref refid="d3/d33/classeCAL_1_1CSubscriber" kindref="compound">CSubscriber</ref>(topic_name_,<sp/>topic_info_)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="d5/de3/classeCAL_1_1CMsgSubscriber" kindref="compound">CMsgSubscriber</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1abbfecfca61a4f85e87677f50e7579ee8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1abbfecfca61a4f85e87677f50e7579ee8" kindref="member">CMsgSubscriber</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber" kindref="compound">CMsgSubscriber</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a4eaa67dd19a69d7df9b4de99d2791e55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber" kindref="compound">CMsgSubscriber</ref>&amp;<sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a4eaa67dd19a69d7df9b4de99d2791e55" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber" kindref="compound">CMsgSubscriber</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1abde498b05779c5b14abc1ff6d6a46cef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1abde498b05779c5b14abc1ff6d6a46cef" kindref="member">CMsgSubscriber</ref>(<ref refid="d5/de3/classeCAL_1_1CMsgSubscriber" kindref="compound">CMsgSubscriber</ref>&amp;&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="d3/d33/classeCAL_1_1CSubscriber" kindref="compound">CSubscriber</ref>(std::move(rhs))</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>m_cb_callback(std::move(rhs.m_cb_callback))</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>has_callback<sp/>=<sp/>(m_cb_callback<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(has_callback)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>callback<sp/>bound<sp/>to<sp/>the<sp/>CSubscriber<sp/>belongs<sp/>to<sp/>rhs,<sp/>bind<sp/>to<sp/>this<sp/>callback<sp/>instead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d33/classeCAL_1_1CSubscriber_1a6e627d4fc8afce25d7317067e1555ecc" kindref="member">CSubscriber::RemReceiveCallback</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>callback<sp/>=<sp/>std::bind(&amp;CMsgSubscriber::ReceiveCallback,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>std::placeholders::_1,<sp/>std::placeholders::_2);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d33/classeCAL_1_1CSubscriber_1ae9434a3d3816ba0bc81ad3dce0f202b7" kindref="member">CSubscriber::AddReceiveCallback</ref>(callback);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a1c925d1a051449161e6849dcd10219d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber" kindref="compound">CMsgSubscriber</ref>&amp;<sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a1c925d1a051449161e6849dcd10219d8" kindref="member">operator=</ref>(<ref refid="d5/de3/classeCAL_1_1CMsgSubscriber" kindref="compound">CMsgSubscriber</ref>&amp;&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d33/classeCAL_1_1CSubscriber_1a90867d43be4633ba5d5b2114b2b92294" kindref="member">CSubscriber::operator=</ref>(std::move(rhs));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_cb_callback<sp/>=<sp/>std::move(rhs.m_cb_callback);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>has_callback(m_cb_callback<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(has_callback)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>callback<sp/>bound<sp/>to<sp/>the<sp/>CSubscriber<sp/>belongs<sp/>to<sp/>rhs,<sp/>bind<sp/>to<sp/>this<sp/>callback<sp/>instead;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d33/classeCAL_1_1CSubscriber_1a6e627d4fc8afce25d7317067e1555ecc" kindref="member">CSubscriber::RemReceiveCallback</ref>();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>callback<sp/>=<sp/>std::bind(&amp;CMsgSubscriber::ReceiveCallback,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>std::placeholders::_1,<sp/>std::placeholders::_2);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d33/classeCAL_1_1CSubscriber_1ae9434a3d3816ba0bc81ad3dce0f202b7" kindref="member">CSubscriber::AddReceiveCallback</ref>(callback);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>use<sp/>the<sp/>method<sp/>CMsgSubscriber(const<sp/>std::string&amp;<sp/>topic_name_,<sp/>const<sp/>SDataTypeInformation&amp;<sp/>topic_info_)<sp/>instead.<sp/>This<sp/>function<sp/>will<sp/>be<sp/>removed<sp/>in<sp/>future<sp/>eCAL<sp/>versions.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="142" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a66f407c0a800d138623cebfdedfabaa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a66f407c0a800d138623cebfdedfabaa6" kindref="member">Create</ref>(const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>topic_name_,<sp/>const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>topic_type_<sp/>=<sp/>&quot;&quot;,<sp/>const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>topic_desc_<sp/>=<sp/>&quot;&quot;)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="d3/d33/classeCAL_1_1CSubscriber_1af9d4527503a72a867b4911164a2ac7aa" kindref="member">CSubscriber::Create</ref>(topic_name_,<sp/>topic_type_,<sp/>topic_desc_));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1accb975230fcd283bd24cedae3e13ca7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1accb975230fcd283bd24cedae3e13ca7c" kindref="member">Create</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>topic_name_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref>&amp;<sp/>topic_info_)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="d3/d33/classeCAL_1_1CSubscriber_1af9d4527503a72a867b4911164a2ac7aa" kindref="member">CSubscriber::Create</ref>(topic_name_,<sp/>topic_info_));</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1afbe5f1b2feb8aa384a2d9fa08b000cc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1afbe5f1b2feb8aa384a2d9fa08b000cc0" kindref="member">Destroy</ref>()</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a41bdbee6fa7b78aade1c972b6b93bf7c" kindref="member">RemReceiveCallback</ref>();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="d3/d33/classeCAL_1_1CSubscriber_1a9fcfccec4e1fd257dd12cf2cd80e8203" kindref="member">CSubscriber::Destroy</ref>());</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a9f55f730114002d9a3df318525c41370" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a9f55f730114002d9a3df318525c41370" kindref="member">Receive</ref>(T&amp;<sp/>msg_,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">*<sp/>time_<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rcv_timeout_<sp/>=<sp/>0)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="181"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assert(<ref refid="d3/d33/classeCAL_1_1CSubscriber_1ab1ac748ad7602edae725861e15801a82" kindref="member">IsCreated</ref>());</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>rec_buf;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>success<sp/>=<sp/><ref refid="d3/d33/classeCAL_1_1CSubscriber_1add17afc444fa01f1774a214a23d9eb2d" kindref="member">CSubscriber::ReceiveBuffer</ref>(rec_buf,<sp/>time_,<sp/>rcv_timeout_);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!success)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(Deserialize(msg_,<sp/>rec_buf.c_str(),<sp/>rec_buf.size()));</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1af215a62bb04debf7eb34a1ce3dfda674" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;void(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>topic_name_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>msg_,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>time_,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>clock_,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>id_)&gt;<sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1af215a62bb04debf7eb34a1ce3dfda674" kindref="member">MsgReceiveCallbackT</ref>;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1aefaca53dac611afbd69e021dcfc09883" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1aefaca53dac611afbd69e021dcfc09883" kindref="member">AddReceiveCallback</ref>(<ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1af215a62bb04debf7eb34a1ce3dfda674" kindref="member">MsgReceiveCallbackT</ref><sp/>callback_)</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assert(<ref refid="d3/d33/classeCAL_1_1CSubscriber_1ab1ac748ad7602edae725861e15801a82" kindref="member">IsCreated</ref>());</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a41bdbee6fa7b78aade1c972b6b93bf7c" kindref="member">RemReceiveCallback</ref>();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>callback_lock(m_cb_callback_mutex);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_cb_callback<sp/>=<sp/>callback_;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>callback<sp/>=<sp/>std::bind(&amp;CMsgSubscriber::ReceiveCallback,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>std::placeholders::_1,<sp/>std::placeholders::_2);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="d3/d33/classeCAL_1_1CSubscriber_1ae9434a3d3816ba0bc81ad3dce0f202b7" kindref="member">CSubscriber::AddReceiveCallback</ref>(callback));</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a41bdbee6fa7b78aade1c972b6b93bf7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1a41bdbee6fa7b78aade1c972b6b93bf7c" kindref="member">RemReceiveCallback</ref>()</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="d3/d33/classeCAL_1_1CSubscriber_1a6e627d4fc8afce25d7317067e1555ecc" kindref="member">CSubscriber::RemReceiveCallback</ref>();</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>callback_lock(m_cb_callback_mutex);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_cb_callback<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_cb_callback<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(ret);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>use<sp/>SDataTypeInformation<sp/>GetDataTypeInformation()<sp/>instead.<sp/>This<sp/>function<sp/>will<sp/>be<sp/>removed<sp/>in<sp/>future<sp/>eCAL<sp/>versions.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>GetTypeName()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="238"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref><sp/>topic_info{<sp/>GetDataTypeInformation()<sp/>};</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Util::CombinedTopicEncodingAndType(topic_info.encoding,<sp/>topic_info.name);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>use<sp/>SDataTypeInformation<sp/>GetDataTypeInformation()<sp/>instead.<sp/>This<sp/>function<sp/>will<sp/>be<sp/>removed<sp/>in<sp/>future<sp/>eCAL<sp/>versions.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>GetDescription()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="245"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GetDataTypeInformation().<ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation_1a68b6da675cbecf3b083e662b6e92f581" kindref="member">descriptor</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>cannot<sp/>make<sp/>it<sp/>pure<sp/>virtual,<sp/>as<sp/>it<sp/>would<sp/>break<sp/>a<sp/>bunch<sp/>of<sp/>implementations,<sp/>who<sp/>are<sp/>not<sp/>(yet)<sp/>implementing<sp/>this<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>SDataTypeInformation<sp/>GetDataTypeInformation()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SDataTypeInformation{};<sp/>}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Deserialize(T&amp;<sp/>msg_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer_,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size_)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ReceiveCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>topic_name_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData" kindref="compound">eCAL::SReceiveCallbackData</ref>*<sp/>data_)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1af215a62bb04debf7eb34a1ce3dfda674" kindref="member">MsgReceiveCallbackT</ref><sp/>fn_callback<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>callback_lock(m_cb_callback_mutex);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fn_callback<sp/>=<sp/>m_cb_callback;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(fn_callback<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>msg;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Deserialize(msg,<sp/>data_-&gt;<ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1a73f9ec7f4a49447079e96b964e6f1137" kindref="member">buf</ref>,<sp/>data_-&gt;<ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1acfd7c40b3892e0fc0c03ca0c37f42999" kindref="member">size</ref>))</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(fn_callback)(topic_name_,<sp/>msg,<sp/>data_-&gt;<ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1aadfaaa0f23f048209e71b72fe658d8a7" kindref="member">time</ref>,<sp/>data_-&gt;<ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1a583076c29d3d2fe4a4487b075b045426" kindref="member">clock</ref>,<sp/>data_-&gt;<ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1ad4a1d4610aa3b5a2c3a94050a9f3a5dd" kindref="member">id</ref>);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>std::mutex<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_cb_callback_mutex;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/de3/classeCAL_1_1CMsgSubscriber_1af215a62bb04debf7eb34a1ce3dfda674" kindref="member">MsgReceiveCallbackT</ref><sp/>m_cb_callback;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/subscriber.h"/>
+  </compounddef>
+</doxygen>

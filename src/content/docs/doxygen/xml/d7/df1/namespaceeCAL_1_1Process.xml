@@ -1,0 +1,736 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/df1/namespaceeCAL_1_1Process" kind="namespace" language="C++">
+    <compoundname>eCAL::Process</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a024a270c580d40fe8e59455226ddbf75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Process::DumpConfig</definition>
+        <argsstring>()</argsstring>
+        <name>DumpConfig</name>
+        <briefdescription>
+<para>Dump configuration to console. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="43" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="43" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a6ea34958542106657a76e88ce57f02a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Process::DumpConfig</definition>
+        <argsstring>(std::string &amp;cfg_s_)</argsstring>
+        <name>DumpConfig</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>cfg_s_</declname>
+        </param>
+        <briefdescription>
+<para>Dump configuration to std::string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cfg_s_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to dump configuration to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="50" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="50" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a5052f19e8161bc54861f0b101548cc8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Process::GetHostName</definition>
+        <argsstring>()</argsstring>
+        <name>GetHostName</name>
+        <briefdescription>
+<para>Get current host name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Host name or empty string if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="57" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="57" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1af29c2673d6aec8d9120b3072b5444a26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Process::GetHostGroupName</definition>
+        <argsstring>()</argsstring>
+        <name>GetHostGroupName</name>
+        <briefdescription>
+<para>Get current host group name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Host group name or empty string if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="64" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="64" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a9f0be9f1946c8d3827baa4d250dae9dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Process::GetHostID</definition>
+        <argsstring>()</argsstring>
+        <name>GetHostID</name>
+        <briefdescription>
+<para>Get unique host id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000080"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>Host id or zero if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="73" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="73" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a9316c16239592058aa92936910c0fff1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Process::GetUnitName</definition>
+        <argsstring>()</argsstring>
+        <name>GetUnitName</name>
+        <briefdescription>
+<para>Get current unit name (defined via eCAL::Initialize). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Unit name or empty string if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="80" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="80" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1aafcbbada35b8c548ab7a0b58d46b6f4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Process::GetTaskParameter</definition>
+        <argsstring>(const char *sep_)</argsstring>
+        <name>GetTaskParameter</name>
+        <param>
+          <type>const char *</type>
+          <declname>sep_</declname>
+        </param>
+        <briefdescription>
+<para>Get current process parameter (defined via eCAL::Initialize(argc_, arg_v). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sep_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Separator.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Task parameter separated by &apos;sep_&apos; or zero string if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="89" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="89" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1aaca4e4230ea147783192e7f2aa9dddfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Process::SleepMS</definition>
+        <argsstring>(long time_ms_)</argsstring>
+        <name>SleepMS</name>
+        <param>
+          <type>long</type>
+          <declname>time_ms_</declname>
+        </param>
+        <briefdescription>
+<para>Sleep current thread. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Because of the fact that std::this_thread::sleep_for is vulnerable to system clock changes on Windows, Sleep function from synchapi.h had to be used for Windows. This insures time robustness on all platforms from a thread sleep perspective.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time_ms_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to sleep in ms. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="100" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="100" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1ae0985a98ff5dcab2df42318b0ce996bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Process::SleepNS</definition>
+        <argsstring>(const long long time_ns_)</argsstring>
+        <name>SleepNS</name>
+        <param>
+          <type>const long long</type>
+          <declname>time_ns_</declname>
+        </param>
+        <briefdescription>
+<para>Sleep current thread. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Because of the fact that std::this_thread::sleep_for is vulnerable to system clock changes on Windows, Sleep function from synchapi.h had to be used for Windows. This insures time robustness on all platforms from a thread sleep perspective. Used with ns unit to obtain bigger precision.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time_ns_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to sleep in ns. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="111" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="111" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1ab768762f3d5bc844ce0b025ad19c4c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Rep</type>
+          </param>
+          <param>
+            <type>typename Period</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void eCAL::Process::SleepFor</definition>
+        <argsstring>(std::chrono::duration&lt; Rep, Period &gt; time)</argsstring>
+        <name>SleepFor</name>
+        <param>
+          <type>std::chrono::duration&lt; Rep, Period &gt;</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Sleep current thread. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Templated implementation which takes as argument a std::chrono::duration and calls underlying SleepNS function. By using a std::chrono::duration argument we ensure that conversion to ms would be more precise for Windows Sleep method.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to sleep expressed in std::chrono::duration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="123" column="10" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" bodystart="123" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1adf71bf1cf68bc4e60e99c8239b84a3b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Process::GetProcessID</definition>
+        <argsstring>()</argsstring>
+        <name>GetProcessID</name>
+        <briefdescription>
+<para>Get current process id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The process id. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="134" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="134" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1aa3fcf7196e69ebaaaf2424f8089b929a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Process::GetProcessIDAsString</definition>
+        <argsstring>()</argsstring>
+        <name>GetProcessIDAsString</name>
+        <briefdescription>
+<para>Get current process id as string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The process id. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="141" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="141" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a3ef5a956fe6ab65f091b9cccc13a3310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Process::GetProcessName</definition>
+        <argsstring>()</argsstring>
+        <name>GetProcessName</name>
+        <briefdescription>
+<para>Get current process name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Process name length or zero if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="148" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="148" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a0468b912c32313f944f1425272cfd53d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Process::GetProcessParameter</definition>
+        <argsstring>()</argsstring>
+        <name>GetProcessParameter</name>
+        <briefdescription>
+<para>Get current process parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Process parameter or empty string if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="155" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="155" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a2df790218186bb86ca0527cba65c2453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API float</type>
+        <definition>ECAL_API float eCAL::Process::GetProcessCpuUsage</definition>
+        <argsstring>()</argsstring>
+        <name>GetProcessCpuUsage</name>
+        <briefdescription>
+<para>Get CPU usage of current process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000081"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>The CPU usage in percent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="164" column="20" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="164" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1adb83926b66ecff2b785f4d6d6c88f533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API unsigned long</type>
+        <definition>ECAL_API unsigned long eCAL::Process::GetProcessMemory</definition>
+        <argsstring>()</argsstring>
+        <name>GetProcessMemory</name>
+        <briefdescription>
+<para>Get memory usage of current process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000082"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>The memory usage in bytes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="173" column="28" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="173" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1adee987991ca8cb2b0ff8e894b45029f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API long long</type>
+        <definition>ECAL_API long long eCAL::Process::GetSClock</definition>
+        <argsstring>()</argsstring>
+        <name>GetSClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000083"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="179" column="24" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="179" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1aa03c3a2a189aa62a0c79ec265a43cd19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API long long</type>
+        <definition>ECAL_API long long eCAL::Process::GetSBytes</definition>
+        <argsstring>()</argsstring>
+        <name>GetSBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000084"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="186" column="24" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="186" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1ac9650b3a94782e569d1fda0f695ae880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API long long</type>
+        <definition>ECAL_API long long eCAL::Process::GetWClock</definition>
+        <argsstring>()</argsstring>
+        <name>GetWClock</name>
+        <briefdescription>
+<para>Get the write clock of the current process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000085"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>The message write count per second. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="195" column="24" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="195" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1aa23764e83f16831c5b2e4da07a8ec1b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API long long</type>
+        <definition>ECAL_API long long eCAL::Process::GetWBytes</definition>
+        <argsstring>()</argsstring>
+        <name>GetWBytes</name>
+        <briefdescription>
+<para>Get the write bytes of the current process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000086"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>The message write bytes per second. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="204" column="24" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="204" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a14af6ac75055ab99a8774a7cc764eb32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API long long</type>
+        <definition>ECAL_API long long eCAL::Process::GetRClock</definition>
+        <argsstring>()</argsstring>
+        <name>GetRClock</name>
+        <briefdescription>
+<para>Get the read clock of the current process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000087"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>The message read count per second. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="213" column="24" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="213" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a7a18edbcb416b038f210f9796178970e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API long long</type>
+        <definition>ECAL_API long long eCAL::Process::GetRBytes</definition>
+        <argsstring>()</argsstring>
+        <name>GetRBytes</name>
+        <briefdescription>
+<para>Get the read bytes of the current process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000088"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>The message read bytes per second. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="222" column="24" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="222" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a28e02d2f857c01052de373bb3e46e717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Process::SetState</definition>
+        <argsstring>(eCAL_Process_eSeverity severity_, eCAL_Process_eSeverity_Level level_, const char *info_)</argsstring>
+        <name>SetState</name>
+        <param>
+          <type><ref refid="d0/d0f/ecal__process__severity_8h_1af54a320816f7e73015680c0cef91ca17" kindref="member">eCAL_Process_eSeverity</ref></type>
+          <declname>severity_</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/d0f/ecal__process__severity_8h_1a2555c88c6ad7b7279f700f0357a8312a" kindref="member">eCAL_Process_eSeverity_Level</ref></type>
+          <declname>level_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>info_</declname>
+        </param>
+        <briefdescription>
+<para>Set process state info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>severity_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Severity. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Severity level. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>info_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Info message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="232" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="232" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1ab066eb894d9c1a7622da905c9c98a225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Process::AddRegistrationCallback</definition>
+        <argsstring>(enum eCAL_Registration_Event event_, RegistrationCallbackT callback_)</argsstring>
+        <name>AddRegistrationCallback</name>
+        <param>
+          <type>enum eCAL_Registration_Event</type>
+          <declname>event_</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d76/ecal__callback_8h_1a91d4259a2908bf409ff0b3fb871ca0a3" kindref="member">RegistrationCallbackT</ref></type>
+          <declname>callback_</declname>
+        </param>
+        <briefdescription>
+<para>Add registration callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of registration. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="242" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="242" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1af220071751dcf78044c31a778a29799a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Process::RemRegistrationCallback</definition>
+        <argsstring>(enum eCAL_Registration_Event event_)</argsstring>
+        <name>RemRegistrationCallback</name>
+        <param>
+          <type>enum eCAL_Registration_Event</type>
+          <declname>event_</declname>
+        </param>
+        <briefdescription>
+<para>Remove registration callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of registration.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="251" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="251" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a206bdbeb55b08d727e370d422d732a8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Process::StartProcess</definition>
+        <argsstring>(const char *proc_name_, const char *proc_args_, const char *working_dir_, bool create_console_, eCAL_Process_eStartMode process_mode_, bool block_)</argsstring>
+        <name>StartProcess</name>
+        <param>
+          <type>const char *</type>
+          <declname>proc_name_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>proc_args_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>working_dir_</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>create_console_</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d85/ecal__process__mode_8h_1ac07aba7e64cb7795b08212f4072658b8" kindref="member">eCAL_Process_eStartMode</ref></type>
+          <declname>process_mode_</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>block_</declname>
+        </param>
+        <briefdescription>
+<para>Start specified process (windows only). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proc_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Process name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>proc_args_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Process argument string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>working_dir_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Working directory. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>create_console_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start process in own console window (Windows only). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>process_mode_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start process normal, hidden, minimized, maximized (Windows only). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Block until process finished.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Process id or zero if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="265" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="265" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1ae10fb357ad61ec8a60e43ff60d62f385" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Process::StopProcess</definition>
+        <argsstring>(const char *proc_name_)</argsstring>
+        <name>StopProcess</name>
+        <param>
+          <type>const char *</type>
+          <declname>proc_name_</declname>
+        </param>
+        <briefdescription>
+<para>Stop specified process (windows only). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proc_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Process name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="274" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="274" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="de/df1/ecal__process_8h_1a4a018d810e332159ef33990e9203fc6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Process::StopProcess</definition>
+        <argsstring>(int proc_id_)</argsstring>
+        <name>StopProcess</name>
+        <param>
+          <type>int</type>
+          <declname>proc_id_</declname>
+        </param>
+        <briefdescription>
+<para>Stop specified process (windows only). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proc_id_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Process id.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="283" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" declline="283" declcolumn="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h" line="38" column="3"/>
+  </compounddef>
+</doxygen>

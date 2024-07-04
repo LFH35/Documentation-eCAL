@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d76/namespaceeCAL_1_1Config_1_1Experimental" kind="namespace" language="C++">
+    <compoundname>eCAL::Config::Experimental</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a233c9d0a10260e01b243b8ee3264ecb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::Experimental::IsShmMonitoringEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsShmMonitoringEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="136" column="34" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="136" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a224c3732eff426573ec505524d031bfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::Experimental::IsNetworkMonitoringDisabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsNetworkMonitoringDisabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="137" column="34" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="137" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a2916e95b188d7b7fceb5335056c43b90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API size_t</type>
+        <definition>ECAL_API size_t eCAL::Config::Experimental::GetShmMonitoringQueueSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetShmMonitoringQueueSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="138" column="34" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="138" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1a04d9c3b9b98ca0505968a01f87bc3425" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Config::Experimental::GetShmMonitoringDomain</definition>
+        <argsstring>()</argsstring>
+        <name>GetShmMonitoringDomain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="139" column="34" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="139" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/ecal__config_8h_1af8e917b3c4963762f5d75c5f7326444a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Config::Experimental::GetDropOutOfOrderMessages</definition>
+        <argsstring>()</argsstring>
+        <name>GetDropOutOfOrderMessages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="140" column="34" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" declline="140" declcolumn="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_config.h" line="134" column="5"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d0b/structeCAL_1_1SServiceResponse" kind="struct" language="C++" prot="public">
+    <compoundname>eCAL::SServiceResponse</compoundname>
+    <includes refid="de/ddd/ecal__service__info_8h" local="no">ecal_service_info.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/d0b/structeCAL_1_1SServiceResponse_1ad1cd1e74d12cee998fcab4226534399a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SServiceResponse::host_name</definition>
+        <argsstring></argsstring>
+        <name>host_name</name>
+        <briefdescription>
+<para>service host name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="45" column="18" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d0b/structeCAL_1_1SServiceResponse_1a9b6fb7b7e1885aec2ca18368c2ac19d0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SServiceResponse::service_name</definition>
+        <argsstring></argsstring>
+        <name>service_name</name>
+        <briefdescription>
+<para>name of the service </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="46" column="18" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d0b/structeCAL_1_1SServiceResponse_1afbe2e90710813b4b060877b71219322f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SServiceResponse::service_id</definition>
+        <argsstring></argsstring>
+        <name>service_id</name>
+        <briefdescription>
+<para>id of the service </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="47" column="18" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d0b/structeCAL_1_1SServiceResponse_1a178191367bece834315b14f023d70d70" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SServiceResponse::method_name</definition>
+        <argsstring></argsstring>
+        <name>method_name</name>
+        <briefdescription>
+<para>name of the service method </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="48" column="18" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d0b/structeCAL_1_1SServiceResponse_1ad71f76163dad8608aee04feabe59bd33" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SServiceResponse::error_msg</definition>
+        <argsstring></argsstring>
+        <name>error_msg</name>
+        <briefdescription>
+<para>human readable error message </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="49" column="18" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d0b/structeCAL_1_1SServiceResponse_1a4e7b663e558bb7b9384977be941f3b53" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eCAL::SServiceResponse::ret_state</definition>
+        <argsstring></argsstring>
+        <name>ret_state</name>
+        <briefdescription>
+<para>return state of the called service method </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="50" column="18" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d0b/structeCAL_1_1SServiceResponse_1ace6e253d71df73ea0a9fc0a88aabafa2" prot="public" static="no" mutable="no">
+        <type>eCallState</type>
+        <definition>eCallState eCAL::SServiceResponse::call_state</definition>
+        <argsstring></argsstring>
+        <name>call_state</name>
+        <briefdescription>
+<para>call state (see eCallState) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="51" column="18" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d0b/structeCAL_1_1SServiceResponse_1aa8eaab321aea72f058de01908ce2585d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string eCAL::SServiceResponse::response</definition>
+        <argsstring></argsstring>
+        <name>response</name>
+        <briefdescription>
+<para>service response </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="52" column="18" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d0b/structeCAL_1_1SServiceResponse_1a427fabf98b2becd698f6860434988ecd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::SServiceResponse::SServiceResponse</definition>
+        <argsstring>()</argsstring>
+        <name>SServiceResponse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="40" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="40" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Service response struct containing the (responding) server informations and the response itself. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" line="38" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service_info.h" bodystart="39" bodyend="53"/>
+    <listofallmembers>
+      <member refid="d9/d0b/structeCAL_1_1SServiceResponse_1ace6e253d71df73ea0a9fc0a88aabafa2" prot="public" virt="non-virtual"><scope>eCAL::SServiceResponse</scope><name>call_state</name></member>
+      <member refid="d9/d0b/structeCAL_1_1SServiceResponse_1ad71f76163dad8608aee04feabe59bd33" prot="public" virt="non-virtual"><scope>eCAL::SServiceResponse</scope><name>error_msg</name></member>
+      <member refid="d9/d0b/structeCAL_1_1SServiceResponse_1ad1cd1e74d12cee998fcab4226534399a" prot="public" virt="non-virtual"><scope>eCAL::SServiceResponse</scope><name>host_name</name></member>
+      <member refid="d9/d0b/structeCAL_1_1SServiceResponse_1a178191367bece834315b14f023d70d70" prot="public" virt="non-virtual"><scope>eCAL::SServiceResponse</scope><name>method_name</name></member>
+      <member refid="d9/d0b/structeCAL_1_1SServiceResponse_1aa8eaab321aea72f058de01908ce2585d" prot="public" virt="non-virtual"><scope>eCAL::SServiceResponse</scope><name>response</name></member>
+      <member refid="d9/d0b/structeCAL_1_1SServiceResponse_1a4e7b663e558bb7b9384977be941f3b53" prot="public" virt="non-virtual"><scope>eCAL::SServiceResponse</scope><name>ret_state</name></member>
+      <member refid="d9/d0b/structeCAL_1_1SServiceResponse_1afbe2e90710813b4b060877b71219322f" prot="public" virt="non-virtual"><scope>eCAL::SServiceResponse</scope><name>service_id</name></member>
+      <member refid="d9/d0b/structeCAL_1_1SServiceResponse_1a9b6fb7b7e1885aec2ca18368c2ac19d0" prot="public" virt="non-virtual"><scope>eCAL::SServiceResponse</scope><name>service_name</name></member>
+      <member refid="d9/d0b/structeCAL_1_1SServiceResponse_1a427fabf98b2becd698f6860434988ecd" prot="public" virt="non-virtual"><scope>eCAL::SServiceResponse</scope><name>SServiceResponse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

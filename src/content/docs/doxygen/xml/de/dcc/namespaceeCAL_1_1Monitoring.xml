@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/dcc/namespaceeCAL_1_1Monitoring" kind="namespace" language="C++">
+    <compoundname>eCAL::Monitoring</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="de/d8e/ecal__monitoring_8h_1a7d38a2c338352ce2d739a0e6241e0e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Monitoring::SetExclFilter</definition>
+        <argsstring>(const std::string &amp;filter_)</argsstring>
+        <name>SetExclFilter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filter_</declname>
+        </param>
+        <briefdescription>
+<para>Set topics filter blacklist regular expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic filter as regular expression.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" line="44" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" declline="44" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8e/ecal__monitoring_8h_1a9beaf5f527b1f60da8662622873805ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Monitoring::SetInclFilter</definition>
+        <argsstring>(const std::string &amp;filter_)</argsstring>
+        <name>SetInclFilter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filter_</declname>
+        </param>
+        <briefdescription>
+<para>Set topics filter whitelist regular expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic filter as regular expression.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" line="53" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" declline="53" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8e/ecal__monitoring_8h_1a1891c7595b3c36fd474b238bb2c80976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Monitoring::SetFilterState</definition>
+        <argsstring>(bool state_)</argsstring>
+        <name>SetFilterState</name>
+        <param>
+          <type>bool</type>
+          <declname>state_</declname>
+        </param>
+        <briefdescription>
+<para>Switch topics filter using regular expression on/off. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter on / off state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" line="62" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" declline="62" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8e/ecal__monitoring_8h_1a3f27326ec1c3aefa80251c32f02a785d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Monitoring::GetMonitoring</definition>
+        <argsstring>(std::string &amp;mon_)</argsstring>
+        <name>GetMonitoring</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>mon_</declname>
+        </param>
+        <briefdescription>
+<para>Get monitoring as serialized protobuf string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000077"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. Please use GetMonitoring(std::string&amp; mon_, unsigned int entities_) instead.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">mon_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to store the monitoring information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Monitoring buffer length or zero if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" line="73" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" declline="73" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8e/ecal__monitoring_8h_1aa83af5b57590229e655179bb665097f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Monitoring::GetMonitoring</definition>
+        <argsstring>(std::string &amp;mon_, unsigned int entities_)</argsstring>
+        <name>GetMonitoring</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>mon_</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>entities_</declname>
+        </param>
+        <briefdescription>
+<para>Get monitoring subset as serialized protobuf string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">mon_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to store the monitoring information. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>entities_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entities to get.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" line="83" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" declline="83" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8e/ecal__monitoring_8h_1a2a0488ed7f58f10016e3a8ecd5d13cf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Monitoring::GetMonitoring</definition>
+        <argsstring>(eCAL::Monitoring::SMonitoring &amp;mon_, unsigned int entities_=Entity::All)</argsstring>
+        <name>GetMonitoring</name>
+        <param>
+          <type>eCAL::Monitoring::SMonitoring &amp;</type>
+          <declname>mon_</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>entities_</declname>
+          <defval>Entity::All</defval>
+        </param>
+        <briefdescription>
+<para>Get monitoring as a struct. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">mon_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target struct to store monitoring information. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>entities_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entities definition.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of struct elements if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" line="93" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" declline="93" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8e/ecal__monitoring_8h_1acd887762353250aa95666405429f6374" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Monitoring::GetLogging</definition>
+        <argsstring>(std::string &amp;log_)</argsstring>
+        <name>GetLogging</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>log_</declname>
+        </param>
+        <briefdescription>
+<para>Get logging as serialized protobuf string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">log_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to store the logging information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Monitoring buffer length or zero if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" line="103" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" declline="103" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8e/ecal__monitoring_8h_1a9e118dfcb7a51ad11d08bde99f90f495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Monitoring::PubMonitoring</definition>
+        <argsstring>(bool state_, std::string name_=&quot;ecal.monitoring&quot;)</argsstring>
+        <name>PubMonitoring</name>
+        <param>
+          <type>bool</type>
+          <declname>state_</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name_</declname>
+          <defval>&quot;ecal.monitoring&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Publish monitoring protobuf message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000078"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch publishing on/off. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Monitoring topic name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" line="115" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" declline="115" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d8e/ecal__monitoring_8h_1a94da1d74530ae82c1cac0824237f8a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API int</type>
+        <definition>ECAL_API int eCAL::Monitoring::PubLogging</definition>
+        <argsstring>(bool state_, std::string name_=&quot;ecal.logging&quot;)</argsstring>
+        <name>PubLogging</name>
+        <param>
+          <type>bool</type>
+          <declname>state_</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name_</declname>
+          <defval>&quot;ecal.logging&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Publish logging protobuf message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000079"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch publishing on/off. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logging topic name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" line="127" column="18" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" declline="127" declcolumn="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_monitoring.h" line="35" column="3"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_f83e91885a89341826b499c5b4c9a60f" kind="dir">
+    <compoundname>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/doc</compoundname>
+    <innerfile refid="dc/d56/doc_8hpp">doc.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/doc/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/dc2/classCDynamicSleeper" kind="class" language="C++" prot="public">
+    <compoundname>CDynamicSleeper</compoundname>
+    <includes refid="de/d22/dynamic__sleeper_8h" local="no">dynamic_sleeper.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/dc2/classCDynamicSleeper_1a470bd0dab65ee8923bdce33d189ec7c8" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex CDynamicSleeper::waitMutex</definition>
+        <argsstring></argsstring>
+        <name>waitMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The mutex used for the condition variable that is used for sleeping </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="178" column="14" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/classCDynamicSleeper_1ac74d10de112fcb6b3b5b599a62055739" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable CDynamicSleeper::waitCv</definition>
+        <argsstring></argsstring>
+        <name>waitCv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The condition variable that is used for sleeping and notifying the sleeping thread of a rate-change </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="179" column="27" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/classCDynamicSleeper_1a34ae9a9cf8993bb7d34f140846225922" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex CDynamicSleeper::modifyTimeMutex</definition>
+        <argsstring></argsstring>
+        <name>modifyTimeMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Mutex for protecting variables while modifying the time point or the rate of time </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="181" column="14" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/classCDynamicSleeper_1a009045a494403e89c3ceb4aa30615519" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CDynamicSleeper::rate</definition>
+        <argsstring></argsstring>
+        <name>rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current rate at which the time proceeds </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="182" column="10" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/classCDynamicSleeper_1a09fd2183f22a251b845a6b9276b8809a" prot="private" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long CDynamicSleeper::lastSimTime</definition>
+        <argsstring></argsstring>
+        <name>lastSimTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The last know time in the simulation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="183" column="13" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/classCDynamicSleeper_1a3f84279748f628525be5e53a5280dbb8" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; std::chrono::steady_clock &gt;</type>
+        <definition>std::chrono::time_point&lt;std::chrono::steady_clock&gt; CDynamicSleeper::lastSimTimeLocalTimestamp</definition>
+        <argsstring></argsstring>
+        <name>lastSimTimeLocalTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The local time when we received the last simulation time </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="184" column="27" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/dc2/classCDynamicSleeper_1aaf4e44427cf259aa63f5937b89203d27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CDynamicSleeper::CDynamicSleeper</definition>
+        <argsstring>()</argsstring>
+        <name>CDynamicSleeper</name>
+        <briefdescription>
+<para>Creates an instance with a rate of 1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The rate is the relative speed of time based on the system time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="39" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="39" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dc2/classCDynamicSleeper_1af83452d2e01780e02deab313ffc2423a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CDynamicSleeper::sleepFor</definition>
+        <argsstring>(long long durationNsecs_)</argsstring>
+        <name>sleepFor</name>
+        <param>
+          <type>long long</type>
+          <declname>durationNsecs_</declname>
+        </param>
+        <briefdescription>
+<para>Blocks for the given amount of nanoseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>How long the function actually blocks depends on the current rate at which the time is supposed to run</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>durationNsecs_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the duration in nanoseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="54" column="8" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="54" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dc2/classCDynamicSleeper_1a411b408923558e2579aa2a69179b3956" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CDynamicSleeper::sleepUntil</definition>
+        <argsstring>(long long sleepUntilTimeNsecs_)</argsstring>
+        <name>sleepUntil</name>
+        <param>
+          <type>long long</type>
+          <declname>sleepUntilTimeNsecs_</declname>
+        </param>
+        <briefdescription>
+<para>Blocks until the given point in sim time is reached. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>How long the function actually blocks depends on the current rate at which the time is supposed to run</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sleepUntilTimeNsecs_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the simulation time in nanoseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="72" column="8" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="72" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dc2/classCDynamicSleeper_1a8f98c51a62fabe7efe13a19875788abe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CDynamicSleeper::setRate</definition>
+        <argsstring>(double rate_)</argsstring>
+        <name>setRate</name>
+        <param>
+          <type>double</type>
+          <declname>rate_</declname>
+        </param>
+        <briefdescription>
+<para>sets the rate at which the time is supposed to run. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All threads that are waiting in the sleep function will automatically adjust their actual time to sleep based on the new rate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the rate of time relative to the system time </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="118" column="8" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="118" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dc2/classCDynamicSleeper_1a6467320c4e5b657231d8b26c5bd23229" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CDynamicSleeper::setTime</definition>
+        <argsstring>(long long nsecs_)</argsstring>
+        <name>setTime</name>
+        <param>
+          <type>long long</type>
+          <declname>nsecs_</declname>
+        </param>
+        <briefdescription>
+<para>Sets the sim time to the given value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the given time is lower than the time that was given the last time or lower than the time that was computed the last time the rate was changed, all waiting threads will abort waiting and return.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nsecs_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new simulation time in nanoseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="138" column="8" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="138" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dc2/classCDynamicSleeper_1a508629b59fb17f93c48aabd3f5aec1c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CDynamicSleeper::setTimeAndRate</definition>
+        <argsstring>(long long time_nsecs_, double rate_)</argsstring>
+        <name>setTimeAndRate</name>
+        <param>
+          <type>long long</type>
+          <declname>time_nsecs_</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rate_</declname>
+        </param>
+        <briefdescription>
+<para>Sets the sim time and the rate of time to the given values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the given time is lower than the time that was given the last time or lower than the time that was computed the last time the rate was changed, all waiting threads will abort waiting and return.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time_nsecs_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new simulatoin time in nanoseconds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rate_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the rate of the simulation time relative to the system clock </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="156" column="8" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="156" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dc2/classCDynamicSleeper_1af68ca28392ea68d690b67d61342c48cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long long</type>
+        <definition>long long CDynamicSleeper::getCurrentInternalSimTime</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentInternalSimTime</name>
+        <briefdescription>
+<para>getter for the internal simulation time used for computing how long to sleep </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the current simulation time </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="169" column="13" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="169" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dc2/classCDynamicSleeper_1a524d8ad2954ed5e928fa658d68bddfa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CDynamicSleeper::~CDynamicSleeper</definition>
+        <argsstring>()</argsstring>
+        <name>~CDynamicSleeper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="175" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="175" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class that is capable of sleeping the (approximately) correct amount of time while the rate of time is changing. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" line="30" column="1" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/dynamic_sleeper.h" bodystart="31" bodyend="185"/>
+    <listofallmembers>
+      <member refid="da/dc2/classCDynamicSleeper_1aaf4e44427cf259aa63f5937b89203d27" prot="public" virt="non-virtual"><scope>CDynamicSleeper</scope><name>CDynamicSleeper</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1af68ca28392ea68d690b67d61342c48cd" prot="public" virt="non-virtual"><scope>CDynamicSleeper</scope><name>getCurrentInternalSimTime</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1a09fd2183f22a251b845a6b9276b8809a" prot="private" virt="non-virtual"><scope>CDynamicSleeper</scope><name>lastSimTime</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1a3f84279748f628525be5e53a5280dbb8" prot="private" virt="non-virtual"><scope>CDynamicSleeper</scope><name>lastSimTimeLocalTimestamp</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1a34ae9a9cf8993bb7d34f140846225922" prot="private" virt="non-virtual"><scope>CDynamicSleeper</scope><name>modifyTimeMutex</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1a009045a494403e89c3ceb4aa30615519" prot="private" virt="non-virtual"><scope>CDynamicSleeper</scope><name>rate</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1a8f98c51a62fabe7efe13a19875788abe" prot="public" virt="non-virtual"><scope>CDynamicSleeper</scope><name>setRate</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1a6467320c4e5b657231d8b26c5bd23229" prot="public" virt="non-virtual"><scope>CDynamicSleeper</scope><name>setTime</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1a508629b59fb17f93c48aabd3f5aec1c7" prot="public" virt="non-virtual"><scope>CDynamicSleeper</scope><name>setTimeAndRate</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1af83452d2e01780e02deab313ffc2423a" prot="public" virt="non-virtual"><scope>CDynamicSleeper</scope><name>sleepFor</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1a411b408923558e2579aa2a69179b3956" prot="public" virt="non-virtual"><scope>CDynamicSleeper</scope><name>sleepUntil</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1ac74d10de112fcb6b3b5b599a62055739" prot="private" virt="non-virtual"><scope>CDynamicSleeper</scope><name>waitCv</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1a470bd0dab65ee8923bdce33d189ec7c8" prot="private" virt="non-virtual"><scope>CDynamicSleeper</scope><name>waitMutex</name></member>
+      <member refid="da/dc2/classCDynamicSleeper_1a524d8ad2954ed5e928fa658d68bddfa3" prot="public" virt="non-virtual"><scope>CDynamicSleeper</scope><name>~CDynamicSleeper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>eCAL - enhanced communication abstraction layer</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><heading level="2">Introduction</heading>
+</para>
+<para>The enhanced communication abstraction layer (eCAL) is a middleware that enables scalable, high performance interprocess communication on a single computer node or between different nodes in a computer network. The design is inspired by known Data Distribution Service for Real-Time Systems (see Data distribution service on wikipedia). The current eCAL implementation realizes a subset of such a DDS system, there is no support for Quality of Service (QoS) driven data transport. <linebreak/>
+ eCAL is designed for typical cloud computing scenarios where different processes exchange there I/O&apos;s using a publisher/subscriber pattern. The data exchange is based on so called topics. A topic wraps the payload that should be exchanged with additional informations like a unique name, a type and a description. A topic can be connected to more then one publisher and/or subscriber. These are the basic elements of the eCAL API. <linebreak/>
+ <itemizedlist>
+<listitem>
+<para>Topic: The most basic description of the data to be published and subscribed. </para>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem>
+<para>Publisher: A Publisher is the object responsible for the actual dissemination of publications. </para>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem>
+<para>Subscriber: A Subscriber is the object responsible for the actual reception of the data resulting from its subscriptions. </para>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem>
+<para>Callback: A Callback can be used to react on incoming messages. </para>
+</listitem>
+</itemizedlist>
+eCAL is simplifying the data transport as much as possible, It uses different mechanism to transport a topic from a publisher to a connected subscriber. On the same computer node the data are exchanged by using memory mapped files. Between different computer nodes UDP multicast is used to spread the data as fast as possible.</para>
+<para><heading level="2">A simple hello world example</heading>
+</para>
+<para>Now lets see a minimal publisher/subscriber example exchanging the famous &quot;hello world&quot; message :-). First the publisher ..</para>
+<para><programlisting><codeline><highlight class="normal">#include<sp/>&lt;ecal/ecal.h&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main(int<sp/>argc,<sp/>char<sp/>**argv)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>initialize<sp/>eCAL<sp/>API</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>eCAL::Initialize(argc,<sp/>argv,<sp/>&quot;minimal_pub&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>create<sp/>a<sp/>publisher<sp/>(topic<sp/>name<sp/>&quot;foo&quot;,<sp/>type<sp/>&quot;std::string&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>eCAL::CPublisher<sp/>pub(&quot;foo&quot;,<sp/>&quot;std::string&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>send<sp/>the<sp/>content</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>pub.Send(&quot;hello<sp/>world&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>finalize<sp/>eCAL<sp/>API</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>eCAL::Finalize();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>and the minimal subscriber ..</para>
+<para><programlisting><codeline><highlight class="normal">#include<sp/>&lt;ecal/ecal.h&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main(int<sp/>argc,<sp/>char<sp/>**argv)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>initialize<sp/>eCAL<sp/>API</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>eCAL::Initialize(argc,<sp/>argv,<sp/>&quot;minimal_sub&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>create<sp/>a<sp/>subscriber<sp/>(topic<sp/>name<sp/>&quot;foo&quot;,<sp/>type<sp/>&quot;std::string&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>eCAL::CSubscriber<sp/>sub(&quot;foo&quot;,<sp/>&quot;std::string&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>receive<sp/>content</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::string<sp/>msg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>sub.Receive(msg);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>finalize<sp/>eCAL<sp/>API</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>eCAL::Finalize();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><heading level="2">Trigger on incoming topics</heading>
+</para>
+<para>A callback function can be used to react on events of multiple subscribers. An extended &quot;hello world&quot; example could look like this. First the publisher part</para>
+<para><programlisting><codeline><highlight class="normal">//<sp/>create<sp/>2<sp/>publishers</highlight></codeline>
+<codeline><highlight class="normal">eCAL::CPublisher<sp/>pub1(&quot;foo1&quot;,<sp/>&quot;std::string&quot;);</highlight></codeline>
+<codeline><highlight class="normal">eCAL::CPublisher<sp/>pub2(&quot;foo2&quot;,<sp/>&quot;std::string&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>sending<sp/>&quot;hello<sp/>world&quot;<sp/>on<sp/>2<sp/>different<sp/>topics</highlight></codeline>
+<codeline><highlight class="normal">while(eCAL::Ok())</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>pub1.Send(&quot;hello&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>eCAL::Process::SleepMS(1000);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>pub2.Send(&quot;world&quot;);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>We use a callback function to react on incoming topics (with &quot;old school&quot; function pointer)</para>
+<para><programlisting><codeline><highlight class="normal">//<sp/>define<sp/>a<sp/>subscriber<sp/>callback<sp/>function</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>OnReceive(const<sp/>char*<sp/>topic_name_,<sp/>const<sp/>struct<sp/>eCAL::SReceiveCallbackData*<sp/>data_,<sp/>const<sp/>void*<sp/>par_)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>printf(&quot;We<sp/>received<sp/>%s<sp/>on<sp/>topic<sp/>%s\n.&quot;,<sp/>(char*)data_-&gt;buf,<sp/>topic_name_.c_str());</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>create<sp/>2<sp/>subscriber</highlight></codeline>
+<codeline><highlight class="normal">eCAL::CSubscriber<sp/>sub1(&quot;foo1&quot;,<sp/>&quot;std::string&quot;);</highlight></codeline>
+<codeline><highlight class="normal">eCAL::CSubscriber<sp/>sub2(&quot;foo2&quot;,<sp/>&quot;std::string&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>register<sp/>subscriber<sp/>callback<sp/>function</highlight></codeline>
+<codeline><highlight class="normal">sub1.AddReceiveCallback(OnReceive);</highlight></codeline>
+<codeline><highlight class="normal">sub2.AddReceiveCallback(OnReceive);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>idle<sp/>main<sp/>thread</highlight></codeline>
+<codeline><highlight class="normal">while(eCAL::Ok())</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>sleep<sp/>100<sp/>ms</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::this_thread::sleep_for(std::chrono::milliseconds(100));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>or we can connect to a callback function using std::bind and a specialized string message subscriber</para>
+<para><programlisting><codeline><highlight class="normal">//<sp/>define<sp/>a<sp/>subscriber<sp/>callback<sp/>function</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>OnReceive(const<sp/>char*<sp/>topic_name_,<sp/>const<sp/>std::string&amp;<sp/>message_)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>printf(&quot;We<sp/>received<sp/>%s<sp/>on<sp/>topic<sp/>%s\n.&quot;,<sp/>message_.c_str(),<sp/>topic_name_.c_str());</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>create<sp/>2<sp/>subscriber</highlight></codeline>
+<codeline><highlight class="normal">eCAL::string::CSubscriber<sp/>sub1(&quot;foo1&quot;);</highlight></codeline>
+<codeline><highlight class="normal">eCAL::string::CSubscriber<sp/>sub2(&quot;foo2&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>register<sp/>subscriber<sp/>callback<sp/>function</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>callback<sp/>=<sp/>std::bind(OnReceive,<sp/>std::placeholders::_1,<sp/>std::placeholders::_2);</highlight></codeline>
+<codeline><highlight class="normal">sub1.AddReceiveCallback(callback);</highlight></codeline>
+<codeline><highlight class="normal">sub2.AddReceiveCallback(callback);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>idle<sp/>main<sp/>thread</highlight></codeline>
+<codeline><highlight class="normal">while(eCAL::Ok())</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>sleep<sp/>100<sp/>ms</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::this_thread::sleep_for(std::chrono::milliseconds(100));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><heading level="2">(De)Serialization of objects</heading>
+</para>
+<para>The eCAL middleware does not provide a mechanism to serialize or deserialize message objects. This has to be implemented in a higher level API. See <ulink url="https://google.github.io/flatbuffers/">google flatbuffers</ulink>, <ulink url="https://capnproto.org/">cap&apos;n proto</ulink> or <ulink url="http://code.google.com/p/protobuf/">google protobuf</ulink> for more details. Here a typical example using <ulink url="http://code.google.com/p/protobuf/">google protobuf</ulink>. First you have to define a so called .proto file for the structure you want to serialize and deserialize. A simple Shape struct will be defined as follows ..</para>
+<para><programlisting><codeline><highlight class="normal">message<sp/>Shape</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>enum<sp/>ShapeType</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CIRCLE<sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TRIANGLE<sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>RECTANGLE<sp/>=<sp/>2;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>required<sp/>ShapeType<sp/>type<sp/>=<sp/>1<sp/>[default<sp/>=<sp/>CIRCLE];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>required<sp/>int32<sp/><sp/><sp/><sp/><sp/>size<sp/>=<sp/>2;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>After compiling that .proto file using the protobuf compiler you will receive a shape.pb.cc and shape.pb.h file that you have to include into your project. The serialization and deserialization is then quite simple ..</para>
+<para><programlisting><codeline><highlight class="normal">//<sp/>create<sp/>a<sp/>publisher<sp/>(topic<sp/>name<sp/>&quot;shape&quot;)</highlight></codeline>
+<codeline><highlight class="normal">eCAL::protobuf::CPublisher&lt;Shape&gt;<sp/>pub(&quot;shape&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>and<sp/>generate<sp/>a<sp/>class<sp/>instance<sp/>of<sp/>Shape</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>Shape<sp/>shape;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>modify<sp/>type<sp/>and<sp/>size<sp/>of<sp/>the<sp/>shape<sp/>object</highlight></codeline>
+<codeline><highlight class="normal">shape.set_type(Shape_ShapeType_CIRCLE);</highlight></codeline>
+<codeline><highlight class="normal">shape.set_size(42);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>send<sp/>the<sp/>shape<sp/>object</highlight></codeline>
+<codeline><highlight class="normal">pub.Send(shape);</highlight></codeline>
+</programlisting></para>
+<para>And last not least the matching deserialization ..</para>
+<para><programlisting><codeline><highlight class="normal">//<sp/>create<sp/>a<sp/>subscriber<sp/>(topic<sp/>name<sp/>&quot;shape&quot;)</highlight></codeline>
+<codeline><highlight class="normal">eCAL::protobuf::CSubscriber&lt;Shape&gt;<sp/>sub(&quot;shape&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>and<sp/>generate<sp/>a<sp/>class<sp/>instance<sp/>of<sp/>Shape</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>Shape<sp/>shape;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>receive<sp/>the<sp/>shape<sp/>object</highlight></codeline>
+<codeline><highlight class="normal">sub.Receive(shape);</highlight></codeline>
+</programlisting></para>
+<para>A similar way can be used to work with google flatbuffers. The flatbuffer message schema looks like this</para>
+<para><programlisting><codeline><highlight class="normal">namespace<sp/>Game.Sample;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">enum<sp/>Color:byte<sp/>{<sp/>Red<sp/>=<sp/>0,<sp/>Green,<sp/>Blue<sp/>=<sp/>2<sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">union<sp/>Any<sp/>{<sp/>Monster<sp/>}<sp/><sp/>//<sp/>add<sp/>more<sp/>elements..</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">struct<sp/>Vec3</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>x:float;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>y:float;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>z:float;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">table<sp/>Monster</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>pos:Vec3;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>mana:short<sp/>=<sp/>150;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>hp:short<sp/>=<sp/>100;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>name:string;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>friendly:bool<sp/>=<sp/>false<sp/>(deprecated);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>inventory:[ubyte];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>color:Color<sp/>=<sp/>Blue;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">root_type<sp/>Monster;</highlight></codeline>
+</programlisting></para>
+<para>After compiling the flatbuffer message we can send it the same way like a protocol buffer.</para>
+<para><programlisting><codeline><highlight class="normal">//<sp/>create<sp/>a<sp/>publisher<sp/>(topic<sp/>name<sp/>&quot;monster&quot;)</highlight></codeline>
+<codeline><highlight class="normal">eCAL::flatbuffers::CPublisher&lt;flatbuffers::FlatBufferBuilder&gt;<sp/>pub(&quot;monster&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>the<sp/>generic<sp/>builder<sp/>instance</highlight></codeline>
+<codeline><highlight class="normal">flatbuffers::FlatBufferBuilder<sp/>builder;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>generate<sp/>a<sp/>class<sp/>instance<sp/>of<sp/>Monster</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>vec<sp/>=<sp/>Game::Sample::Vec3(1,<sp/>2,<sp/>3);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">auto<sp/>name<sp/>=<sp/>builder.CreateString(&quot;Monster&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">unsigned<sp/>char<sp/>inv_data[]<sp/>=<sp/>{<sp/>0,<sp/>1,<sp/>2,<sp/>3,<sp/>4,<sp/>5,<sp/>6,<sp/>7,<sp/>8,<sp/>9<sp/>};</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>inventory<sp/>=<sp/>builder.CreateVector(inv_data,<sp/>10);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>shortcut<sp/>for<sp/>creating<sp/>monster<sp/>with<sp/>all<sp/>fields<sp/>set:</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>mloc<sp/>=<sp/>Game::Sample::CreateMonster(builder,<sp/>&amp;vec,<sp/>150,<sp/>80,<sp/>name,<sp/>inventory,<sp/>Game::Sample::Color_Blue);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>finalize<sp/>the<sp/>message</highlight></codeline>
+<codeline><highlight class="normal">builder.Finish(mloc);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>and<sp/>send<sp/>the<sp/>monster</highlight></codeline>
+<codeline><highlight class="normal">pub.Send(builder,<sp/>-1);</highlight></codeline>
+</programlisting></para>
+<para>Finally let&apos;s receive it via receive callback. So first we define a callback function for the flatbuffer message.</para>
+<para><programlisting><codeline><highlight class="normal">void<sp/>OnMonster(const<sp/>char*<sp/>topic_name_,<sp/>const<sp/>flatbuffers::FlatBufferBuilder&amp;<sp/>msg_,<sp/>const<sp/>long<sp/>long<sp/>time_)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>create<sp/>monster</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>auto<sp/>monster<sp/>=<sp/>Game::Sample::GetMonster(msg_.GetBufferPointer());</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>print<sp/>content</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;monster<sp/>pos<sp/>x<sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;<sp/>&lt;&lt;<sp/>monster-&gt;pos()-&gt;x()<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;monster<sp/>pos<sp/>y<sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;<sp/>&lt;&lt;<sp/>monster-&gt;pos()-&gt;y()<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;monster<sp/>pos<sp/>z<sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;<sp/>&lt;&lt;<sp/>monster-&gt;pos()-&gt;z()<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;monster<sp/>name<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;<sp/>&lt;&lt;<sp/>monster-&gt;name()-&gt;c_str()<sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>and implement the flatbuffer subscriber.</para>
+<para><programlisting><codeline><highlight class="normal">//<sp/>create<sp/>a<sp/>subscriber<sp/>(topic<sp/>name<sp/>&quot;monster&quot;)</highlight></codeline>
+<codeline><highlight class="normal">eCAL::flatbuffers::CSubscriber&lt;flatbuffers::FlatBufferBuilder&gt;<sp/>sub(&quot;monster&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>add<sp/>receive<sp/>callback<sp/>function<sp/>(_1<sp/>=<sp/>topic_name,<sp/>_2<sp/>=<sp/>msg,<sp/>_3<sp/>=<sp/>time)</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>callback<sp/>=<sp/>std::bind(OnMonster,<sp/>std::placeholders::_1,<sp/>std::placeholders::_2,<sp/>std::placeholders::_3);</highlight></codeline>
+<codeline><highlight class="normal">sub.AddReceiveCallback(callback);</highlight></codeline>
+</programlisting></para>
+<para><heading level="2">Catching eCAL events</heading>
+</para>
+<para>Beside the message receive callbacks eCAL provides an API to get informed if publisher / subscriber internal events get fired. The following example shows how to catch the connect and disconnect events of an eCAL publisher. First we define the event callback function ..</para>
+<para><programlisting><codeline><highlight class="normal">void<sp/>OnEvent(const<sp/>char*<sp/>topic_name_,<sp/>const<sp/>struct<sp/>eCAL::SPubEventCallbackData*<sp/>data_)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;topic<sp/>name<sp/><sp/><sp/>:<sp/>&quot;<sp/>&lt;&lt;<sp/>topic_name_<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>switch<sp/>(data_-&gt;type)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>case<sp/>pub_event_connected:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;event<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;<sp/>&lt;&lt;<sp/>&quot;pub_event_connected&quot;<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>case<sp/>pub_event_disconnected:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;event<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;<sp/>&lt;&lt;<sp/>&quot;pub_event_disconnected&quot;<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>default:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;event<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;<sp/>&lt;&lt;<sp/>&quot;unknown&quot;<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>Then we only have to bind the event we are interested in to the event callback.</para>
+<para><programlisting><codeline><highlight class="normal">//<sp/>create<sp/>a<sp/>publisher<sp/>(topic<sp/>name<sp/>&quot;person&quot;)</highlight></codeline>
+<codeline><highlight class="normal">eCAL::protobuf::CPublisher&lt;class<sp/>pb::People::Person&gt;<sp/>pub(&quot;person&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>add<sp/>event<sp/>callback<sp/>function<sp/>(_1<sp/>=<sp/>topic_name,<sp/>_2<sp/>=<sp/>event<sp/>data<sp/>struct)</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>evt_callback<sp/>=<sp/>std::bind(OnEvent,<sp/>std::placeholders::_1,<sp/>std::placeholders::_2);</highlight></codeline>
+<codeline><highlight class="normal">pub.AddEventCallback(pub_event_connected,<sp/><sp/><sp/><sp/>evt_callback);</highlight></codeline>
+<codeline><highlight class="normal">pub.AddEventCallback(pub_event_disconnected,<sp/>evt_callback);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/doc/doc.hpp"/>
+  </compounddef>
+</doxygen>

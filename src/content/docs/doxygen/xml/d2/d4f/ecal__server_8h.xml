@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d4f/ecal__server_8h" kind="file" language="C++">
+    <compoundname>ecal_server.h</compoundname>
+    <includes refid="dc/de4/ecal__deprecate_8h" local="no">ecal/ecal_deprecate.h</includes>
+    <includes refid="d8/db1/ecal__os_8h" local="no">ecal/ecal_os.h</includes>
+    <includes refid="df/d76/ecal__callback_8h" local="no">ecal/ecal_callback.h</includes>
+    <includes refid="de/ddd/ecal__service__info_8h" local="no">ecal/ecal_service_info.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">memory</includes>
+    <includedby refid="d9/dbf/ecal_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</includedby>
+    <includedby refid="d7/d5d/ecal__service_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service.h</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>functional</label>
+      </node>
+      <node id="6">
+        <label>ecal/cimpl/ecal_callback_cimpl.h</label>
+      </node>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_server.h</label>
+        <link refid="d2/d4f/ecal__server_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ecal/ecal_service_info.h</label>
+        <link refid="de/ddd/ecal__service__info_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ecal/ecal_os.h</label>
+        <link refid="d8/db1/ecal__os_8h"/>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>ecal/ecal_types.h</label>
+        <link refid="d1/de7/ecal__types_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ecal/ecal_defs.h</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+      <node id="11">
+        <label>ecal/cimpl/ecal_service_info_cimpl.h</label>
+      </node>
+      <node id="2">
+        <label>ecal/ecal_deprecate.h</label>
+        <link refid="dc/de4/ecal__deprecate_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ecal/ecal_callback.h</label>
+        <link refid="df/d76/ecal__callback_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_server.h</label>
+        <link refid="d2/d4f/ecal__server_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service.h</label>
+        <link refid="d7/d5d/ecal__service_8h"/>
+      </node>
+      <node id="2">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</label>
+        <link refid="d9/dbf/ecal_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d0/d09/classeCAL_1_1CServiceServer" prot="public">eCAL::CServiceServer</innerclass>
+    <innernamespace refid="db/de7/namespaceeCAL">eCAL</innernamespace>
+    <briefdescription>
+<para>eCAL service interface </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dc/de4/ecal__deprecate_8h" kindref="compound">ecal/ecal_deprecate.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d8/db1/ecal__os_8h" kindref="compound">ecal/ecal_os.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="df/d76/ecal__callback_8h" kindref="compound">ecal/ecal_callback.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="de/ddd/ecal__service__info_8h" kindref="compound">ecal/ecal_service_info.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eCAL</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CServiceServerImpl;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d0/d09/classeCAL_1_1CServiceServer" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/d09/classeCAL_1_1CServiceServer" kindref="compound">CServiceServer</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49" refid="d0/d09/classeCAL_1_1CServiceServer_1a4046992dbf0eaaf51dcc69d43e0f7d78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1a4046992dbf0eaaf51dcc69d43e0f7d78" kindref="member">CServiceServer</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="d0/d09/classeCAL_1_1CServiceServer_1a6db206279280c99f9deb829d475350e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1a4046992dbf0eaaf51dcc69d43e0f7d78" kindref="member">CServiceServer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>service_name_);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="d0/d09/classeCAL_1_1CServiceServer_1a64a1e25a15d197e590672275696a35d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1a64a1e25a15d197e590672275696a35d6" kindref="member">~CServiceServer</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="d0/d09/classeCAL_1_1CServiceServer_1ab4a5c2b8cc033a9375de8cc29829f289" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1a4046992dbf0eaaf51dcc69d43e0f7d78" kindref="member">CServiceServer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer" kindref="compound">CServiceServer</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="d0/d09/classeCAL_1_1CServiceServer_1a6f2a55da7ddd6cced90821ef02a0d58a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer" kindref="compound">CServiceServer</ref>&amp;<sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1a6f2a55da7ddd6cced90821ef02a0d58a" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer" kindref="compound">CServiceServer</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="d0/d09/classeCAL_1_1CServiceServer_1a3c7d5cbda958f2d4520061cd61376f74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1a3c7d5cbda958f2d4520061cd61376f74" kindref="member">Create</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>service_name_);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="d0/d09/classeCAL_1_1CServiceServer_1a82a28745c0d9a964bfcaac493cb47502" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1a82a28745c0d9a964bfcaac493cb47502" kindref="member">Destroy</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="d0/d09/classeCAL_1_1CServiceServer_1a40a09560ccdb6dc359db6c9b21ded042" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1a40a09560ccdb6dc359db6c9b21ded042" kindref="member">AddDescription</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>method_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>req_type_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>req_desc_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>resp_type_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>resp_desc_);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="d0/d09/classeCAL_1_1CServiceServer_1af52167f5ef7b89bfff61ac48a1c46e77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1af52167f5ef7b89bfff61ac48a1c46e77" kindref="member">AddMethodCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>method_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>req_type_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>resp_type_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/ddd/ecal__service__info_8h_1ae0436af7a525f2b5fcc30025def57c30" kindref="member">MethodCallbackT</ref>&amp;<sp/>callback_);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="d0/d09/classeCAL_1_1CServiceServer_1a300d466ffc32432b63474308e0eae390" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1a300d466ffc32432b63474308e0eae390" kindref="member">RemMethodCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>method_);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="d0/d09/classeCAL_1_1CServiceServer_1ac36d0e836d65a6cca9fc48e37dedf27d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1ac36d0e836d65a6cca9fc48e37dedf27d" kindref="member">AddEventCallback</ref>(eCAL_Server_Event<sp/>type_,<sp/><ref refid="df/d76/ecal__callback_8h_1a9b49337a63f0ad773c4490f21b7b8d5c" kindref="member">ServerEventCallbackT</ref><sp/>callback_);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="d0/d09/classeCAL_1_1CServiceServer_1a4dcd631696a6aed9cc177a5763ac579f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1a4dcd631696a6aed9cc177a5763ac579f" kindref="member">RemEventCallback</ref>(eCAL_Server_Event<sp/>type_);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="d0/d09/classeCAL_1_1CServiceServer_1a04fe300dfd88f0ed3e2ca3f3fde7a479" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/>std::string<sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1a04fe300dfd88f0ed3e2ca3f3fde7a479" kindref="member">GetServiceName</ref>();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="d0/d09/classeCAL_1_1CServiceServer_1a55c8a71b1f6d5cb1b70ab9317ed35a07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ECAL_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d09/classeCAL_1_1CServiceServer_1a55c8a71b1f6d5cb1b70ab9317ed35a07" kindref="member">IsConnected</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;CServiceServerImpl&gt;<sp/>m_service_server_impl;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_created;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}<sp/></highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_server.h"/>
+  </compounddef>
+</doxygen>

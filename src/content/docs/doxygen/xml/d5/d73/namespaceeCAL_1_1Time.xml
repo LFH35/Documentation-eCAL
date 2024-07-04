@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/d73/namespaceeCAL_1_1Time" kind="namespace" language="C++">
+    <compoundname>eCAL::Time</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d5/df7/ecal__time_8h_1a7fd36c3df5f4fe573f250eea2eafebde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::Time::GetName</definition>
+        <argsstring>()</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+<para>Get interface name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Get time sync interface name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" line="40" column="26" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" declline="40" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/df7/ecal__time_8h_1ab6d9d1b4bef72c120b3dc9935047ffda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API long long</type>
+        <definition>ECAL_API long long eCAL::Time::GetMicroSeconds</definition>
+        <argsstring>()</argsstring>
+        <name>GetMicroSeconds</name>
+        <briefdescription>
+<para>Get the current eCAL Time in microseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The timebase depends on the loaded ecaltime plugin.</para>
+<para><simplesect kind="return"><para>eCAL Time in microseconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" line="49" column="24" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" declline="49" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/df7/ecal__time_8h_1a58d1b5790d3a79c5cc664449af9569c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API long long</type>
+        <definition>ECAL_API long long eCAL::Time::GetNanoSeconds</definition>
+        <argsstring>()</argsstring>
+        <name>GetNanoSeconds</name>
+        <briefdescription>
+<para>Get the current eCAL Time in nanoseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The timebase depends on the loaded ecaltime plugin.</para>
+<para><simplesect kind="return"><para>eCAL Time in nanoseconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" line="58" column="24" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" declline="58" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/df7/ecal__time_8h_1a9757b9a8a143a99d9e23fb1a9728ab84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Time::SetNanoSeconds</definition>
+        <argsstring>(long long time_)</argsstring>
+        <name>SetNanoSeconds</name>
+        <param>
+          <type>long long</type>
+          <declname>time_</declname>
+        </param>
+        <briefdescription>
+<para>Sets the eCAL Time to the given time in nanoseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function only succeeds, if the host is the time master.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new eCAL Time in nanoseconds</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" line="69" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" declline="69" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/df7/ecal__time_8h_1a5d8e04b1b940df2739fbf78d34306fd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Time::IsSynchronized</definition>
+        <argsstring>()</argsstring>
+        <name>IsSynchronized</name>
+        <briefdescription>
+<para>Returns time synchronization state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if process is time synchronized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" line="76" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" declline="76" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/df7/ecal__time_8h_1ac8f3ede210605457aa8239cb578a1157" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::Time::IsMaster</definition>
+        <argsstring>()</argsstring>
+        <name>IsMaster</name>
+        <briefdescription>
+<para>Checks if the current host is the time master. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if host is time master, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" line="83" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" declline="83" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/df7/ecal__time_8h_1ada92c9fde160e167be93706d38dc39ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Time::SleepForNanoseconds</definition>
+        <argsstring>(long long duration_nsecs_)</argsstring>
+        <name>SleepForNanoseconds</name>
+        <param>
+          <type>long long</type>
+          <declname>duration_nsecs_</declname>
+        </param>
+        <briefdescription>
+<para>Blocks for the given amount of nanoseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The actual amount of (real-) time is influenced by the current rate at which the time is proceeding. It is not guaranteed, that the precision of this function actually is in nanoseconds. Limitations of the operating system might reduce the accuracy.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration_nsecs_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the duration in nanoseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" line="95" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" declline="95" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/df7/ecal__time_8h_1ab49ab0c0adb1c27325e3cd9c07f06c3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API void</type>
+        <definition>ECAL_API void eCAL::Time::GetStatus</definition>
+        <argsstring>(int &amp;error_, std::string *status_message_)</argsstring>
+        <name>GetStatus</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>error_</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>status_message_</declname>
+        </param>
+        <briefdescription>
+<para>Get the current error code and status message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An error code of 0 is considered to be OK. Any other error code is considered to indicate a problem. Time Adapters may use a set of error codes to indicate specific problems. The Status message may be a nullpointer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>error_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[out] the error code </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status_message_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[out] a human-readable status message. May be nullptr. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" line="108" column="19" declfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" declline="108" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/df7/ecal__time_8h_1a189586f0e0772f9562da20e7e449a898" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class _Rep</type>
+          </param>
+          <param>
+            <type>class _Period</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void eCAL::Time::sleep_for</definition>
+        <argsstring>(const std::chrono::duration&lt; _Rep, _Period &gt; &amp;_Rel_time)</argsstring>
+        <name>sleep_for</name>
+        <param>
+          <type>const std::chrono::duration&lt; _Rep, _Period &gt; &amp;</type>
+          <declname>_Rel_time</declname>
+        </param>
+        <briefdescription>
+<para>blocks for the given duration </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The actual amount of (real-) time is influenced by the current rate at which the time is proceeding. The precision of the delay is not guaranteed. It might depend on the actual eCAL Clock that is selected and limitations of the operating system.</para>
+<para>Example usage: eCAL::Time::sleep_for(std::chrono::seconds(10))</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_Rel_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the relative duration to sleep </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" line="130" column="12" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" bodystart="130" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_time.h" line="33" column="3"/>
+  </compounddef>
+</doxygen>

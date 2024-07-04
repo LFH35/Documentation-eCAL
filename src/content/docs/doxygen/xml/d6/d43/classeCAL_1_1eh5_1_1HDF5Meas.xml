@@ -1,0 +1,1031 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kind="class" language="C++" prot="public">
+    <compoundname>eCAL::eh5::HDF5Meas</compoundname>
+    <includes refid="d9/d88/eh5__meas_8h" local="no">eh5_meas.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a54dbaccb69979d75e6542d1f62b9c314" prot="public" static="no">
+        <type>std::function&lt; void(void)&gt;</type>
+        <definition>typedef std::function&lt;void(void)&gt; eCAL::eh5::HDF5Meas::CallbackFunction</definition>
+        <argsstring></argsstring>
+        <name>CallbackFunction</name>
+        <briefdescription>
+<para>Callback function type for pre file split notification. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="304" column="29" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a8479dda3272e182a32be0bfafda7c318" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; HDF5MeasImpl &gt;</type>
+        <definition>std::unique_ptr&lt;HDF5MeasImpl&gt; eCAL::eh5::HDF5Meas::hdf_meas_impl_</definition>
+        <argsstring></argsstring>
+        <name>hdf_meas_impl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="319" column="23" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a38a4a05c222d89a299585e495d176dd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::eh5::HDF5Meas::HDF5Meas</definition>
+        <argsstring>()</argsstring>
+        <name>HDF5Meas</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="49" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a0bd5ff2dc2f13c544494a7745581c55b" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::eh5::HDF5Meas::HDF5Meas</definition>
+        <argsstring>(const std::string &amp;path, eAccessType access=RDONLY)</argsstring>
+        <name>HDF5Meas</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>eAccessType</type>
+          <declname>access</declname>
+          <defval>RDONLY</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input file path / measurement directory path (see meas directory structure description bellow, in Open method). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>access</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Access type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="58" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a8586f7c715d04371ec47be6d039dcf16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::eh5::HDF5Meas::~HDF5Meas</definition>
+        <argsstring>()</argsstring>
+        <name>~HDF5Meas</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="63" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a046f3d909593b00d712062426f20b903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::eh5::HDF5Meas::HDF5Meas</definition>
+        <argsstring>(const HDF5Meas &amp;other)=delete</argsstring>
+        <name>HDF5Meas</name>
+        <param>
+          <type>const <ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor deleted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="68" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a8f21de8290b9e61ef3dca8a29f143998" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref> &amp;</type>
+        <definition>HDF5Meas&amp; eCAL::eh5::HDF5Meas::operator=</definition>
+        <argsstring>(const HDF5Meas &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move assignemnt deleted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="72" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aa6bd4a1ae6a3bed9579b3a26cb6af4c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::eh5::HDF5Meas::HDF5Meas</definition>
+        <argsstring>(HDF5Meas &amp;&amp;)=default</argsstring>
+        <name>HDF5Meas</name>
+        <param>
+          <type><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="77" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a7e7bae6a1c1d218fe8fe16f3f91ee16b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref> &amp;</type>
+        <definition>HDF5Meas&amp; eCAL::eh5::HDF5Meas::operator=</definition>
+        <argsstring>(HDF5Meas &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas" kindref="compound">HDF5Meas</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move assignment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="81" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aecad4114488fb039cb4a7887caaa5c25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::eh5::HDF5Meas::Open</definition>
+        <argsstring>(const std::string &amp;path, eAccessType access=RDONLY)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>eAccessType</type>
+          <declname>access</declname>
+          <defval>RDONLY</defval>
+        </param>
+        <briefdescription>
+<para>Open file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input file path / measurement directory path. <verbatim>            Default measurement directory structure:
+             - root directory e.g.: M:\measurement_directory\measurement01
+             - documents directory:                                |_doc
+             - hosts directories:                                  |_Host1 (e.g.: CARPC01)
+                                                                   |_Host2 (e.g.: CARPC02)
+
+            File path as input (eAccessType::RDONLY):
+             - root directory (e.g.: M:\measurement_directory\measurement01) in this case all hosts subdirectories will be iterated,
+             - host directory (e.g.: M:\measurement_directory\measurement01\CARPC01),
+             - file path, path to file from measurement (e.g.: M:\measurement_directory\measurement01\CARPC01\meas01_05.hdf5).
+
+            File path as output (eAccessType::CREATE):
+             - full path to  measurement directory (recommended with host name) (e.g.: M:\measurement_directory\measurement01\CARPC01),
+             - to set the name of the actual hdf5 file use SetFileBaseName method.
+</verbatim> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>access</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Access type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if output (eAccessType::CREATE) measurement directory structure can be accessed/created, false otherwise. true if input (eAccessType::RDONLY) measurement/file path was opened, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="108" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1abeed7e30c0dfe2c99fcea3dddc5b131a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::eh5::HDF5Meas::Close</definition>
+        <argsstring>()</argsstring>
+        <name>Close</name>
+        <briefdescription>
+<para>Close file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if succeeds, false if it fails </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="115" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aca4422176c24284ea24d694e545d8f68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::eh5::HDF5Meas::IsOk</definition>
+        <argsstring>() const</argsstring>
+        <name>IsOk</name>
+        <briefdescription>
+<para>Checks if file/measurement is ok. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if meas can be opened(read) or location is accessible(write), false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="122" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aeafef45016e17fabfd091af5663d95ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string eCAL::eh5::HDF5Meas::GetFileVersion</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFileVersion</name>
+        <briefdescription>
+<para>Get the File Type Version of the current opened file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>file version </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="129" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a674c3533cd6269ac88ff3f9a88e1791a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t eCAL::eh5::HDF5Meas::GetMaxSizePerFile</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxSizePerFile</name>
+        <briefdescription>
+<para>Gets maximum allowed size for an individual file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>maximum size in MB </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="136" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a5c12487539acba0e4396535ad50550e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eCAL::eh5::HDF5Meas::SetMaxSizePerFile</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>SetMaxSizePerFile</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Sets maximum allowed size for an individual file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum size in MB </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="143" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a523090bd0f77a4438efd42676474dedd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::eh5::HDF5Meas::IsOneFilePerChannelEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>IsOneFilePerChannelEnabled</name>
+        <briefdescription>
+<para>Whether each Channel shall be writte in its own file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When enabled, data is clustered by channel and each channel is written to its own file. The filenames will consist of the basename and the channel name.</para>
+<para><simplesect kind="return"><para>true, if one file per channel is enabled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="154" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ab6d20e5ca90bcf043e351490bc066b11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eCAL::eh5::HDF5Meas::SetOneFilePerChannelEnabled</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>SetOneFilePerChannelEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Enable / disable the creation of one individual file per channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When enabled, data is clustered by channel and each channel is written to its own file. The filenames will consist of the basename and the channel name.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether one file shall be created per channel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="165" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aaaaf77dbb3707d2016e622d67b8f351f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::set&lt; std::string &gt;</type>
+        <definition>std::set&lt;std::string&gt; eCAL::eh5::HDF5Meas::GetChannelNames</definition>
+        <argsstring>() const</argsstring>
+        <name>GetChannelNames</name>
+        <briefdescription>
+<para>Get the available channel names of the current opened file / measurement. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>channel names </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="172" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ae7433e76c418f226fd448a52a801e2b8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::eh5::HDF5Meas::HasChannel</definition>
+        <argsstring>(const std::string &amp;channel_name) const</argsstring>
+        <name>HasChannel</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel_name</declname>
+        </param>
+        <briefdescription>
+<para>Check if channel exists in measurement. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the channel</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if exists, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="181" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ab068cdb97d707afe1317f6ab5cbd1e69" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string eCAL::eh5::HDF5Meas::GetChannelDescription</definition>
+        <argsstring>(const std::string &amp;channel_name) const</argsstring>
+        <name>GetChannelDescription</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel_name</declname>
+        </param>
+        <briefdescription>
+<para>Get the channel description for the given channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel name</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>channel description </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="190" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aadf74bed883a202b76a9f556b3ba16f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eCAL::eh5::HDF5Meas::SetChannelDescription</definition>
+        <argsstring>(const std::string &amp;channel_name, const std::string &amp;description)</argsstring>
+        <name>SetChannelDescription</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+<para>Set description of the given channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>description of the channel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="198" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a9ba7555055d7df49f2e73874979e7825" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string eCAL::eh5::HDF5Meas::GetChannelType</definition>
+        <argsstring>(const std::string &amp;channel_name) const</argsstring>
+        <name>GetChannelType</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel_name</declname>
+        </param>
+        <briefdescription>
+<para>Gets the channel type of the given channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel name</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>channel type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="207" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ae4f937af73235f7058ca81139f6cc213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eCAL::eh5::HDF5Meas::SetChannelType</definition>
+        <argsstring>(const std::string &amp;channel_name, const std::string &amp;type)</argsstring>
+        <name>SetChannelType</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Set type of the given channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of the channel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="215" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a3265977aa86b989c4cb9ee4358b35206" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>long long</type>
+        <definition>long long eCAL::eh5::HDF5Meas::GetMinTimestamp</definition>
+        <argsstring>(const std::string &amp;channel_name) const</argsstring>
+        <name>GetMinTimestamp</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel_name</declname>
+        </param>
+        <briefdescription>
+<para>Gets minimum timestamp for specified channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel name</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>minimum timestamp value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="224" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a72eb031080a9cc9976241cfa83219cac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>long long</type>
+        <definition>long long eCAL::eh5::HDF5Meas::GetMaxTimestamp</definition>
+        <argsstring>(const std::string &amp;channel_name) const</argsstring>
+        <name>GetMaxTimestamp</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel_name</declname>
+        </param>
+        <briefdescription>
+<para>Gets maximum timestamp for specified channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel name</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>maximum timestamp value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="233" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a988501cbee4f7c2e692302956be166c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::eh5::HDF5Meas::GetEntriesInfo</definition>
+        <argsstring>(const std::string &amp;channel_name, EntryInfoSet &amp;entries) const</argsstring>
+        <name>GetEntriesInfo</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel_name</declname>
+        </param>
+        <param>
+          <type>EntryInfoSet &amp;</type>
+          <declname>entries</declname>
+        </param>
+        <briefdescription>
+<para>Gets the header info for all data entries for the given channel Header = timestamp + entry id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">entries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header info for all data entries</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if succeeds, false if it fails </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="244" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a3e410806eaca9ec637b28a48d94ae13e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::eh5::HDF5Meas::GetEntriesInfoRange</definition>
+        <argsstring>(const std::string &amp;channel_name, long long begin, long long end, EntryInfoSet &amp;entries) const</argsstring>
+        <name>GetEntriesInfoRange</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel_name</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>EntryInfoSet &amp;</type>
+          <declname>entries</declname>
+        </param>
+        <briefdescription>
+<para>Gets the header info for data entries for the given channel included in given time range (begin-&gt;end) Header = timestamp + entry id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time range begin timestamp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time range end timestamp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">entries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header info for data entries in given range</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if succeeds, false if it fails </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="257" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ae5662887a20255c6b963c4f191dd102d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::eh5::HDF5Meas::GetEntryDataSize</definition>
+        <argsstring>(long long entry_id, size_t &amp;size) const</argsstring>
+        <name>GetEntryDataSize</name>
+        <param>
+          <type>long long</type>
+          <declname>entry_id</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Gets data size of a specific entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry data size</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if succeeds, false if it fails </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="267" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ac228c71238443288a0a271e7d059626e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::eh5::HDF5Meas::GetEntryData</definition>
+        <argsstring>(long long entry_id, void *data) const</argsstring>
+        <name>GetEntryData</name>
+        <param>
+          <type>long long</type>
+          <declname>entry_id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Gets data from a specific entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if succeeds, false if it fails </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="277" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1afe55bd6d747fd940242f5a21e03a36a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eCAL::eh5::HDF5Meas::SetFileBaseName</definition>
+        <argsstring>(const std::string &amp;base_name)</argsstring>
+        <name>SetFileBaseName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>base_name</declname>
+        </param>
+        <briefdescription>
+<para>Set measurement file base name (desired name for the actual hdf5 files that will be created) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>base_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the hdf5 files that will be created. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="284" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a6385d17c35fe657d698b743ce1ce35a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::eh5::HDF5Meas::AddEntryToFile</definition>
+        <argsstring>(const void *data, const unsigned long long &amp;size, const long long &amp;snd_timestamp, const long long &amp;rcv_timestamp, const std::string &amp;channel_name, long long id, long long clock)</argsstring>
+        <name>AddEntryToFile</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const unsigned long long &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const long long &amp;</type>
+          <declname>snd_timestamp</declname>
+        </param>
+        <param>
+          <type>const long long &amp;</type>
+          <declname>rcv_timestamp</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel_name</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>clock</declname>
+        </param>
+        <briefdescription>
+<para>Add entry to file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to be added </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>snd_timestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>send time stamp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rcv_timestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>receive time stamp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message clock</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if succeeds, false if it fails </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="299" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1adc707f792475c9d03a1b5be24d40e198" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eCAL::eh5::HDF5Meas::ConnectPreSplitCallback</definition>
+        <argsstring>(CallbackFunction cb)</argsstring>
+        <name>ConnectPreSplitCallback</name>
+        <param>
+          <type><ref refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a54dbaccb69979d75e6542d1f62b9c314" kindref="member">CallbackFunction</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Connect callback for pre file split notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="311" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a54e3462d02dad69d9ed9c4ecb1a133fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eCAL::eh5::HDF5Meas::DisconnectPreSplitCallback</definition>
+        <argsstring>()</argsstring>
+        <name>DisconnectPreSplitCallback</name>
+        <briefdescription>
+<para>Disconnect pre file split callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="316" column="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL HDF5 measurement API </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" line="43" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/eh5_meas.h" bodystart="44" bodyend="320"/>
+    <listofallmembers>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a6385d17c35fe657d698b743ce1ce35a5" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>AddEntryToFile</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a54dbaccb69979d75e6542d1f62b9c314" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>CallbackFunction</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1abeed7e30c0dfe2c99fcea3dddc5b131a" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>Close</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1adc707f792475c9d03a1b5be24d40e198" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>ConnectPreSplitCallback</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a54e3462d02dad69d9ed9c4ecb1a133fa" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>DisconnectPreSplitCallback</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ab068cdb97d707afe1317f6ab5cbd1e69" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>GetChannelDescription</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aaaaf77dbb3707d2016e622d67b8f351f" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>GetChannelNames</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a9ba7555055d7df49f2e73874979e7825" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>GetChannelType</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a988501cbee4f7c2e692302956be166c3" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>GetEntriesInfo</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a3e410806eaca9ec637b28a48d94ae13e" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>GetEntriesInfoRange</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ac228c71238443288a0a271e7d059626e" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>GetEntryData</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ae5662887a20255c6b963c4f191dd102d" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>GetEntryDataSize</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aeafef45016e17fabfd091af5663d95ef" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>GetFileVersion</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a674c3533cd6269ac88ff3f9a88e1791a" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>GetMaxSizePerFile</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a72eb031080a9cc9976241cfa83219cac" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>GetMaxTimestamp</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a3265977aa86b989c4cb9ee4358b35206" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>GetMinTimestamp</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ae7433e76c418f226fd448a52a801e2b8" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>HasChannel</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a38a4a05c222d89a299585e495d176dd3" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>HDF5Meas</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a0bd5ff2dc2f13c544494a7745581c55b" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>HDF5Meas</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a046f3d909593b00d712062426f20b903" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>HDF5Meas</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aa6bd4a1ae6a3bed9579b3a26cb6af4c1" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>HDF5Meas</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a8479dda3272e182a32be0bfafda7c318" prot="private" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>hdf_meas_impl_</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aca4422176c24284ea24d694e545d8f68" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>IsOk</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a523090bd0f77a4438efd42676474dedd" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>IsOneFilePerChannelEnabled</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aecad4114488fb039cb4a7887caaa5c25" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>Open</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a8f21de8290b9e61ef3dca8a29f143998" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>operator=</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a7e7bae6a1c1d218fe8fe16f3f91ee16b" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>operator=</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1aadf74bed883a202b76a9f556b3ba16f7" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>SetChannelDescription</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ae4f937af73235f7058ca81139f6cc213" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>SetChannelType</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1afe55bd6d747fd940242f5a21e03a36a6" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>SetFileBaseName</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a5c12487539acba0e4396535ad50550e1" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>SetMaxSizePerFile</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1ab6d20e5ca90bcf043e351490bc066b11" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>SetOneFilePerChannelEnabled</name></member>
+      <member refid="d6/d43/classeCAL_1_1eh5_1_1HDF5Meas_1a8586f7c715d04371ec47be6d039dcf16" prot="public" virt="non-virtual"><scope>eCAL::eh5::HDF5Meas</scope><name>~HDF5Meas</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

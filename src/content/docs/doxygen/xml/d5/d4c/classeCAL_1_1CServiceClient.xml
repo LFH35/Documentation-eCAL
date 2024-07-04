@@ -1,0 +1,642 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/d4c/classeCAL_1_1CServiceClient" kind="class" language="C++" prot="public">
+    <compoundname>eCAL::CServiceClient</compoundname>
+    <includes refid="d0/d22/ecal__client_8h" local="no">ecal_client.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d5/d4c/classeCAL_1_1CServiceClient_1aec38d1c79836154c83254225fe9ddf82" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; eCAL::CServiceClientImpl &gt;</type>
+        <definition>std::shared_ptr&lt;eCAL::CServiceClientImpl&gt; eCAL::CServiceClient::m_service_client_impl</definition>
+        <argsstring></argsstring>
+        <name>m_service_client_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="198" column="21" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d4c/classeCAL_1_1CServiceClient_1a73b950bf56f4860b9b43de4d79e4ce84" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eCAL::CServiceClient::m_created</definition>
+        <argsstring></argsstring>
+        <name>m_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="199" column="25" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1a901dc1fb638e9c06c983c00ebc590000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API</type>
+        <definition>ECAL_API eCAL::CServiceClient::CServiceClient</definition>
+        <argsstring>()</argsstring>
+        <name>CServiceClient</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="50" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1ad88c03f8fa5b7a08138515466850ae49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API</type>
+        <definition>ECAL_API eCAL::CServiceClient::CServiceClient</definition>
+        <argsstring>(const std::string &amp;service_name_)</argsstring>
+        <name>CServiceClient</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>service_name_</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique service name. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="57" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1aef943524910c5c24ff8db9629abfbcea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ECAL_API</type>
+        <definition>virtual ECAL_API eCAL::CServiceClient::~CServiceClient</definition>
+        <argsstring>()</argsstring>
+        <name>~CServiceClient</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="62" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1a230e8bd181cd32b20a3f4d2e60ecfbb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API</type>
+        <definition>ECAL_API eCAL::CServiceClient::CServiceClient</definition>
+        <argsstring>(const CServiceClient &amp;)=delete</argsstring>
+        <name>CServiceClient</name>
+        <param>
+          <type>const <ref refid="d5/d4c/classeCAL_1_1CServiceClient" kindref="compound">CServiceClient</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>CServiceClients are non-copyable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="67" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1aff52f97a63644df77a8cbca434693841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API <ref refid="d5/d4c/classeCAL_1_1CServiceClient" kindref="compound">CServiceClient</ref> &amp;</type>
+        <definition>ECAL_API CServiceClient&amp; eCAL::CServiceClient::operator=</definition>
+        <argsstring>(const CServiceClient &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d5/d4c/classeCAL_1_1CServiceClient" kindref="compound">CServiceClient</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>CServiceClients are non-copyable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="72" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1ac4cfb013603351270aed2f83a917b44f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CServiceClient::Create</definition>
+        <argsstring>(const std::string &amp;service_name_)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>service_name_</declname>
+        </param>
+        <briefdescription>
+<para>Creates this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique service name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="81" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1ac2b9fedf1711133fff0023ec377cb045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CServiceClient::Destroy</definition>
+        <argsstring>()</argsstring>
+        <name>Destroy</name>
+        <briefdescription>
+<para>Destroys this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="88" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1ad3718ae4184366e335f78918fb8274f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CServiceClient::SetHostName</definition>
+        <argsstring>(const std::string &amp;host_name_)</argsstring>
+        <name>SetHostName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>host_name_</declname>
+        </param>
+        <briefdescription>
+<para>Change the host name filter for that client instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host name filter (empty == all hosts)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="97" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1ab53eff1227ed32ecb49cc6769303e268" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CServiceClient::Call</definition>
+        <argsstring>(const std::string &amp;method_name_, const std::string &amp;request_, int timeout_=-1)</argsstring>
+        <name>Call</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>method_name_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>request_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout_</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Call a method of this service, responses will be returned by callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>method_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>request_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum time before operation returns (in milliseconds, -1 means infinite).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="108" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1afac68a2bdf163c6b23f58677a8611510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CServiceClient::Call</definition>
+        <argsstring>(const std::string &amp;method_name_, const std::string &amp;request_, int timeout_, ServiceResponseVecT *service_response_vec_)</argsstring>
+        <name>Call</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>method_name_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>request_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout_</declname>
+        </param>
+        <param>
+          <type><ref refid="de/ddd/ecal__service__info_8h_1a36106945ed691d2225be35b428072270" kindref="member">ServiceResponseVecT</ref> *</type>
+          <declname>service_response_vec_</declname>
+        </param>
+        <briefdescription>
+<para>Call a method of this service, all responses will be returned in service_response_vec_. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>method_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>request_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum time before operation returns (in milliseconds, -1 means infinite). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">service_response_vec_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Response vector containing service responses from every called service (null pointer == no response).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="120" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1a8c50f6bbc65f5a8cf617b554ec6b385e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CServiceClient::Call</definition>
+        <argsstring>(const std::string &amp;host_name_, const std::string &amp;method_name_, const std::string &amp;request_, struct SServiceResponse &amp;service_info_, std::string &amp;response_)</argsstring>
+        <name>Call</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>host_name_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>method_name_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>request_</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="d9/d0b/structeCAL_1_1SServiceResponse" kindref="compound">SServiceResponse</ref> &amp;</type>
+          <declname>service_info_</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>response_</declname>
+        </param>
+        <briefdescription>
+<para>Call method of this service, for specific host. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000065"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the create method bool <ref refid="d5/d4c/classeCAL_1_1CServiceClient_1afac68a2bdf163c6b23f58677a8611510" kindref="member">Call(const std::string&amp; method_name_, const std::string&amp; request_, int timeout_, ServiceResponseVecT* service_response_vec_)</ref> instead. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>request_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">service_info_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Service response struct for detailed informations. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">response_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Response string.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="135" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1a19586611a3d25a9ebe452954b543a659" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CServiceClient::CallAsync</definition>
+        <argsstring>(const std::string &amp;method_name_, const std::string &amp;request_, int timeout_=-1)</argsstring>
+        <name>CallAsync</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>method_name_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>request_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout_</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Call a method of this service asynchronously, responses will be returned by callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>method_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Method name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>request_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum time before operation returns (in milliseconds, -1 means infinite) - NOT SUPPORTED YET.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="146" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1aea2313031075e10b3a03893683531ddb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CServiceClient::AddResponseCallback</definition>
+        <argsstring>(const ResponseCallbackT &amp;callback_)</argsstring>
+        <name>AddResponseCallback</name>
+        <param>
+          <type>const <ref refid="de/ddd/ecal__service__info_8h_1a572360f74991bd1369ea24b5b7a0b6bb" kindref="member">ResponseCallbackT</ref> &amp;</type>
+          <declname>callback_</declname>
+        </param>
+        <briefdescription>
+<para>Add server response callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function for server response. <linebreak/>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="155" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1a07f1a9ad950a5bcc95601f90e4f89832" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CServiceClient::RemResponseCallback</definition>
+        <argsstring>()</argsstring>
+        <name>RemResponseCallback</name>
+        <briefdescription>
+<para>Remove server response callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="162" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1a2d4e0d6eea8ecb83d15d2c0f874f50ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CServiceClient::AddEventCallback</definition>
+        <argsstring>(eCAL_Client_Event type_, ClientEventCallbackT callback_)</argsstring>
+        <name>AddEventCallback</name>
+        <param>
+          <type>eCAL_Client_Event</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d76/ecal__callback_8h_1ac7bddc5ffadba36ef41e7d5ff6c02d62" kindref="member">ClientEventCallbackT</ref></type>
+          <declname>callback_</declname>
+        </param>
+        <briefdescription>
+<para>Add client event callback function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event type to react on. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback function to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="172" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1adb295c5035793bcbbfb9229b5c733981" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CServiceClient::RemEventCallback</definition>
+        <argsstring>(eCAL_Client_Event type_)</argsstring>
+        <name>RemEventCallback</name>
+        <param>
+          <type>eCAL_Client_Event</type>
+          <declname>type_</declname>
+        </param>
+        <briefdescription>
+<para>Remove client event callback function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event type to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="181" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1a44d65f147834baf3a8f7534ab0cb04ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::CServiceClient::GetServiceName</definition>
+        <argsstring>()</argsstring>
+        <name>GetServiceName</name>
+        <briefdescription>
+<para>Retrieve service name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The service name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="188" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d4c/classeCAL_1_1CServiceClient_1a959993bba1c33ad2fed540febc91ac8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CServiceClient::IsConnected</definition>
+        <argsstring>()</argsstring>
+        <name>IsConnected</name>
+        <briefdescription>
+<para>Check connection state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if connected, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="195" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Service client wrapper class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" line="44" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h" bodystart="45" bodyend="200"/>
+    <listofallmembers>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1a2d4e0d6eea8ecb83d15d2c0f874f50ac" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>AddEventCallback</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1aea2313031075e10b3a03893683531ddb" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>AddResponseCallback</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1ab53eff1227ed32ecb49cc6769303e268" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>Call</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1afac68a2bdf163c6b23f58677a8611510" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>Call</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1a8c50f6bbc65f5a8cf617b554ec6b385e" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>Call</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1a19586611a3d25a9ebe452954b543a659" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>CallAsync</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1ac4cfb013603351270aed2f83a917b44f" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>Create</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1a901dc1fb638e9c06c983c00ebc590000" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>CServiceClient</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1ad88c03f8fa5b7a08138515466850ae49" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>CServiceClient</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1a230e8bd181cd32b20a3f4d2e60ecfbb0" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>CServiceClient</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1ac2b9fedf1711133fff0023ec377cb045" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>Destroy</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1a44d65f147834baf3a8f7534ab0cb04ce" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>GetServiceName</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1a959993bba1c33ad2fed540febc91ac8a" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>IsConnected</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1a73b950bf56f4860b9b43de4d79e4ce84" prot="protected" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>m_created</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1aec38d1c79836154c83254225fe9ddf82" prot="protected" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>m_service_client_impl</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1aff52f97a63644df77a8cbca434693841" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>operator=</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1adb295c5035793bcbbfb9229b5c733981" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>RemEventCallback</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1a07f1a9ad950a5bcc95601f90e4f89832" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>RemResponseCallback</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1ad3718ae4184366e335f78918fb8274f8" prot="public" virt="non-virtual"><scope>eCAL::CServiceClient</scope><name>SetHostName</name></member>
+      <member refid="d5/d4c/classeCAL_1_1CServiceClient_1aef943524910c5c24ff8db9629abfbcea" prot="public" virt="virtual"><scope>eCAL::CServiceClient</scope><name>~CServiceClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

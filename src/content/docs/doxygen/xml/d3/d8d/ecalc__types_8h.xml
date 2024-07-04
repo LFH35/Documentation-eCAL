@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d8d/ecalc__types_8h" kind="file" language="C++">
+    <compoundname>ecalc_types.h</compoundname>
+    <includedby refid="dd/d5d/ecalc_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecalc.h</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_clang.h</label>
+        <link refid="d4/d19/ecal__clang_8h"/>
+      </node>
+      <node id="2">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecalc.h</label>
+        <link refid="dd/d5d/ecalc_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecalc_types.h</label>
+        <link refid="d3/d8d/ecalc__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d3/d8d/ecalc__types_8h_1af9bcc49cdd10d31d24e62dbdf1449be7" prot="public" static="no">
+        <name>ECAL_ALLOCATE_4ME</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Flag to indicate eCAL to allocate/deallocate memory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecalc_types.h" line="13" column="9" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecalc_types.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d3/d8d/ecalc__types_8h_1a6801786d75d8af7f213d45239018884b" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* ECAL_HANDLE</definition>
+        <argsstring></argsstring>
+        <name>ECAL_HANDLE</name>
+        <briefdescription>
+<para>Common handle for eCAL C API function calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecalc_types.h" line="18" column="14" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecalc_types.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>File including shared types for eCAL C API. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ecalc_types_h_included</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ecalc_types_h_included</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d3/d8d/ecalc__types_8h_1af9bcc49cdd10d31d24e62dbdf1449be7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ECAL_ALLOCATE_4ME<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="d3/d8d/ecalc__types_8h_1a6801786d75d8af7f213d45239018884b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="d3/d8d/ecalc__types_8h_1a6801786d75d8af7f213d45239018884b" kindref="member">ECAL_HANDLE</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//ecalc_types_h_included</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecalc_types.h"/>
+  </compounddef>
+</doxygen>

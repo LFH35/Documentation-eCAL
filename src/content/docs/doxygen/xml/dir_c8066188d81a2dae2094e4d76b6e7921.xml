@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_c8066188d81a2dae2094e4d76b6e7921" kind="dir">
+    <compoundname>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5</compoundname>
+    <innerfile refid="db/d1b/eh5__defs_8h">eh5_defs.h</innerfile>
+    <innerfile refid="d9/d88/eh5__meas_8h">eh5_meas.h</innerfile>
+    <innerfile refid="d1/d37/eh5__types_8h">eh5_types.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecalhdf5/include/ecalhdf5/"/>
+  </compounddef>
+</doxygen>

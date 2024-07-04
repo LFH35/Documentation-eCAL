@@ -1,0 +1,1098 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d33/classeCAL_1_1CSubscriber" kind="class" language="C++" prot="public">
+    <compoundname>eCAL::CSubscriber</compoundname>
+    <derivedcompoundref refid="d5/de3/classeCAL_1_1CMsgSubscriber" prot="public" virt="non-virtual">eCAL::CMsgSubscriber&lt; T &gt;</derivedcompoundref>
+    <includes refid="de/db9/ecal__subscriber_8h" local="no">ecal_subscriber.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d3/d33/classeCAL_1_1CSubscriber_1a6b29d0d7dd4cd0edb364fdadee37904b" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; CDataReader &gt;</type>
+        <definition>std::shared_ptr&lt;CDataReader&gt; eCAL::CSubscriber::m_datareader</definition>
+        <argsstring></argsstring>
+        <name>m_datareader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="365" column="25" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d33/classeCAL_1_1CSubscriber_1a5b6cbe2dc4565a68f4d5be5ca1fc897d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eCAL::CSubscriber::m_created</definition>
+        <argsstring></argsstring>
+        <name>m_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="367" column="38" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d33/classeCAL_1_1CSubscriber_1a675c720e7ffcb5d292b22400a87c98ac" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eCAL::CSubscriber::m_initialized</definition>
+        <argsstring></argsstring>
+        <name>m_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="368" column="38" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1aa7fb5a8fc8ea62b172ddb309b82128ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API</type>
+        <definition>ECAL_API eCAL::CSubscriber::CSubscriber</definition>
+        <argsstring>()</argsstring>
+        <name>CSubscriber</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="91" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a94c85b36570ccc5821699e3e2eb48849" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API</type>
+        <definition>ECAL_API eCAL::CSubscriber::CSubscriber</definition>
+        <argsstring>(const std::string &amp;topic_name_, const std::string &amp;topic_type_, const std::string &amp;topic_desc_=&quot;&quot;)</argsstring>
+        <name>CSubscriber</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_type_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_desc_</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000103"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the constructor <ref refid="d3/d33/classeCAL_1_1CSubscriber_1ad5e15fc7c17ae35d32cae42006d7922e" kindref="member">CSubscriber(const std::string&amp; topic_name_, const SDataTypeInformation&amp; topic_info_)</ref> instead. This function will be removed in future eCAL versions..</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type name (optional for type checking). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_desc_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type description (optional for description checking). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="102" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1ad5e15fc7c17ae35d32cae42006d7922e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API</type>
+        <definition>ECAL_API eCAL::CSubscriber::CSubscriber</definition>
+        <argsstring>(const std::string &amp;topic_name_, const SDataTypeInformation &amp;topic_info_)</argsstring>
+        <name>CSubscriber</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> &amp;</type>
+          <declname>topic_info_</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_info_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic information (encoding, type, descriptor) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="110" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1aa8f7d20d8c16b11d531850a4c7616388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API</type>
+        <definition>ECAL_API eCAL::CSubscriber::CSubscriber</definition>
+        <argsstring>(const std::string &amp;topic_name_)</argsstring>
+        <name>CSubscriber</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique topic name. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="117" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a5875cb28944b5abff4efdc1eaf18c77d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ECAL_API</type>
+        <definition>virtual ECAL_API eCAL::CSubscriber::~CSubscriber</definition>
+        <argsstring>()</argsstring>
+        <name>~CSubscriber</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="122" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a577b34a61563ae610d9e4d563e1c5e23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API</type>
+        <definition>ECAL_API eCAL::CSubscriber::CSubscriber</definition>
+        <argsstring>(const CSubscriber &amp;)=delete</argsstring>
+        <name>CSubscriber</name>
+        <param>
+          <type>const <ref refid="d3/d33/classeCAL_1_1CSubscriber" kindref="compound">CSubscriber</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>CSubscribers are non-copyable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="127" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a90867d43be4633ba5d5b2114b2b92294" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API <ref refid="d3/d33/classeCAL_1_1CSubscriber" kindref="compound">CSubscriber</ref> &amp;</type>
+        <definition>ECAL_API CSubscriber&amp; eCAL::CSubscriber::operator=</definition>
+        <argsstring>(const CSubscriber &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d3/d33/classeCAL_1_1CSubscriber" kindref="compound">CSubscriber</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>CSubscribers are non-copyable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="132" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a57b644fc055b56b33a5ad682c88d1932" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>ECAL_API</type>
+        <definition>ECAL_API eCAL::CSubscriber::CSubscriber</definition>
+        <argsstring>(CSubscriber &amp;&amp;rhs) noexcept</argsstring>
+        <name>CSubscriber</name>
+        <param>
+          <type><ref refid="d3/d33/classeCAL_1_1CSubscriber" kindref="compound">CSubscriber</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>CSubscribers are move-enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="137" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1aeae711f1cc7b0e6f3857208d7dfb009b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>ECAL_API <ref refid="d3/d33/classeCAL_1_1CSubscriber" kindref="compound">CSubscriber</ref> &amp;</type>
+        <definition>ECAL_API CSubscriber&amp; eCAL::CSubscriber::operator=</definition>
+        <argsstring>(CSubscriber &amp;&amp;rhs) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d3/d33/classeCAL_1_1CSubscriber" kindref="compound">CSubscriber</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>CSubscribers are move-enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="142" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1af9d4527503a72a867b4911164a2ac7aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::Create</definition>
+        <argsstring>(const std::string &amp;topic_name_, const std::string &amp;topic_type_, const std::string &amp;topic_desc_=&quot;&quot;)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_type_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_desc_</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Creates this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000104"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the create method bool Create(const std::string&amp; topic_name_, const STopicInformation&amp; topic_info_) instead. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type name (optional for type checking). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_desc_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type description (optional for description checking).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="155" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a9a64692f7179b6f35e504342d3a88bd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::Create</definition>
+        <argsstring>(const std::string &amp;topic_name_)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <briefdescription>
+<para>Creates this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique topic name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="164" column="19" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" bodystart="164" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a0a9d922ec165f1de8d10643343f5a5c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::Create</definition>
+        <argsstring>(const std::string &amp;topic_name_, const SDataTypeInformation &amp;topic_info_)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> &amp;</type>
+          <declname>topic_info_</declname>
+        </param>
+        <briefdescription>
+<para>Creates this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topic_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique topic name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topic_info_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topic information (encoding, type, descriptor)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="176" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a9fcfccec4e1fd257dd12cf2cd80e8203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::Destroy</definition>
+        <argsstring>()</argsstring>
+        <name>Destroy</name>
+        <briefdescription>
+<para>Destroys this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="183" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a6d2eedfb0f6f188e755fdc10b8dd65aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::SetQOS</definition>
+        <argsstring>(const QOS::SReaderQOS &amp;qos_)</argsstring>
+        <name>SetQOS</name>
+        <param>
+          <type>const <ref refid="dd/d67/structeCAL_1_1QOS_1_1SReaderQOS" kindref="compound">QOS::SReaderQOS</ref> &amp;</type>
+          <declname>qos_</declname>
+        </param>
+        <briefdescription>
+<para>Set subscriber quality of service attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000105"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>qos_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quality of service policies.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="194" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a354f4ef355df54ef7a9ed0d5041075ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API <ref refid="dd/d67/structeCAL_1_1QOS_1_1SReaderQOS" kindref="compound">QOS::SReaderQOS</ref></type>
+        <definition>ECAL_API QOS::SReaderQOS eCAL::CSubscriber::GetQOS</definition>
+        <argsstring>()</argsstring>
+        <name>GetQOS</name>
+        <briefdescription>
+<para>Get current subscriber quality of service attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000106"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>Quality of service attributes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="203" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1ae2d9cba79a3cb7b4b95d45170a960ad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::SetID</definition>
+        <argsstring>(const std::set&lt; long long &gt; &amp;id_set_)</argsstring>
+        <name>SetID</name>
+        <param>
+          <type>const std::set&lt; long long &gt; &amp;</type>
+          <declname>id_set_</declname>
+        </param>
+        <briefdescription>
+<para>Set a set of id&apos;s to prefiltering topics (see <ref refid="dc/d42/classeCAL_1_1CPublisher_1a1098fe2ca3ac7c8dae5f9845c000b16b" kindref="member">CPublisher::SetID</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id_set_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of id&apos;s.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="212" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1ac492eeefdacaeed58903de10231e1d85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::SetAttribute</definition>
+        <argsstring>(const std::string &amp;attr_name_, const std::string &amp;attr_value_)</argsstring>
+        <name>SetAttribute</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>attr_name_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>attr_value_</declname>
+        </param>
+        <briefdescription>
+<para>Sets subscriber attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attr_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attr_value_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails. @experimental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="223" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a36bbd182dffd749747a45647fb2c11a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::ClearAttribute</definition>
+        <argsstring>(const std::string &amp;attr_name_)</argsstring>
+        <name>ClearAttribute</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>attr_name_</declname>
+        </param>
+        <briefdescription>
+<para>Removes subscriber attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attr_name_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails. @experimental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="233" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1aeed17e22a271f1bfe41f14fc472a329f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API size_t</type>
+        <definition>ECAL_API size_t eCAL::CSubscriber::Receive</definition>
+        <argsstring>(std::string &amp;buf_, long long *time_=nullptr, int rcv_timeout_=0) const</argsstring>
+        <name>Receive</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>buf_</declname>
+        </param>
+        <param>
+          <type>long long *</type>
+          <declname>time_</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rcv_timeout_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Receive a message from the publisher. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000107"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method bool ReceiveBuffer(std::string&amp; buf_, long long* time_ = nullptr, int rcv_timeout_ = 0) instead. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buf_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Standard string for copying message content. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">time_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time from publisher in us (default = nullptr). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rcv_timeout_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum time before receive operation returns (in milliseconds, -1 means infinite).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Length of received buffer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="246" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1add17afc444fa01f1774a214a23d9eb2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::ReceiveBuffer</definition>
+        <argsstring>(std::string &amp;buf_, long long *time_=nullptr, int rcv_timeout_=0) const</argsstring>
+        <name>ReceiveBuffer</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>buf_</declname>
+        </param>
+        <param>
+          <type>long long *</type>
+          <declname>time_</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rcv_timeout_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Receive a message from the publisher (able to process zero length buffer). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buf_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Standard string for copying message content. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">time_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time from publisher in us (default = nullptr). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rcv_timeout_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum time before receive operation returns (in milliseconds, -1 means infinite).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="257" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1ae9434a3d3816ba0bc81ad3dce0f202b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::AddReceiveCallback</definition>
+        <argsstring>(ReceiveCallbackT callback_)</argsstring>
+        <name>AddReceiveCallback</name>
+        <param>
+          <type><ref refid="df/d76/ecal__callback_8h_1aa7cd61c577b65761ec5227aa509f1aa6" kindref="member">ReceiveCallbackT</ref></type>
+          <declname>callback_</declname>
+        </param>
+        <briefdescription>
+<para>Add callback function for incoming receives. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback function to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="266" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a6e627d4fc8afce25d7317067e1555ecc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::RemReceiveCallback</definition>
+        <argsstring>()</argsstring>
+        <name>RemReceiveCallback</name>
+        <briefdescription>
+<para>Remove callback function for incoming receives. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if succeeded, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="273" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a3da35ff391cb6f5b11fbca47dc73fee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::AddEventCallback</definition>
+        <argsstring>(eCAL_Subscriber_Event type_, SubEventCallbackT callback_)</argsstring>
+        <name>AddEventCallback</name>
+        <param>
+          <type>eCAL_Subscriber_Event</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d76/ecal__callback_8h_1a86878088e2aad452b6881ccfe5ab8cd2" kindref="member">SubEventCallbackT</ref></type>
+          <declname>callback_</declname>
+        </param>
+        <briefdescription>
+<para>Add callback function for subscriber events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event type to react on. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback function to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="283" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a8bd9d9324c5aaeeb953d9697cceb6c39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::RemEventCallback</definition>
+        <argsstring>(eCAL_Subscriber_Event type_)</argsstring>
+        <name>RemEventCallback</name>
+        <param>
+          <type>eCAL_Subscriber_Event</type>
+          <declname>type_</declname>
+        </param>
+        <briefdescription>
+<para>Remove callback function for subscriber events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event type to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="292" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1ab1ac748ad7602edae725861e15801a82" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::IsCreated</definition>
+        <argsstring>() const</argsstring>
+        <name>IsCreated</name>
+        <briefdescription>
+<para>Query if this object is created. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if created, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="299" column="19" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" bodystart="299" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a10df03e071cd435b8d7f089e2820b981" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API size_t</type>
+        <definition>ECAL_API size_t eCAL::CSubscriber::GetPublisherCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPublisherCount</name>
+        <briefdescription>
+<para>Query the number of publishers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of publishers. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="306" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a485ae0a2e102d7563e1eca9e919178ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::CSubscriber::GetTopicName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTopicName</name>
+        <briefdescription>
+<para>Gets name of the connected topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The topic name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="313" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a8ca964ba862ac4658786b8bf5f7d46d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::CSubscriber::GetTypeName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTypeName</name>
+        <briefdescription>
+<para>Gets type of the connected topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000108"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> <ref refid="d3/d33/classeCAL_1_1CSubscriber_1a7e35f163ae5692ad3ec33c8282f1f4e3" kindref="member">GetDataTypeInformation()</ref> instead. You can extract the typename from the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>The type name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="322" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a4bd98308f9766f8da9dd7bbe9040000d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::CSubscriber::GetDescription</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDescription</name>
+        <briefdescription>
+<para>Gets description of the connected topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000109"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Please use the method <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> <ref refid="d3/d33/classeCAL_1_1CSubscriber_1a7e35f163ae5692ad3ec33c8282f1f4e3" kindref="member">GetDataTypeInformation()</ref> instead. You can extract the descriptor from the <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> variable. This function will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>The description. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="331" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a7e35f163ae5692ad3ec33c8282f1f4e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref></type>
+        <definition>ECAL_API SDataTypeInformation eCAL::CSubscriber::GetDataTypeInformation</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDataTypeInformation</name>
+        <briefdescription>
+<para>Gets description of the connected topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The topic information. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="338" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1aabe73171952a53d768b706668354f1f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API bool</type>
+        <definition>ECAL_API bool eCAL::CSubscriber::SetTimeout</definition>
+        <argsstring>(int timeout_)</argsstring>
+        <name>SetTimeout</name>
+        <param>
+          <type>int</type>
+          <declname>timeout_</declname>
+        </param>
+        <briefdescription>
+<para>Set the timeout parameter for triggering the timeout callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000110"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeout_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timeout in milliseconds.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if succeeded, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="349" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1af0219891ad14c21e829458287d0f6961" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ECAL_API std::string</type>
+        <definition>ECAL_API std::string eCAL::CSubscriber::Dump</definition>
+        <argsstring>(const std::string &amp;indent_=&quot;&quot;) const</argsstring>
+        <name>Dump</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>indent_</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Dump the whole class state into a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indent_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indentation used for dump.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The dump sting. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="358" column="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a72c0884567370269d024e352db910699" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eCAL::CSubscriber::InitializeQOS</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeQOS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="361" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d33/classeCAL_1_1CSubscriber_1a8d9177d3445b5516595b7e4cca027d2a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eCAL::CSubscriber::ApplyTopicToDescGate</definition>
+        <argsstring>(const std::string &amp;topic_name_, const SDataTypeInformation &amp;topic_info_)</argsstring>
+        <name>ApplyTopicToDescGate</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topic_name_</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref> &amp;</type>
+          <declname>topic_info_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="362" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL subscriber class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="d3/d33/classeCAL_1_1CSubscriber" kindref="compound">CSubscriber</ref> class is used to receive topics from matching eCAL publishers. <linebreak/>
+ <linebreak/>
+ For receiving the topic payload the subscriber class provides a callback interface and overloaded receive methods. <programlisting><codeline><highlight class="normal">//<sp/>create<sp/>subscriber,<sp/>topic<sp/>name<sp/>&quot;A&quot;</highlight></codeline>
+<codeline><highlight class="normal">eCAL::CSubscriber<sp/>sub(&quot;A&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//---------------------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>receive<sp/>content<sp/>with<sp/>100<sp/>ms<sp/>timeout<sp/>as<sp/>standard<sp/>string<sp/>and<sp/>read<sp/>receive<sp/>time<sp/>stamp</highlight></codeline>
+<codeline><highlight class="normal">//---------------------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">std::string<sp/>rcv_s;</highlight></codeline>
+<codeline><highlight class="normal">long<sp/>long<sp/>time<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">size_t<sp/>rcv_len<sp/>=<sp/>sub.Receive(rcv_s,<sp/>&amp;time,<sp/>100);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//---------------------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>receive<sp/>content<sp/>with<sp/>a<sp/>callback<sp/>functions</highlight></codeline>
+<codeline><highlight class="normal">//---------------------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>OnReceive(const<sp/>char*<sp/>topic_name_,<sp/>const<sp/>struct<sp/>eCAL::SReceiveCallbackData*<sp/>data_)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>size_t<sp/><sp/><sp/><sp/><sp/><sp/>size<sp/>=<sp/>data_-&gt;size;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>const<sp/>void*<sp/>data<sp/>=<sp/>data_-&gt;buf;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>long<sp/>long<sp/><sp/><sp/>time<sp/>=<sp/>data_-&gt;time;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>add<sp/>callback</highlight></codeline>
+<codeline><highlight class="normal">sub.AddReceiveCallback(std::bind(OnReceive,<sp/>std::placeholders::_1,<sp/>std::placeholders::_2));</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>idle<sp/>main<sp/>thread</highlight></codeline>
+<codeline><highlight class="normal">while(eCAL::Ok())</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>sleep<sp/>100<sp/>ms</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::this_thread::sleep_for(std::chrono::milliseconds(100));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>eCAL::CSubscriber</label>
+        <link refid="d3/d33/classeCAL_1_1CSubscriber"/>
+      </node>
+      <node id="2">
+        <label>eCAL::CMsgSubscriber&lt; T &gt;</label>
+        <link refid="d5/de3/classeCAL_1_1CMsgSubscriber"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" line="85" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h" bodystart="86" bodyend="369"/>
+    <listofallmembers>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a3da35ff391cb6f5b11fbca47dc73fee3" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>AddEventCallback</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1ae9434a3d3816ba0bc81ad3dce0f202b7" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>AddReceiveCallback</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a8d9177d3445b5516595b7e4cca027d2a" prot="protected" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>ApplyTopicToDescGate</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a36bbd182dffd749747a45647fb2c11a0" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>ClearAttribute</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1af9d4527503a72a867b4911164a2ac7aa" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>Create</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a9a64692f7179b6f35e504342d3a88bd4" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>Create</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a0a9d922ec165f1de8d10643343f5a5c7" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>Create</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1aa7fb5a8fc8ea62b172ddb309b82128ec" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>CSubscriber</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a94c85b36570ccc5821699e3e2eb48849" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>CSubscriber</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1ad5e15fc7c17ae35d32cae42006d7922e" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>CSubscriber</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1aa8f7d20d8c16b11d531850a4c7616388" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>CSubscriber</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a577b34a61563ae610d9e4d563e1c5e23" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>CSubscriber</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a57b644fc055b56b33a5ad682c88d1932" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>CSubscriber</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a9fcfccec4e1fd257dd12cf2cd80e8203" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>Destroy</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1af0219891ad14c21e829458287d0f6961" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>Dump</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a7e35f163ae5692ad3ec33c8282f1f4e3" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>GetDataTypeInformation</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a4bd98308f9766f8da9dd7bbe9040000d" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>GetDescription</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a10df03e071cd435b8d7f089e2820b981" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>GetPublisherCount</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a354f4ef355df54ef7a9ed0d5041075ac" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>GetQOS</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a485ae0a2e102d7563e1eca9e919178ec" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>GetTopicName</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a8ca964ba862ac4658786b8bf5f7d46d5" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>GetTypeName</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a72c0884567370269d024e352db910699" prot="protected" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>InitializeQOS</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1ab1ac748ad7602edae725861e15801a82" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>IsCreated</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a5b6cbe2dc4565a68f4d5be5ca1fc897d" prot="protected" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>m_created</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a6b29d0d7dd4cd0edb364fdadee37904b" prot="protected" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>m_datareader</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a675c720e7ffcb5d292b22400a87c98ac" prot="protected" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>m_initialized</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a90867d43be4633ba5d5b2114b2b92294" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>operator=</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1aeae711f1cc7b0e6f3857208d7dfb009b" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>operator=</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1aeed17e22a271f1bfe41f14fc472a329f" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>Receive</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1add17afc444fa01f1774a214a23d9eb2d" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>ReceiveBuffer</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a8bd9d9324c5aaeeb953d9697cceb6c39" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>RemEventCallback</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a6e627d4fc8afce25d7317067e1555ecc" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>RemReceiveCallback</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1ac492eeefdacaeed58903de10231e1d85" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>SetAttribute</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1ae2d9cba79a3cb7b4b95d45170a960ad3" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>SetID</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a6d2eedfb0f6f188e755fdc10b8dd65aa" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>SetQOS</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1aabe73171952a53d768b706668354f1f7" prot="public" virt="non-virtual"><scope>eCAL::CSubscriber</scope><name>SetTimeout</name></member>
+      <member refid="d3/d33/classeCAL_1_1CSubscriber_1a5875cb28944b5abff4efdc1eaf18c77d" prot="public" virt="virtual"><scope>eCAL::CSubscriber</scope><name>~CSubscriber</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

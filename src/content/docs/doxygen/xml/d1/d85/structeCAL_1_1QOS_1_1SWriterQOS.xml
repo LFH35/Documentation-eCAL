@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/d85/structeCAL_1_1QOS_1_1SWriterQOS" kind="struct" language="C++" prot="public">
+    <compoundname>eCAL::QOS::SWriterQOS</compoundname>
+    <includes refid="d8/d58/ecal__qos_8h" local="no">ecal_qos.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d1/d85/structeCAL_1_1QOS_1_1SWriterQOS_1a1e945298c94d3d0ed3eca1d98ab88713" prot="public" static="no" mutable="no">
+        <type><ref refid="d8/d58/ecal__qos_8h_1a0da8b6f992aeac2e25089144fd27da24" kindref="member">eQOSPolicy_HistoryKind</ref></type>
+        <definition>eQOSPolicy_HistoryKind eCAL::QOS::SWriterQOS::history_kind</definition>
+        <argsstring></argsstring>
+        <name>history_kind</name>
+        <briefdescription>
+<para>qos history kind mode </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" line="65" column="31" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d85/structeCAL_1_1QOS_1_1SWriterQOS_1ac1bc3aaccd2de72fda2737301c464201" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eCAL::QOS::SWriterQOS::history_kind_depth</definition>
+        <argsstring></argsstring>
+        <name>history_kind_depth</name>
+        <briefdescription>
+<para>qos history kind mode depth </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" line="66" column="31" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d85/structeCAL_1_1QOS_1_1SWriterQOS_1ab248169cc98f4e00def36e7f70a24acc" prot="public" static="no" mutable="no">
+        <type><ref refid="d8/d58/ecal__qos_8h_1afc19a9113f5036d91321f5ba6b4e4803" kindref="member">eQOSPolicy_Reliability</ref></type>
+        <definition>eQOSPolicy_Reliability eCAL::QOS::SWriterQOS::reliability</definition>
+        <argsstring></argsstring>
+        <name>reliability</name>
+        <briefdescription>
+<para>qos reliability mode </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" line="67" column="31" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d85/structeCAL_1_1QOS_1_1SWriterQOS_1a36a0419940d0a796e4cfcc25728709cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eCAL::QOS::SWriterQOS::SWriterQOS</definition>
+        <argsstring>()</argsstring>
+        <name>SWriterQOS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" line="59" column="7" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" bodystart="59" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL data writer QOS settings. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="da/d58/deprecated_1_deprecated000101"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed in future eCAL versions. </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" line="57" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_qos.h" bodystart="58" bodyend="68"/>
+    <listofallmembers>
+      <member refid="d1/d85/structeCAL_1_1QOS_1_1SWriterQOS_1a1e945298c94d3d0ed3eca1d98ab88713" prot="public" virt="non-virtual"><scope>eCAL::QOS::SWriterQOS</scope><name>history_kind</name></member>
+      <member refid="d1/d85/structeCAL_1_1QOS_1_1SWriterQOS_1ac1bc3aaccd2de72fda2737301c464201" prot="public" virt="non-virtual"><scope>eCAL::QOS::SWriterQOS</scope><name>history_kind_depth</name></member>
+      <member refid="d1/d85/structeCAL_1_1QOS_1_1SWriterQOS_1ab248169cc98f4e00def36e7f70a24acc" prot="public" virt="non-virtual"><scope>eCAL::QOS::SWriterQOS</scope><name>reliability</name></member>
+      <member refid="d1/d85/structeCAL_1_1QOS_1_1SWriterQOS_1a36a0419940d0a796e4cfcc25728709cd" prot="public" virt="non-virtual"><scope>eCAL::QOS::SWriterQOS</scope><name>SWriterQOS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

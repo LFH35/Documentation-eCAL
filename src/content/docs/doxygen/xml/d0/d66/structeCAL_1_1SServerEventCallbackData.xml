@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d66/structeCAL_1_1SServerEventCallbackData" kind="struct" language="C++" prot="public">
+    <compoundname>eCAL::SServerEventCallbackData</compoundname>
+    <includes refid="df/d76/ecal__callback_8h" local="no">ecal_callback.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/d66/structeCAL_1_1SServerEventCallbackData_1aa318600e2ba9b3cabab824597ecfbec1" prot="public" static="no" mutable="no">
+        <type>eCAL_Server_Event</type>
+        <definition>eCAL_Server_Event eCAL::SServerEventCallbackData::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <initializer>= server_event_none</initializer>
+        <briefdescription>
+<para>event type </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="142" column="23" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d66/structeCAL_1_1SServerEventCallbackData_1a4fd9dfb87407433d52bfa14c80294896" prot="public" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long eCAL::SServerEventCallbackData::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>event time in µs </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="143" column="23" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>eCAL server event callback struct. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" line="140" column="3" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h" bodystart="141" bodyend="144"/>
+    <listofallmembers>
+      <member refid="d0/d66/structeCAL_1_1SServerEventCallbackData_1a4fd9dfb87407433d52bfa14c80294896" prot="public" virt="non-virtual"><scope>eCAL::SServerEventCallbackData</scope><name>time</name></member>
+      <member refid="d0/d66/structeCAL_1_1SServerEventCallbackData_1aa318600e2ba9b3cabab824597ecfbec1" prot="public" virt="non-virtual"><scope>eCAL::SServerEventCallbackData</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

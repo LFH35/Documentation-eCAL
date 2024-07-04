@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_26014e4eb82f5c4db5319d0bac6ce224" kind="dir">
+    <compoundname>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include</compoundname>
+    <innerfile refid="de/d22/dynamic__sleeper_8h">dynamic_sleeper.h</innerfile>
+    <innerfile refid="de/d4f/ecaltime_8h">ecaltime.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/contrib/ecaltime/include/"/>
+  </compounddef>
+</doxygen>

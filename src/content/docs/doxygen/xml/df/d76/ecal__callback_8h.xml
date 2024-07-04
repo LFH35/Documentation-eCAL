@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d76/ecal__callback_8h" kind="file" language="C++">
+    <compoundname>ecal_callback.h</compoundname>
+    <includes refid="dc/de4/ecal__deprecate_8h" local="no">ecal/ecal_deprecate.h</includes>
+    <includes local="no">ecal/cimpl/ecal_callback_cimpl.h</includes>
+    <includes refid="d1/de7/ecal__types_8h" local="no">ecal/ecal_types.h</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">string</includes>
+    <includedby refid="d9/dbf/ecal_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</includedby>
+    <includedby refid="d0/d22/ecal__client_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h</includedby>
+    <includedby refid="de/df1/ecal__process_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h</includedby>
+    <includedby refid="dc/d1a/ecal__publisher_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_publisher.h</includedby>
+    <includedby refid="d2/d4f/ecal__server_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_server.h</includedby>
+    <includedby refid="de/db9/ecal__subscriber_8h" local="no">/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>functional</label>
+      </node>
+      <node id="4">
+        <label>ecal/cimpl/ecal_callback_cimpl.h</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>ecal/ecal_types.h</label>
+        <link refid="d1/de7/ecal__types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ecal/ecal_defs.h</label>
+      </node>
+      <node id="2">
+        <label>ecal/ecal_deprecate.h</label>
+        <link refid="dc/de4/ecal__deprecate_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h</label>
+        <link refid="df/d76/ecal__callback_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_server.h</label>
+        <link refid="d2/d4f/ecal__server_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_service.h</label>
+        <link refid="d7/d5d/ecal__service_8h"/>
+      </node>
+      <node id="11">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/subscriber.h</label>
+        <link refid="da/d9f/subscriber_8h_source"/>
+      </node>
+      <node id="5">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_process.h</label>
+        <link refid="de/df1/ecal__process_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_timed_cb.h</label>
+        <link refid="da/dfc/ecal__timed__cb_8h"/>
+      </node>
+      <node id="8">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/msg/publisher.h</label>
+        <link refid="d1/d40/publisher_8h_source"/>
+      </node>
+      <node id="7">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_publisher.h</label>
+        <link refid="dc/d1a/ecal__publisher_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal.h</label>
+        <link refid="d9/dbf/ecal_8h"/>
+      </node>
+      <node id="10">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_subscriber.h</label>
+        <link refid="de/db9/ecal__subscriber_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_client.h</label>
+        <link refid="d0/d22/ecal__client_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h</label>
+        <link refid="df/d76/ecal__callback_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d4/d97/structeCAL_1_1SReceiveCallbackData" prot="public">eCAL::SReceiveCallbackData</innerclass>
+    <innerclass refid="d7/dcb/structeCAL_1_1SPubEventCallbackData" prot="public">eCAL::SPubEventCallbackData</innerclass>
+    <innerclass refid="de/de6/structeCAL_1_1SSubEventCallbackData" prot="public">eCAL::SSubEventCallbackData</innerclass>
+    <innerclass refid="d6/daa/structeCAL_1_1SServiceAttr" prot="public">eCAL::SServiceAttr</innerclass>
+    <innerclass refid="d6/d99/structeCAL_1_1SClientEventCallbackData" prot="public">eCAL::SClientEventCallbackData</innerclass>
+    <innerclass refid="db/d72/structeCAL_1_1SClientAttr" prot="public">eCAL::SClientAttr</innerclass>
+    <innerclass refid="d0/d66/structeCAL_1_1SServerEventCallbackData" prot="public">eCAL::SServerEventCallbackData</innerclass>
+    <innernamespace refid="db/de7/namespaceeCAL">eCAL</innernamespace>
+    <briefdescription>
+<para>eCAL subscriber callback interface </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016<sp/>-<sp/>2019<sp/>Continental<sp/>Corporation</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>=========================<sp/>eCAL<sp/>LICENSE<sp/>=================================</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dc/de4/ecal__deprecate_8h" kindref="compound">ecal/ecal_deprecate.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ecal/cimpl/ecal_callback_cimpl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d1/de7/ecal__types_8h" kindref="compound">ecal/ecal_types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">eCAL</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39" refid="d4/d97/structeCAL_1_1SReceiveCallbackData" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData" kindref="compound">SReceiveCallbackData</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41" refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1a73f9ec7f4a49447079e96b964e6f1137" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1a73f9ec7f4a49447079e96b964e6f1137" kindref="member">buf</ref><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1acfd7c40b3892e0fc0c03ca0c37f42999" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1acfd7c40b3892e0fc0c03ca0c37f42999" kindref="member">size</ref><sp/><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1ad4a1d4610aa3b5a2c3a94050a9f3a5dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1aadfaaa0f23f048209e71b72fe658d8a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1aadfaaa0f23f048209e71b72fe658d8a7" kindref="member">time</ref><sp/><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1a583076c29d3d2fe4a4487b075b045426" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData_1a583076c29d3d2fe4a4487b075b045426" kindref="member">clock</ref><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="d7/dcb/structeCAL_1_1SPubEventCallbackData" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData" kindref="compound">SPubEventCallbackData</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData" kindref="compound">SPubEventCallbackData</ref>()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aecc8fd8a2f02cbf5386ec5dfcb8dc78d" kindref="member">type</ref><sp/><sp/>=<sp/>pub_event_none;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a8ac417eae8daf46dd5b6a00721268273" kindref="member">time</ref><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a1998c8d07e9b046f9cf04cfb1b8f7f40" kindref="member">clock</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="59" refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aecc8fd8a2f02cbf5386ec5dfcb8dc78d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>eCAL_Publisher_Event<sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aecc8fd8a2f02cbf5386ec5dfcb8dc78d" kindref="member">type</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a8ac417eae8daf46dd5b6a00721268273" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a8ac417eae8daf46dd5b6a00721268273" kindref="member">time</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a1998c8d07e9b046f9cf04cfb1b8f7f40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a1998c8d07e9b046f9cf04cfb1b8f7f40" kindref="member">clock</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aad6953139e9e168a3313d600e1f2ed12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aad6953139e9e168a3313d600e1f2ed12" kindref="member">tid</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>the<sp/>separate<sp/>infos<sp/>encoding<sp/>and<sp/>type<sp/>in<sp/>member<sp/>tdatatype<sp/>instead<sp/>of<sp/>ttype.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64" refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a6e4f62c71dd68a87379138064e0e54d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a6e4f62c71dd68a87379138064e0e54d7" kindref="member">ttype</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(&quot;Use<sp/>the<sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aeba8116a327f6e787311e8d75e907112" kindref="member">tdatatype</ref>.descriptor<sp/>instead<sp/>of<sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a3f57151bd0ae8e9a52bf742473ee23df" kindref="member">tdesc</ref>.&quot;)</highlight></codeline>
+<codeline lineno="66" refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a3f57151bd0ae8e9a52bf742473ee23df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a3f57151bd0ae8e9a52bf742473ee23df" kindref="member">tdesc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67" refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aeba8116a327f6e787311e8d75e907112" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aeba8116a327f6e787311e8d75e907112" kindref="member">tdatatype</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="de/de6/structeCAL_1_1SSubEventCallbackData" refkind="compound"><highlight class="normal"><sp/><sp/>struct<sp/><ref refid="de/de6/structeCAL_1_1SSubEventCallbackData" kindref="compound">SSubEventCallbackData</ref></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/de6/structeCAL_1_1SSubEventCallbackData" kindref="compound">SSubEventCallbackData</ref>()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aecc8fd8a2f02cbf5386ec5dfcb8dc78d" kindref="member">type</ref><sp/><sp/>=<sp/>sub_event_none;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a8ac417eae8daf46dd5b6a00721268273" kindref="member">time</ref><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a1998c8d07e9b046f9cf04cfb1b8f7f40" kindref="member">clock</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="81" refid="de/de6/structeCAL_1_1SSubEventCallbackData_1a1e1443f266b9ce27f37cf0fbe2c34e44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>eCAL_Subscriber_Event<sp/><ref refid="de/de6/structeCAL_1_1SSubEventCallbackData_1a1e1443f266b9ce27f37cf0fbe2c34e44" kindref="member">type</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="de/de6/structeCAL_1_1SSubEventCallbackData_1ae5c167e8274e2a1a16ab416383dddd11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/de6/structeCAL_1_1SSubEventCallbackData_1ae5c167e8274e2a1a16ab416383dddd11" kindref="member">time</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="de/de6/structeCAL_1_1SSubEventCallbackData_1a61f146f69892d232afa4769323d58e5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/de6/structeCAL_1_1SSubEventCallbackData_1a61f146f69892d232afa4769323d58e5f" kindref="member">clock</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="de/de6/structeCAL_1_1SSubEventCallbackData_1a4fc15ba0ba651762858e2c64b5871d97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/de6/structeCAL_1_1SSubEventCallbackData_1a4fc15ba0ba651762858e2c64b5871d97" kindref="member">tid</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>the<sp/>separate<sp/>infos<sp/>encoding<sp/>and<sp/>type<sp/>in<sp/>member<sp/>tdatatype<sp/>instead<sp/>of<sp/>ttype.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="86" refid="de/de6/structeCAL_1_1SSubEventCallbackData_1a5e3798b9dd840ca0d216ccebb105cec2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a6e4f62c71dd68a87379138064e0e54d7" kindref="member">ttype</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de4/ecal__deprecate_8h_1af43a13501449f4cec468e5fb7b4e96f7" kindref="member">ECAL_DEPRECATE_SINCE_5_13</ref>(&quot;Use<sp/>the<sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aeba8116a327f6e787311e8d75e907112" kindref="member">tdatatype</ref>.descriptor<sp/>instead<sp/>of<sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a3f57151bd0ae8e9a52bf742473ee23df" kindref="member">tdesc</ref>.&quot;)</highlight></codeline>
+<codeline lineno="88" refid="de/de6/structeCAL_1_1SSubEventCallbackData_1ac40ce0f98cffe8b258dc866b73ffa5ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a3f57151bd0ae8e9a52bf742473ee23df" kindref="member">tdesc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="de/de6/structeCAL_1_1SSubEventCallbackData_1ada95800b1278580c3884f7312233aa1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d0f/structeCAL_1_1SDataTypeInformation" kindref="compound">SDataTypeInformation</ref><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aeba8116a327f6e787311e8d75e907112" kindref="member">tdatatype</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="d6/daa/structeCAL_1_1SServiceAttr" refkind="compound"><highlight class="normal"><sp/><sp/>struct<sp/><ref refid="d6/daa/structeCAL_1_1SServiceAttr" kindref="compound">SServiceAttr</ref></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97" refid="d6/daa/structeCAL_1_1SServiceAttr_1a0d1654876635a8c90b5b26b3f0323a5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><ref refid="d6/daa/structeCAL_1_1SServiceAttr_1a0d1654876635a8c90b5b26b3f0323a5e" kindref="member">key</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="d6/daa/structeCAL_1_1SServiceAttr_1a105b9481795caee865132433dcecfad5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><ref refid="d6/daa/structeCAL_1_1SServiceAttr_1a105b9481795caee865132433dcecfad5" kindref="member">hname</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="d6/daa/structeCAL_1_1SServiceAttr_1a2489e2452ca0ecc8a68554032ff52635" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><ref refid="d6/daa/structeCAL_1_1SServiceAttr_1a2489e2452ca0ecc8a68554032ff52635" kindref="member">pname</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="d6/daa/structeCAL_1_1SServiceAttr_1ab61d4012dedd1460e9cd40749d77dc5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><ref refid="d6/daa/structeCAL_1_1SServiceAttr_1ab61d4012dedd1460e9cd40749d77dc5f" kindref="member">uname</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="d6/daa/structeCAL_1_1SServiceAttr_1afb255b538350960654dd065dd0d98cfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><ref refid="d6/daa/structeCAL_1_1SServiceAttr_1afb255b538350960654dd065dd0d98cfd" kindref="member">sname</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="d6/daa/structeCAL_1_1SServiceAttr_1ad0d8fc6a5950fe4e1432e0d1dc6ed834" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><ref refid="d6/daa/structeCAL_1_1SServiceAttr_1ad0d8fc6a5950fe4e1432e0d1dc6ed834" kindref="member">sid</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="d6/daa/structeCAL_1_1SServiceAttr_1a1a1d2d4278e651f82c6d22935c8d1ab7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pid<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;<sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>internal<sp/>protocol<sp/>specifics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="d6/daa/structeCAL_1_1SServiceAttr_1a624a47286fb03f9c04641a8517e5d78e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>version<sp/><sp/><sp/><sp/><sp/>=<sp/>0;<sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="d6/daa/structeCAL_1_1SServiceAttr_1a330c695d255531a8a334ded281981ba6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>tcp_port_v0<sp/>=<sp/>0;<sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="d6/daa/structeCAL_1_1SServiceAttr_1a33c6171778952b3a2d30598f479731ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>tcp_port_v1<sp/>=<sp/>0;<sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="d6/d99/structeCAL_1_1SClientEventCallbackData" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d6/d99/structeCAL_1_1SClientEventCallbackData" kindref="compound">SClientEventCallbackData</ref></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116" refid="d6/d99/structeCAL_1_1SClientEventCallbackData_1ac6c811f9fe9e57bb56f9aa36d3be1382" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>eCAL_Client_Event<sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aecc8fd8a2f02cbf5386ec5dfcb8dc78d" kindref="member">type</ref><sp/>=<sp/>client_event_none;<sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="d6/d99/structeCAL_1_1SClientEventCallbackData_1adc8a1d79699aa74a51e3e8ca1040c418" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a8ac417eae8daf46dd5b6a00721268273" kindref="member">time</ref><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="d6/d99/structeCAL_1_1SClientEventCallbackData_1af38f64a52c413e126f90abfff5285556" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/daa/structeCAL_1_1SServiceAttr" kindref="compound">SServiceAttr</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d99/structeCAL_1_1SClientEventCallbackData_1af38f64a52c413e126f90abfff5285556" kindref="member">attr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="db/d72/structeCAL_1_1SClientAttr" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="db/d72/structeCAL_1_1SClientAttr" kindref="compound">SClientAttr</ref></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126" refid="db/d72/structeCAL_1_1SClientAttr_1a8c72cc464f7eb37d2111b1dd5a65e0b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><ref refid="db/d72/structeCAL_1_1SClientAttr_1a8c72cc464f7eb37d2111b1dd5a65e0b4" kindref="member">key</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="db/d72/structeCAL_1_1SClientAttr_1a25ba3a9659b2cdde33490f5c064931d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><ref refid="db/d72/structeCAL_1_1SClientAttr_1a25ba3a9659b2cdde33490f5c064931d9" kindref="member">hname</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="db/d72/structeCAL_1_1SClientAttr_1ae55bce1e301bcea42a70f8eb22a2a3db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><ref refid="db/d72/structeCAL_1_1SClientAttr_1ae55bce1e301bcea42a70f8eb22a2a3db" kindref="member">pname</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="db/d72/structeCAL_1_1SClientAttr_1a41fec199d9dfed8281005f31b0353b43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><ref refid="db/d72/structeCAL_1_1SClientAttr_1a41fec199d9dfed8281005f31b0353b43" kindref="member">uname</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="db/d72/structeCAL_1_1SClientAttr_1a8abd53e4a7105fbba13480440e6b4f3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><ref refid="db/d72/structeCAL_1_1SClientAttr_1a8abd53e4a7105fbba13480440e6b4f3c" kindref="member">sname</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="db/d72/structeCAL_1_1SClientAttr_1a9b5913e61141f79f344c4496b50f2dd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><sp/><sp/><ref refid="db/d72/structeCAL_1_1SClientAttr_1a9b5913e61141f79f344c4496b50f2dd1" kindref="member">sid</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="db/d72/structeCAL_1_1SClientAttr_1a3d5c3b32aa5193a6eac749c6291f4a6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pid<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="db/d72/structeCAL_1_1SClientAttr_1a9d923d714d7979fc8eb57efc832d7538" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>version<sp/>=<sp/>0;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="d0/d66/structeCAL_1_1SServerEventCallbackData" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d0/d66/structeCAL_1_1SServerEventCallbackData" kindref="compound">SServerEventCallbackData</ref></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142" refid="d0/d66/structeCAL_1_1SServerEventCallbackData_1aa318600e2ba9b3cabab824597ecfbec1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>eCAL_Server_Event<sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1aecc8fd8a2f02cbf5386ec5dfcb8dc78d" kindref="member">type</ref><sp/>=<sp/>server_event_none;<sp/><sp/></highlight></codeline>
+<codeline lineno="143" refid="d0/d66/structeCAL_1_1SServerEventCallbackData_1a4fd9dfb87407433d52bfa14c80294896" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData_1a8ac417eae8daf46dd5b6a00721268273" kindref="member">time</ref><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="df/d76/ecal__callback_8h_1aa7cd61c577b65761ec5227aa509f1aa6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="df/d76/ecal__callback_8h_1aa7cd61c577b65761ec5227aa509f1aa6" kindref="member">ReceiveCallbackT</ref><sp/>=<sp/>std::function&lt;void<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="d4/d97/structeCAL_1_1SReceiveCallbackData" kindref="compound">SReceiveCallbackData</ref><sp/>*)&gt;;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="df/d76/ecal__callback_8h_1afa9b0ed5fa82263c5b5a0cb7fe96613d" kindref="member">TimerCallbackT</ref><sp/>=<sp/>std::function&lt;void<sp/>()&gt;;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="df/d76/ecal__callback_8h_1a91d4259a2908bf409ff0b3fb871ca0a3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="df/d76/ecal__callback_8h_1a91d4259a2908bf409ff0b3fb871ca0a3" kindref="member">RegistrationCallbackT</ref><sp/>=<sp/>std::function&lt;void<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)&gt;;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="df/d76/ecal__callback_8h_1ad5ee2b03f650f613c9ae5487a73630a1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="df/d76/ecal__callback_8h_1ad5ee2b03f650f613c9ae5487a73630a1" kindref="member">PubEventCallbackT</ref><sp/>=<sp/>std::function&lt;void<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="d7/dcb/structeCAL_1_1SPubEventCallbackData" kindref="compound">SPubEventCallbackData</ref><sp/>*)&gt;;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="df/d76/ecal__callback_8h_1a86878088e2aad452b6881ccfe5ab8cd2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="df/d76/ecal__callback_8h_1a86878088e2aad452b6881ccfe5ab8cd2" kindref="member">SubEventCallbackT</ref><sp/>=<sp/>std::function&lt;void<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="de/de6/structeCAL_1_1SSubEventCallbackData" kindref="compound">SSubEventCallbackData</ref><sp/>*)&gt;;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="df/d76/ecal__callback_8h_1ac7bddc5ffadba36ef41e7d5ff6c02d62" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="df/d76/ecal__callback_8h_1ac7bddc5ffadba36ef41e7d5ff6c02d62" kindref="member">ClientEventCallbackT</ref><sp/>=<sp/>std::function&lt;void<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="d6/d99/structeCAL_1_1SClientEventCallbackData" kindref="compound">SClientEventCallbackData</ref><sp/>*)&gt;;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="df/d76/ecal__callback_8h_1a9b49337a63f0ad773c4490f21b7b8d5c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="df/d76/ecal__callback_8h_1a9b49337a63f0ad773c4490f21b7b8d5c" kindref="member">ServerEventCallbackT</ref><sp/>=<sp/>std::function&lt;void<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="d0/d66/structeCAL_1_1SServerEventCallbackData" kindref="compound">SServerEventCallbackData</ref><sp/>*)&gt;;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_callback.h"/>
+  </compounddef>
+</doxygen>

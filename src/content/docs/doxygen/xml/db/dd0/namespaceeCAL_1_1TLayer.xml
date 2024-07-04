@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/dd0/namespaceeCAL_1_1TLayer" kind="namespace" language="C++">
+    <compoundname>eCAL::TLayer</compoundname>
+    <innerclass refid="d1/dd5/structeCAL_1_1TLayer_1_1STLayer" prot="public">eCAL::TLayer::STLayer</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>eTransportLayer</name>
+        <enumvalue id="d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59aa93751ee7a34e950875cd2a3e173d14cc" prot="public">
+          <name>tlayer_none</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59aadf6241003a0e85edbfb770290267b104" prot="public">
+          <name>tlayer_udp_mc</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59aaacb65209b8a605d9306b5c92d4680420" prot="public">
+          <name>tlayer_shm</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59aad5b80ce9187d5c07cca41aaae5455f17" prot="public">
+          <name>tlayer_tcp</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59aaa5e9d60aaf6f0fa8840781fafa4e7b38" prot="public">
+          <name>tlayer_inproc</name>
+          <initializer>= 42</initializer>
+          <briefdescription>
+<para>deprecated, whole layer will be removed in future eCAL versions </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59aa4479578bc3487e70170cefd21031bff6" prot="public">
+          <name>tlayer_all</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>eCAL transport layer types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" line="36" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>eSendMode</name>
+        <enumvalue id="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91aab9db2d0d8ca89cff6863c884d1916ca6" prot="public">
+          <name>smode_none</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91aaf3fd774250dd879142292b5da43ce580" prot="public">
+          <name>smode_off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91aa78e1c618bfba2d93df101c8af5b7fb8f" prot="public">
+          <name>smode_on</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91aad5decc980ccd30a077195b92b9ef082b" prot="public">
+          <name>smode_auto</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>eCAL transport layer modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" line="49" column="5" bodyfile="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" bodystart="50" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lu/luca@Nextcloud/Programming/Conti/Praktikum/ecal/ecal/core/include/ecal/ecal_tlayer.h" line="31" column="3"/>
+  </compounddef>
+</doxygen>
