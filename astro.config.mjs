@@ -10,6 +10,10 @@ export default defineConfig({
   integrations: [
   starlight({
     title: 'Eclipse eCAL™',
+    logo: {
+      src: './src/assets/ecal-logo.svg',
+    },
+    favicon: './src/assets/favicon.png',
     customCss: [
     // Relative path to your custom CSS file
     './src/styles/custom.css'],
@@ -19,7 +23,8 @@ export default defineConfig({
     sidebar: [{
       label: 'Getting Started',
       autogenerate: {
-        directory: 'getting_started'
+        directory: 'getting_started', 
+        collapsed: true 
       } //{ label: 'Example Guide', link: '/guides/example/' },
     }],
   }),
