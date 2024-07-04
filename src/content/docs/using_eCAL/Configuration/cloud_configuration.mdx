@@ -1,0 +1,21 @@
+---
+title: Cloud Configuration
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+To switch eCAL to cloud mode, edit your `ecal.ini` and change the following settings:
+
+- Windows: `C:\ProgramData\eCAL\ecal.ini`
+- Ubuntu: `/etc/ecal/ecal.ini`
+```ini
+   [network]
+   network_enabled           = true
+   multicast_ttl             = 2
+```
+
+<Aside type="danger" title="Important">
+Don't forget to set your multicast routes and make sure your hostname resolution works on all machines!
+- [UDP Multicast routes](/getting_started/4_network_configuration/)
+- [Hostname resolution for Services](/getting_started/5_ecal_services/#52-hostname-resolution)
+</Aside>
