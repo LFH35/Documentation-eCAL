@@ -11,7 +11,7 @@ export default defineConfig({
   starlight({
     title: 'Eclipse eCAL™',
     logo: {
-      src: './src/assets/ecal-logo.svg',
+      src: './src/assets/logo.svg',
     },
     favicon: './src/assets/favicon.png',
     customCss: [
