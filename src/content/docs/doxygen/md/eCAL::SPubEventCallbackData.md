@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::SPubEventCallbackData
+sidebar:
+  order: 2
 ---
 
 eCAL publisher event callback struct.

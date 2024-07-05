@@ -1,5 +1,7 @@
 ---
 title: class eCAL::CTimedCB
+sidebar:
+  order: 2
 ---
 
 eCAL timer callback class.

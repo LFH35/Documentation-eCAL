@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::SServiceMethodInformation
+sidebar:
+  order: 2
 ---
 
 Optional compile time information associated with a given service method (necessary for reflection / runtime type checking)

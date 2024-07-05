@@ -1,5 +1,7 @@
 ---
 title: page deprecated
+sidebar:
+    order: 1
 ---
 
 Global [client_call_method](src/content/docs/doxygen/md/client_call_method.md#d4/d19/ecal__clang_8h_1a8f33dfb4c563e82391cb4a0e3d1b0089)  (ECAL_HANDLE handle_, const char *method_name_, const char *request_, const int request_len_, const int timeout_)* Will be removed in future eCAL versions. 

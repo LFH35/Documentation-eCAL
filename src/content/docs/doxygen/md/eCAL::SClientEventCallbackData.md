@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::SClientEventCallbackData
+sidebar:
+  order: 2
 ---
 
 eCAL client event callback struct.

@@ -1,5 +1,7 @@
 ---
 title: {{kind}} {{name}}
+sidebar:
+    order: 1
 ---
 
 {{briefdescription}}

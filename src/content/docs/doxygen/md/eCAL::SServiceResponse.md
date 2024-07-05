@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::SServiceResponse
+sidebar:
+  order: 2
 ---
 
 Service response struct containing the (responding) server informations and the response itself.

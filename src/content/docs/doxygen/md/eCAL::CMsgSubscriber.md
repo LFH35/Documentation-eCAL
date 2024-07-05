@@ -1,5 +1,7 @@
 ---
 title: class eCAL::CMsgSubscriber
+sidebar:
+  order: 2
 ---
 
 ```cpp

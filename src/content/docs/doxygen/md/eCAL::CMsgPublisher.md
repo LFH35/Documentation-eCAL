@@ -1,5 +1,7 @@
 ---
 title: class eCAL::CMsgPublisher
+sidebar:
+  order: 2
 ---
 
 ```cpp

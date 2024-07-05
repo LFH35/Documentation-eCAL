@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::SSubEventCallbackData
+sidebar:
+  order: 2
 ---
 
 eCAL subscriber event callback struct.

@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::QOS::SWriterQOS
+sidebar:
+  order: 2
 ---
 
 eCAL data writer QOS settings.

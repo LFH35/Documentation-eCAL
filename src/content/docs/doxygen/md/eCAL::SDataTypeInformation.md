@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::SDataTypeInformation
+sidebar:
+  order: 2
 ---
 
 Optional compile time information associated with a given topic (necessary for reflection / runtime type checking)

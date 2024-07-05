@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::TLayer::STLayer
+sidebar:
+  order: 2
 ---
 
 eCAL transport layer state struct.

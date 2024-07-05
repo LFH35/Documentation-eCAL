@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::SEventHandle
+sidebar:
+  order: 2
 ---
 
 eCAL event callback handle.

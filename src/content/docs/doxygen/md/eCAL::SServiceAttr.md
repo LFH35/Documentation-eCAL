@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::SServiceAttr
+sidebar:
+  order: 2
 ---
 
 eCAL service attributes.

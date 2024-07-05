@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::SClientAttr
+sidebar:
+  order: 2
 ---
 
 eCAL client attributes.

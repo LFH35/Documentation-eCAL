@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::SReceiveCallbackData
+sidebar:
+  order: 2
 ---
 
 eCAL subscriber receive callback struct.

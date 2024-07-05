@@ -1,5 +1,7 @@
 ---
 title: class eCAL::CSubscriber
+sidebar:
+  order: 2
 ---
 
 eCAL subscriber class.

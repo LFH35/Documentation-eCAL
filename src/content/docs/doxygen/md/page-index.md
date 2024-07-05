@@ -1,5 +1,7 @@
 ---
 title: page index
+sidebar:
+    order: 1
 ---
 
 ## Introduction

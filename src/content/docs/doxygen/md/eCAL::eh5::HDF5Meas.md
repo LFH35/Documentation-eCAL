@@ -1,5 +1,7 @@
 ---
 title: class eCAL::eh5::HDF5Meas
+sidebar:
+  order: 2
 ---
 
 eCAL HDF5 measurement API

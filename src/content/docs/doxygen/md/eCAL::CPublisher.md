@@ -1,5 +1,7 @@
 ---
 title: class eCAL::CPublisher
+sidebar:
+  order: 2
 ---
 
 eCAL publisher class.

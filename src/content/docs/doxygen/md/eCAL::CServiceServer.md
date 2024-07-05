@@ -1,5 +1,7 @@
 ---
 title: class eCAL::CServiceServer
+sidebar:
+  order: 2
 ---
 
 Service Server wrapper class.

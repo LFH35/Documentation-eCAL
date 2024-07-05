@@ -1,5 +1,7 @@
 ---
 title: class eCAL::CTimer
+sidebar:
+  order: 2
 ---
 
 eCAL timer class.

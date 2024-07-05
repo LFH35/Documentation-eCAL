@@ -1,5 +1,7 @@
 ---
 title: struct eCAL::QOS::SReaderQOS
+sidebar:
+  order: 2
 ---
 
 eCAL data reader QOS settings.

@@ -1,5 +1,7 @@
 ---
 title: class eCAL::CServiceClient
+sidebar:
+  order: 2
 ---
 
 Service client wrapper class.
