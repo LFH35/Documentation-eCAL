@@ -1,5 +1,5 @@
 ---
-title: {{name}} 
+title: {{kind}} {{name}}
 ---
 
 {{briefdescription}}

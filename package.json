@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "convert": "node convertHtmlToMdx.js",
-    "moxygen": "moxygen --anchors --pages --classes --templates=src/assets/templates --output=src/content/docs/doxygen/md/%s.md src/content/docs/doxygen/xml"
+    "moxygen": "moxygen --pages --classes --templates=src/assets/templates --output=src/content/docs/doxygen/md/%s.md src/content/docs/doxygen/xml"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.2",

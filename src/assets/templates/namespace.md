@@ -1,8 +1,8 @@
 ---
-title: 3. {{name}} namespace
+title: {{kind}} {{name}}
 ---
 
-# {{kind}} `{{name}}` {{anchor refid}}
+# {{kind}} `{{name}}`
 
 {{briefdescription}}
 
@@ -20,7 +20,7 @@ title: 3. {{name}} namespace
 ## Members
 
 {{#each filtered.members}}
-#### {{title proto}} {{anchor refid}}
+#### {{title proto}}
 
 {{#if enumvalue}}
  Values                         | Descriptions                                

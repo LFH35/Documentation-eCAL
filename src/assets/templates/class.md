@@ -15,7 +15,7 @@ title: {{kind}} {{name}}
 
 {{detaileddescription}}
 
-# Members
+## Members
 
 {{#each filtered.compounds}}
 ### {{title proto}} 
