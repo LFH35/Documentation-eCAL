@@ -1,5 +1,5 @@
 ---
-title: 2. {{kind}} {{name}}
+title: {{kind}} {{name}}
 ---
 
 {{#if basecompoundref}}

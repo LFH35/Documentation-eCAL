@@ -1,8 +1,6 @@
 ---
-title: 1. {{name}} page
+title: {{name}} 
 ---
-
-# {{kind}} `{{name}}` {{anchor refid}}
 
 {{briefdescription}}
 
@@ -21,7 +19,7 @@ title: 1. {{name}} page
 ## Members
 
 {{#each filtered.members}}
-#### {{title proto}} {{anchor refid}}
+#### {{title proto}}
 
 {{#if enumvalue}}
  Values                         | Descriptions                                
