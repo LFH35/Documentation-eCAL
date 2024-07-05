@@ -48,7 +48,7 @@ Constructor.
 
 Constructor.
 
-> Deprecated: Please use the constructor [CSubscriber(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](doxygen/md/zapi-CSubscriber.md#d3/d33/classeCAL_1_1CSubscriber_1ad5e15fc7c17ae35d32cae42006d7922e) instead. This function will be removed in future eCAL versions..
+> Deprecated: Please use the constructor [CSubscriber(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](src/content/docs/doxygen/md/zapi-CSubscriber.md#d3/d33/classeCAL_1_1CSubscriber_1ad5e15fc7c17ae35d32cae42006d7922e) instead. This function will be removed in future eCAL versions..
 
 #### Parameters
 * `topic_name_` Unique topic name. 
@@ -57,7 +57,7 @@ Constructor.
 
 * `topic_desc_` Type description (optional for description checking).
 
-### `public ECAL_API `[`CSubscriber`](#d3/d33/classeCAL_1_1CSubscriber_1ad5e15fc7c17ae35d32cae42006d7922e)`(const std::string & topic_name_,const `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
+### `public ECAL_API `[`CSubscriber`](#d3/d33/classeCAL_1_1CSubscriber_1ad5e15fc7c17ae35d32cae42006d7922e)`(const std::string & topic_name_,const `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
 
 Constructor.
 
@@ -119,7 +119,7 @@ Creates this object.
 #### Returns
 True if it succeeds, false if it fails.
 
-### `public ECAL_API bool `[`Create`](#d3/d33/classeCAL_1_1CSubscriber_1a0a9d922ec165f1de8d10643343f5a5c7)`(const std::string & topic_name_,const `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
+### `public ECAL_API bool `[`Create`](#d3/d33/classeCAL_1_1CSubscriber_1a0a9d922ec165f1de8d10643343f5a5c7)`(const std::string & topic_name_,const `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
 
 Creates this object.
 
@@ -138,7 +138,7 @@ Destroys this object.
 #### Returns
 true if it succeeds, false if it fails.
 
-### `public ECAL_API bool `[`SetQOS`](#d3/d33/classeCAL_1_1CSubscriber_1a6d2eedfb0f6f188e755fdc10b8dd65aa)`(const `[`QOS::SReaderQOS`](doxygen/md/zapi-eCAL::QOS::SReaderQOS.md#dd/d67/structeCAL_1_1QOS_1_1SReaderQOS)` & qos_)` 
+### `public ECAL_API bool `[`SetQOS`](#d3/d33/classeCAL_1_1CSubscriber_1a6d2eedfb0f6f188e755fdc10b8dd65aa)`(const `[`QOS::SReaderQOS`](src/content/docs/doxygen/md/zapi-eCAL::QOS::SReaderQOS.md#dd/d67/structeCAL_1_1QOS_1_1SReaderQOS)` & qos_)` 
 
 Set subscriber quality of service attributes.
 
@@ -150,7 +150,7 @@ Set subscriber quality of service attributes.
 #### Returns
 True if it succeeds, false if it fails.
 
-### `public ECAL_API `[`QOS::SReaderQOS`](doxygen/md/zapi-eCAL::QOS::SReaderQOS.md#dd/d67/structeCAL_1_1QOS_1_1SReaderQOS)` `[`GetQOS`](#d3/d33/classeCAL_1_1CSubscriber_1a354f4ef355df54ef7a9ed0d5041075ac)`()` 
+### `public ECAL_API `[`QOS::SReaderQOS`](src/content/docs/doxygen/md/zapi-eCAL::QOS::SReaderQOS.md#dd/d67/structeCAL_1_1QOS_1_1SReaderQOS)` `[`GetQOS`](#d3/d33/classeCAL_1_1CSubscriber_1a354f4ef355df54ef7a9ed0d5041075ac)`()` 
 
 Get current subscriber quality of service attributes.
 
@@ -161,7 +161,7 @@ Quality of service attributes.
 
 ### `public ECAL_API bool `[`SetID`](#d3/d33/classeCAL_1_1CSubscriber_1ae2d9cba79a3cb7b4b95d45170a960ad3)`(const std::set< long long > & id_set_)` 
 
-Set a set of id's to prefiltering topics (see [CPublisher::SetID](doxygen/md/zapi-SetID.md#dc/d42/classeCAL_1_1CPublisher_1a1098fe2ca3ac7c8dae5f9845c000b16b)).
+Set a set of id's to prefiltering topics (see [CPublisher::SetID](src/content/docs/doxygen/md/zapi-SetID.md#dc/d42/classeCAL_1_1CPublisher_1a1098fe2ca3ac7c8dae5f9845c000b16b)).
 
 #### Parameters
 * `id_set_` Set of id's.
@@ -221,7 +221,7 @@ Receive a message from the publisher (able to process zero length buffer).
 #### Returns
 True if it succeeds, false if it fails.
 
-### `public ECAL_API bool `[`AddReceiveCallback`](#d3/d33/classeCAL_1_1CSubscriber_1ae9434a3d3816ba0bc81ad3dce0f202b7)`(`[`ReceiveCallbackT`](doxygen/md/zapi-ReceiveCallbackT.md#df/d76/ecal__callback_8h_1aa7cd61c577b65761ec5227aa509f1aa6)` callback_)` 
+### `public ECAL_API bool `[`AddReceiveCallback`](#d3/d33/classeCAL_1_1CSubscriber_1ae9434a3d3816ba0bc81ad3dce0f202b7)`(`[`ReceiveCallbackT`](src/content/docs/doxygen/md/zapi-ReceiveCallbackT.md#df/d76/ecal__callback_8h_1aa7cd61c577b65761ec5227aa509f1aa6)` callback_)` 
 
 Add callback function for incoming receives.
 
@@ -238,7 +238,7 @@ Remove callback function for incoming receives.
 #### Returns
 True if succeeded, false if not.
 
-### `public ECAL_API bool `[`AddEventCallback`](#d3/d33/classeCAL_1_1CSubscriber_1a3da35ff391cb6f5b11fbca47dc73fee3)`(eCAL_Subscriber_Event type_,`[`SubEventCallbackT`](doxygen/md/zapi-SubEventCallbackT.md#df/d76/ecal__callback_8h_1a86878088e2aad452b6881ccfe5ab8cd2)` callback_)` 
+### `public ECAL_API bool `[`AddEventCallback`](#d3/d33/classeCAL_1_1CSubscriber_1a3da35ff391cb6f5b11fbca47dc73fee3)`(eCAL_Subscriber_Event type_,`[`SubEventCallbackT`](src/content/docs/doxygen/md/zapi-SubEventCallbackT.md#df/d76/ecal__callback_8h_1a86878088e2aad452b6881ccfe5ab8cd2)` callback_)` 
 
 Add callback function for subscriber events.
 
@@ -285,7 +285,7 @@ The topic name.
 
 Gets type of the connected topic.
 
-> Deprecated: Please use the method [SDataTypeInformation](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)[GetDataTypeInformation()](doxygen/md/zapi-GetDataTypeInformation.md#d3/d33/classeCAL_1_1CSubscriber_1a7e35f163ae5692ad3ec33c8282f1f4e3) instead. You can extract the typename from the [SDataTypeInformation](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation) variable. This function will be removed in future eCAL versions.
+> Deprecated: Please use the method [SDataTypeInformation](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)[GetDataTypeInformation()](src/content/docs/doxygen/md/zapi-GetDataTypeInformation.md#d3/d33/classeCAL_1_1CSubscriber_1a7e35f163ae5692ad3ec33c8282f1f4e3) instead. You can extract the typename from the [SDataTypeInformation](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation) variable. This function will be removed in future eCAL versions.
 
 #### Returns
 The type name.
@@ -294,12 +294,12 @@ The type name.
 
 Gets description of the connected topic.
 
-> Deprecated: Please use the method [SDataTypeInformation](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)[GetDataTypeInformation()](doxygen/md/zapi-GetDataTypeInformation.md#d3/d33/classeCAL_1_1CSubscriber_1a7e35f163ae5692ad3ec33c8282f1f4e3) instead. You can extract the descriptor from the [SDataTypeInformation](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation) variable. This function will be removed in future eCAL versions.
+> Deprecated: Please use the method [SDataTypeInformation](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)[GetDataTypeInformation()](src/content/docs/doxygen/md/zapi-GetDataTypeInformation.md#d3/d33/classeCAL_1_1CSubscriber_1a7e35f163ae5692ad3ec33c8282f1f4e3) instead. You can extract the descriptor from the [SDataTypeInformation](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation) variable. This function will be removed in future eCAL versions.
 
 #### Returns
 The description.
 
-### `public ECAL_API `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` `[`GetDataTypeInformation`](#d3/d33/classeCAL_1_1CSubscriber_1a7e35f163ae5692ad3ec33c8282f1f4e3)`() const` 
+### `public ECAL_API `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` `[`GetDataTypeInformation`](#d3/d33/classeCAL_1_1CSubscriber_1a7e35f163ae5692ad3ec33c8282f1f4e3)`() const` 
 
 Gets description of the connected topic.
 
@@ -336,5 +336,5 @@ The dump sting.
 
 ### `protected void `[`InitializeQOS`](#d3/d33/classeCAL_1_1CSubscriber_1a72c0884567370269d024e352db910699)`()` 
 
-### `protected bool `[`ApplyTopicToDescGate`](#d3/d33/classeCAL_1_1CSubscriber_1a8d9177d3445b5516595b7e4cca027d2a)`(const std::string & topic_name_,const `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
+### `protected bool `[`ApplyTopicToDescGate`](#d3/d33/classeCAL_1_1CSubscriber_1a8d9177d3445b5516595b7e4cca027d2a)`(const std::string & topic_name_,const `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
 

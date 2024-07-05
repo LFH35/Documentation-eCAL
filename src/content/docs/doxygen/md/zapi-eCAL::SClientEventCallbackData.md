@@ -14,7 +14,7 @@ event type
 
 event time in µs
 
-### `public `[`SServiceAttr`](doxygen/md/zapi-eCAL::SServiceAttr.md#d6/daa/structeCAL_1_1SServiceAttr)` `[`attr`](#d6/d99/structeCAL_1_1SClientEventCallbackData_1af38f64a52c413e126f90abfff5285556) 
+### `public `[`SServiceAttr`](src/content/docs/doxygen/md/zapi-eCAL::SServiceAttr.md#d6/daa/structeCAL_1_1SServiceAttr)` `[`attr`](#d6/d99/structeCAL_1_1SClientEventCallbackData_1af38f64a52c413e126f90abfff5285556) 
 
 event related service attributes
 

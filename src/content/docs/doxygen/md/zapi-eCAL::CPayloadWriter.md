@@ -6,7 +6,7 @@ Base payload writer class to allow zero copy memory operations.
 
 This class serves as the base class for payload writers, allowing zero-copy memory operations. The `WriteFull` and `WriteModified` calls may operate on the target memory file directly in zero-copy mode.
 
-A partial writing / modification of the memory file is only possible when zero-copy mode is activated. If zero-copy is not enabled, the `WriteModified` method is ignored and the `WriteFull` method is always executed (see [CPublisher::ShmEnableZeroCopy](doxygen/md/zapi-ShmEnableZeroCopy.md#dc/d42/classeCAL_1_1CPublisher_1af057c139ad7f40fe6574e095f5ff806c))
+A partial writing / modification of the memory file is only possible when zero-copy mode is activated. If zero-copy is not enabled, the `WriteModified` method is ignored and the `WriteFull` method is always executed (see [CPublisher::ShmEnableZeroCopy](src/content/docs/doxygen/md/zapi-ShmEnableZeroCopy.md#dc/d42/classeCAL_1_1CPublisher_1af057c139ad7f40fe6574e095f5ff806c))
 
 # Members
 

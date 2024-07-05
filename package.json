@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "convert": "node convertHtmlToMdx.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.2",
@@ -16,6 +17,7 @@
     "@expressive-code/plugin-line-numbers": "^0.35.3",
     "astro": "^4.10.2",
     "astro-icon": "^1.1.0",
+    "cheerio": "^1.0.0-rc.12",
     "prismjs": "^1.29.0",
     "raw-loader": "^4.0.2",
     "sharp": "^0.32.5",

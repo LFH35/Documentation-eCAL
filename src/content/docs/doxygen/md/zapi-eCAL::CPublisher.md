@@ -28,7 +28,7 @@ Constructor.
 
 Constructor.
 
-> Deprecated: Please use the constructor [CPublisher(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](doxygen/md/zapi-CPublisher.md#dc/d42/classeCAL_1_1CPublisher_1a504c55b1883606f3ea948a3642c409cc) instead. This function will be removed in future eCAL versions.
+> Deprecated: Please use the constructor [CPublisher(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](src/content/docs/doxygen/md/zapi-CPublisher.md#dc/d42/classeCAL_1_1CPublisher_1a504c55b1883606f3ea948a3642c409cc) instead. This function will be removed in future eCAL versions.
 
 #### Parameters
 * `topic_name_` Unique topic name. 
@@ -37,7 +37,7 @@ Constructor.
 
 * `topic_desc_` Type description (optional).
 
-### `public ECAL_API `[`CPublisher`](#dc/d42/classeCAL_1_1CPublisher_1a504c55b1883606f3ea948a3642c409cc)`(const std::string & topic_name_,const `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
+### `public ECAL_API `[`CPublisher`](#dc/d42/classeCAL_1_1CPublisher_1a504c55b1883606f3ea948a3642c409cc)`(const std::string & topic_name_,const `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
 
 Constructor.
 
@@ -77,7 +77,7 @@ CPublishers are move-enabled.
 
 Creates this object.
 
-> Deprecated: Please use the create method bool [Create(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](doxygen/md/zapi-Create.md#dc/d42/classeCAL_1_1CPublisher_1abf94f945976e3b9c0a65a8f17199006f) instead. This function will be removed in future eCAL versions.
+> Deprecated: Please use the create method bool [Create(const std::string& topic_name_, const SDataTypeInformation& topic_info_)](src/content/docs/doxygen/md/zapi-Create.md#dc/d42/classeCAL_1_1CPublisher_1abf94f945976e3b9c0a65a8f17199006f) instead. This function will be removed in future eCAL versions.
 
 #### Parameters
 * `topic_name_` Unique topic name. 
@@ -89,7 +89,7 @@ Creates this object.
 #### Returns
 True if it succeeds, false if it fails.
 
-### `public ECAL_API bool `[`Create`](#dc/d42/classeCAL_1_1CPublisher_1abf94f945976e3b9c0a65a8f17199006f)`(const std::string & topic_name_,const `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
+### `public ECAL_API bool `[`Create`](#dc/d42/classeCAL_1_1CPublisher_1abf94f945976e3b9c0a65a8f17199006f)`(const std::string & topic_name_,const `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
 
 Creates this object.
 
@@ -122,7 +122,7 @@ True if it succeeds, false if it fails.
 
 Setup topic type name.
 
-> Deprecated: Please use the method bool [SetDataTypeInformation(const SDataTypeInformation& topic_info_)](doxygen/md/zapi-SetDataTypeInformation.md#dc/d42/classeCAL_1_1CPublisher_1aad7aed589c12253ff805c795b9106b39) instead. This function will be removed in future eCAL versions.
+> Deprecated: Please use the method bool [SetDataTypeInformation(const SDataTypeInformation& topic_info_)](src/content/docs/doxygen/md/zapi-SetDataTypeInformation.md#dc/d42/classeCAL_1_1CPublisher_1aad7aed589c12253ff805c795b9106b39) instead. This function will be removed in future eCAL versions.
 
 #### Parameters
 * `topic_type_name_` Topic type name.
@@ -134,7 +134,7 @@ True if it succeeds, false if it fails.
 
 Setup topic description.
 
-> Deprecated: Please use the method bool [SetDataTypeInformation(const SDataTypeInformation& topic_info_)](doxygen/md/zapi-SetDataTypeInformation.md#dc/d42/classeCAL_1_1CPublisher_1aad7aed589c12253ff805c795b9106b39) instead. This function will be removed in future eCAL versions.
+> Deprecated: Please use the method bool [SetDataTypeInformation(const SDataTypeInformation& topic_info_)](src/content/docs/doxygen/md/zapi-SetDataTypeInformation.md#dc/d42/classeCAL_1_1CPublisher_1aad7aed589c12253ff805c795b9106b39) instead. This function will be removed in future eCAL versions.
 
 #### Parameters
 * `topic_desc_` Description string.
@@ -142,7 +142,7 @@ Setup topic description.
 #### Returns
 True if it succeeds, false if it fails.
 
-### `public ECAL_API bool `[`SetDataTypeInformation`](#dc/d42/classeCAL_1_1CPublisher_1aad7aed589c12253ff805c795b9106b39)`(const `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
+### `public ECAL_API bool `[`SetDataTypeInformation`](#dc/d42/classeCAL_1_1CPublisher_1aad7aed589c12253ff805c795b9106b39)`(const `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
 
 Setup topic information.
 
@@ -194,7 +194,7 @@ Share topic description.
 #### Returns
 True if it succeeds, false if it fails.
 
-### `public ECAL_API bool `[`SetQOS`](#dc/d42/classeCAL_1_1CPublisher_1a7742362c6bd52a5cf4bf5432402beaf1)`(const `[`QOS::SWriterQOS`](doxygen/md/zapi-eCAL::QOS::SWriterQOS.md#d1/d85/structeCAL_1_1QOS_1_1SWriterQOS)` & qos_)` 
+### `public ECAL_API bool `[`SetQOS`](#dc/d42/classeCAL_1_1CPublisher_1a7742362c6bd52a5cf4bf5432402beaf1)`(const `[`QOS::SWriterQOS`](src/content/docs/doxygen/md/zapi-eCAL::QOS::SWriterQOS.md#d1/d85/structeCAL_1_1QOS_1_1SWriterQOS)` & qos_)` 
 
 Set publisher quality of service attributes.
 
@@ -206,7 +206,7 @@ Set publisher quality of service attributes.
 #### Returns
 True if it succeeds, false if it fails.
 
-### `public ECAL_API `[`QOS::SWriterQOS`](doxygen/md/zapi-eCAL::QOS::SWriterQOS.md#d1/d85/structeCAL_1_1QOS_1_1SWriterQOS)` `[`GetQOS`](#dc/d42/classeCAL_1_1CPublisher_1a16b531c461127e2e22ef6fe02fcf79b9)`()` 
+### `public ECAL_API `[`QOS::SWriterQOS`](src/content/docs/doxygen/md/zapi-eCAL::QOS::SWriterQOS.md#d1/d85/structeCAL_1_1QOS_1_1SWriterQOS)` `[`GetQOS`](#dc/d42/classeCAL_1_1CPublisher_1a16b531c461127e2e22ef6fe02fcf79b9)`()` 
 
 Get current publisher quality of service attributes.
 
@@ -215,7 +215,7 @@ Get current publisher quality of service attributes.
 #### Returns
 Quality of service attributes.
 
-### `public ECAL_API bool `[`SetLayerMode`](#dc/d42/classeCAL_1_1CPublisher_1a679db56f8d6bb28f94ef9f356158680f)`(`[`TLayer::eTransportLayer`](doxygen/md/zapi-eTransportLayer.md#d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59a)` layer_,`[`TLayer::eSendMode`](doxygen/md/zapi-eSendMode.md#d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a)` mode_)` 
+### `public ECAL_API bool `[`SetLayerMode`](#dc/d42/classeCAL_1_1CPublisher_1a679db56f8d6bb28f94ef9f356158680f)`(`[`TLayer::eTransportLayer`](src/content/docs/doxygen/md/zapi-eTransportLayer.md#d4/dd8/ecal__tlayer_8h_1a65b651c8133a86e4850afa99db69a59a)` layer_,`[`TLayer::eSendMode`](src/content/docs/doxygen/md/zapi-eSendMode.md#d4/dd8/ecal__tlayer_8h_1ae475e842a5ad28c0104f9558e9bdb91a)` mode_)` 
 
 Set publisher send mode for specific transport layer.
 
@@ -263,7 +263,7 @@ The advantage of this configuration is a much higher performance for large paylo
 
 Today, for specific scenarios (1:1 pub/sub connections with large payloads for example) this feature can increase the performance remarkable. But please keep in mind to return from the message callback function as fast as possible to not delay subsequent read/write access operations.
 
-By using the [eCAL::CPayloadWriter](doxygen/md/zapi-eCAL::CPayloadWriter.md#dd/db1/classeCAL_1_1CPayloadWriter) API a full zero copy implementation is possible by providing separate methods for the initialization and the modification of the memory file content (see [CPayloadWriter](doxygen/md/zapi-eCAL::CPayloadWriter.md#dd/db1/classeCAL_1_1CPayloadWriter) documentation).
+By using the [eCAL::CPayloadWriter](src/content/docs/doxygen/md/zapi-eCAL::CPayloadWriter.md#dd/db1/classeCAL_1_1CPayloadWriter) API a full zero copy implementation is possible by providing separate methods for the initialization and the modification of the memory file content (see [CPayloadWriter](src/content/docs/doxygen/md/zapi-eCAL::CPayloadWriter.md#dd/db1/classeCAL_1_1CPayloadWriter) documentation).
 
 #### Parameters
 * `state_` Set type zero copy mode for shared memory transport layer (true == zero copy enabled).
@@ -279,7 +279,7 @@ Most applications perform very well with the default behavior. If subscribers ar
 
 There may still be cases where it could make sense to synchronize the transfer of the payload from a publisher to a subscriber by using an additional handshake event. This event is signaled by a subscriber back to the sending publisher to confirm the complete payload transmission and the processed subscriber callback.
 
-The publisher will wait up to the specified timeout for the acknowledge signals of all connected subscribers before sending new content. Finally that means the publishers [CPublisher::Send](doxygen/md/zapi-Send.md#dc/d42/classeCAL_1_1CPublisher_1acbea7ac61cfb86ca5a939e281a89285f) API function call is now blocked and will not return until all subscriber have read and processed their content or the timeout has been reached.
+The publisher will wait up to the specified timeout for the acknowledge signals of all connected subscribers before sending new content. Finally that means the publishers [CPublisher::Send](src/content/docs/doxygen/md/zapi-Send.md#dc/d42/classeCAL_1_1CPublisher_1acbea7ac61cfb86ca5a939e281a89285f) API function call is now blocked and will not return until all subscriber have read and processed their content or the timeout has been reached.
 
 #### Parameters
 * `acknowledge_timeout_ms_` timeout to wait for acknowledge signal from connected subscriber in ms (0 == no handshake).
@@ -291,7 +291,7 @@ True if it succeeds, false if it fails.
 
 Force connected subscribers to send acknowledge event after processing the message and block publisher send call on this event with a timeout.
 
-See [ShmSetAcknowledgeTimeout(long long acknowledge_timeout_ms_)](doxygen/md/zapi-ShmSetAcknowledgeTimeout.md#dc/d42/classeCAL_1_1CPublisher_1a809dab69596b6f4632bcf0b5d68b4eef)
+See [ShmSetAcknowledgeTimeout(long long acknowledge_timeout_ms_)](src/content/docs/doxygen/md/zapi-ShmSetAcknowledgeTimeout.md#dc/d42/classeCAL_1_1CPublisher_1a809dab69596b6f4632bcf0b5d68b4eef)
 
 #### Parameters
 * `acknowledge_timeout_` timeout to wait for acknowledge signal from connected subscriber (0 == no handshake).
@@ -323,7 +323,7 @@ Send a message to all subscribers.
 #### Returns
 Number of bytes sent.
 
-### `public ECAL_API size_t `[`Send`](#dc/d42/classeCAL_1_1CPublisher_1a5f97c75cbcaeb7bd31e451560d473103)`(`[`CPayloadWriter`](doxygen/md/zapi-eCAL::CPayloadWriter.md#dd/db1/classeCAL_1_1CPayloadWriter)` & payload_,long long time_) const` 
+### `public ECAL_API size_t `[`Send`](#dc/d42/classeCAL_1_1CPublisher_1a5f97c75cbcaeb7bd31e451560d473103)`(`[`CPayloadWriter`](src/content/docs/doxygen/md/zapi-eCAL::CPayloadWriter.md#dd/db1/classeCAL_1_1CPayloadWriter)` & payload_,long long time_) const` 
 
 Send a message to all subscribers.
 
@@ -357,7 +357,7 @@ Number of bytes sent.
 
 Send a message to all subscribers synchronized with acknowledge timeout (see also ShmSetAcknowledgeTimeout).
 
-> Deprecated: Please use the method size_t [Send(CPayloadWriter& payload_, long long time_, long long acknowledge_timeout_ms_) const ](doxygen/md/zapi-Send.md#dc/d42/classeCAL_1_1CPublisher_1a8fd0663b7117ca27c70b3ddac16c60e8)instead. This function will be removed in future eCAL versions.
+> Deprecated: Please use the method size_t [Send(CPayloadWriter& payload_, long long time_, long long acknowledge_timeout_ms_) const ](src/content/docs/doxygen/md/zapi-Send.md#dc/d42/classeCAL_1_1CPublisher_1a8fd0663b7117ca27c70b3ddac16c60e8)instead. This function will be removed in future eCAL versions.
 
 #### Parameters
 * `buf_` Pointer to content buffer. 
@@ -371,7 +371,7 @@ Send a message to all subscribers synchronized with acknowledge timeout (see als
 #### Returns
 Number of bytes sent.
 
-### `public ECAL_API size_t `[`Send`](#dc/d42/classeCAL_1_1CPublisher_1a8fd0663b7117ca27c70b3ddac16c60e8)`(`[`CPayloadWriter`](doxygen/md/zapi-eCAL::CPayloadWriter.md#dd/db1/classeCAL_1_1CPayloadWriter)` & payload_,long long time_,long long acknowledge_timeout_ms_) const` 
+### `public ECAL_API size_t `[`Send`](#dc/d42/classeCAL_1_1CPublisher_1a8fd0663b7117ca27c70b3ddac16c60e8)`(`[`CPayloadWriter`](src/content/docs/doxygen/md/zapi-eCAL::CPayloadWriter.md#dd/db1/classeCAL_1_1CPayloadWriter)` & payload_,long long time_,long long acknowledge_timeout_ms_) const` 
 
 Send a message to all subscribers synchronized with acknowledge timeout (see also ShmSetAcknowledgeTimeout).
 
@@ -413,7 +413,7 @@ Send a message to all subscribers synchronized.
 #### Returns
 Number of bytes sent.
 
-### `public ECAL_API bool `[`AddEventCallback`](#dc/d42/classeCAL_1_1CPublisher_1af62a9ab48e4f1186320ae23343d971e4)`(eCAL_Publisher_Event type_,`[`PubEventCallbackT`](doxygen/md/zapi-PubEventCallbackT.md#df/d76/ecal__callback_8h_1ad5ee2b03f650f613c9ae5487a73630a1)` callback_)` 
+### `public ECAL_API bool `[`AddEventCallback`](#dc/d42/classeCAL_1_1CPublisher_1af62a9ab48e4f1186320ae23343d971e4)`(eCAL_Publisher_Event type_,`[`PubEventCallbackT`](src/content/docs/doxygen/md/zapi-PubEventCallbackT.md#df/d76/ecal__callback_8h_1ad5ee2b03f650f613c9ae5487a73630a1)` callback_)` 
 
 Add callback function for publisher events.
 
@@ -467,7 +467,7 @@ The topic name.
 
 Gets type of the connected topic.
 
-> Deprecated: Please use the method [SDataTypeInformation](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)[GetDataTypeInformation()](doxygen/md/zapi-GetDataTypeInformation.md#dc/d42/classeCAL_1_1CPublisher_1addc866ba86a84a8c83e4cb78b6c4f540) instead. You can extract the typename from the [SDataTypeInformation](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation) variable. This function will be removed in future eCAL versions.
+> Deprecated: Please use the method [SDataTypeInformation](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)[GetDataTypeInformation()](src/content/docs/doxygen/md/zapi-GetDataTypeInformation.md#dc/d42/classeCAL_1_1CPublisher_1addc866ba86a84a8c83e4cb78b6c4f540) instead. You can extract the typename from the [SDataTypeInformation](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation) variable. This function will be removed in future eCAL versions.
 
 #### Returns
 The type name.
@@ -476,12 +476,12 @@ The type name.
 
 Gets description of the connected topic.
 
-> Deprecated: Please use the method [SDataTypeInformation](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)[GetDataTypeInformation()](doxygen/md/zapi-GetDataTypeInformation.md#dc/d42/classeCAL_1_1CPublisher_1addc866ba86a84a8c83e4cb78b6c4f540) instead. You can extract the descriptor from the [SDataTypeInformation](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation) variable. This function will be removed in future eCAL versions.
+> Deprecated: Please use the method [SDataTypeInformation](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)[GetDataTypeInformation()](src/content/docs/doxygen/md/zapi-GetDataTypeInformation.md#dc/d42/classeCAL_1_1CPublisher_1addc866ba86a84a8c83e4cb78b6c4f540) instead. You can extract the descriptor from the [SDataTypeInformation](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation) variable. This function will be removed in future eCAL versions.
 
 #### Returns
 The description.
 
-### `public ECAL_API `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` `[`GetDataTypeInformation`](#dc/d42/classeCAL_1_1CPublisher_1addc866ba86a84a8c83e4cb78b6c4f540)`() const` 
+### `public ECAL_API `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` `[`GetDataTypeInformation`](#dc/d42/classeCAL_1_1CPublisher_1addc866ba86a84a8c83e4cb78b6c4f540)`() const` 
 
 Gets description of the connected topic.
 
@@ -510,5 +510,5 @@ The dump string.
 
 ### `protected void `[`InitializeTLayer`](#dc/d42/classeCAL_1_1CPublisher_1aaf61ea734d14239a173f5112aab2cc5c)`()` 
 
-### `protected bool `[`ApplyTopicToDescGate`](#dc/d42/classeCAL_1_1CPublisher_1a8800c3a1c833332fdc3b5d197c4bf775)`(const std::string & topic_name_,const `[`SDataTypeInformation`](doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
+### `protected bool `[`ApplyTopicToDescGate`](#dc/d42/classeCAL_1_1CPublisher_1a8800c3a1c833332fdc3b5d197c4bf775)`(const std::string & topic_name_,const `[`SDataTypeInformation`](src/content/docs/doxygen/md/zapi-eCAL::SDataTypeInformation.md#d7/d0f/structeCAL_1_1SDataTypeInformation)` & topic_info_)` 
 
