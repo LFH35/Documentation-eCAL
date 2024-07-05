@@ -1,0 +1,29 @@
+---
+title: eCAL Sys Client
+sidebar:
+   order: 4
+   label: Client
+---
+
+import { Aside } from "@astrojs/starlight/components";
+import { Code } from 'astro-expressive-code/components';
+
+import sysClientUsageTXT from '../../../../../assets/files/sys/sys_client_usage.txt?raw';
+
+eCAL Sys Client provides the client for the eCAL Sys Host Applications (i.e. [eCAL Sys GUI](/using_ecal/applications/ecal-sys/ecal_sys_gui/) or [eCAL Sys CLI](/using_ecal/applications/ecal-sys/ecal_sys_cli/)).
+Start this application on all machines, that shall be remote controlled.
+
+eCAL Sys Client is not needed on the machine that runs the eCAL Sys Host Application.
+
+<Aside type="caution" title="Important">
+   The eCAL Sys Client is a remote-control application with no authentication.
+   If you are annoyed by accepting this security implication at startup, you can start eCAL Sys Client with:
+
+   ```shell
+      ecal_sys_client --auto-accept-security-risk
+   ```
+</Aside>
+
+## Usage
+
+<Code code={sysClientUsageTXT} lang="text" title="sys_client_usage.txt"/>
