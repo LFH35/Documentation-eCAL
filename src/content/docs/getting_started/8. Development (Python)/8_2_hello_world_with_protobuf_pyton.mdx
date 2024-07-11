@@ -95,11 +95,11 @@ For that, create a file `protobuf_snd.py` next to your `proto_messages` director
 <Aside title="What is happening here?">
     - **Line 5** imports the Protobuf Publisher from eCAL
    
-    - **Line 9** imports the :file:`hello_world_pb2.py` that we just have created.
+    - **Line 9** imports the `hello_world_pb2.py` that we just have created.
 
     - **Line 14** initializes eCAL. The name of the node is "Python Protobuf Publisher".
 
-    - By also providing ``sys.argv`` you get the ability to pass command line arguments to eCAL, e.g. for loading an :file:`ecal.ini` configuration file from a non-standard path. In practice this is not often used and you could also pass ``[]`` as arguments.
+    - By also providing ``sys.argv`` you get the ability to pass command line arguments to eCAL, e.g. for loading an `ecal.ini` configuration file from a non-standard path. In practice this is not often used and you could also pass ``[]`` as arguments.
 
     - **Line 20** creates an eCAL Publisher for the topic "hello_world_python_protobuf_topic". The second parameter is the type from our converted "hello_world.proto" message description. By providing the type, eCAL knows how to dynamically deserialize the message.
 
@@ -119,7 +119,7 @@ When you execute the python script, you can now already see the data in the eCAL
 We know that the sender already works.
 So, let's implement a python script that can receive the serialized protobuf data, deserialize it and display the content of the message!
 
-Create a file :file:`protobuf_rec.py` next to the sender and paste the following content:
+Create a file `protobuf_rec.py` next to the sender and paste the following content:
 
 <FileTree>
 - ‎

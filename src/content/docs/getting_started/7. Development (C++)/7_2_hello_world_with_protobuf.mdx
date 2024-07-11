@@ -81,7 +81,7 @@ Now start implementing the actual sender application. Just as in the [last secti
     <Aside title="What is happening here?">
         - **Line 2**: This time, we include the protobuf publisher.
 
-        - **Line7** includes the generated C++ file from the :file:`hello_world.proto`
+        - **Line7** includes the generated C++ file from the `hello_world.proto`
 
         - **Line 13** creates a protobuf publisher instance. Note that it is templated to ``proto_messages::HelloWorld``, so if you would want to send different messages to different topics, you would create one publisher instance per topic. Sending different messages to the same topic is a bad idea and will break the de-serialization.
 

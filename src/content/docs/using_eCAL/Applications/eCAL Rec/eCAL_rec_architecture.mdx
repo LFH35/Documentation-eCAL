@@ -6,6 +6,7 @@ sidebar:
 ---
 
 import { Aside } from "@astrojs/starlight/components";
+import { Steps } from "@astrojs/starlight/components";
 
 In this chapter we will take a deeper look at the different recording modes and the host / client architecture of eCAL Rec.
 
@@ -18,6 +19,7 @@ In this chapter we will take a deeper look at the different recording modes and 
 
 The eCAL Recorder has two essential modes for creating recordings:
 
+<Steps>
 1. **Centralized recording**:
    
    This means that you simply start the eCAL Recorder on one of your many machines.
@@ -40,11 +42,13 @@ The eCAL Recorder has two essential modes for creating recordings:
    <Aside type="tip">
    <iframe width="550" height="330" src="https://www.youtube.com/embed/h3DUirOMfu8" title="HowTo - Create Distributed Recordings with eCAL Rec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
    </Aside>
+</Steps>
 
 ## Host / Client Architecture
 
 A (distributed) eCAL Rec setup consists of 2 applications:
 
+<Steps>
 1. The **Host Application**.
    This can be either one of:
 
@@ -73,3 +77,4 @@ A (distributed) eCAL Rec setup consists of 2 applications:
         Even though you can use `ecal_rec_client` from command line to start a recording, it is generally advisable to use `ecal_rec /.exe` (the eCAL rec cli host application) for that purpose.
         It features a richer set of parameters, can load config files and has an interactive mode.
     </Aside>
+</Steps>

@@ -68,7 +68,7 @@ Therefore you have to create a **route**, i.e. a ``239.0.0.x -> outgoing NIC`` m
 
 3. Enter the following line and replace xx.xx.xx.xx with your IP address
    
-   ```batch
+   ```shell
       route -p add 239.0.0.0 mask 255.255.255.0 xx.xx.xx.xx
    ```
    <Aside type="tip">If you made a mistake, you can delete your route/s with ``route delete 239.0.0.0``. Your eCAL communication may not work, if you leave faulty routes in place.</Aside>
@@ -77,7 +77,7 @@ Therefore you have to create a **route**, i.e. a ``239.0.0.x -> outgoing NIC`` m
 5. Check the result from a command prompt.
    It should show your route under `IPv4 Route Table / Persistent Routes`.
    
-   ```batch
+   ```shell
       route print
    ```
    ![Windows route print](../../../assets/win_route_print.png)
@@ -86,7 +86,6 @@ Therefore you have to create a **route**, i.e. a ``239.0.0.x -> outgoing NIC`` m
 <Aside type="tip">It is recommended to assign a static IP, so your multicast route will not become outdated at some point.</Aside>
 
 ### 4.2.2 Multicast configuration on Ubuntu
----------------------------------------------
 
 You can configure the multicast route in various ways, depending on your Ubuntu version.
 
@@ -99,7 +98,7 @@ Jump to your section of choice below:
    - **Via GUI** (Works well for desktop Ubuntu)
    - **Via /etc/network/interfaces** (Legacy, up to Ubuntu 18. Not supported in Ubuntu 20, any more.)
 
-2. [Test the Configuration](https://eclipse-ecal.github.io/ecal/getting_started/cloud.html#ubuntu-multicast-route-test)
+2. [Test the Configuration](/getting_started/4_network_configuration/#4221-test-the-configuration)
 </Steps>
 
 <Tabs>
@@ -110,30 +109,24 @@ Jump to your section of choice below:
         
         ![Space indentation in gedit](../../../assets/gedit_space_indentation.png)
     </Aside>
-        1. Configure the **loopback multicast** route (this will become active, if you disconnect from all networks).
-
-        ```bash
-            sudo gedit /etc/netplan/50-ecal-multicast-loopback.yaml
-        ```
-
-        Paste the following configuration:
-
-        <Code code={ecalMulticastLoopback} lang="yml" />
+    <Steps>
+      1. Configure the **loopback multicast** route (this will become active, if you disconnect from all networks).
+         ```shell
+             sudo gedit /etc/netplan/50-ecal-multicast-loopback.yaml
+         ```
+         Paste the following configuration:
+         <Code code={ecalMulticastLoopback} lang="yml" />
 
       2. Configure the **external multicast** route.
          This will get a lower metric and will thus become the preferred route once the interface is up.
-
-         ```bash
+         ```shell
             sudo gedit /etc/netplan/50-ecal-multicast.yaml
          ```
-
          Paste the following configuration and **replace eth0** with your desired interface:
-
-        <Code code={ecalMulticast} lang="yml" />
+         <Code code={ecalMulticast} lang="yml" />
 
       3. Apply the changes
-
-         ```bash
+         ```shell
             sudo netplan apply
          ```
          <Aside type="caution" title="Important">
@@ -141,8 +134,7 @@ Jump to your section of choice below:
 
             ![Activate the netplan settings from the Gnome GUI](../../../assets/gnome_netplan_gui.svg)
          </Aside>
-
-         
+      </Steps>    
   </TabItem>
   <TabItem label="GUI (easiest)">
     If you have a graphical network manager installed (-> Desktop Ubuntu), you can use it to configure the external route.
@@ -150,53 +142,47 @@ Jump to your section of choice below:
       <Aside type="caution" title="Important">
       This method lacks the ability to configure a loopback route. When you are not connected to any network, your eCAL communication will fail. You can however combine this method with the loopback configuration from netplan.
       </Aside>
-
+      <Steps>
       1. Configure the **external multicast** route
-
          - System Settings > Network > Your Adapter > Options > IPv4 Tab > Routes
-
          - Create a route:
-
-         - Address: `239.0.0.0`
-         - Netmask: `255.255.255.0`
-         - Gateway: `0.0.0.0`
-         - Metric: `1`
-
-        ![Ubuntu multicast route](../../../assets/ubuntu_route_gui.png)
+            - Address: `239.0.0.0`
+            - Netmask: `255.255.255.0`
+            - Gateway: `0.0.0.0`
+            - Metric: `1`
+         ![Ubuntu multicast route](../../../assets/ubuntu_route_gui.png)
 
       2. Turn the interface off and on again
 
-      3. Configure the **loopback multicast** route via *netplan* or :file:`/etc/network/interfaces`.
+      3. Configure the **loopback multicast** route via *netplan* or `/etc/network/interfaces`.
          You can omit this, but then you will have to explicitly set eCAL to local mode, if you are not connected to any network.
+      </Steps>
   </TabItem>
   <TabItem label="etc/network/interfaces (legacy)">
-  The well known :file:`/etc/network/interfaces` file is supported up to Ubuntu 18.
+  The well known `/etc/network/interfaces` file is supported up to Ubuntu 18.
       It is not supported since Ubuntu 20, anymore.
       Please use netplan instead.
-      If you are running Ubuntu 18, using netplan is still recommended, unless you want to manage other interfaces via :file:`/etc/network/interfaces`.
+      If you are running Ubuntu 18, using netplan is still recommended, unless you want to manage other interfaces via `/etc/network/interfaces`.
 
       Edit the file and add the content below.
 
-      ```bash
+      ```shell
          sudo gedit /etc/network/interfaces
       ```
 
+      <Steps>
       1. Configure the **loopback multicast** route (this will become active, if you disconnect from all networks).
-
-         Add the following lines beneath the :code:`iface lo inet loopback` line:
-
-         ```bash
+         Add the following lines beneath the `iface lo inet loopback` line:
+         ```shell
             post-up ifconfig lo multicast
             post-up route add -net 239.0.0.0 netmask 255.255.255.0 dev lo metric 1000
          ```
 
       2. Configure the **external multicast** route.
          This will get a lower metric and will thus become the preferred route once the interface is up.
-
          Add the following lines and **replace eth0** with your interface.
          You may want to replace the dhcp line with your desired configuration.
-
-         ```bash
+         ```shell
             # replace eth0 with your network adapter
             auto eth0
             allow-hotplug eth0
@@ -206,6 +192,7 @@ Jump to your section of choice below:
          ```
 
       3. Restart your PC
+      </Steps>
   </TabItem>
 </Tabs>
 
@@ -213,7 +200,7 @@ Jump to your section of choice below:
 
 Check the result from a terminal. It should show routes for local and external communication:
 
-```bash
+```shell
    route -n
 ```
 

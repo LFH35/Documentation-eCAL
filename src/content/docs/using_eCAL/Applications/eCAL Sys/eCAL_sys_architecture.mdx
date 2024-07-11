@@ -7,6 +7,7 @@ sidebar:
 
 import { Aside } from "@astrojs/starlight/components";
 import { Badge } from '@astrojs/starlight/components';
+import { Steps } from "@astrojs/starlight/components";
 
 In this chapter we will take a deeper look at eCAl Sys.
 We will discuss the Host / Client architecture and eCAL Sys configuration files.
@@ -15,8 +16,9 @@ We will discuss the Host / Client architecture and eCAL Sys configuration files.
 
 eCAL Sys consists of 2 (or 3) applications:
 
+<Steps>
 1. The **Host Application**.
-   This can be either one of:
+   This can be either one of: 
 
    - eCAL Sys GUI (`ecal_sys_gui /.exe`)
    - eCAL Sys CLI (`ecal_sys /.exe`)
@@ -52,6 +54,7 @@ eCAL Sys consists of 2 (or 3) applications:
    <Aside type="tip">
       You can use eCAL Sys to start the MMA Application, by creating an ``ecal_mma`` task.
    </Aside>
+</Steps>
 
 ## Configuration Files
 
@@ -66,7 +69,7 @@ The command line application (eCAL Sys CLI) can only load .ecalsys files, but no
 
    For instance to use an environment variable ``my_root_dir`` that you have configured differently on each target, use:
 
-   ```env   
+   ```shell   
       $TARGET{ENV my_root_dir}/task
    ```
 

@@ -41,7 +41,7 @@ The path to the measurement that we want to process. It can also be a path point
 The path where the converted measurement will be saved.
 
 <Aside type="caution" title="Important">
-   The application will create a folder called :file:`MEASUREMENT_CONVERTER` in the output path.
+   The application will create a folder called `MEASUREMENT_CONVERTER` in the output path.
 
    If the folder already exists, it is important for it to be empty, otherwise the application will not continue.
 </Aside>
@@ -55,8 +55,8 @@ Let's see how this configuration file can look like.
 <Code code={configYAML} lang="yml" title="config.yaml"/>
 
 <Aside title="What will be the result by using this configuration file?">
-   We will have a measurement with base file name :file:`measurement` with a maximum size of 1024 MB per file.
-   It will have a duration of 10 seconds, from second 10 of the original measurement to second 20, excluding at the same time any channel containg the characters sequence :file:`Image` and :file:`V2X`, and the channel :file:`TrafficParticipantListPb`, if they exist in the measurement.
+   We will have a measurement with base file name `measurement` with a maximum size of 1024 MB per file.
+   It will have a duration of 10 seconds, from second 10 of the original measurement to second 20, excluding at the same time any channel containg the characters sequence `Image` and `V2X`, and the channel `TrafficParticipantListPb`, if they exist in the measurement.
 </Aside>
 
 - **basename** : the base name of the `.hdf5` files

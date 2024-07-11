@@ -7,6 +7,7 @@ sidebar:
 import { Aside } from "@astrojs/starlight/components";
 import { Code } from 'astro-expressive-code/components';
 import { FileTree } from '@astrojs/starlight/components';
+import { Steps } from "@astrojs/starlight/components";
 
 import runtimeDockerfile from '../../../../assets/files/eCAL_in_docker/eCAL_runtime_container/Dockerfile?raw'
 
@@ -67,7 +68,7 @@ The file hierarchy that we are going to follow:
 </FileTree>
 
 ### eCAL runtime container
-
+<Steps>
 1. Create the file `ecal_runtime_container/Dockerfile` and paste the following installation commands:
 
    <Code code={runtimeDockerfile} lang="docker" title="Dockerfile"/>
@@ -98,13 +99,14 @@ The file hierarchy that we are going to follow:
       - ``--pid=host`` will share the Process-ID range with the host.
         Otherwise processes from different containers may get the same Process ID, which will prevent communication between those two processes.
     </Aside>
-
+</Steps>
 
 ### Publisher container
 
 The publisher container will be built on top of the ``ecal-runtime`` container.
 It will contain the Hello World Sample from the [Getting Started Section](/getting_started/7-development-c/7_1_hello_world/#712-hello-world-publisher).
 
+<Steps>
 1. Create a file `pub_container/Dockerfile` and paste the following content:
     <Code code={pubDockerfile} lang="docker" title="Dockerfile"/>
 
@@ -119,11 +121,13 @@ It will contain the Hello World Sample from the [Getting Started Section](/getti
         cd pub_container
         sudo docker build . --rm -t ecal-publisher:1.0.0
     ```
+</Steps>
 
 ### Subscriber container
 
 The subscriber container will also be based on the ``ecal-runtime`` container and contain the Hello World Sample from the [Getting Started Section](/getting_started/7-development-c/7_1_hello_world/#713-hello-world-subscriber).
 
+<Steps>
 1. Create a file: `sub_container/Dockerfile`
     <Code code={subDockerfile} lang="docker" title="Dockerfile"/>
 
@@ -138,6 +142,7 @@ The subscriber container will also be based on the ``ecal-runtime`` container an
         cd sub_container
         sudo docker build . --rm -t ecal-subscriber:1.0.0
     ```
+</Steps>
 
 ### Run the docker containers
 
@@ -148,15 +153,16 @@ The subscriber container will also be based on the ``ecal-runtime`` container an
     ```
 
 - You can also use the docker-compose file to manage multiple containers.
-
+  <Steps>
   1. In the parent folder create file `docker-compose.yaml` and paste the following content:
      <Code code={dockerComposeYAML} lang="yml" title="docker-compose.yaml"/>
 
-  1. You can now use that docker-compose to build/run the publisher and subscriber containers:
+  2. You can now use that docker-compose to build/run the publisher and subscriber containers:
         ```shell
             sudo docker-compose build
             sudo docker-compose up
         ```
+  </Steps>
 
 ### Seamless IPC-Communication across host borders
 
@@ -171,6 +177,7 @@ In eCAL, you are able to set host belonging over network borders by utilizing th
     If we don't set the same ``host_group_name`` on our Host and our Containers, an IPC-Communication across host borders is not available with different host names.
 </Aside>
 
+<Steps>
 1. To encapsulate your container network from your host network, you need to create a new docker network with the following command:
     ```shell
       sudo docker network create --driver=bridge --subnet=10.0.10.0/24 my_network
@@ -224,5 +231,6 @@ In eCAL, you are able to set host belonging over network borders by utilizing th
         sudo nano /etc/hosts
     ```
     ![console /etc/hosts ](../../../../assets/vscode_etc_hosts.png)
+</Steps>
 
 When you are done, all eCAL nodes can communicate seamlessly from docker to the host and vice versa.

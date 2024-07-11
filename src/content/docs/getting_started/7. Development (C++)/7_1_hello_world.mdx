@@ -13,13 +13,11 @@ import sndMainCPP from '../../../../assets/files/hello_world/hello_world_snd/mai
 import recCMakeListsTXT from '../../../../assets/files/hello_world/hello_world_rec/CMakeLists.txt?raw';
 import recMainCPP from '../../../../assets/files/hello_world/hello_world_rec/main.cpp?raw';
 
-<Aside type="caution" title="Important">
-<Icon name="seti:windows" />
+<Aside type="caution" title="Important for Windows">
 This tutorial will **only work with eCAL 5.7.3** and upwards.
 It will **not** work with older versions that were published as .msi installer (it missed some libraries).
 
 Please switch to Ubuntu, if you are using an old eCAL Version.
-
 </Aside>
 
 After you have learned a lot about the pre-compiled applications that come with eCAL, let's create our own!
@@ -44,7 +42,7 @@ First, you have to install some more development dependencies:
 
 
 - Ubuntu:
-    ```bash
+    ```shell
         sudo apt install cmake g++ libprotobuf-dev protobuf-compiler
     ```
 
@@ -85,7 +83,7 @@ Somewhere on your hard drive create an empty directory and create a file `CMakeL
 Now that you have the source code ready, create a `_build` directory and build the code!
 
 - Windows:
-    ```batch
+    ```shell
         mkdir \_build
         cd \_build
         cmake .. -A x64
@@ -93,7 +91,7 @@ Now that you have the source code ready, create a `_build` directory and build t
     ```
 
 - Ubuntu:
-    ```bash
+    ```shell
         mkdir \_build
         cd \_build
         cmake ..
@@ -128,7 +126,7 @@ Again, create a new directory somewhere and add create the `CMakeLists.txt` and 
 Now that you have the source code ready, create a `_build` directory and build the code!
 
 - Windows:
-    ```batch
+    ```shell
         mkdir \_build
         cd \_build
         cmake .. -A x64

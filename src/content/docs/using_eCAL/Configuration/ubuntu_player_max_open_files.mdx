@@ -32,7 +32,7 @@ Please follow the following steps to increase the allowed number of open files.
 
 3. Add to `/etc/security/limits.conf`:
    *Replace YOUR_USERNAME with your actual username!*
-    ```conf
+    ```shell
       YOUR_USERNAME     soft     nproc          65535
       YOUR_USERNAME     hard     nproc          65535
       YOUR_USERNAME     soft     nofile         65535
