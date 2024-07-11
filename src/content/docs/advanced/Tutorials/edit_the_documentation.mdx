@@ -1,0 +1,51 @@
+---
+title: Edit the documentation
+sidebar:
+    order: 1
+---
+
+import { Aside } from "@astrojs/starlight/components";
+import { Badge } from '@astrojs/starlight/components';
+import { Steps } from "@astrojs/starlight/components";
+
+This documentation is createt with [Astro](https://astro.build/) and uses the Theme [Starlight](https://starlight.astro.build/guides/sidebar/#custom-html-attributes).
+
+In this tutorial we will teach you how to edit the documentation locally on your PC. For that we will use Visual Studio Code and [Node.js](https://nodejs.org/en) which you will need for building the site and also for dev Preview.
+
+<Aside type="tip">
+    For small changes you can click <Badge text="Edit page" variant="note" size="medium" /> at the bottom of every Site.
+</Aside>
+
+<Steps>
+1. Checkout the eCAL git repository:
+    ```shell
+        git clone https://github.com/eclipse-ecal/ecal.git
+    ```
+
+2. Download and install Visual Studio Code on your PC (it is available for Windows, Linux and macOS). https://code.visualstudio.com/
+
+3. Download and install Node.js. https://nodejs.org/en
+
+4. Navigate to the eCAL directory where the docs folder is located. Access the docs folder and install the requirements with npm.
+    ```shell
+        npm install
+    ```
+
+5. Now you can run:
+    ```shell
+        npm run dev
+    ```
+    for dev Preview in your Browser (http://localhost:4321)
+
+6. Run:
+    ```shell
+        npm run build
+    ```
+    for Building the application, the Build files will be located at `/dist/..`
+</Steps>
+
+<Aside>
+    For easier development with VS-Code we recommend to install some extensions:
+    - Astro
+    - Prettier - Code formatter
+</Aside>

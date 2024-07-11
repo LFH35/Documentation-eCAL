@@ -20,6 +20,9 @@ export default defineConfig({
     social: {
       github: 'https://github.com/eclipse-ecal/ecal'
     },
+    editLink: {
+      baseUrl: 'https://github.com/LFH35/Documentation-eCAL/tree/master', // Change to your Github folder where the doc are located
+    },
     sidebar: [{
       label: 'Getting Started',
       autogenerate: {
@@ -54,6 +57,15 @@ export default defineConfig({
         directory: 'doxygen/md', 
         collapsed: true 
       }
+    },{
+      label: 'Eclipse Foundation',
+      items: [
+        {label: 'Website', link: 'http://www.eclipse.org/', attrs: { target: '_blank' } },
+        {label: 'Privacy policy', link: 'http://www.eclipse.org/legal/privacy.php', attrs: { target: '_blank' } },
+        {label: 'Terms of Use', link: 'http://www.eclipse.org/legal/termsofuse.php', attrs: { target: '_blank' } },
+        {label: 'Copyright agent', link: 'http://www.eclipse.org/legal/copyright.php', attrs: { target: '_blank' } },
+        {label: 'Legal', link: 'http://www.eclipse.org/legal', attrs: { target: '_blank' } } ],
+ 
     }],
   }),
   icon()],
