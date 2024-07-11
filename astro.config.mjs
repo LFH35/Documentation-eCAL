@@ -18,7 +18,8 @@ export default defineConfig({
     // Relative path to your custom CSS file
     './src/styles/custom.css'],
     social: {
-      github: 'https://github.com/eclipse-ecal/ecal'
+      github: 'https://github.com/eclipse-ecal/ecal',
+      youtube: 'https://www.youtube.com/channel/UCqYP4x5pBc3KklFuJr2GIMw'
     },
     editLink: {
       baseUrl: 'https://github.com/LFH35/Documentation-eCAL/tree/master', // Change to your Github folder where the doc are located
